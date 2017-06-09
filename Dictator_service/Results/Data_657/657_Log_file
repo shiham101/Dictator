@@ -1,0 +1,42 @@
+2017-05-22 01:07:54,908 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 01:07:54,909 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 127.0.0.1
+2017-05-22 01:07:55,516 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-22 01:07:55,516 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-22 01:07:55,522 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-22 01:07:55,522 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 01:07:55,523 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-22 01:07:55,523 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 01:07 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000062s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.57 seconds
+
+
+
+2017-05-22 01:07:55,531 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 01:07:55,560 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 01:07:55,562 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 127.0.0.1
+2017-05-22 01:07:56,231 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-22 01:07:56,232 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-22 01:07:56,234 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-22 01:07:56,234 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 01:07:56,234 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-22 01:07:56,234 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 01:07 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000047s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.65 seconds
+
+
+
+2017-05-22 01:07:56,245 - Commands Logger - DEBUG - Finished!!!

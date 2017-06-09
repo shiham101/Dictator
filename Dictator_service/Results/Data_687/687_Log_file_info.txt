@@ -1,0 +1,29 @@
+2017-05-28 09:57:12,446 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-28 09:57:18,452 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 687
+2017-05-28 09:57:18,455 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-28 09:57:18,461 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-28 09:57:18,482 - Info Logger - DEBUG - Service,Host,port  is -->http  127.0.0.1  8000
+2017-05-28 09:57:18,491 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 687
+2017-05-28 09:57:18,492 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 09:57:18,494 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Thread started --with command echo -e 'Get/HTTP/1.0' | nc 127.0.0.1 8000 |grep 'Server'
+2017-05-28 09:57:18,551 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Thread finished
+2017-05-28 09:57:18,552 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Saving details :
+2017-05-28 09:57:18,652 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Details Updated successfully
+2017-05-28 09:57:18,696 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 687
+2017-05-28 09:57:18,697 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 09:57:18,698 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-headers -p 8000 127.0.0.1
+2017-05-28 09:57:32,296 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Thread finished
+2017-05-28 09:57:32,297 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Saving details :
+2017-05-28 09:57:32,313 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Details Updated successfully
+2017-05-28 09:57:32,322 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 687
+2017-05-28 09:57:32,323 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Inside command_meta
+2017-05-28 09:58:25,374 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Everything Fine till now-->Launching run command
+2017-05-28 09:58:30,485 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Module Execution completed
+2017-05-28 09:58:30,486 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Exiting  from msfconsole !!!
+2017-05-28 09:58:32,698 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Saving details :
+2017-05-28 09:58:32,771 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Details Updated successfully
+2017-05-28 09:58:32,771 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Exiting custom_meta !!

@@ -1,0 +1,36 @@
+2017-05-22 02:58:38,551 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:58:38,552 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Thread started --with command nmap -sV --script=ssh2-enum-algos.nse -p 22 127.0.0.
+2017-05-22 02:58:47,938 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Thread finished
+2017-05-22 02:58:47,939 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Saving details :
+2017-05-22 02:58:47,943 - Commands Logger - DEBUG - Command id is ->ssh_5
+2017-05-22 02:58:47,943 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=ssh2-enum-algos.nse -p 22 127.0.0.', '\nEnd']
+2017-05-22 02:58:47,944 - Commands Logger - DEBUG - My var : '$.Entries."ssh_5"'
+2017-05-22 02:58:47,944 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=ssh2-enum-algos.nse -p 22 127.0.0.
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:58 UTC
+Failed to resolve "127.0.0.".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 9.31 seconds
+
+
+
+2017-05-22 02:58:47,950 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 02:58:47,994 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:58:47,995 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 22 127.0.0.
+2017-05-22 02:58:57,784 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Thread finished
+2017-05-22 02:58:57,785 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Saving details :
+2017-05-22 02:58:57,787 - Commands Logger - DEBUG - Command id is ->ssh_6
+2017-05-22 02:58:57,788 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=banner.nse -p 22 127.0.0.', '\nEnd']
+2017-05-22 02:58:57,788 - Commands Logger - DEBUG - My var : '$.Entries."ssh_6"'
+2017-05-22 02:58:57,788 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=banner.nse -p 22 127.0.0.
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:58 UTC
+Failed to resolve "127.0.0.".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 9.74 seconds
+
+
+
+2017-05-22 02:58:57,832 - Commands Logger - DEBUG - Finished!!!

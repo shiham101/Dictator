@@ -1,0 +1,23 @@
+2017-05-11 10:05:48,108 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-11 10:05:54,113 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 650
+2017-05-11 10:05:54,115 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-11 10:05:54,117 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-11 10:05:54,119 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-11 10:05:54,120 - Info Logger - DEBUG - Service,Host,port  is -->http  192.168.182.132  80
+2017-05-11 10:05:54,145 - Info Logger - DEBUG - Command id --> http_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 650
+2017-05-11 10:05:54,145 - Info Logger - DEBUG - Command id --> http_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 10:05:54,147 - Info Logger - DEBUG - Command id --> http_1  Message --> :Thread started --with command nikto -h  192.168.182.132:80
+2017-05-11 10:12:22,519 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-11 10:12:28,527 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 650
+2017-05-11 10:12:28,528 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-11 10:12:28,530 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-11 10:12:28,531 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-11 10:12:28,532 - Info Logger - DEBUG - Service,Host,port  is -->http  192.168.182.132  80

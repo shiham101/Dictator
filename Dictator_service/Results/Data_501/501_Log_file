@@ -1,0 +1,26 @@
+2017-02-07 17:43:13,058 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :Inside command_meta
+2017-02-07 17:43:29,107 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :[4mmsf[0m [0m> 
+2017-02-07 17:43:29,107 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :0
+2017-02-07 17:43:32,214 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-07 17:43:35,317 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set THREADS 1
+[0mTHREADS => 1
+[4mmsf[0m [0m> 
+2017-02-07 17:43:38,421 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-07 17:43:41,529 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :use auxiliary/scanner/ftp/ftp_login
+[0m[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-07 17:43:44,635 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-07 17:43:47,737 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set rport 21
+[0mrport => 21
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-07 17:43:50,840 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set USERNAME msfadmin
+[0mUSERNAME => msfadmin
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-07 17:43:53,946 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set PASSWORD msfadmin
+[0mPASSWORD => msfadmin
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 

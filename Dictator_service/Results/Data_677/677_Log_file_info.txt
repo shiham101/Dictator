@@ -1,0 +1,21 @@
+2017-05-22 04:11:38,337 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-22 04:11:44,346 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 677
+2017-05-22 04:11:44,348 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 04:11:44,350 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-22 04:11:44,352 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 04:11:44,354 - Info Logger - DEBUG - Service,Host,port  is -->http  127.0.0.1  80
+2017-05-22 04:11:44,373 - Info Logger - DEBUG - Command id --> http_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 677
+2017-05-22 04:11:44,374 - Info Logger - DEBUG - Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-22 04:11:44,375 - Info Logger - DEBUG - Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-22 04:11:47,380 - Info Logger - DEBUG - Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 04:11:47,381 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 127.0.0.1
+2017-05-22 04:11:58,298 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread finished
+2017-05-22 04:11:58,299 - Info Logger - DEBUG - Command id --> http_5  Message --> :Saving details :
+2017-05-22 04:11:58,382 - Info Logger - DEBUG - Command id --> http_5  Message --> :Details Updated successfully
+2017-05-22 04:11:58,410 - Info Logger - DEBUG - Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-22 04:11:58,488 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting Start_sniffing() method
+2017-05-22 04:11:58,492 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting general_commands_tout_sniff()

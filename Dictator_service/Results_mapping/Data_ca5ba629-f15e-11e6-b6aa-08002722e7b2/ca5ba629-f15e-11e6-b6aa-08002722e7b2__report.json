@@ -1,0 +1,2193 @@
+[
+    {
+        "host": "10.0.1.37", 
+        "host_info": {
+            "host-fqdn": null, 
+            "host_ip": "10.0.1.37", 
+            "host_name": "10.0.1.37", 
+            "operating-system": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+            "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+            "scantime": "2016-12-11 23:16:08", 
+            "system-type": "general-purpose"
+        }, 
+        "status": "nessus_only", 
+        "value": [
+            {
+                "description": "This plugin displays, for each tested host, information about the scan itself :\n\n  - The version of the plugin set.\n  - The type of scanner (Nessus or Nessus Home).\n  - The version of the Nessus Engine.\n  - The port scanner(s) used.\n  - The port range scanned.\n  - Whether credentialed or third-party patch management     checks are possible.\n  - The date of the scan.\n  - The duration of the scan.\n  - The number of hosts scanned in parallel.\n  - The number of checks done in parallel.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "19506", 
+                "plugin_name": "Nessus Scan Information", 
+                "port": "0", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "general", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "This plugin displays information about the Nessus scan.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is missing one or more security patches. This plugin lists the newest version of each patch to install to make sure the remote host is up-to-date.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "66334", 
+                "plugin_name": "Patch Report", 
+                "port": "0", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "general", 
+                "sevirity": "0", 
+                "solution": "Install the patches listed below.", 
+                "synopsis": "The remote host is missing several patches.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was unable to identify a service on the remote host even though it returned a banner of some type.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11154", 
+                "plugin_name": "Unknown Service Detection: Banner Retrieval", 
+                "port": "8787", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "msgsrvr?", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "There is an unknown service running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Security patches may have been 'backported' to the remote SSH server without changing its version number. \n\nBanner-based checks have been disabled to avoid false positives. \n\nNote that this test is informational only and does not denote any security problem.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "39520", 
+                "plugin_name": "Backported Security Patch Detection (SSH)", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ssh", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "Security patches are backported.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Security patches may have been 'backported' to the remote HTTP server without changing its version number.\n\nBanner-based checks have been disabled to avoid false positives.\n\nNote that this test is informational only and does not denote any security problem.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "39521", 
+                "plugin_name": "Backported Security Patch Detection (WWW)", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "Security patches are backported.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The version of Samba running on the remote host is affected by a remote code execution vulnerability due to improper validation of user-supplied input when passing RPC messages from external scripts to a shell. A remote, authenticated attacker can exploit this via the use of shell metacharacters during login negotiations when the 'username map script' option is enabled, or during the invocation of other printer and file management MS-RPC calls.", 
+                "exploits": [
+                    "exploit/multi/samba/usermap_script", 
+                    "Samba - 'Username' map script' Command Execution (Metasploit) - The Exploit-DB Ref : 16320 URL-http://www.exploit-db.com/exploits/16320", 
+                    "MSRPC Samba Command Injection exploit - Core Security Category : Exploits/Remote URL-", 
+                    "Samba Username Map Script Command Injection Exploit - Core Security Category : Exploits/Remote URL-"
+                ], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "82580", 
+                "plugin_name": "Samba 3.0.0 'SamrChangePassword' RCE", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {
+                    "bid": [
+                        "23972"
+                    ], 
+                    "cve": [
+                        "CVE-2007-2447"
+                    ], 
+                    "osvdb": [
+                        "34700"
+                    ], 
+                    "xref": [
+                        "OSVDB:34700", 
+                        "CERT:268336"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "6.8", 
+                    "cvss_temporal_score": "5.9", 
+                    "cvss_temporal_vector": "CVSS2#E:ND/RL:OF/RC:C", 
+                    "cvss_vector": "CVSS2#AV:N/AC:M/Au:N/C:P/I:P/A:P", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "cifs", 
+                "sevirity": "2", 
+                "solution": "Upgrade to version 3.0.25 or later", 
+                "synopsis": "The file and print server running on the remote host is affected by a remote code execution vulnerability.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The version of vsftpd running on the remote host has been compiled with a backdoor. Attempting to login with a username containing :) (a smiley face) triggers the backdoor, which results in a shell listening on TCP port 6200. The shell stops listening after a client connects to and disconnects from it.\n\nAn unauthenticated, remote attacker could exploit this to execute arbitrary code as root.", 
+                "exploits": [
+                    "exploit/unix/ftp/vsftpd_234_backdoor"
+                ], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "55523", 
+                "plugin_name": "vsftpd Smiley Face Backdoor", 
+                "port": "21", 
+                "protocol": "tcp", 
+                "ref": {
+                    "bid": [
+                        "48539"
+                    ], 
+                    "edb-id": "17491", 
+                    "osvdb": [
+                        "73573"
+                    ], 
+                    "xref": [
+                        "OSVDB:73573", 
+                        "EDB-ID:17491"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "10.0", 
+                    "cvss_temporal_score": "8.3", 
+                    "cvss_temporal_vector": "CVSS2#E:F/RL:OF/RC:C", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:C/I:C/A:C", 
+                    "risk_factor": "Critical"
+                }, 
+                "service": "ftp", 
+                "sevirity": "4", 
+                "solution": "Validate and recompile a legitimate copy of the source code.", 
+                "synopsis": "The remote FTP server contains a backdoor, allowing execution of arbitrary code.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By using information obtained from a Nessus scan, this plugin reports CPE (Common Platform Enumeration) matches for various hardware and software products found on a host. \n\nNote that if an official CPE is not available for the product, this plugin computes the best possible CPE based on the information available from the scan.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "45590", 
+                "plugin_name": "Common Platform Enumeration (CPE)", 
+                "port": "0", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "general", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It is possible to enumerate CPE names that matched on the remote system.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "According to its self-reported version number, the Unix operating system running on the remote host is no longer supported.\n\nLack of support implies that no new security patches for the product will be released by the vendor. As a result, it is likely to contain security vulnerabilities.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "33850", 
+                "plugin_name": "Unsupported Unix Operating System", 
+                "port": "0", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "cvss_base_score": "10.0", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:C/I:C/A:C", 
+                    "risk_factor": "Critical"
+                }, 
+                "service": "general", 
+                "sevirity": "4", 
+                "solution": "Upgrade to a version of the Unix operating system that is currently supported.", 
+                "synopsis": "The operating system running on the remote host is no longer supported.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Based on the remote operating system, it is possible to determine what the remote system type is (eg: a printer, router, general-purpose computer, etc).", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "54615", 
+                "plugin_name": "Device Type", 
+                "port": "0", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "general", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It is possible to guess the remote device type.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Using a combination of remote probes (e.g., TCP/IP, SMB, HTTP, NTP, SNMP, etc.), it is possible to guess the name of the remote operating system in use. It is also possible sometimes to guess the version of the operating system.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11936", 
+                "plugin_name": "OS Identification", 
+                "port": "0", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "general", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It is possible to guess the remote operating system.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The version of Apache HTTP Server running on the remote host is affected by an information disclosure vulnerability. Sending a request with HTTP headers long enough to exceed the server limit causes the web server to respond with an HTTP 400. By default, the offending HTTP header and value are displayed on the 400 error page. When used in conjunction with other attacks (e.g., cross-site scripting), this could result in the compromise of httpOnly cookies.", 
+                "exploits": [
+                    "Apache - httpOnly Cookie Disclosure - The Exploit-DB Ref : 18442 URL-http://www.exploit-db.com/exploits/18442"
+                ], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "57792", 
+                "plugin_name": "Apache HTTP Server httpOnly Cookie Information Disclosure", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {
+                    "bid": [
+                        "51706"
+                    ], 
+                    "cve": [
+                        "CVE-2012-0053"
+                    ], 
+                    "edb-id": "18442", 
+                    "osvdb": [
+                        "78556"
+                    ], 
+                    "xref": [
+                        "OSVDB:78556", 
+                        "EDB-ID:18442"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "4.3", 
+                    "cvss_temporal_score": "3.4", 
+                    "cvss_temporal_vector": "CVSS2#E:POC/RL:OF/RC:C", 
+                    "cvss_vector": "CVSS2#AV:N/AC:M/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "www", 
+                "sevirity": "2", 
+                "solution": "Upgrade to Apache version 2.0.65 / 2.2.22 or later.", 
+                "synopsis": "The web server running on the remote host is affected by an information disclosure vulnerability.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Security patches may have been 'backported' to the remote PHP install without changing its version number.\n\nBanner-based checks have been disabled to avoid false positives.\n\nNote that this test is informational only and does not denote any security problem.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "84574", 
+                "plugin_name": "Backported Security Patch Detection (PHP)", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "Security patches have been backported.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin determines the version of the IRC daemon.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11156", 
+                "plugin_name": "IRC Daemon Version Detection", 
+                "port": "6667", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "irc", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote host is an IRC server.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running a mail (SMTP) server on this port. \n\nSince SMTP servers are the targets of spammers, it is recommended you disable it if you do not use it.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10263", 
+                "plugin_name": "SMTP Server Detection", 
+                "port": "25", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "smtp", 
+                "sevirity": "0", 
+                "solution": "Disable this service if you do not use it, or filter incoming traffic to this port.", 
+                "synopsis": "An SMTP server is listening on the remote port.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Signing is not required on the remote SMB server. An unauthenticated, remote attacker can exploit this to conduct man-in-the-middle attacks against the SMB server.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "57608", 
+                "plugin_name": "SMB Signing Disabled", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "cvss_base_score": "5.0", 
+                    "cvss_temporal_score": "3.7", 
+                    "cvss_temporal_vector": "CVSS2#E:U/RL:OF/RC:C", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:N/I:P/A:N", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "cifs", 
+                "sevirity": "2", 
+                "solution": "Enforce message signing in the host's configuration. On Windows, this is found in the policy setting 'Microsoft network server: Digitally sign communications (always)'. On Samba, the setting is called 'server signing'. See the 'see also' links for further details.", 
+                "synopsis": "Signing is not required on the remote SMB server.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "WebDAV is an industry standard extension to the HTTP specification.\nIt adds a capability for authorized users to remotely add and manage the content of a web server.\n\nIf you do not use this extension, you should disable it.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11424", 
+                "plugin_name": "WebDAV Detection", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "http://support.microsoft.com/default.aspx?kbid=241520", 
+                "synopsis": "The remote server is running with WebDAV enabled.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin attempts to determine the version of PHP available on the remote web server.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "48243", 
+                "plugin_name": "PHP Version", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It is possible to obtain the version number of the remote PHP install.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote web server supports the TRACE and/or TRACK methods. TRACE and TRACK are HTTP methods that are used to debug web server connections.", 
+                "exploits": [
+                    "auxiliary/scanner/http/options"
+                ], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11213", 
+                "plugin_name": "HTTP TRACE / TRACK Methods Allowed", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {
+                    "bid": [
+                        "9506", 
+                        "9561", 
+                        "11604", 
+                        "33374", 
+                        "37995"
+                    ], 
+                    "cve": [
+                        "CVE-2003-1567", 
+                        "CVE-2004-2320", 
+                        "CVE-2010-0386"
+                    ], 
+                    "osvdb": [
+                        "877", 
+                        "3726", 
+                        "5648", 
+                        "11408", 
+                        "50485"
+                    ], 
+                    "xref": [
+                        "OSVDB:877", 
+                        "OSVDB:3726", 
+                        "OSVDB:5648", 
+                        "OSVDB:11408", 
+                        "OSVDB:50485", 
+                        "CERT:288308", 
+                        "CERT:867593", 
+                        "CWE:16"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "5.0", 
+                    "cvss_temporal_score": "4.3", 
+                    "cvss_temporal_vector": "CVSS2#E:H/RL:OF/RC:C", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "www", 
+                "sevirity": "2", 
+                "solution": "Disable these methods. Refer to the plugin output for more information.", 
+                "synopsis": "Debugging functions are enabled on the remote web server.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This test gives some information about the remote HTTP protocol - the version used, whether HTTP Keep-Alive and HTTP pipelining are enabled, etc... \n\nThis test is informational only and does not denote any security problem.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "24260", 
+                "plugin_name": "HyperText Transfer Protocol (HTTP) Information", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "Some information about the remote HTTP configuration can be extracted.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin extracts the banner of the Apache web server and attempts to determine which Linux distribution the remote host is running.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "18261", 
+                "plugin_name": "Apache Banner Linux Distribution Disclosure", 
+                "port": "0", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "general", 
+                "sevirity": "0", 
+                "solution": "If you do not wish to display this information, edit 'httpd.conf' and set the directive 'ServerTokens Prod' and restart Apache.\nn/a", 
+                "synopsis": "The name of the Linux distribution running on the remote host was found in the banner of the web server.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin attempts to determine the type and the version of the remote web server.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10107", 
+                "plugin_name": "HTTP Server Type and Version", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "A web server is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote SSH server is configured to allow either MD5 or 96-bit MAC algorithms, both of which are considered weak.\n\nNote that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software versions.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "71049", 
+                "plugin_name": "SSH Weak MAC Algorithms Enabled", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "cvss_base_score": "2.6", 
+                    "cvss_vector": "CVSS2#AV:N/AC:H/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Low"
+                }, 
+                "service": "ssh", 
+                "sevirity": "1", 
+                "solution": "Contact the vendor or consult product documentation to disable MD5 and 96-bit MAC algorithms.", 
+                "synopsis": "The remote SSH server is configured to allow MD5 and 96-bit MAC algorithms.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus has detected that the remote SSH server is configured to use the Arcfour stream cipher or no cipher at all. RFC 4253 advises against using Arcfour due to an issue with weak keys.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "90317", 
+                "plugin_name": "SSH Weak Algorithms Supported", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "cvss_base_score": "4.3", 
+                    "cvss_vector": "CVSS2#AV:N/AC:M/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "ssh", 
+                "sevirity": "2", 
+                "solution": "Contact the vendor or consult product documentation to remove the weak ciphers.", 
+                "synopsis": "The remote SSH server is configured to allow weak encryption algorithms or no algorithm at all.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The SSH server is configured to support Cipher Block Chaining (CBC) encryption.  This may allow an attacker to recover the plaintext message from the ciphertext. \n\nNote that this plugin only checks for the options of the SSH server and does not check for vulnerable software versions.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "70658", 
+                "plugin_name": "SSH Server CBC Mode Ciphers Enabled", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {
+                    "bid": [
+                        "32319"
+                    ], 
+                    "cve": [
+                        "CVE-2008-5161"
+                    ], 
+                    "osvdb": [
+                        "50035", 
+                        "50036"
+                    ], 
+                    "xref": [
+                        "OSVDB:50035", 
+                        "OSVDB:50036", 
+                        "CERT:958563", 
+                        "CWE:200"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "2.6", 
+                    "cvss_temporal_score": "2.6", 
+                    "cvss_temporal_vector": "CVSS2#E:ND/RL:ND/RC:ND", 
+                    "cvss_vector": "CVSS2#AV:N/AC:H/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Low"
+                }, 
+                "service": "ssh", 
+                "sevirity": "1", 
+                "solution": "Contact the vendor or consult product documentation to disable CBC mode cipher encryption, and enable CTR or GCM cipher mode encryption.", 
+                "synopsis": "The SSH server is configured to use Cipher Block Chaining.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote SSH host key has been generated on a Debian or Ubuntu system which contains a bug in the random number generator of its OpenSSL library.\n\nThe problem is due to a Debian packager removing nearly all sources of entropy in the remote version of OpenSSL.\n\nAn attacker can easily obtain the private part of the remote key and use this to set up decipher the remote session  or set up a man in the middle attack.", 
+                "exploits": [
+                    "Debian OpenSSL Predictable Random Number Generation Exploit - Core Security Category : Exploits/Remote URL-", 
+                    "Debian and Derivatives OpenSSL 0.9.8c-1 <= 0.9.8g-9 - Predictable PRNG Brute Force SSH Exploit (Python) - The Exploit-DB Ref : 5720 URL-http://www.exploit-db.com/exploits/5720"
+                ], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "32314", 
+                "plugin_name": "Debian OpenSSH/OpenSSL Package Random Number Generator Weakness", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {
+                    "bid": [
+                        "29179"
+                    ], 
+                    "cve": [
+                        "CVE-2008-0166"
+                    ], 
+                    "osvdb": [
+                        "45029", 
+                        "45503"
+                    ], 
+                    "xref": [
+                        "OSVDB:45029", 
+                        "OSVDB:45503", 
+                        "CWE:310"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "10.0", 
+                    "cvss_temporal_score": "8.3", 
+                    "cvss_temporal_vector": "CVSS2#E:F/RL:OF/RC:C", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:C/I:C/A:C", 
+                    "risk_factor": "Critical"
+                }, 
+                "service": "ssh", 
+                "sevirity": "4", 
+                "solution": "Consider all cryptographic material generated on the remote host to be guessable. In particuliar, all SSH, SSL and OpenVPN key material should be re-generated.", 
+                "synopsis": "The remote SSH host keys are weak.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This script detects which algorithms and languages are supported by the remote service for encrypting communications.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "70657", 
+                "plugin_name": "SSH Algorithms and Languages Supported", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ssh", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An SSH server is listening on this port.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin determines the versions of the SSH protocol supported by the remote SSH daemon.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10881", 
+                "plugin_name": "SSH Protocol Versions Supported", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ssh", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "A SSH server is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "It is possible to obtain information about the remote SSH server by sending an empty authentication request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10267", 
+                "plugin_name": "SSH Server Type and Version Information", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ssh", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An SSH server is listening on this port.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote service is a PostgreSQL database server, or a derivative such as EnterpriseDB.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "26024", 
+                "plugin_name": "PostgreSQL Server Detection", 
+                "port": "5432", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "postgresql", 
+                "sevirity": "0", 
+                "solution": "Limit incoming traffic to this port if desired.", 
+                "synopsis": "A database service is listening on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "A shell is listening on the remote port without any authentication being required. An attacker may use it by connecting to the remote port and sending commands directly.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "51988", 
+                "plugin_name": "Rogue Shell Backdoor Detection", 
+                "port": "1524", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "cvss_base_score": "10.0", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:C/I:C/A:C", 
+                    "risk_factor": "Critical"
+                }, 
+                "service": "wild_shell", 
+                "sevirity": "4", 
+                "solution": "Verify if the remote host has been compromised, and reinstall the system if necessary.", 
+                "synopsis": "The remote host may have been compromised.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote FTP server allows the user's name and password to be transmitted in cleartext, which could be intercepted by a network sniffer or a man-in-the-middle attack.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "34324", 
+                "plugin_name": "FTP Supports Cleartext Authentication", 
+                "port": "21", 
+                "protocol": "tcp", 
+                "ref": {
+                    "xref": [
+                        "CWE:522", 
+                        "CWE:523", 
+                        "CWE:928", 
+                        "CWE:930"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "2.6", 
+                    "cvss_vector": "CVSS2#AV:N/AC:H/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Low"
+                }, 
+                "service": "ftp", 
+                "sevirity": "1", 
+                "solution": "Switch to SFTP (part of the SSH suite) or FTPS (FTP over SSL/TLS). In the latter case, configure the server so that control connections are encrypted.", 
+                "synopsis": "Authentication credentials might be intercepted.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This FTP service allows anonymous logins. Any remote user may connect and authenticate without providing a password or unique credentials.\nThis allows a user to access any files made available on the FTP server.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10079", 
+                "plugin_name": "Anonymous FTP Enabled", 
+                "port": "21", 
+                "protocol": "tcp", 
+                "ref": {
+                    "cve": [
+                        "CVE-1999-0497"
+                    ], 
+                    "osvdb": [
+                        "69"
+                    ], 
+                    "xref": [
+                        "OSVDB:69"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "5.0", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "ftp", 
+                "sevirity": "2", 
+                "solution": "Disable anonymous FTP if it is not required. Routinely check the FTP server to ensure sensitive content is not available.", 
+                "synopsis": "Anonymous logins are allowed on the remote FTP server.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running vsftpd, an FTP server for UNIX-like systems written in C.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "52703", 
+                "plugin_name": "vsftpd Detection", 
+                "port": "21", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ftp", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An FTP server is listening on the remote port.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "It is possible to obtain the banner of the remote FTP server by connecting to a remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10092", 
+                "plugin_name": "FTP Server Detection", 
+                "port": "21", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ftp", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An FTP server is listening on a remote port.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running an X11 server.  X11 is a client-server protocol that can be used to display graphical applications running on a given host on a remote client. \n\nSince the X11 traffic is not ciphered, it is possible for an attacker to eavesdrop on the connection.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10407", 
+                "plugin_name": "X Server Detection", 
+                "port": "6000", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "cvss_base_score": "2.6", 
+                    "cvss_vector": "CVSS2#AV:N/AC:H/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Low"
+                }, 
+                "service": "x11", 
+                "sevirity": "1", 
+                "solution": "Restrict access to this port. If the X11 client/server facility is not used, disable TCP support in X11 entirely (-nolisten tcp).", 
+                "synopsis": "An X11 server is listening on the remote host", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running an AJP (Apache JServ Protocol) connector, a service by which a standalone web server such as Apache communicates over TCP with a Java servlet container such as Tomcat.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "21186", 
+                "plugin_name": "AJP Connector Detection", 
+                "port": "8009", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ajp13", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "There is an AJP connector listening on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The VNC server running on the remote host is secured with a weak password.  Nessus was able to login using VNC authentication and a password of 'password'.  A remote, unauthenticated attacker could exploit this to take control of the system.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "61708", 
+                "plugin_name": "VNC Server 'password' Password", 
+                "port": "5900", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "cvss_base_score": "10.0", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:C/I:C/A:C", 
+                    "risk_factor": "Critical"
+                }, 
+                "service": "vnc", 
+                "sevirity": "4", 
+                "solution": "Secure the VNC service with a strong password.", 
+                "synopsis": "A VNC server running on the remote host is secured with a weak password.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This script checks the remote VNC server protocol version and the available 'security types' to determine if any unencrypted 'security-types' are in use or available.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "65792", 
+                "plugin_name": "VNC Server Unencrypted Communication Detection", 
+                "port": "5900", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "vnc", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "A VNC server with one or more unencrypted 'security-types' is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This script checks the remote VNC server protocol version and the available 'security types'.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "19288", 
+                "plugin_name": "VNC Server Security Type Detection", 
+                "port": "5900", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "vnc", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "A VNC server is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running VNC (Virtual Network Computing), which uses the RFB (Remote Framebuffer) protocol to provide remote access to graphical user interfaces and thus permits a console on the remote host to be displayed on another.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10342", 
+                "plugin_name": "VNC Software Detection", 
+                "port": "5900", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "vnc", 
+                "sevirity": "0", 
+                "solution": "Make sure use of this software is done in accordance with your organization's security policy and filter incoming traffic to this port.", 
+                "synopsis": "The remote host is running a remote display software (VNC).", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running an RMI registry, which acts as a bootstrap naming service for registering and retrieving remote objects with simple names in the Java Remote Method Invocation (RMI) system.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22227", 
+                "plugin_name": "RMI Registry Detection", 
+                "port": "1099", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rmi_registry", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An RMI registry is listening on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running BIND or another DNS server that reports its version number when it receives a special request for the text 'version.bind' in the domain 'chaos'. \n\nThis version is not necessarily accurate and could even be forged, as some DNS servers send the information based on a configuration file.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10028", 
+                "plugin_name": "DNS Server BIND version Directive Remote Version Detection", 
+                "port": "53", 
+                "protocol": "udp", 
+                "ref": {
+                    "osvdb": [
+                        "23"
+                    ], 
+                    "xref": [
+                        "OSVDB:23"
+                    ]
+                }, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "dns", 
+                "sevirity": "0", 
+                "solution": "It is possible to hide the version number of BIND by using the 'version' directive in the 'options' section in named.conf.", 
+                "synopsis": "It is possible to obtain the version number of the remote DNS server.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22964", 
+                "plugin_name": "Service Detection", 
+                "port": "6667", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "irc", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote service could be identified.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22964", 
+                "plugin_name": "Service Detection", 
+                "port": "5900", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "vnc", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote service could be identified.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22964", 
+                "plugin_name": "Service Detection", 
+                "port": "1524", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "wild_shell", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote service could be identified.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22964", 
+                "plugin_name": "Service Detection", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote service could be identified.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22964", 
+                "plugin_name": "Service Detection", 
+                "port": "25", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "smtp", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote service could be identified.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22964", 
+                "plugin_name": "Service Detection", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ssh", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote service could be identified.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "22964", 
+                "plugin_name": "Service Detection", 
+                "port": "21", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ftp", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "The remote service could be identified.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Nessus was able to obtain version information by sending a special TXT record query to the remote host.\n\nNote that this version is not necessarily accurate and could even be forged, as some DNS servers send the information based on a configuration file.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "72779", 
+                "plugin_name": "DNS Server Version Detection", 
+                "port": "53", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "dns", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "Nessus was able to obtain version information on the remote DNS server.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "Makes a traceroute to the remote host.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10287", 
+                "plugin_name": "Traceroute Information", 
+                "port": "0", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "general", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It was possible to obtain traceroute information.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "It is possible to learn the remote host name by querying the remote DNS server for 'hostname.bind' in the CHAOS domain.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "35371", 
+                "plugin_name": "DNS Server hostname.bind Map Hostname Disclosure", 
+                "port": "53", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "dns", 
+                "sevirity": "0", 
+                "solution": "It may be possible to disable this feature.  Consult the vendor's documentation for more information.", 
+                "synopsis": "The DNS server discloses the remote host name.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote service is a Domain Name System (DNS) server, which provides a mapping between hostnames and IP addresses.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11002", 
+                "plugin_name": "DNS Server Detection", 
+                "port": "53", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "dns", 
+                "sevirity": "0", 
+                "solution": "Disable this service if it is not needed or restrict access to internal hosts only if the service is available externally.", 
+                "synopsis": "A DNS server is listening on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote service is a Domain Name System (DNS) server, which provides a mapping between hostnames and IP addresses.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11002", 
+                "plugin_name": "DNS Server Detection", 
+                "port": "53", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "dns", 
+                "sevirity": "0", 
+                "solution": "Disable this service if it is not needed or restrict access to internal hosts only if the service is available externally.", 
+                "synopsis": "A DNS server is listening on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote NFS server is exporting one or more shares without restricting access (based on hostname, IP, or IP range).", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "42256", 
+                "plugin_name": "NFS Shares World Readable", 
+                "port": "2049", 
+                "protocol": "tcp", 
+                "ref": {
+                    "osvdb": [
+                        "339"
+                    ], 
+                    "xref": [
+                        "OSVDB:339"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "5.0", 
+                    "cvss_vector": "CVSS2#AV:N/AC:L/Au:N/C:P/I:N/A:N", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "rpc-nfs", 
+                "sevirity": "2", 
+                "solution": "Place the appropriate restrictions on all NFS shares.", 
+                "synopsis": "The remote NFS server exports world-readable shares.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "111", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-portmapper", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "58653", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-status", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "41639", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-mountd", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "2049", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-nfs", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "39120", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-nlockmgr", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "111", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-portmapper", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "36048", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-status", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "57763", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-nlockmgr", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "46331", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-mountd", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "By sending a DUMP request to the portmapper, it was possible to enumerate the ONC RPC services running on the remote port.  Using this information, it is possible to connect and bind to each service by sending an RPC request to the remote port.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11111", 
+                "plugin_name": "RPC Services Enumeration", 
+                "port": "2049", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-nfs", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC service is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin retrieves the list of NFS exported shares.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10437", 
+                "plugin_name": "NFS Share Export List", 
+                "port": "2049", 
+                "protocol": "tcp", 
+                "ref": {
+                    "cve": [
+                        "CVE-1999-0554"
+                    ], 
+                    "osvdb": [
+                        "339"
+                    ], 
+                    "xref": [
+                        "OSVDB:339"
+                    ]
+                }, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-nfs", 
+                "sevirity": "0", 
+                "solution": "Ensure each share is intended to be exported.", 
+                "synopsis": "The remote NFS server exports a list of shares.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The RPC portmapper is running on this port.\n\nThe portmapper allows someone to get the port number of each RPC service running on the remote host by sending either multiple lookup requests or a DUMP request.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10223", 
+                "plugin_name": "RPC portmapper Service Detection", 
+                "port": "111", 
+                "protocol": "udp", 
+                "ref": {
+                    "cve": [
+                        "CVE-1999-0632"
+                    ]
+                }, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-portmapper", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC portmapper is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The RPC portmapper is running on this port. \n\nThe portmapper allows someone to get the port number of each RPC service running on the remote host by sending either multiple lookup requests or a DUMP request.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "53335", 
+                "plugin_name": "RPC portmapper (TCP)", 
+                "port": "111", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-portmapper", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An ONC RPC portmapper is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The version of Samba, a CIFS/SMB server for Linux and Unix, running on the remote host is affected by a flaw, known as Badlock, that exists in the Security Account Manager (SAM) and Local Security Authority (Domain Policy) (LSAD) protocols due to improper authentication level negotiation over Remote Procedure Call (RPC) channels. A man-in-the-middle attacker who is able to able to intercept the traffic between a client and a server hosting a SAM database can exploit this flaw to force a downgrade of the authentication level, which allows the execution of arbitrary Samba network calls in the context of the intercepted user, such as viewing or modifying sensitive security data in the Active Directory (AD) database or disabling critical services.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "90509", 
+                "plugin_name": "Samba Badlock Vulnerability", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {
+                    "bid": [
+                        "86002"
+                    ], 
+                    "cve": [
+                        "CVE-2016-2118"
+                    ], 
+                    "iava": [
+                        "2016-A-0095"
+                    ], 
+                    "osvdb": [
+                        "136339"
+                    ], 
+                    "xref": [
+                        "OSVDB:136339", 
+                        "CERT:813296", 
+                        "IAVA:2016-A-0095"
+                    ]
+                }, 
+                "risk_vec": {
+                    "cvss_base_score": "6.8", 
+                    "cvss_temporal_score": "5.6", 
+                    "cvss_temporal_vector": "CVSS2#E:F/RL:OF/RC:ND", 
+                    "cvss_vector": "CVSS2#AV:N/AC:M/Au:N/C:P/I:P/A:P", 
+                    "risk_factor": "Medium"
+                }, 
+                "service": "cifs", 
+                "sevirity": "2", 
+                "solution": "Upgrade to Samba version 4.2.11 / 4.3.8 / 4.4.2 or later.", 
+                "synopsis": "An SMB server running on the remote host is affected by the Badlock vulnerability.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "It was possible to obtain the browse list of the remote Windows system by sending a request to the LANMAN pipe. The browse list is the list of the nearest Windows systems of the remote host.", 
+                "exploits": [], 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10397", 
+                "plugin_name": "Microsoft Windows SMB LanMan Pipe Server Listing Disclosure", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {
+                    "osvdb": [
+                        "300"
+                    ], 
+                    "xref": [
+                        "OSVDB:300"
+                    ]
+                }, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "cifs", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It is possible to obtain network information.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "1524", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "wild_shell", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "514", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "shell?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "8009", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ajp13", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "3632", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "distcc?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "8180", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "identity-mgr?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "6667", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "irc", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "8787", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "msgsrvr?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "1099", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rmi_registry", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "513", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "login?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "3306", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "mysql?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "5900", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "vnc", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "5432", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "postgresql", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "2121", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "scientia-ssdb?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "512", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "exec?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "2049", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-nfs", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "22", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ssh", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "cifs", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "21", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "ftp", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "25", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "smtp", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "80", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "www", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "53", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "dns", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "6000", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "x11", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "139", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "smb", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "111", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "rpc-portmapper", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "This plugin is a SYN 'half-open' port scanner.  It shall be reasonably quick even against a firewalled target. \n\nNote that SYN scans are less intrusive than TCP (full connect) scans against broken services, but they might cause problems for less robust firewalls and also leave unclosed connections on the remote target, if the network is loaded.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11219", 
+                "plugin_name": "Nessus SYN scanner", 
+                "port": "23", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "telnet?", 
+                "sevirity": "0", 
+                "solution": "Protect your target with an IP filter.", 
+                "synopsis": "It is possible to determine which TCP ports are open.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running a Microsoft Windows operating system or Samba, a CIFS/SMB server for Unix. It was possible to log into it using one of the following accounts :\n\n- NULL session\n- Guest account\n- Supplied credentials", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10394", 
+                "plugin_name": "Microsoft Windows SMB Log In Possible", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "cifs", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It was possible to log into the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "It is possible to obtain the remote operating system name and version (Windows and/or Samba) by sending an authentication request to port 139 or 445. This script requires SMB1 enabled on the host.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10785", 
+                "plugin_name": "Microsoft Windows SMB NativeLanManager Remote System Information Disclosure", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "cifs", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It is possible to obtain information about the remote operating system.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is running Samba, a CIFS/SMB server for Linux and Unix.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "25240", 
+                "plugin_name": "Samba Server Detection", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "cifs", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "An SMB server is running on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote host is listening on UDP port 137 or TCP port 445, and replies to NetBIOS nbtscan or SMB requests.\n\nNote that this plugin gathers information to be used in other plugins, but does not itself generate a report.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "10150", 
+                "plugin_name": "Windows NetBIOS / SMB Remote Host Information Disclosure", 
+                "port": "137", 
+                "protocol": "udp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "netbios-ns", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "It was possible to obtain the network name of the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote service understands the CIFS (Common Internet File System) or Server Message Block (SMB) protocol, used to provide shared access to files, printers, etc between nodes on a network.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11011", 
+                "plugin_name": "Microsoft Windows SMB Service Detection", 
+                "port": "139", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "smb", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "A file / print sharing service is listening on the remote host.", 
+                "system-type": "general-purpose"
+            }, 
+            {
+                "description": "The remote service understands the CIFS (Common Internet File System) or Server Message Block (SMB) protocol, used to provide shared access to files, printers, etc between nodes on a network.", 
+                "exploits": "", 
+                "host_name": "10.0.1.37", 
+                "os": "Linux Kernel 2.6 on Ubuntu 8.04 (hardy)", 
+                "plugin_id": "11011", 
+                "plugin_name": "Microsoft Windows SMB Service Detection", 
+                "port": "445", 
+                "protocol": "tcp", 
+                "ref": {}, 
+                "risk_vec": {
+                    "risk_factor": "None"
+                }, 
+                "service": "cifs", 
+                "sevirity": "0", 
+                "solution": "n/a", 
+                "synopsis": "A file / print sharing service is listening on the remote host.", 
+                "system-type": "general-purpose"
+            }
+        ]
+    }
+]

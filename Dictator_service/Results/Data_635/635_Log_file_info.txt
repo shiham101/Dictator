@@ -1,0 +1,26 @@
+2017-03-14 20:36:19,977 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-03-14 20:36:25,984 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 635
+2017-03-14 20:36:25,986 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-03-14 20:36:25,989 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-03-14 20:36:26,003 - Info Logger - DEBUG - Service,Host,port  is -->telnet  192.168.182.128  23
+2017-03-14 20:36:26,009 - Info Logger - DEBUG - Command id --> telnet_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 635
+2017-03-14 20:36:26,010 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-03-14 20:36:26,012 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread started --with command nmap -p 23 192.168.182.128 --script telnet-encryption
+2017-03-14 20:36:34,579 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread finished
+2017-03-14 20:36:34,580 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Saving details :
+2017-03-14 20:36:34,614 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Details Updated successfully
+2017-03-14 20:36:34,628 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 635
+2017-03-14 20:36:34,629 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-03-14 20:36:34,653 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-03-14 20:36:37,665 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 23 and timeout 200
+2017-03-14 20:36:54,461 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-03-14 20:36:54,484 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Details Updated successfully
+2017-03-14 20:36:54,589 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Exiting General_interactive()
+2017-03-14 20:36:54,590 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-03-14 20:36:54,723 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Exiting Start_sniffing() method
+2017-03-14 20:36:54,728 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Exiting general_commands_tout_sniff()
+2017-03-14 20:36:54,774 - Info Logger - ERROR - Error occured in Main method Driver instance has no attribute 'generate_report'

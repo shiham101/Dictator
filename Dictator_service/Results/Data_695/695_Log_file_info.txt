@@ -1,0 +1,274 @@
+2017-05-28 18:24:28,938 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-28 18:24:34,946 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 695
+2017-05-28 18:24:34,948 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-28 18:24:34,949 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-28 18:24:34,960 - Info Logger - DEBUG - Service,Host,port  is -->telnet  127.0.0.1  21
+2017-05-28 18:24:34,966 - Info Logger - DEBUG - Command id --> telnet_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 18:24:34,967 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 18:24:34,973 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread started --with command nmap -p 21 127.0.0.1 --script telnet-encryption
+2017-05-28 18:24:35,837 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread finished
+2017-05-28 18:24:35,840 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Saving details :
+2017-05-28 18:24:35,855 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Details Updated successfully
+2017-05-28 18:24:35,894 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 18:24:35,894 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-28 18:24:35,895 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-28 18:24:38,900 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 127.0.0.1 21 and timeout 200
+2017-05-28 18:24:53,123 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Results not as expected --> see aurguments 
+2017-05-28 18:24:53,125 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-28 18:24:53,164 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Details Updated successfully
+2017-05-28 18:24:53,280 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Exiting General_interactive()
+2017-05-28 18:24:53,282 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-28 18:24:53,524 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Exiting Start_sniffing() method
+2017-05-28 18:24:53,529 - Info Logger - DEBUG - Command id --> telnet_sniff_1  Message --> :Exiting general_commands_tout_sniff()
+2017-05-28 19:04:21,988 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-28 19:04:27,995 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 695
+2017-05-28 19:04:27,997 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-28 19:04:27,999 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-28 19:04:28,011 - Info Logger - DEBUG - Service,Host,port  is -->domain  107.154.150.38  53
+2017-05-28 19:04:28,018 - Info Logger - DEBUG - Command id --> domain_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:04:28,018 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Launching Domain Interactive ::<--- Command :--->nslookup
+2017-05-28 19:04:54,299 - Info Logger - ERROR - Command id --> domain_1  Message --> :Exception Domain Intaractive Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7fc199024c10>
+command: /usr/bin/nslookup
+args: [u'/usr/bin/nslookup']
+searcher: None
+buffer (last 100 chars): "erver:\t\t107.154.150.38\r\nAddress:\t107.154.150.38#53\r\n\r\n** server can't find cricinfo.com: NOTAUTH\r\n> "
+before (last 100 chars): "erver:\t\t107.154.150.38\r\nAddress:\t107.154.150.38#53\r\n\r\n** server can't find cricinfo.com: NOTAUTH\r\n> "
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 6321
+child_fd: 12
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+2017-05-28 19:04:54,410 - Info Logger - DEBUG - Command id --> domain_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:04:54,411 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching FierceCheck with the given host --> 107.154.150.38
+2017-05-28 19:04:54,412 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38 -threads 10
+2017-05-28 19:05:24,354 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 19:06:14,421 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Dns reverse lookup
+2017-05-28 19:06:14,421 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 19:06:15,729 - Info Logger - DEBUG - Command id --> domain_2  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 19:06:15,729 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting getReverseDns()
+2017-05-28 19:06:15,831 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching reverse DNS FierceCheck
+2017-05-28 19:06:15,833 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38.ip.incapdns.net -threads 10
+2017-05-28 19:06:58,330 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 19:06:58,336 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Saving details :
+2017-05-28 19:06:58,361 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Details Updated successfully
+2017-05-28 19:06:58,361 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting Dns_Ferice_check()
+2017-05-28 19:06:58,370 - Info Logger - DEBUG - Command id --> domain_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:06:58,371 - Info Logger - DEBUG - Command id --> domain_3  Message --> :In Dns_recon check
+2017-05-28 19:06:58,372 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Dns reverse lookup
+2017-05-28 19:06:58,372 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 19:06:59,647 - Info Logger - DEBUG - Command id --> domain_3  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 19:06:59,647 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting getReverseDns()
+2017-05-28 19:06:59,749 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -D name_list.txt
+2017-05-28 19:07:00,790 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -a
+2017-05-28 19:07:19,352 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Saving details :
+2017-05-28 19:07:19,368 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Details Updated successfully
+2017-05-28 19:07:19,368 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting Dns_recon check
+2017-05-28 19:07:19,384 - Info Logger - DEBUG - Command id --> domain_4  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:07:19,384 - Info Logger - DEBUG - Command id --> domain_4  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 19:07:19,385 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread started --with command nmap -sU --script=dns-recursion.nse -p 53 107.154.150.38
+2017-05-28 19:07:26,251 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread finished
+2017-05-28 19:07:26,251 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Saving details :
+2017-05-28 19:07:26,271 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Details Updated successfully
+2017-05-28 19:07:26,308 - Info Logger - DEBUG - Command id --> domain_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:07:26,309 - Info Logger - DEBUG - Command id --> domain_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 19:07:26,310 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 53 107.154.150.38
+2017-05-28 19:07:59,811 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread finished
+2017-05-28 19:07:59,812 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Saving details :
+2017-05-28 19:07:59,834 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Details Updated successfully
+2017-05-28 19:07:59,864 - Info Logger - DEBUG - Command id --> domain_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:07:59,865 - Info Logger - DEBUG - Command id --> domain_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 19:07:59,867 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread started --with command nslookup 107.154.150.38
+2017-05-28 19:08:00,982 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread finished
+2017-05-28 19:08:00,982 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Saving details :
+2017-05-28 19:08:00,998 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Details Updated successfully
+2017-05-28 19:16:41,617 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-28 19:16:47,623 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 695
+2017-05-28 19:16:47,624 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-28 19:16:47,627 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-28 19:16:47,636 - Info Logger - DEBUG - Service,Host,port  is -->domain  107.154.150.38  53
+2017-05-28 19:16:47,642 - Info Logger - DEBUG - Command id --> domain_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:16:47,642 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Launching Domain Interactive ::<--- Command :--->nslookup
+2017-05-28 19:16:51,782 - Info Logger - ERROR - Command id --> domain_1  Message --> :Exception Domain Intaractive Commands instance has no attribute 'print_Log_Info'
+2017-05-28 19:16:51,889 - Info Logger - DEBUG - Command id --> domain_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:16:51,890 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching FierceCheck with the given host --> 107.154.150.38
+2017-05-28 19:16:51,891 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38 -threads 10
+2017-05-28 19:17:19,627 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 19:18:09,679 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Dns reverse lookup
+2017-05-28 19:18:09,679 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 19:18:10,922 - Info Logger - DEBUG - Command id --> domain_2  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 19:18:10,922 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting getReverseDns()
+2017-05-28 19:18:11,024 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching reverse DNS FierceCheck
+2017-05-28 19:18:11,026 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38.ip.incapdns.net -threads 10
+2017-05-28 19:18:53,506 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 19:18:53,518 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Saving details :
+2017-05-28 19:18:53,540 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Details Updated successfully
+2017-05-28 19:18:53,541 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting Dns_Ferice_check()
+2017-05-28 19:18:53,552 - Info Logger - DEBUG - Command id --> domain_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:18:53,553 - Info Logger - DEBUG - Command id --> domain_3  Message --> :In Dns_recon check
+2017-05-28 19:18:53,553 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Dns reverse lookup
+2017-05-28 19:18:53,553 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 19:18:54,795 - Info Logger - DEBUG - Command id --> domain_3  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 19:18:54,795 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting getReverseDns()
+2017-05-28 19:18:54,896 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -D name_list.txt
+2017-05-28 19:18:55,093 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -a
+2017-05-28 19:19:13,635 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Saving details :
+2017-05-28 19:19:13,654 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Details Updated successfully
+2017-05-28 19:19:13,655 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting Dns_recon check
+2017-05-28 19:19:13,663 - Info Logger - DEBUG - Command id --> domain_4  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:19:13,664 - Info Logger - DEBUG - Command id --> domain_4  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 19:19:13,666 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread started --with command nmap -sU --script=dns-recursion.nse -p 53 107.154.150.38
+2017-05-28 19:19:20,466 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread finished
+2017-05-28 19:19:20,466 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Saving details :
+2017-05-28 19:19:20,479 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Details Updated successfully
+2017-05-28 19:19:20,523 - Info Logger - DEBUG - Command id --> domain_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:19:20,523 - Info Logger - DEBUG - Command id --> domain_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 19:19:20,524 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 53 107.154.150.38
+2017-05-28 19:19:53,194 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread finished
+2017-05-28 19:19:53,195 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Saving details :
+2017-05-28 19:19:53,216 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Details Updated successfully
+2017-05-28 19:19:53,265 - Info Logger - DEBUG - Command id --> domain_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 19:19:53,265 - Info Logger - DEBUG - Command id --> domain_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 19:19:53,267 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread started --with command nslookup 107.154.150.38
+2017-05-28 19:19:54,329 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread finished
+2017-05-28 19:19:54,330 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Saving details :
+2017-05-28 19:19:54,358 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Details Updated successfully
+2017-05-28 20:43:53,256 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-28 20:43:59,264 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 695
+2017-05-28 20:43:59,266 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-28 20:43:59,268 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-28 20:43:59,276 - Info Logger - DEBUG - Service,Host,port  is -->domain  107.154.150.38  53
+2017-05-28 20:43:59,282 - Info Logger - DEBUG - Command id --> domain_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:43:59,282 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Launching Domain Interactive ::<--- Command :--->nslookup
+2017-05-28 20:44:03,433 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Invalid host address given cricinfo.com J is --> 2
+2017-05-28 20:44:03,535 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Saving details :
+2017-05-28 20:44:03,554 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Details Updated successfully
+2017-05-28 20:44:03,561 - Info Logger - DEBUG - Command id --> domain_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:44:03,561 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching FierceCheck with the given host --> 107.154.150.38
+2017-05-28 20:44:03,562 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38 -threads 10
+2017-05-28 20:44:31,952 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 20:45:22,026 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Dns reverse lookup
+2017-05-28 20:45:22,027 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 20:45:23,310 - Info Logger - DEBUG - Command id --> domain_2  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 20:45:23,310 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting getReverseDns()
+2017-05-28 20:45:23,412 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching reverse DNS FierceCheck
+2017-05-28 20:45:23,415 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38.ip.incapdns.net -threads 10
+2017-05-28 20:46:05,635 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 20:46:05,684 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Saving details :
+2017-05-28 20:46:05,697 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Details Updated successfully
+2017-05-28 20:46:05,697 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting Dns_Ferice_check()
+2017-05-28 20:46:05,702 - Info Logger - DEBUG - Command id --> domain_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:46:05,702 - Info Logger - DEBUG - Command id --> domain_3  Message --> :In Dns_recon check
+2017-05-28 20:46:05,702 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Dns reverse lookup
+2017-05-28 20:46:05,702 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 20:46:06,938 - Info Logger - DEBUG - Command id --> domain_3  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 20:46:06,939 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting getReverseDns()
+2017-05-28 20:46:07,039 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -D name_list.txt
+2017-05-28 20:46:07,316 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -a
+2017-05-28 20:46:26,131 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Saving details :
+2017-05-28 20:46:26,150 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Details Updated successfully
+2017-05-28 20:46:26,151 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting Dns_recon check
+2017-05-28 20:46:26,160 - Info Logger - DEBUG - Command id --> domain_4  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:46:26,161 - Info Logger - DEBUG - Command id --> domain_4  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 20:46:26,163 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread started --with command nmap -sU --script=dns-recursion.nse -p 53 107.154.150.38
+2017-05-28 20:46:32,783 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread finished
+2017-05-28 20:46:32,784 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Saving details :
+2017-05-28 20:46:32,801 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Details Updated successfully
+2017-05-28 20:46:32,856 - Info Logger - DEBUG - Command id --> domain_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:46:32,857 - Info Logger - DEBUG - Command id --> domain_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 20:46:32,858 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 53 107.154.150.38
+2017-05-28 20:47:06,357 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread finished
+2017-05-28 20:47:06,358 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Saving details :
+2017-05-28 20:47:06,373 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Details Updated successfully
+2017-05-28 20:47:06,414 - Info Logger - DEBUG - Command id --> domain_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:47:06,414 - Info Logger - DEBUG - Command id --> domain_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 20:47:06,420 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread started --with command nslookup 107.154.150.38
+2017-05-28 20:47:07,514 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread finished
+2017-05-28 20:47:07,514 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Saving details :
+2017-05-28 20:47:07,526 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Details Updated successfully
+2017-05-28 20:54:36,681 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-28 20:54:42,689 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 695
+2017-05-28 20:54:42,691 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-28 20:54:42,696 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-28 20:54:42,719 - Info Logger - DEBUG - Service,Host,port  is -->domain  107.154.150.38  53
+2017-05-28 20:54:42,727 - Info Logger - DEBUG - Command id --> domain_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:54:42,728 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Launching Domain Interactive ::<--- Command :--->nslookup
+2017-05-28 20:54:52,164 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Saving details :
+2017-05-28 20:54:52,176 - Info Logger - DEBUG - Command id --> domain_1  Message --> :Details Updated successfully
+2017-05-28 20:54:52,186 - Info Logger - DEBUG - Command id --> domain_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:54:52,187 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching FierceCheck with the given host --> 107.154.150.38
+2017-05-28 20:54:52,189 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38 -threads 10
+2017-05-28 20:55:21,154 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 20:56:11,242 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Dns reverse lookup
+2017-05-28 20:56:11,243 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 20:56:12,670 - Info Logger - DEBUG - Command id --> domain_2  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 20:56:12,670 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting getReverseDns()
+2017-05-28 20:56:12,772 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Launching reverse DNS FierceCheck
+2017-05-28 20:56:12,774 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread started --with command fierce -dns 107.154.150.38.ip.incapdns.net -threads 10
+2017-05-28 20:56:57,047 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Thread finished
+2017-05-28 20:56:57,082 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Saving details :
+2017-05-28 20:56:57,131 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Details Updated successfully
+2017-05-28 20:56:57,131 - Info Logger - DEBUG - Command id --> domain_2  Message --> :Exiting Dns_Ferice_check()
+2017-05-28 20:56:57,139 - Info Logger - DEBUG - Command id --> domain_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:56:57,140 - Info Logger - DEBUG - Command id --> domain_3  Message --> :In Dns_recon check
+2017-05-28 20:56:57,140 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Dns reverse lookup
+2017-05-28 20:56:57,140 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Recieved host is : 107.154.150.38
+2017-05-28 20:56:58,403 - Info Logger - DEBUG - Command id --> domain_3  Message --> : (2)-->Reverse dns Timed out
+2017-05-28 20:56:58,404 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting getReverseDns()
+2017-05-28 20:56:58,505 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -D name_list.txt
+2017-05-28 20:56:59,211 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -a
+2017-05-28 20:57:18,348 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Saving details :
+2017-05-28 20:57:18,374 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Details Updated successfully
+2017-05-28 20:57:18,374 - Info Logger - DEBUG - Command id --> domain_3  Message --> :Exiting Dns_recon check
+2017-05-28 20:57:18,381 - Info Logger - DEBUG - Command id --> domain_4  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:57:18,381 - Info Logger - DEBUG - Command id --> domain_4  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 20:57:18,393 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread started --with command nmap -sU --script=dns-recursion.nse -p 53 107.154.150.38
+2017-05-28 20:57:25,111 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Thread finished
+2017-05-28 20:57:25,111 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Saving details :
+2017-05-28 20:57:25,122 - Info Logger - DEBUG - Command id --> domain_4  Message --> :Details Updated successfully
+2017-05-28 20:57:25,161 - Info Logger - DEBUG - Command id --> domain_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:57:25,161 - Info Logger - DEBUG - Command id --> domain_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 20:57:25,162 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 53 107.154.150.38
+2017-05-28 20:57:43,631 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread finished
+2017-05-28 20:57:43,631 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Saving details :
+2017-05-28 20:57:43,645 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Details Updated successfully
+2017-05-28 20:57:43,669 - Info Logger - DEBUG - Command id --> domain_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 695
+2017-05-28 20:57:43,670 - Info Logger - DEBUG - Command id --> domain_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 20:57:43,672 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread started --with command nslookup 107.154.150.38
+2017-05-28 20:57:51,761 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Thread finished
+2017-05-28 20:57:51,761 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Saving details :
+2017-05-28 20:57:51,776 - Info Logger - DEBUG - Command id --> domain_6  Message --> :Details Updated successfully

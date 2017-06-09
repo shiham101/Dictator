@@ -1,0 +1,70 @@
+2017-05-22 00:53:32,457 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-22 00:53:32,457 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-22 00:53:32,458 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 22 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_656/656_127.0.0.1_22_capture-output.pcap
+2017-05-22 00:53:35,462 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 00:53:35,464 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 22 127.0.0.1
+2017-05-22 00:53:36,302 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-22 00:53:36,303 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-22 00:53:36,310 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-22 00:53:36,310 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 22 127.0.0.1', '\nEnd']
+2017-05-22 00:53:36,310 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-22 00:53:36,310 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 22 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 00:53 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000046s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+|_banner: SSH-2.0-OpenSSH_7.2p2 Debian-5
+
+Nmap done: 1 IP address (1 host up) scanned in 0.78 seconds
+
+
+
+2017-05-22 00:53:36,322 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 00:53:36,354 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-22 00:53:36,511 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 00:53:36,522 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 22 127.0.0.1
+2017-05-22 00:53:37,546 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-22 00:53:37,546 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-22 00:53:37,547 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-22 00:53:37,548 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 22 127.0.0.1', '\nEnd']
+2017-05-22 00:53:37,548 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-22 00:53:37,548 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 22 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 00:53 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000046s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 1.01 seconds
+
+
+
+2017-05-22 00:53:37,554 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 00:53:37,582 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 00:53:37,583 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 22 127.0.0.1
+2017-05-22 00:53:39,319 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-22 00:53:39,319 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-22 00:53:39,325 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-22 00:53:39,325 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 22 127.0.0.1', '\nEnd']
+2017-05-22 00:53:39,325 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-22 00:53:39,325 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 22 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 00:53 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000073s latency).
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Debian 5 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.70 seconds
+
+
+
+2017-05-22 00:53:39,329 - Commands Logger - DEBUG - Finished!!!

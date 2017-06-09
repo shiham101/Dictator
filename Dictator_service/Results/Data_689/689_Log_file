@@ -1,0 +1,2409 @@
+2017-05-28 16:21:42,967 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:21:42,968 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_1  Message --> :Thread started --with command sslyze 127.0.0.1:443
+2017-05-28 16:21:43,399 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_1  Message --> :Thread finished
+2017-05-28 16:21:43,400 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_1  Message --> :Saving details :
+2017-05-28 16:21:43,402 - Commands Logger - DEBUG - Command id is ->ssl_1
+2017-05-28 16:21:43,402 - Commands Logger - DEBUG - commands are : [u'sslyze 127.0.0.1:443', '\nEnd']
+2017-05-28 16:21:43,403 - Commands Logger - DEBUG - My var : '$.Entries."ssl_1"'
+2017-05-28 16:21:43,403 - Commands Logger - DEBUG - Result --> : Command Executed :sslyze 127.0.0.1:443
+
+Result
+
+
+ AVAILABLE PLUGINS
+ -----------------
+
+  PluginOpenSSLCipherSuites
+  PluginSessionResumption
+  PluginChromeSha1Deprecation
+  PluginHSTS
+  PluginCertInfo
+  PluginHeartbleed
+  PluginCompression
+  PluginSessionRenegotiation
+
+
+
+ CHECKING HOST(S) AVAILABILITY
+ -----------------------------
+
+   127.0.0.1:443                       => 127.0.0.1:443
+
+
+
+ SCAN COMPLETED IN 0.08 S
+ ------------------------
+
+
+
+2017-05-28 16:21:43,414 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:21:49,679 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_beast_1  Message --> :Saving details :
+2017-05-28 16:21:49,685 - Commands Logger - DEBUG - Command id is ->ssl_beast_1
+2017-05-28 16:21:49,685 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -A 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:21:45    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for BEAST vulnerability \x1b[m\r\n\r\n\x1b[1m BEAST\x1b[m (CVE-2011-3389)                     TLS1:\x1b[1;33m AES128-SHA DHE-RSA-AES128-SHA\r\n                                                 AES256-SHA DHE-RSA-AES256-SHA CAMELLIA128-SHA\r\n                                                 DHE-RSA-CAMELLIA128-SHA CAMELLIA256-SHA DHE-RSA-CAMELLIA256-SHA\r\n                                                 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA\x1b[m\r\n                                           \x1b[1;33mVULNERABLE\x1b[m -- but also supports higher protocols (possible mitigation): TLSv1.1 TLSv1.2\r\n\r\n\x1b[7m Done 2017-05-28 16:21:49    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:21:49,686 - Commands Logger - DEBUG - My var : '$.Entries."ssl_beast_1"'
+2017-05-28 16:21:49,686 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -A 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:21:45    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for BEAST vulnerability [m
+
+[1m BEAST[m (CVE-2011-3389)                     TLS1:[1;33m AES128-SHA DHE-RSA-AES128-SHA
+                                                 AES256-SHA DHE-RSA-AES256-SHA CAMELLIA128-SHA
+                                                 DHE-RSA-CAMELLIA128-SHA CAMELLIA256-SHA DHE-RSA-CAMELLIA256-SHA
+                                                 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-SHA[m
+                                           [1;33mVULNERABLE[m -- but also supports higher protocols (possible mitigation): TLSv1.1 TLSv1.2
+
+[7m Done 2017-05-28 16:21:49    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:21:49,697 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:21:53,239 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_freak_1  Message --> :Saving details :
+2017-05-28 16:21:53,243 - Commands Logger - DEBUG - Command id is ->ssl_freak_1
+2017-05-28 16:21:53,243 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -F 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:21:51    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for FREAK attack \x1b[m\r\n\r\n\x1b[1m FREAK\x1b[m (CVE-2015-0204)                     \x1b[1;32mnot vulnerable (OK)\x1b[m\r\n\r\n\x1b[7m Done 2017-05-28 16:21:53    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:21:53,243 - Commands Logger - DEBUG - My var : '$.Entries."ssl_freak_1"'
+2017-05-28 16:21:53,243 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -F 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:21:51    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for FREAK attack [m
+
+[1m FREAK[m (CVE-2015-0204)                     [1;32mnot vulnerable (OK)[m
+
+[7m Done 2017-05-28 16:21:53    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:21:53,256 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:21:59,964 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_1  Message --> :Saving details :
+2017-05-28 16:21:59,968 - Commands Logger - DEBUG - Command id is ->ssl_CCS_Injection_1
+2017-05-28 16:21:59,968 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -I 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:21:55    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for CCS injection vulnerability \x1b[m\r\n\r\n\x1b[1m CCS\x1b[m (CVE-2014-0224)                       \x1b[1;32mnot vulnerable (OK)\x1b[m\r\n\r\n\x1b[7m Done 2017-05-28 16:21:59    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:21:59,968 - Commands Logger - DEBUG - My var : '$.Entries."ssl_CCS_Injection_1"'
+2017-05-28 16:21:59,969 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -I 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:21:55    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for CCS injection vulnerability [m
+
+[1m CCS[m (CVE-2014-0224)                       [1;32mnot vulnerable (OK)[m
+
+[7m Done 2017-05-28 16:21:59    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:21:59,978 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:22:00,123 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:22:00,125 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_2  Message --> :Thread started --with command nmap -sV --script=ssl-ccs-injection -p 443 127.0.0.1
+2017-05-28 16:22:15,133 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_2  Message --> :Thread finished
+2017-05-28 16:22:15,134 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_2  Message --> :Saving details :
+2017-05-28 16:22:15,137 - Commands Logger - DEBUG - Command id is ->ssl_CCS_Injection_2
+2017-05-28 16:22:15,137 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=ssl-ccs-injection -p 443 127.0.0.1', '\nEnd']
+2017-05-28 16:22:15,138 - Commands Logger - DEBUG - My var : '$.Entries."ssl_CCS_Injection_2"'
+2017-05-28 16:22:15,138 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=ssl-ccs-injection -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:22 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000069s latency).
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.96 seconds
+
+
+
+2017-05-28 16:22:15,240 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:22:15,255 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :Inside command_meta
+2017-05-28 16:22:57,850 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:22:57,850 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :0
+2017-05-28 16:23:01,418 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :use auxiliary/scanner/ssl/openssl_ccs
+[0m[4mmsf[0m auxiliary([1m[31mopenssl_ccs[0m) [0m> 
+2017-05-28 16:23:04,532 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mopenssl_ccs[0m) [0m> 
+2017-05-28 16:23:07,638 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :set RPORTS 443
+[0mRPORTS => 443
+[4mmsf[0m auxiliary([1m[31mopenssl_ccs[0m) [0m> 
+2017-05-28 16:23:07,638 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:23:12,748 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:23:12,749 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mopenssl_ccs[0m) [0m> 
+2017-05-28 16:23:12,749 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:23:12,750 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:23:14,860 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :Exited from msfconsole !!!
+2017-05-28 16:23:14,861 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:23:14,861 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :Closing the child pipe !!!
+2017-05-28 16:23:14,962 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_CCS_Injection_3  Message --> :Saving details :
+2017-05-28 16:23:14,965 - Commands Logger - DEBUG - Command id is ->ssl_CCS_Injection_3
+2017-05-28 16:23:14,965 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/ssl/openssl_ccs\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_ccs\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_ccs\x1b[0m) \x1b[0m> \n', 'set RPORTS 443\r\r\n\x1b[0mRPORTS => 443\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_ccs\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_ccs\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:23:14,966 - Commands Logger - DEBUG - My var : '$.Entries."ssl_CCS_Injection_3"'
+2017-05-28 16:23:14,966 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mopenssl_ccs[0m) [0m> 
+2017-05-28 16:23:14,976 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:23:18,514 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Crime_1  Message --> :Saving details :
+2017-05-28 16:23:18,520 - Commands Logger - DEBUG - Command id is ->ssl_Crime_1
+2017-05-28 16:23:18,520 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -C 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:23:17    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for CRIME vulnerability \x1b[m\r\n\r\n\x1b[1m CRIME, TLS \x1b[m(CVE-2012-4929)                \x1b[0;32mnot vulnerable (OK)\x1b[m\r\n\r\n\x1b[7m Done 2017-05-28 16:23:18    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:23:18,521 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Crime_1"'
+2017-05-28 16:23:18,521 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -C 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:23:17    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for CRIME vulnerability [m
+
+[1m CRIME, TLS [m(CVE-2012-4929)                [0;32mnot vulnerable (OK)[m
+
+[7m Done 2017-05-28 16:23:18    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:23:18,533 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:23:18,645 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Crime_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:23:18,646 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Crime_2  Message --> :Thread started --with command echo | openssl s_client -connect 127.0.0.1:443 /dev/null |grep -i 'Compression'
+2017-05-28 16:23:18,674 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Crime_2  Message --> :Thread finished
+2017-05-28 16:23:18,676 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Crime_2  Message --> :Saving details :
+2017-05-28 16:23:18,679 - Commands Logger - DEBUG - Command id is ->ssl_Crime_2
+2017-05-28 16:23:18,680 - Commands Logger - DEBUG - commands are : [u"echo | openssl s_client -connect 127.0.0.1:443 /dev/null |grep -i 'Compression'", '\nEnd']
+2017-05-28 16:23:18,680 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Crime_2"'
+2017-05-28 16:23:18,680 - Commands Logger - DEBUG - Result --> : Command Executed :echo | openssl s_client -connect 127.0.0.1:443 /dev/null |grep -i 'Compression'
+
+Resultunknown option /dev/null
+usage: s_client args
+
+ -host host     - use -connect instead
+ -port port     - use -connect instead
+ -connect host:port - who to connect to (default is localhost:4433)
+ -verify_hostname host - check peer certificate matches "host"
+ -verify_email email - check peer certificate matches "email"
+ -verify_ip ipaddr - check peer certificate matches "ipaddr"
+ -verify arg   - turn on peer certificate verification
+ -verify_return_error - return verification errors
+ -cert arg     - certificate file to use, PEM format assumed
+ -certform arg - certificate format (PEM or DER) PEM default
+ -key arg      - Private key file to use, in cert file if
+                 not specified but cert file is.
+ -keyform arg  - key format (PEM or DER) PEM default
+ -pass arg     - private key file pass phrase source
+ -CApath arg   - PEM format directory of CA's
+ -CAfile arg   - PEM format file of CA's
+ -no_alt_chains - only ever use the first certificate chain found
+ -reconnect    - Drop and re-make the connection with the same Session-ID
+ -pause        - sleep(1) after each read(2) and write(2) system call
+ -prexit       - print session information even on connection failure
+ -showcerts    - show all certificates in the chain
+ -debug        - extra output
+ -msg          - Show protocol messages
+ -nbio_test    - more ssl protocol testing
+ -state        - print the 'ssl' states
+ -nbio         - Run with non-blocking IO
+ -crlf         - convert LF from terminal into CRLF
+ -quiet        - no s_client output
+ -ign_eof      - ignore input eof (default when -quiet)
+ -no_ign_eof   - don't ignore input eof
+ -psk_identity arg - PSK identity
+ -psk arg      - PSK in hex (without 0x)
+ -srpuser user     - SRP authentification for 'user'
+ -srppass arg      - password for 'user'
+ -srp_lateuser     - SRP username into second ClientHello message
+ -srp_moregroups   - Tolerate other than the known g N values.
+ -srp_strength int - minimal length in bits for N (default 1024).
+ -ssl2         - just use SSLv2
+ -tls1_2       - just use TLSv1.2
+ -tls1_1       - just use TLSv1.1
+ -tls1         - just use TLSv1
+ -dtls1        - just use DTLSv1
+ -fallback_scsv - send TLS_FALLBACK_SCSV
+ -mtu          - set the link layer MTU
+ -no_tls1_2/-no_tls1_1/-no_tls1/-no_ssl3/-no_ssl2 - turn off that protocol
+ -bugs         - Switch on all SSL implementation bug workarounds
+ -cipher       - preferred cipher to use, use the 'openssl ciphers'
+                 command to see what is available
+ -starttls prot - use the STARTTLS command before starting TLS
+                 for those protocols that support it, where
+                 'prot' defines which one to assume.  Currently,
+                 only "smtp", "pop3", "imap", "ftp" and "xmpp"
+                 are supported.
+ -engine id    - Initialise and use the specified engine
+ -rand file:file:...
+ -sess_out arg - file to write SSL session to
+ -sess_in arg  - file to read SSL session from
+ -servername host  - Set TLS extension servername in ClientHello
+ -tlsextdebug      - hex dump of all TLS extensions received
+ -status           - request certificate status from server
+ -no_ticket        - disable use of RFC4507bis session tickets
+ -serverinfo types - send empty ClientHello extensions (comma-separated numbers)
+ -curves arg       - Elliptic curves to advertise (colon-separated list)
+ -sigalgs arg      - Signature algorithms to support (colon-separated list)
+ -client_sigalgs arg - Signature algorithms to support for client
+                       certificate authentication (colon-separated list)
+ -nextprotoneg arg - enable NPN extension, considering named protocols supported (comma-separated list)
+ -alpn arg         - enable ALPN extension, considering named protocols supported (comma-separated list)
+ -legacy_renegotiation - enable use of legacy renegotiation (dangerous)
+ -use_srtp profiles - Offer SRTP key management with a colon-separated profile list
+ -keymatexport label   - Export keying material using label
+ -keymatexportlen len  - Export len bytes of keying material (default 20)
+
+
+
+2017-05-28 16:23:18,689 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:23:21,260 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_1  Message --> :Saving details :
+2017-05-28 16:23:21,265 - Commands Logger - DEBUG - Command id is ->ssl_Poodle_1
+2017-05-28 16:23:21,265 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -O 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:23:20    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for SSLv3 POODLE (Padding Oracle On Downgraded Legacy Encryption) \x1b[m\r\n\r\n\x1b[1m POODLE, SSL\x1b[m (CVE-2014-3566)               \x1b[1;32mnot vulnerable (OK)\x1b[m\r\n\r\n\x1b[1m\x1b[4m Testing for TLS_FALLBACK_SCSV Protection \x1b[m\r\n\r\n\x1b[1m TLS_FALLBACK_SCSV\x1b[m (RFC 7507),             \x1b[0;32mDowngrade attack prevention supported (OK)\x1b[m\r\n\r\n\x1b[7m Done 2017-05-28 16:23:21    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:23:21,265 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Poodle_1"'
+2017-05-28 16:23:21,266 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -O 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:23:20    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for SSLv3 POODLE (Padding Oracle On Downgraded Legacy Encryption) [m
+
+[1m POODLE, SSL[m (CVE-2014-3566)               [1;32mnot vulnerable (OK)[m
+
+[1m[4m Testing for TLS_FALLBACK_SCSV Protection [m
+
+[1m TLS_FALLBACK_SCSV[m (RFC 7507),             [0;32mDowngrade attack prevention supported (OK)[m
+
+[7m Done 2017-05-28 16:23:21    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:23:21,274 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:23:21,387 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:23:21,388 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_2  Message --> :Thread started --with command nmap -sV --script=ssl-poodle -p 443 127.0.0.1
+2017-05-28 16:23:36,152 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_2  Message --> :Thread finished
+2017-05-28 16:23:36,154 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_2  Message --> :Saving details :
+2017-05-28 16:23:36,157 - Commands Logger - DEBUG - Command id is ->ssl_Poodle_2
+2017-05-28 16:23:36,157 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=ssl-poodle -p 443 127.0.0.1', '\nEnd']
+2017-05-28 16:23:36,157 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Poodle_2"'
+2017-05-28 16:23:36,158 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=ssl-poodle -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:23 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000065s latency).
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.71 seconds
+
+
+
+2017-05-28 16:23:36,261 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:23:36,291 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:23:36,292 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_3  Message --> :Thread started --with command openssl s_client -connect 127.0.0.1:443
+2017-05-28 16:24:36,377 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_3  Message --> :Thread finished
+2017-05-28 16:24:36,378 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Poodle_3  Message --> :Saving details :
+2017-05-28 16:24:36,382 - Commands Logger - DEBUG - Command id is ->ssl_Poodle_3
+2017-05-28 16:24:36,382 - Commands Logger - DEBUG - commands are : [u'openssl s_client -connect 127.0.0.1:443', '\nEnd']
+2017-05-28 16:24:36,382 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Poodle_3"'
+2017-05-28 16:24:36,382 - Commands Logger - DEBUG - Result --> : Command Executed :openssl s_client -connect 127.0.0.1:443
+
+Resultdepth=0 C = IN, ST = Bangalore, L = Bangalore, O = Paladion Networks, OU = Practice, CN = paladion.net, emailAddress = furqankhan08@gmail.com
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = IN, ST = Bangalore, L = Bangalore, O = Paladion Networks, OU = Practice, CN = paladion.net, emailAddress = furqankhan08@gmail.com
+verify return:1
+CONNECTED(00000008)
+---
+Certificate chain
+ 0 s:/C=IN/ST=Bangalore/L=Bangalore/O=Paladion Networks/OU=Practice/CN=paladion.net/emailAddress=furqankhan08@gmail.com
+   i:/C=IN/ST=Bangalore/L=Bangalore/O=Paladion Networks/OU=Practice/CN=paladion.net/emailAddress=furqankhan08@gmail.com
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIEGTCCAwGgAwIBAgIJAOshUGLqw2g6MA0GCSqGSIb3DQEBCwUAMIGiMQswCQYD
+VQQGEwJJTjESMBAGA1UECAwJQmFuZ2Fsb3JlMRIwEAYDVQQHDAlCYW5nYWxvcmUx
+GjAYBgNVBAoMEVBhbGFkaW9uIE5ldHdvcmtzMREwDwYDVQQLDAhQcmFjdGljZTEV
+MBMGA1UEAwwMcGFsYWRpb24ubmV0MSUwIwYJKoZIhvcNAQkBFhZmdXJxYW5raGFu
+MDhAZ21haWwuY29tMB4XDTE3MDIxNzA3MzQxM1oXDTE4MDIxNzA3MzQxM1owgaIx
+CzAJBgNVBAYTAklOMRIwEAYDVQQIDAlCYW5nYWxvcmUxEjAQBgNVBAcMCUJhbmdh
+bG9yZTEaMBgGA1UECgwRUGFsYWRpb24gTmV0d29ya3MxETAPBgNVBAsMCFByYWN0
+aWNlMRUwEwYDVQQDDAxwYWxhZGlvbi5uZXQxJTAjBgkqhkiG9w0BCQEWFmZ1cnFh
+bmtoYW4wOEBnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQCiGQk+wabA597O7ItcvDntzkvbDhveLkOi9Yml47H3duKMkTxhdwMCqNxFqZbc
+TRxioeYdDimPQwZ+9eYZTVxQiOJFe36QerVJmRiupcYyNr/ht1UuyGVL2cwfyLqE
+Fgy1RX+oE4cBCXLEpY0zRMahbBEEAZGoDxmEHRpLq6Sjzmn6Mh2ZuemOQGW4pgOU
+jG+RZaNZCRA72wSZaJzjxUrLnVJuKrLdPRc49IwLy6umMPWuTO4/x1g2yyAxevLU
+xXDKRze78PI5cY9IRY9QZNxbebdN+CrfcHdV9NjBTvNtHyEXp0sKcspp942I0r1u
+bqcKQi3Ouge4pnQyT4kwc9upAgMBAAGjUDBOMB0GA1UdDgQWBBRr0JFqZP05yZlz
+WmcRFvdhqfiKAjAfBgNVHSMEGDAWgBRr0JFqZP05yZlzWmcRFvdhqfiKAjAMBgNV
+HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQB3z7ZwFN7Hib9fj3f3WaoEm/6y
+lYyxOFlIJMqhMozcFC5hOw0I18+KCyy3rMLkf0VOqi2jLx+UbezBFlMqPVO23+A0
+AGllybU3TwX6PM+Qcg545GShKQg+CXXQ96iU/whoVkDm8PaMO1ktHwPBea4rBz3J
+lSp3h1vcVMoptnTqyUq4MCBX7HAhSE2lOH7W5DqkFkuelzMl90IP65P7qA90o9s5
+36LT2gv519rTL8ivavhDQLmYyZZcDc6FKSbPm05wAMlGDFufTyq8ho+sK7xzo3TB
+DvKiA5waw2e0gBatzgedIbHPynnf7X+QlPCI09fkvf4dVqLQ37v2Xk9nDrNr
+-----END CERTIFICATE-----
+subject=/C=IN/ST=Bangalore/L=Bangalore/O=Paladion Networks/OU=Practice/CN=paladion.net/emailAddress=furqankhan08@gmail.com
+issuer=/C=IN/ST=Bangalore/L=Bangalore/O=Paladion Networks/OU=Practice/CN=paladion.net/emailAddress=furqankhan08@gmail.com
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 1723 bytes and written 431 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 46251C976F163A683C2C60831AA62B6D72CEF464978E84D4F5C119EC042B9EB7
+    Session-ID-ctx: 
+    Master-Key: 9F289DAB21ABBD2ACF1C29D67C00D6F8C7E0917744F16DC451BAB777AE881B7EEF8B06E8571756F94F7C69AF3C4D8E7A
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 08 70 13 89 97 86 d3 ff-3c b2 9a 4f db 3c d9 2e   .p......<..O.<..
+    0010 - 4c 6c 1c 8f 5b 3b 20 7d-96 e0 5a c6 58 a1 aa 22   Ll..[; }..Z.X.."
+    0020 - c6 1f 9b ad f4 2a 18 c6-17 be 4c 2d 44 a5 1f 4e   .....*....L-D..N
+    0030 - ea 93 d4 47 03 ab e6 a7-e4 05 e5 c8 2b c9 67 b3   ...G........+.g.
+    0040 - 52 aa 1c e7 d8 87 e0 7a-91 a1 19 12 69 e6 7b dd   R......z....i.{.
+    0050 - 99 12 c9 a9 41 b5 5d 5c-df d5 f2 94 28 39 e7 43   ....A.]\....(9.C
+    0060 - f0 80 c2 55 dd 9a af b3-38 32 61 94 08 0f 42 a0   ...U....82a...B.
+    0070 - d6 ff 9e 3a 33 3a a8 77-c7 21 c0 8c 12 7d 29 8a   ...:3:.w.!...}).
+    0080 - f2 3f a8 28 dc b3 b4 01-68 20 f5 41 e5 19 9b e2   .?.(....h .A....
+    0090 - ab 4e eb c1 65 13 df a8-33 92 46 fb 54 d1 dd 83   .N..e...3.F.T...
+    00a0 - af 65 c7 bc 86 1b a4 bd-23 e9 2a a1 23 4f 34 ac   .e......#.*.#O4.
+
+    Start Time: 1495988616
+    Timeout   : 300 (sec)
+    Verify return code: 18 (self signed certificate)
+---
+closed
+
+
+
+2017-05-28 16:24:36,394 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:24:40,303 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HearBleed_1  Message --> :Saving details :
+2017-05-28 16:24:40,307 - Commands Logger - DEBUG - Command id is ->ssl_HearBleed_1
+2017-05-28 16:24:40,308 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -B 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:24:38    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for heartbleed vulnerability \x1b[m\r\n\r\n\x1b[1m Heartbleed\x1b[m (CVE-2014-0160)                \x1b[1;32mnot vulnerable (OK)\x1b[m, no heartbeat extension\r\n\r\n\x1b[7m Done 2017-05-28 16:24:40    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:24:40,308 - Commands Logger - DEBUG - My var : '$.Entries."ssl_HearBleed_1"'
+2017-05-28 16:24:40,309 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -B 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:24:38    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for heartbleed vulnerability [m
+
+[1m Heartbleed[m (CVE-2014-0160)                [1;32mnot vulnerable (OK)[m, no heartbeat extension
+
+[7m Done 2017-05-28 16:24:40    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:24:40,320 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:24:40,430 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:24:40,431 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_2  Message --> :Thread started --with command  nmap --script ssl-heartbleed -p 443 127.0.0.1
+2017-05-28 16:24:41,448 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_2  Message --> :Thread finished
+2017-05-28 16:24:41,449 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_2  Message --> :Saving details :
+2017-05-28 16:24:41,452 - Commands Logger - DEBUG - Command id is ->ssl_HeartBleed_2
+2017-05-28 16:24:41,452 - Commands Logger - DEBUG - commands are : [u' nmap --script ssl-heartbleed -p 443 127.0.0.1', '\nEnd']
+2017-05-28 16:24:41,453 - Commands Logger - DEBUG - My var : '$.Entries."ssl_HeartBleed_2"'
+2017-05-28 16:24:41,453 - Commands Logger - DEBUG - Result --> : Command Executed : nmap --script ssl-heartbleed -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:24 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000078s latency).
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.98 seconds
+
+
+
+2017-05-28 16:24:41,461 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:24:41,483 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :Inside command_meta
+2017-05-28 16:25:16,139 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:25:16,141 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :0
+2017-05-28 16:25:19,833 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :use auxiliary/scanner/ssl/openssl_heartbleed
+[0m[4mmsf[0m auxiliary([1m[31mopenssl_heartbleed[0m) [0m> 
+2017-05-28 16:25:22,937 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mopenssl_heartbleed[0m) [0m> 
+2017-05-28 16:25:26,041 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :set RPORTS 443
+[0mRPORTS => 443
+[4mmsf[0m auxiliary([1m[31mopenssl_heartbleed[0m) [0m> 
+2017-05-28 16:25:26,042 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:25:31,150 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:25:31,151 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mopenssl_heartbleed[0m) [0m> 
+2017-05-28 16:25:31,151 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:25:31,152 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:25:33,256 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :Exited from msfconsole !!!
+2017-05-28 16:25:33,256 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:25:33,257 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :Closing the child pipe !!!
+2017-05-28 16:25:33,360 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_HeartBleed_3  Message --> :Saving details :
+2017-05-28 16:25:33,367 - Commands Logger - DEBUG - Command id is ->ssl_HeartBleed_3
+2017-05-28 16:25:33,368 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/ssl/openssl_heartbleed\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_heartbleed\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_heartbleed\x1b[0m) \x1b[0m> \n', 'set RPORTS 443\r\r\n\x1b[0mRPORTS => 443\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_heartbleed\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mopenssl_heartbleed\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:25:33,368 - Commands Logger - DEBUG - My var : '$.Entries."ssl_HeartBleed_3"'
+2017-05-28 16:25:33,369 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mopenssl_heartbleed[0m) [0m> 
+2017-05-28 16:25:33,453 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:25:36,058 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_LogJam_1  Message --> :Saving details :
+2017-05-28 16:25:36,063 - Commands Logger - DEBUG - Command id is ->ssl_LogJam_1
+2017-05-28 16:25:36,063 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -J 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:25:35    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for LOGJAM vulnerability \x1b[m\r\n\r\n\x1b[1m LOGJAM\x1b[m (CVE-2015-4000), experimental      \x1b[1;32mnot vulnerable (OK)\x1b[m, common primes not checked. "testssl.sh -E/-e" spots candidates\r\n\r\n\x1b[7m Done 2017-05-28 16:25:36    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:25:36,063 - Commands Logger - DEBUG - My var : '$.Entries."ssl_LogJam_1"'
+2017-05-28 16:25:36,064 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -J 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:25:35    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for LOGJAM vulnerability [m
+
+[1m LOGJAM[m (CVE-2015-4000), experimental      [1;32mnot vulnerable (OK)[m, common primes not checked. "testssl.sh -E/-e" spots candidates
+
+[7m Done 2017-05-28 16:25:36    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:25:36,079 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:25:39,829 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Sweet_32_1  Message --> :Saving details :
+2017-05-28 16:25:39,832 - Commands Logger - DEBUG - Command id is ->ssl_Sweet_32_1
+2017-05-28 16:25:39,832 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh --ciphers 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:25:38    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing ~standard cipher lists \x1b[m\r\n\r\n\x1b[1m Null Ciphers                 \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Anonymous NULL Ciphers       \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Anonymous DH Ciphers         \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m 40 Bit encryption            \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m 56 Bit export ciphers        \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Export Ciphers (general)     \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Low (<=64 Bit)               \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m DES Ciphers                  \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m "Medium" grade encryption    \x1b[m\x1b[0;32mnot offered (OK)\x1b[m\r\n\x1b[1m Triple DES Ciphers           \x1b[mnot offered (OK)\r\n\x1b[1m High grade encryption        \x1b[m\x1b[1;32moffered (OK)\x1b[m\r\n\r\n\r\n\x1b[7m Done 2017-05-28 16:25:39    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:25:39,832 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Sweet_32_1"'
+2017-05-28 16:25:39,833 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh --ciphers 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:25:38    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing ~standard cipher lists [m
+
+[1m Null Ciphers                 [m[1;32mnot offered (OK)[m
+[1m Anonymous NULL Ciphers       [m[1;32mnot offered (OK)[m
+[1m Anonymous DH Ciphers         [m[1;32mnot offered (OK)[m
+[1m 40 Bit encryption            [m[1;32mnot offered (OK)[m
+[1m 56 Bit export ciphers        [m[1;32mnot offered (OK)[m
+[1m Export Ciphers (general)     [m[1;32mnot offered (OK)[m
+[1m Low (<=64 Bit)               [m[1;32mnot offered (OK)[m
+[1m DES Ciphers                  [m[1;32mnot offered (OK)[m
+[1m "Medium" grade encryption    [m[0;32mnot offered (OK)[m
+[1m Triple DES Ciphers           [mnot offered (OK)
+[1m High grade encryption        [m[1;32moffered (OK)[m
+
+
+[7m Done 2017-05-28 16:25:39    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:25:39,840 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:25:44,302 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Ciphers_1  Message --> :Saving details :
+2017-05-28 16:25:44,305 - Commands Logger - DEBUG - Command id is ->ssl_Ciphers_1
+2017-05-28 16:25:44,306 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh --ciphers 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:25:41    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing ~standard cipher lists \x1b[m\r\n\r\n\x1b[1m Null Ciphers                 \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Anonymous NULL Ciphers       \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Anonymous DH Ciphers         \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m 40 Bit encryption            \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m 56 Bit export ciphers        \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Export Ciphers (general)     \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m Low (<=64 Bit)               \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m DES Ciphers                  \x1b[m\x1b[1;32mnot offered (OK)\x1b[m\r\n\x1b[1m "Medium" grade encryption    \x1b[m\x1b[0;32mnot offered (OK)\x1b[m\r\n\x1b[1m Triple DES Ciphers           \x1b[mnot offered (OK)\r\n\x1b[1m High grade encryption        \x1b[m\x1b[1;32moffered (OK)\x1b[m\r\n\r\n\r\n\x1b[7m Done 2017-05-28 16:25:44    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:25:44,306 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Ciphers_1"'
+2017-05-28 16:25:44,306 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh --ciphers 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:25:41    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing ~standard cipher lists [m
+
+[1m Null Ciphers                 [m[1;32mnot offered (OK)[m
+[1m Anonymous NULL Ciphers       [m[1;32mnot offered (OK)[m
+[1m Anonymous DH Ciphers         [m[1;32mnot offered (OK)[m
+[1m 40 Bit encryption            [m[1;32mnot offered (OK)[m
+[1m 56 Bit export ciphers        [m[1;32mnot offered (OK)[m
+[1m Export Ciphers (general)     [m[1;32mnot offered (OK)[m
+[1m Low (<=64 Bit)               [m[1;32mnot offered (OK)[m
+[1m DES Ciphers                  [m[1;32mnot offered (OK)[m
+[1m "Medium" grade encryption    [m[0;32mnot offered (OK)[m
+[1m Triple DES Ciphers           [mnot offered (OK)
+[1m High grade encryption        [m[1;32moffered (OK)[m
+
+
+[7m Done 2017-05-28 16:25:44    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:25:44,319 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:25:46,823 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Sweet_Drown_1  Message --> :Saving details :
+2017-05-28 16:25:46,827 - Commands Logger - DEBUG - Command id is ->ssl_Sweet_Drown_1
+2017-05-28 16:25:46,828 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -D 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:25:46    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing for DROWN vulnerability \x1b[m\r\n\r\n\x1b[1m DROWN\x1b[m (2016-0800, CVE-2016-0703)          \x1b[1;32mnot vulnerable on this port (OK)\x1b[m\r\n                                           make sure you don\'t use this certificate elsewhere with SSLv2 enabled services\r\n                                           https://censys.io/ipv4?q=5C39938F7E9DCB7EBDB7E0692A40D2D7640A4BE09EA8566E25A6393C061DFD1C could help you to find out\r\n\r\n\x1b[7m Done 2017-05-28 16:25:46    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:25:46,828 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Sweet_Drown_1"'
+2017-05-28 16:25:46,828 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -D 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:25:46    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing for DROWN vulnerability [m
+
+[1m DROWN[m (2016-0800, CVE-2016-0703)          [1;32mnot vulnerable on this port (OK)[m
+                                           make sure you don't use this certificate elsewhere with SSLv2 enabled services
+                                           https://censys.io/ipv4?q=5C39938F7E9DCB7EBDB7E0692A40D2D7640A4BE09EA8566E25A6393C061DFD1C could help you to find out
+
+[7m Done 2017-05-28 16:25:46    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:25:46,840 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:25:46,953 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Sweet_Drown_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:25:46,961 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Sweet_Drown_2  Message --> :Thread started --with command nmap --script = sslv2-drown -p 443 127.0.0.1
+2017-05-28 16:25:48,103 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Sweet_Drown_2  Message --> :Thread finished
+2017-05-28 16:25:48,104 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Sweet_Drown_2  Message --> :Saving details :
+2017-05-28 16:25:48,111 - Commands Logger - DEBUG - Command id is ->ssl_Sweet_Drown_2
+2017-05-28 16:25:48,112 - Commands Logger - DEBUG - commands are : [u'nmap --script = sslv2-drown -p 443 127.0.0.1', '\nEnd']
+2017-05-28 16:25:48,113 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Sweet_Drown_2"'
+2017-05-28 16:25:48,113 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script = sslv2-drown -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:25 UTC
+NSE: failed to initialize the script engine:
+/usr/bin/../share/nmap/nse_main.lua:801: '=' did not match a category, filename, or directory
+stack traceback:
+	[C]: in function 'error'
+	/usr/bin/../share/nmap/nse_main.lua:801: in function 'get_chosen_scripts'
+	/usr/bin/../share/nmap/nse_main.lua:1251: in main chunk
+	[C]: in ?
+
+QUITTING!
+
+
+
+2017-05-28 16:25:48,136 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:26:03,234 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_RC4_1  Message --> :Saving details :
+2017-05-28 16:26:03,236 - Commands Logger - DEBUG - Command id is ->ssl_RC4_1
+2017-05-28 16:26:03,237 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -E -4 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:25:50    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Checking for vulnerable RC4 Ciphers \x1b[m\r\n\r\n\x1b[1m RC4\x1b[m (CVE-2013-2566, CVE-2015-2808)        \x1b[0;32mno RC4 ciphers detected (OK)\x1b[m\r\n\r\n\r\n\x1b[1m\x1b[4m Testing all locally available ciphers per protocol against the server, ordered by encryption strength \x1b[m\r\n\r\nHexcode  Cipher Suite Name (OpenSSL)       KeyExch.  Encryption Bits\r\n------------------------------------------------------------------------\r\nSSLv2 \r\nSSLv3 \r\nTLS 1 \r\n xc014   ECDHE-RSA-AES256-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n x39     DHE-RSA-AES256-SHA                DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n x88     DHE-RSA-CAMELLIA256-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x35     AES256-SHA                        RSA        AES       256       \r\n x84     CAMELLIA256-SHA                   RSA        Camellia  256       \r\n xc013   ECDHE-RSA-AES128-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n x33     DHE-RSA-AES128-SHA                DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n x45     DHE-RSA-CAMELLIA128-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x2f     AES128-SHA                        RSA        AES       128       \r\n x41     CAMELLIA128-SHA                   RSA        Camellia  128       \r\nTLS 1.1 \r\n xc014   ECDHE-RSA-AES256-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n x39     DHE-RSA-AES256-SHA                DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n x88     DHE-RSA-CAMELLIA256-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x35     AES256-SHA                        RSA        AES       256       \r\n x84     CAMELLIA256-SHA                   RSA        Camellia  256       \r\n xc013   ECDHE-RSA-AES128-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n x33     DHE-RSA-AES128-SHA                DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n x45     DHE-RSA-CAMELLIA128-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x2f     AES128-SHA                        RSA        AES       128       \r\n x41     CAMELLIA128-SHA                   RSA        Camellia  128       \r\nTLS 1.2 \r\n xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH \x1b[0;32m256 \x1b[m  AESGCM    256       \r\n xc028   ECDHE-RSA-AES256-SHA384           ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n xc014   ECDHE-RSA-AES256-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n x9f     DHE-RSA-AES256-GCM-SHA384         DH \x1b[0;33m1024 \x1b[m   AESGCM    256       \r\n x6b     DHE-RSA-AES256-SHA256             DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n x39     DHE-RSA-AES256-SHA                DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n xc077   ECDHE-RSA-CAMELLIA256-SHA384      ECDH \x1b[0;32m256 \x1b[m  Camellia  256       \r\n xc4     DHE-RSA-CAMELLIA256-SHA256        DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x88     DHE-RSA-CAMELLIA256-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x9d     AES256-GCM-SHA384                 RSA        AESGCM    256       \r\n x3d     AES256-SHA256                     RSA        AES       256       \r\n x35     AES256-SHA                        RSA        AES       256       \r\n xc0     CAMELLIA256-SHA256                RSA        Camellia  256       \r\n x84     CAMELLIA256-SHA                   RSA        Camellia  256       \r\n xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH \x1b[0;32m256 \x1b[m  AESGCM    128       \r\n xc027   ECDHE-RSA-AES128-SHA256           ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n xc013   ECDHE-RSA-AES128-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n x9e     DHE-RSA-AES128-GCM-SHA256         DH \x1b[0;33m1024 \x1b[m   AESGCM    128       \r\n x67     DHE-RSA-AES128-SHA256             DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n x33     DHE-RSA-AES128-SHA                DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n xc076   ECDHE-RSA-CAMELLIA128-SHA256      ECDH \x1b[0;32m256 \x1b[m  Camellia  128       \r\n xbe     DHE-RSA-CAMELLIA128-SHA256        DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x45     DHE-RSA-CAMELLIA128-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x9c     AES128-GCM-SHA256                 RSA        AESGCM    128       \r\n x3c     AES128-SHA256                     RSA        AES       128       \r\n x2f     AES128-SHA                        RSA        AES       128       \r\n xba     CAMELLIA128-SHA256                RSA        Camellia  128       \r\n x41     CAMELLIA128-SHA                   RSA        Camellia  128       \r\n\r\n\x1b[7m Done 2017-05-28 16:26:02    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:26:03,237 - Commands Logger - DEBUG - My var : '$.Entries."ssl_RC4_1"'
+2017-05-28 16:26:03,237 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -E -4 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:25:50    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Checking for vulnerable RC4 Ciphers [m
+
+[1m RC4[m (CVE-2013-2566, CVE-2015-2808)        [0;32mno RC4 ciphers detected (OK)[m
+
+
+[1m[4m Testing all locally available ciphers per protocol against the server, ordered by encryption strength [m
+
+Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.  Encryption Bits
+------------------------------------------------------------------------
+SSLv2 
+SSLv3 
+TLS 1 
+ xc014   ECDHE-RSA-AES256-SHA              ECDH [0;32m256 [m  AES       256       
+ x39     DHE-RSA-AES256-SHA                DH [0;33m1024 [m   AES       256       
+ x88     DHE-RSA-CAMELLIA256-SHA           DH [0;33m1024 [m   Camellia  256       
+ x35     AES256-SHA                        RSA        AES       256       
+ x84     CAMELLIA256-SHA                   RSA        Camellia  256       
+ xc013   ECDHE-RSA-AES128-SHA              ECDH [0;32m256 [m  AES       128       
+ x33     DHE-RSA-AES128-SHA                DH [0;33m1024 [m   AES       128       
+ x45     DHE-RSA-CAMELLIA128-SHA           DH [0;33m1024 [m   Camellia  128       
+ x2f     AES128-SHA                        RSA        AES       128       
+ x41     CAMELLIA128-SHA                   RSA        Camellia  128       
+TLS 1.1 
+ xc014   ECDHE-RSA-AES256-SHA              ECDH [0;32m256 [m  AES       256       
+ x39     DHE-RSA-AES256-SHA                DH [0;33m1024 [m   AES       256       
+ x88     DHE-RSA-CAMELLIA256-SHA           DH [0;33m1024 [m   Camellia  256       
+ x35     AES256-SHA                        RSA        AES       256       
+ x84     CAMELLIA256-SHA                   RSA        Camellia  256       
+ xc013   ECDHE-RSA-AES128-SHA              ECDH [0;32m256 [m  AES       128       
+ x33     DHE-RSA-AES128-SHA                DH [0;33m1024 [m   AES       128       
+ x45     DHE-RSA-CAMELLIA128-SHA           DH [0;33m1024 [m   Camellia  128       
+ x2f     AES128-SHA                        RSA        AES       128       
+ x41     CAMELLIA128-SHA                   RSA        Camellia  128       
+TLS 1.2 
+ xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH [0;32m256 [m  AESGCM    256       
+ xc028   ECDHE-RSA-AES256-SHA384           ECDH [0;32m256 [m  AES       256       
+ xc014   ECDHE-RSA-AES256-SHA              ECDH [0;32m256 [m  AES       256       
+ x9f     DHE-RSA-AES256-GCM-SHA384         DH [0;33m1024 [m   AESGCM    256       
+ x6b     DHE-RSA-AES256-SHA256             DH [0;33m1024 [m   AES       256       
+ x39     DHE-RSA-AES256-SHA                DH [0;33m1024 [m   AES       256       
+ xc077   ECDHE-RSA-CAMELLIA256-SHA384      ECDH [0;32m256 [m  Camellia  256       
+ xc4     DHE-RSA-CAMELLIA256-SHA256        DH [0;33m1024 [m   Camellia  256       
+ x88     DHE-RSA-CAMELLIA256-SHA           DH [0;33m1024 [m   Camellia  256       
+ x9d     AES256-GCM-SHA384                 RSA        AESGCM    256       
+ x3d     AES256-SHA256                     RSA        AES       256       
+ x35     AES256-SHA                        RSA        AES       256       
+ xc0     CAMELLIA256-SHA256                RSA        Camellia  256       
+ x84     CAMELLIA256-SHA                   RSA        Camellia  256       
+ xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH [0;32m256 [m  AESGCM    128       
+ xc027   ECDHE-RSA-AES128-SHA256           ECDH [0;32m256 [m  AES       128       
+ xc013   ECDHE-RSA-AES128-SHA              ECDH [0;32m256 [m  AES       128       
+ x9e     DHE-RSA-AES128-GCM-SHA256         DH [0;33m1024 [m   AESGCM    128       
+ x67     DHE-RSA-AES128-SHA256             DH [0;33m1024 [m   AES       128       
+ x33     DHE-RSA-AES128-SHA                DH [0;33m1024 [m   AES       128       
+ xc076   ECDHE-RSA-CAMELLIA128-SHA256      ECDH [0;32m256 [m  Camellia  128       
+ xbe     DHE-RSA-CAMELLIA128-SHA256        DH [0;33m1024 [m   Camellia  128       
+ x45     DHE-RSA-CAMELLIA128-SHA           DH [0;33m1024 [m   Camellia  128       
+ x9c     AES128-GCM-SHA256                 RSA        AESGCM    128       
+ x3c     AES128-SHA256                     RSA        AES       128       
+ x2f     AES128-SHA                        RSA        AES       128       
+ xba     CAMELLIA128-SHA256                RSA        Camellia  128       
+ x41     CAMELLIA128-SHA                   RSA        Camellia  128       
+
+[7m Done 2017-05-28 16:26:02    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:26:03,337 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:26:03,450 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:26:03,451 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_1  Message --> :Thread started --with command echo | openssl s_client -connect 127.0.0.1:443 |grep 'Secure Renegotiation'
+2017-05-28 16:26:03,493 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_1  Message --> :Thread finished
+2017-05-28 16:26:03,494 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_1  Message --> :Saving details :
+2017-05-28 16:26:03,497 - Commands Logger - DEBUG - Command id is ->ssl_Secure_Renegotiation_1
+2017-05-28 16:26:03,497 - Commands Logger - DEBUG - commands are : [u"echo | openssl s_client -connect 127.0.0.1:443 |grep 'Secure Renegotiation'", '\nEnd']
+2017-05-28 16:26:03,498 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Secure_Renegotiation_1"'
+2017-05-28 16:26:03,498 - Commands Logger - DEBUG - Result --> : Command Executed :echo | openssl s_client -connect 127.0.0.1:443 |grep 'Secure Renegotiation'
+
+Resultdepth=0 C = IN, ST = Bangalore, L = Bangalore, O = Paladion Networks, OU = Practice, CN = paladion.net, emailAddress = furqankhan08@gmail.com
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = IN, ST = Bangalore, L = Bangalore, O = Paladion Networks, OU = Practice, CN = paladion.net, emailAddress = furqankhan08@gmail.com
+verify return:1
+DONE
+Secure Renegotiation IS supported
+
+
+
+2017-05-28 16:26:03,507 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:26:03,528 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:26:03,529 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_2  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443 |grep 'Secure Renegotiation'
+2017-05-28 16:26:51,773 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_2  Message --> :Thread finished
+2017-05-28 16:26:51,777 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Renegotiation_2  Message --> :Saving details :
+2017-05-28 16:26:51,780 - Commands Logger - DEBUG - Command id is ->ssl_Secure_Renegotiation_2
+2017-05-28 16:26:51,781 - Commands Logger - DEBUG - commands are : [u"echo | bash Scripts/testssl.sh 127.0.0.1:443 |grep 'Secure Renegotiation'", '\nEnd']
+2017-05-28 16:26:51,781 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Secure_Renegotiation_2"'
+2017-05-28 16:26:51,781 - Commands Logger - DEBUG - Result --> : Command Executed :echo | bash Scripts/testssl.sh 127.0.0.1:443 |grep 'Secure Renegotiation'
+
+Result[1m Secure Renegotiation [m(CVE-2009-3555)      [1;32mnot vulnerable (OK)[m
+
+None
+
+2017-05-28 16:26:51,799 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:26:51,844 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:26:51,846 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443 |grep 'Secure Client-Initiated Renegotiation'
+2017-05-28 16:27:44,321 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :Thread finished
+2017-05-28 16:27:44,322 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :Saving details :
+2017-05-28 16:27:44,325 - Commands Logger - DEBUG - Command id is ->ssl_Secure_Client_Renegotiation_1
+2017-05-28 16:27:44,325 - Commands Logger - DEBUG - commands are : [u"echo | bash Scripts/testssl.sh 127.0.0.1:443 |grep 'Secure Client-Initiated Renegotiation'", '\nEnd']
+2017-05-28 16:27:44,325 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Secure_Client_Renegotiation_1"'
+2017-05-28 16:27:44,325 - Commands Logger - DEBUG - Result --> : Command Executed :echo | bash Scripts/testssl.sh 127.0.0.1:443 |grep 'Secure Client-Initiated Renegotiation'
+
+Result[1m Secure Client-Initiated Renegotiation     [m[0;32mnot vulnerable (OK)[m
+
+None
+
+2017-05-28 16:27:44,340 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:27:59,806 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_ciphers_1  Message --> :Saving details :
+2017-05-28 16:27:59,809 - Commands Logger - DEBUG - Command id is ->ssl_Weak_ciphers_1
+2017-05-28 16:27:59,810 - Commands Logger - DEBUG - commands are : [u'bash Scripts/testssl.sh -E 127.0.0.1:443\n', '\x1b[0;35m\r\nNo mapping file found\x1b[m\r\n\x1b[1m\r\n###########################################################\r\n    testssl.sh       2.8 from https://testssl.sh/    \r\n    (\x1b[1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582\x1b[m\x1b[1m)\r\n\r\n      This program is free software. Distribution and\r\n             modification under GPLv2 permitted.\r\n      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!\r\n\r\n       Please file bugs @ https://testssl.sh/bugs/\r\n\r\n###########################################################\x1b[m\r\n\r\n Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]\r\n on Bane:Scripts/bin/openssl.Linux.x86_64\r\n (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")\r\n\r\n\r\n\x1b[7m Start 2017-05-28 16:27:46    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n rDNS (127.0.0.1):       localhost.\r\n Service detected:       HTTP\r\n\r\n\r\n\x1b[1m\x1b[4m Testing all locally available ciphers per protocol against the server, ordered by encryption strength \x1b[m\r\n\r\nHexcode  Cipher Suite Name (OpenSSL)       KeyExch.  Encryption Bits\r\n------------------------------------------------------------------------\r\nSSLv2 \r\nSSLv3 \r\nTLS 1 \r\n xc014   ECDHE-RSA-AES256-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n x39     DHE-RSA-AES256-SHA                DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n x88     DHE-RSA-CAMELLIA256-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x35     AES256-SHA                        RSA        AES       256       \r\n x84     CAMELLIA256-SHA                   RSA        Camellia  256       \r\n xc013   ECDHE-RSA-AES128-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n x33     DHE-RSA-AES128-SHA                DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n x45     DHE-RSA-CAMELLIA128-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x2f     AES128-SHA                        RSA        AES       128       \r\n x41     CAMELLIA128-SHA                   RSA        Camellia  128       \r\nTLS 1.1 \r\n xc014   ECDHE-RSA-AES256-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n x39     DHE-RSA-AES256-SHA                DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n x88     DHE-RSA-CAMELLIA256-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x35     AES256-SHA                        RSA        AES       256       \r\n x84     CAMELLIA256-SHA                   RSA        Camellia  256       \r\n xc013   ECDHE-RSA-AES128-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n x33     DHE-RSA-AES128-SHA                DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n x45     DHE-RSA-CAMELLIA128-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x2f     AES128-SHA                        RSA        AES       128       \r\n x41     CAMELLIA128-SHA                   RSA        Camellia  128       \r\nTLS 1.2 \r\n xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH \x1b[0;32m256 \x1b[m  AESGCM    256       \r\n xc028   ECDHE-RSA-AES256-SHA384           ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n xc014   ECDHE-RSA-AES256-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       256       \r\n x9f     DHE-RSA-AES256-GCM-SHA384         DH \x1b[0;33m1024 \x1b[m   AESGCM    256       \r\n x6b     DHE-RSA-AES256-SHA256             DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n x39     DHE-RSA-AES256-SHA                DH \x1b[0;33m1024 \x1b[m   AES       256       \r\n xc077   ECDHE-RSA-CAMELLIA256-SHA384      ECDH \x1b[0;32m256 \x1b[m  Camellia  256       \r\n xc4     DHE-RSA-CAMELLIA256-SHA256        DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x88     DHE-RSA-CAMELLIA256-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  256       \r\n x9d     AES256-GCM-SHA384                 RSA        AESGCM    256       \r\n x3d     AES256-SHA256                     RSA        AES       256       \r\n x35     AES256-SHA                        RSA        AES       256       \r\n xc0     CAMELLIA256-SHA256                RSA        Camellia  256       \r\n x84     CAMELLIA256-SHA                   RSA        Camellia  256       \r\n xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH \x1b[0;32m256 \x1b[m  AESGCM    128       \r\n xc027   ECDHE-RSA-AES128-SHA256           ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n xc013   ECDHE-RSA-AES128-SHA              ECDH \x1b[0;32m256 \x1b[m  AES       128       \r\n x9e     DHE-RSA-AES128-GCM-SHA256         DH \x1b[0;33m1024 \x1b[m   AESGCM    128       \r\n x67     DHE-RSA-AES128-SHA256             DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n x33     DHE-RSA-AES128-SHA                DH \x1b[0;33m1024 \x1b[m   AES       128       \r\n xc076   ECDHE-RSA-CAMELLIA128-SHA256      ECDH \x1b[0;32m256 \x1b[m  Camellia  128       \r\n xbe     DHE-RSA-CAMELLIA128-SHA256        DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x45     DHE-RSA-CAMELLIA128-SHA           DH \x1b[0;33m1024 \x1b[m   Camellia  128       \r\n x9c     AES128-GCM-SHA256                 RSA        AESGCM    128       \r\n x3c     AES128-SHA256                     RSA        AES       128       \r\n x2f     AES128-SHA                        RSA        AES       128       \r\n xba     CAMELLIA128-SHA256                RSA        Camellia  128       \r\n x41     CAMELLIA128-SHA                   RSA        Camellia  128       \r\n\r\n\x1b[7m Done 2017-05-28 16:27:59    -->> 127.0.0.1:443 (127.0.0.1) <<--\x1b[m\r\n\r\n\r\n<class \'pexpect.exceptions.EOF\'>End of file -']
+2017-05-28 16:27:59,810 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Weak_ciphers_1"'
+2017-05-28 16:27:59,810 - Commands Logger - DEBUG - Result --> : Command Executed :bash Scripts/testssl.sh -E 127.0.0.1:443
+
+
+Result
+[0;35m
+No mapping file found[m
+[1m
+###########################################################
+    testssl.sh       2.8 from https://testssl.sh/    
+    ([1;30m97c8d8a 2017-03-21 12:23:52 -- 1.582[m[1m)
+
+      This program is free software. Distribution and
+             modification under GPLv2 permitted.
+      USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+       Please file bugs @ https://testssl.sh/bugs/
+
+###########################################################[m
+
+ Using "OpenSSL 1.0.2-chacha (1.0.2d-dev)" [~181 ciphers]
+ on Bane:Scripts/bin/openssl.Linux.x86_64
+ (built: "Jul  6 18:05:33 2015", platform: "linux-x86_64")
+
+
+[7m Start 2017-05-28 16:27:46    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+ rDNS (127.0.0.1):       localhost.
+ Service detected:       HTTP
+
+
+[1m[4m Testing all locally available ciphers per protocol against the server, ordered by encryption strength [m
+
+Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.  Encryption Bits
+------------------------------------------------------------------------
+SSLv2 
+SSLv3 
+TLS 1 
+ xc014   ECDHE-RSA-AES256-SHA              ECDH [0;32m256 [m  AES       256       
+ x39     DHE-RSA-AES256-SHA                DH [0;33m1024 [m   AES       256       
+ x88     DHE-RSA-CAMELLIA256-SHA           DH [0;33m1024 [m   Camellia  256       
+ x35     AES256-SHA                        RSA        AES       256       
+ x84     CAMELLIA256-SHA                   RSA        Camellia  256       
+ xc013   ECDHE-RSA-AES128-SHA              ECDH [0;32m256 [m  AES       128       
+ x33     DHE-RSA-AES128-SHA                DH [0;33m1024 [m   AES       128       
+ x45     DHE-RSA-CAMELLIA128-SHA           DH [0;33m1024 [m   Camellia  128       
+ x2f     AES128-SHA                        RSA        AES       128       
+ x41     CAMELLIA128-SHA                   RSA        Camellia  128       
+TLS 1.1 
+ xc014   ECDHE-RSA-AES256-SHA              ECDH [0;32m256 [m  AES       256       
+ x39     DHE-RSA-AES256-SHA                DH [0;33m1024 [m   AES       256       
+ x88     DHE-RSA-CAMELLIA256-SHA           DH [0;33m1024 [m   Camellia  256       
+ x35     AES256-SHA                        RSA        AES       256       
+ x84     CAMELLIA256-SHA                   RSA        Camellia  256       
+ xc013   ECDHE-RSA-AES128-SHA              ECDH [0;32m256 [m  AES       128       
+ x33     DHE-RSA-AES128-SHA                DH [0;33m1024 [m   AES       128       
+ x45     DHE-RSA-CAMELLIA128-SHA           DH [0;33m1024 [m   Camellia  128       
+ x2f     AES128-SHA                        RSA        AES       128       
+ x41     CAMELLIA128-SHA                   RSA        Camellia  128       
+TLS 1.2 
+ xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH [0;32m256 [m  AESGCM    256       
+ xc028   ECDHE-RSA-AES256-SHA384           ECDH [0;32m256 [m  AES       256       
+ xc014   ECDHE-RSA-AES256-SHA              ECDH [0;32m256 [m  AES       256       
+ x9f     DHE-RSA-AES256-GCM-SHA384         DH [0;33m1024 [m   AESGCM    256       
+ x6b     DHE-RSA-AES256-SHA256             DH [0;33m1024 [m   AES       256       
+ x39     DHE-RSA-AES256-SHA                DH [0;33m1024 [m   AES       256       
+ xc077   ECDHE-RSA-CAMELLIA256-SHA384      ECDH [0;32m256 [m  Camellia  256       
+ xc4     DHE-RSA-CAMELLIA256-SHA256        DH [0;33m1024 [m   Camellia  256       
+ x88     DHE-RSA-CAMELLIA256-SHA           DH [0;33m1024 [m   Camellia  256       
+ x9d     AES256-GCM-SHA384                 RSA        AESGCM    256       
+ x3d     AES256-SHA256                     RSA        AES       256       
+ x35     AES256-SHA                        RSA        AES       256       
+ xc0     CAMELLIA256-SHA256                RSA        Camellia  256       
+ x84     CAMELLIA256-SHA                   RSA        Camellia  256       
+ xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH [0;32m256 [m  AESGCM    128       
+ xc027   ECDHE-RSA-AES128-SHA256           ECDH [0;32m256 [m  AES       128       
+ xc013   ECDHE-RSA-AES128-SHA              ECDH [0;32m256 [m  AES       128       
+ x9e     DHE-RSA-AES128-GCM-SHA256         DH [0;33m1024 [m   AESGCM    128       
+ x67     DHE-RSA-AES128-SHA256             DH [0;33m1024 [m   AES       128       
+ x33     DHE-RSA-AES128-SHA                DH [0;33m1024 [m   AES       128       
+ xc076   ECDHE-RSA-CAMELLIA128-SHA256      ECDH [0;32m256 [m  Camellia  128       
+ xbe     DHE-RSA-CAMELLIA128-SHA256        DH [0;33m1024 [m   Camellia  128       
+ x45     DHE-RSA-CAMELLIA128-SHA           DH [0;33m1024 [m   Camellia  128       
+ x9c     AES128-GCM-SHA256                 RSA        AESGCM    128       
+ x3c     AES128-SHA256                     RSA        AES       128       
+ x2f     AES128-SHA                        RSA        AES       128       
+ xba     CAMELLIA128-SHA256                RSA        Camellia  128       
+ x41     CAMELLIA128-SHA                   RSA        Camellia  128       
+
+[7m Done 2017-05-28 16:27:59    -->> 127.0.0.1:443 (127.0.0.1) <<--[m
+
+
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:27:59,893 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:28:00,003 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_ciphers_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:28:00,005 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_ciphers_2  Message --> :Thread started --with command sslscan 127.0.0.1:443
+2017-05-28 16:28:00,752 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_ciphers_2  Message --> :Thread finished
+2017-05-28 16:28:00,753 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_ciphers_2  Message --> :Saving details :
+2017-05-28 16:28:00,755 - Commands Logger - DEBUG - Command id is ->ssl_Weak_ciphers_2
+2017-05-28 16:28:00,755 - Commands Logger - DEBUG - commands are : [u'sslscan 127.0.0.1:443', '\nEnd']
+2017-05-28 16:28:00,756 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Weak_ciphers_2"'
+2017-05-28 16:28:00,756 - Commands Logger - DEBUG - Result --> : Command Executed :sslscan 127.0.0.1:443
+
+ResultVersion: [32m1.11.7-static[0m
+OpenSSL 1.0.2i-dev  xx XXX xxxx
+[0m
+Testing SSL server [32m127.0.0.1[0m on port [32m443[0m
+
+  [1;34mTLS Fallback SCSV:[0m
+Server [32msupports[0m TLS Fallback SCSV
+
+  [1;34mTLS renegotiation:[0m
+[32mSecure[0m session renegotiation supported
+
+  [1;34mTLS Compression:[0m
+Compression [32mdisabled[0m
+
+  [1;34mHeartbleed:[0m
+TLS 1.2 [32mnot vulnerable[0m to heartbleed
+TLS 1.1 [32mnot vulnerable[0m to heartbleed
+TLS 1.0 [32mnot vulnerable[0m to heartbleed
+
+  [1;34mSupported Server Cipher(s):[0m
+[32mPreferred[0m TLSv1.2  [32m256[0m bits  [32mECDHE-RSA-AES256-GCM-SHA384  [0m Curve P-256 DHE 256
+Accepted  TLSv1.2  [32m256[0m bits  [32mDHE-RSA-AES256-GCM-SHA384    [0m DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m128[0m bits  [32mECDHE-RSA-AES128-GCM-SHA256  [0m Curve P-256 DHE 256
+Accepted  TLSv1.2  [32m128[0m bits  [32mDHE-RSA-AES128-GCM-SHA256    [0m DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m256[0m bits  ECDHE-RSA-AES256-SHA384       Curve P-256 DHE 256
+Accepted  TLSv1.2  [32m256[0m bits  DHE-RSA-AES256-SHA256         DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m128[0m bits  ECDHE-RSA-AES128-SHA256       Curve P-256 DHE 256
+Accepted  TLSv1.2  [32m128[0m bits  DHE-RSA-AES128-SHA256         DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m256[0m bits  ECDHE-RSA-AES256-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.2  [32m256[0m bits  DHE-RSA-AES256-SHA            DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m256[0m bits  DHE-RSA-CAMELLIA256-SHA       DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m128[0m bits  ECDHE-RSA-AES128-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.2  [32m128[0m bits  DHE-RSA-AES128-SHA            DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m128[0m bits  DHE-RSA-CAMELLIA128-SHA       DHE [33m1024[0m bits
+Accepted  TLSv1.2  [32m256[0m bits  AES256-GCM-SHA384            
+Accepted  TLSv1.2  [32m128[0m bits  AES128-GCM-SHA256            
+Accepted  TLSv1.2  [32m256[0m bits  AES256-SHA256                
+Accepted  TLSv1.2  [32m128[0m bits  AES128-SHA256                
+Accepted  TLSv1.2  [32m256[0m bits  AES256-SHA                   
+Accepted  TLSv1.2  [32m256[0m bits  CAMELLIA256-SHA              
+Accepted  TLSv1.2  [32m128[0m bits  AES128-SHA                   
+Accepted  TLSv1.2  [32m128[0m bits  CAMELLIA128-SHA              
+[32mPreferred[0m TLSv1.1  [32m256[0m bits  ECDHE-RSA-AES256-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.1  [32m256[0m bits  DHE-RSA-AES256-SHA            DHE [33m1024[0m bits
+Accepted  TLSv1.1  [32m256[0m bits  DHE-RSA-CAMELLIA256-SHA       DHE [33m1024[0m bits
+Accepted  TLSv1.1  [32m128[0m bits  ECDHE-RSA-AES128-SHA          Curve P-256 DHE 256
+Accepted  TLSv1.1  [32m128[0m bits  DHE-RSA-AES128-SHA            DHE [33m1024[0m bits
+Accepted  TLSv1.1  [32m128[0m bits  DHE-RSA-CAMELLIA128-SHA       DHE [33m1024[0m bits
+Accepted  TLSv1.1  [32m256[0m bits  AES256-SHA                   
+Accepted  TLSv1.1  [32m256[0m bits  CAMELLIA256-SHA              
+Accepted  TLSv1.1  [32m128[0m bits  AES128-SHA                   
+Accepted  TLSv1.1  [32m128[0m bits  CAMELLIA128-SHA              
+[32mPreferred[0m [33mTLSv1.0[0m  [32m256[0m bits  ECDHE-RSA-AES256-SHA          Curve P-256 DHE 256
+Accepted  [33mTLSv1.0[0m  [32m256[0m bits  DHE-RSA-AES256-SHA            DHE [33m1024[0m bits
+Accepted  [33mTLSv1.0[0m  [32m256[0m bits  DHE-RSA-CAMELLIA256-SHA       DHE [33m1024[0m bits
+Accepted  [33mTLSv1.0[0m  [32m128[0m bits  ECDHE-RSA-AES128-SHA          Curve P-256 DHE 256
+Accepted  [33mTLSv1.0[0m  [32m128[0m bits  DHE-RSA-AES128-SHA            DHE [33m1024[0m bits
+Accepted  [33mTLSv1.0[0m  [32m128[0m bits  DHE-RSA-CAMELLIA128-SHA       DHE [33m1024[0m bits
+Accepted  [33mTLSv1.0[0m  [32m256[0m bits  AES256-SHA                   
+Accepted  [33mTLSv1.0[0m  [32m256[0m bits  CAMELLIA256-SHA              
+Accepted  [33mTLSv1.0[0m  [32m128[0m bits  AES128-SHA                   
+Accepted  [33mTLSv1.0[0m  [32m128[0m bits  CAMELLIA128-SHA              
+
+  [1;34mSSL Certificate:[0m
+Signature Algorithm: [32msha256WithRSAEncryption[0m
+RSA Key Strength:    2048
+
+Subject:  paladion.net
+Issuer:   [31mpaladion.net[0m
+
+Not valid before: [32mFeb 17 07:34:13 2017 GMT[0m
+Not valid after:  [32mFeb 17 07:34:13 2018 GMT[0m
+
+None
+
+2017-05-28 16:28:00,792 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:28:00,804 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_cert_exp_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:28:00,805 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_cert_exp_1  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Certificate Expiration'
+2017-05-28 16:28:51,095 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_cert_exp_1  Message --> :Thread finished
+2017-05-28 16:28:51,097 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Weak_cert_exp_1  Message --> :Saving details :
+2017-05-28 16:28:51,100 - Commands Logger - DEBUG - Command id is ->ssl_Weak_cert_exp_1
+2017-05-28 16:28:51,100 - Commands Logger - DEBUG - commands are : [u"echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Certificate Expiration'", '\nEnd']
+2017-05-28 16:28:51,100 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Weak_cert_exp_1"'
+2017-05-28 16:28:51,100 - Commands Logger - DEBUG - Result --> : Command Executed :echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Certificate Expiration'
+
+Result[1m Certificate Expiration       [m[0;32m264 >= 60 days[m (2017-02-17 07:34 --> 2018-02-17 07:34 +0000)
+
+None
+
+2017-05-28 16:28:51,167 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:28:51,196 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Wild_card_1  Message --> :Saving details :
+2017-05-28 16:28:51,199 - Commands Logger - DEBUG - Command id is ->ssl_Wild_card_1
+2017-05-28 16:28:51,199 - Commands Logger - DEBUG - commands are : [u"echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Common Name'\n", "| bash Scripts/testssl.sh 127.0.0.1:443 | grep Common Name\r\n<class 'pexpect.exceptions.EOF'>End of file -"]
+2017-05-28 16:28:51,199 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Wild_card_1"'
+2017-05-28 16:28:51,199 - Commands Logger - DEBUG - Result --> : Command Executed :echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Common Name'
+
+
+Result
+| bash Scripts/testssl.sh 127.0.0.1:443 | grep Common Name
+<class 'pexpect.exceptions.EOF'>End of file -
+2017-05-28 16:28:51,208 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:28:51,319 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Self_Signed_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:28:51,320 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Self_Signed_1  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Issuer'
+2017-05-28 16:29:42,902 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Self_Signed_1  Message --> :Thread finished
+2017-05-28 16:29:42,903 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Self_Signed_1  Message --> :Saving details :
+2017-05-28 16:29:42,906 - Commands Logger - DEBUG - Command id is ->ssl_Self_Signed_1
+2017-05-28 16:29:42,906 - Commands Logger - DEBUG - commands are : [u"echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Issuer'", '\nEnd']
+2017-05-28 16:29:42,907 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Self_Signed_1"'
+2017-05-28 16:29:42,907 - Commands Logger - DEBUG - Result --> : Command Executed :echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Issuer'
+
+Result[1m Issuer                       [m[1;31mself-signed (NOT ok)[m
+
+None
+
+2017-05-28 16:29:42,965 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:29:43,201 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:29:43,202 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Server key size'
+2017-05-28 16:30:36,586 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :Thread finished
+2017-05-28 16:30:36,591 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :Saving details :
+2017-05-28 16:30:36,594 - Commands Logger - DEBUG - Command id is ->ssl_Server_key_size
+2017-05-28 16:30:36,594 - Commands Logger - DEBUG - commands are : [u"echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Server key size'", '\nEnd']
+2017-05-28 16:30:36,594 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Server_key_size"'
+2017-05-28 16:30:36,594 - Commands Logger - DEBUG - Result --> : Command Executed :echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Server key size'
+
+Result[1m Server key size              [mRSA 2048 bits
+
+None
+
+2017-05-28 16:30:36,611 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:30:36,651 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:30:36,652 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Signature Algorithm'
+2017-05-28 16:31:29,075 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :Thread finished
+2017-05-28 16:31:29,077 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_Server_key_size  Message --> :Saving details :
+2017-05-28 16:31:29,080 - Commands Logger - DEBUG - Command id is ->ssl_Server_key_size
+2017-05-28 16:31:29,081 - Commands Logger - DEBUG - commands are : [u"echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Signature Algorithm'", '\nEnd']
+2017-05-28 16:31:29,081 - Commands Logger - DEBUG - My var : '$.Entries."ssl_Server_key_size"'
+2017-05-28 16:31:29,082 - Commands Logger - DEBUG - Result --> : Command Executed :echo | bash Scripts/testssl.sh 127.0.0.1:443 | grep 'Signature Algorithm'
+
+Result[1m Signature Algorithm          [m[0;32mSHA256 with RSA[m
+
+None
+
+2017-05-28 16:31:29,097 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:31:29,143 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_3_ssl_tls_support  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:31:29,144 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_3_ssl_tls_support  Message --> :Thread started --with command java -jar Scripts/TestSSLServer.jar 127.0.0.1 443
+2017-05-28 16:31:30,257 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_3_ssl_tls_support  Message --> :Thread finished
+2017-05-28 16:31:30,258 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_3_ssl_tls_support  Message --> :Saving details :
+2017-05-28 16:31:30,260 - Commands Logger - DEBUG - Command id is ->ssl_3_ssl_tls_support
+2017-05-28 16:31:30,260 - Commands Logger - DEBUG - commands are : [u'java -jar Scripts/TestSSLServer.jar 127.0.0.1 443', '\nEnd']
+2017-05-28 16:31:30,260 - Commands Logger - DEBUG - My var : '$.Entries."ssl_3_ssl_tls_support"'
+2017-05-28 16:31:30,261 - Commands Logger - DEBUG - Result --> : Command Executed :java -jar Scripts/TestSSLServer.jar 127.0.0.1 443
+
+ResultSupported versions: TLSv1.0 TLSv1.1 TLSv1.2
+Deflate compression: no
+Supported cipher suites (ORDER IS NOT SIGNIFICANT):
+  TLSv1.0
+     RSA_WITH_AES_128_CBC_SHA
+     DHE_RSA_WITH_AES_128_CBC_SHA
+     RSA_WITH_AES_256_CBC_SHA
+     DHE_RSA_WITH_AES_256_CBC_SHA
+     RSA_WITH_CAMELLIA_128_CBC_SHA
+     DHE_RSA_WITH_CAMELLIA_128_CBC_SHA
+     RSA_WITH_CAMELLIA_256_CBC_SHA
+     DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+     TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+     TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+  (TLSv1.1: idem)
+[ERR: server wants to use cipher suite 0x00C0 which client did not announce]
+  TLSv1.2
+     DHE_RSA_WITH_AES_128_CBC_SHA
+     DHE_RSA_WITH_AES_256_CBC_SHA
+     RSA_WITH_AES_256_CBC_SHA256
+     DHE_RSA_WITH_CAMELLIA_128_CBC_SHA
+     DHE_RSA_WITH_AES_128_CBC_SHA256
+     DHE_RSA_WITH_AES_256_CBC_SHA256
+     DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+     TLS_RSA_WITH_AES_128_GCM_SHA256
+     TLS_RSA_WITH_AES_256_GCM_SHA384
+     TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+     TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+     TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256
+     TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256
+     TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256
+     TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+     TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+     TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+     TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+     TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+     TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+     TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256
+     TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384
+     TLS_RSA_WITH_AES_128_CCM
+     TLS_RSA_WITH_AES_256_CCM
+     TLS_DHE_RSA_WITH_AES_128_CCM
+     TLS_DHE_RSA_WITH_AES_256_CCM
+     TLS_RSA_WITH_AES_128_CCM_8
+     TLS_RSA_WITH_AES_256_CCM_8
+     TLS_DHE_RSA_WITH_AES_128_CCM_8
+     TLS_DHE_RSA_WITH_AES_256_CCM_8
+----------------------
+Server certificate(s):
+  2705122c70d78eef1f41419b45a217c7e9045e54: EMAILADDRESS=furqankhan08@gmail.com, CN=paladion.net, OU=Practice, O=Paladion Networks, L=Bangalore, ST=Bangalore, C=IN
+----------------------
+Minimal encryption strength:     strong encryption (96-bit or more)
+Achievable encryption strength:  strong encryption (96-bit or more)
+BEAST status: vulnerable
+CRIME status: protected
+
+
+
+2017-05-28 16:31:30,272 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:31:30,314 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:31:30,315 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_5  Message --> :Thread started --with command  nmap --script= ssl-cert -p 443 127.0.0.1
+2017-05-28 16:33:30,316 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_5  Message --> :Terminating process
+2017-05-28 16:33:30,434 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_5  Message --> :Thread finished
+2017-05-28 16:33:30,435 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_5  Message --> :Saving details :
+2017-05-28 16:33:30,439 - Commands Logger - DEBUG - Command id is ->ssl_5
+2017-05-28 16:33:30,439 - Commands Logger - DEBUG - commands are : [u' nmap --script= ssl-cert -p 443 127.0.0.1', '\nEnd']
+2017-05-28 16:33:30,440 - Commands Logger - DEBUG - My var : '$.Entries."ssl_5"'
+2017-05-28 16:33:30,440 - Commands Logger - DEBUG - Result --> : Command Executed : nmap --script= ssl-cert -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:31 UTC
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 10.0.2.16
+|     Subnet Mask: 255.255.255.0
+|     Router: 10.0.2.2
+|     Domain Name Server: 10.0.1.252, 8.8.8.8, 192.168.182.2
+|     Domain Name: localdomain
+|_    Server Identifier: 10.0.2.2
+| broadcast-ms-sql-discover: 
+|   10.0.2.2 (LAPTOP-6BA3EGF3)
+|     [10.0.2.2\SQLEXPRESS]
+|       Name: SQLEXPRESS
+|_      Product: Microsoft SQL Server 2012
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-ping: 
+|   IP: 10.0.1.65  MAC: 52:54:00:12:35:02
+|_  Use --script-args=newtargets to add the results as targets
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Failed to resolve "ssl-cert".
+sendto in send_ip_packet_sd: sendto(17, packet, 65536, 0, 127.0.0.1, 16) => Message too long
+Offending packet: TCP 127.0.0.1:33818 > 127.0.0.1:443 S ttl=128 id=0 iplen=0  seq=593756088 win=3072 <mss 1460>
+Killed
+
+Killed@
+
+2017-05-28 16:33:30,452 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:33:31,392 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_5  Message --> :Parent Process already KIlled
+2017-05-28 16:33:31,393 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_5  Message --> :Kill result is --> 137
+2017-05-28 16:33:31,407 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:33:31,409 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_6  Message --> :Thread started --with command nmap --script =ssl-enum-ciphers -p 443 127.0.0.1
+2017-05-28 16:33:32,360 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_6  Message --> :Thread finished
+2017-05-28 16:33:32,361 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_6  Message --> :Saving details :
+2017-05-28 16:33:32,364 - Commands Logger - DEBUG - Command id is ->ssl_6
+2017-05-28 16:33:32,364 - Commands Logger - DEBUG - commands are : [u'nmap --script =ssl-enum-ciphers -p 443 127.0.0.1', '\nEnd']
+2017-05-28 16:33:32,364 - Commands Logger - DEBUG - My var : '$.Entries."ssl_6"'
+2017-05-28 16:33:32,365 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script =ssl-enum-ciphers -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:33 UTC
+NSE: failed to initialize the script engine:
+/usr/bin/../share/nmap/nse_main.lua:801: '=ssl-enum-ciphers' did not match a category, filename, or directory
+stack traceback:
+	[C]: in function 'error'
+	/usr/bin/../share/nmap/nse_main.lua:801: in function 'get_chosen_scripts'
+	/usr/bin/../share/nmap/nse_main.lua:1251: in main chunk
+	[C]: in ?
+
+QUITTING!
+
+
+
+2017-05-28 16:33:32,373 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:33:32,399 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:33:32,400 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_7  Message --> :Thread started --with command perl Scripts/ssl-cipher-suite-enum.pl --rdp 127.0.0.1:443
+2017-05-28 16:33:34,101 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_7  Message --> :Thread finished
+2017-05-28 16:33:34,102 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_7  Message --> :Saving details :
+2017-05-28 16:33:34,104 - Commands Logger - DEBUG - Command id is ->ssl_7
+2017-05-28 16:33:34,105 - Commands Logger - DEBUG - commands are : [u'perl Scripts/ssl-cipher-suite-enum.pl --rdp 127.0.0.1:443', '\nEnd']
+2017-05-28 16:33:34,105 - Commands Logger - DEBUG - My var : '$.Entries."ssl_7"'
+2017-05-28 16:33:34,105 - Commands Logger - DEBUG - Result --> : Command Executed :perl Scripts/ssl-cipher-suite-enum.pl --rdp 127.0.0.1:443
+
+ResultStarting ssl-cipher-suite-enum v1.0.2 ( http://labs.portcullis.co.uk/application/ssl-cipher-suite-enum/ ) at Sun May 28 16:33:32 2017
+
+[+] Scanning 1 hosts
+
+=== Scan Info ===
+
+Target:       127.0.0.1
+IP:           127.0.0.1
+Port:         443
+Protocols:    SSLv2.0,SSLv3.0,TLSv1.0,TLSv1.1,TLSv1.2
+Persist:      0
+Preamble:     RDP
+Scan Rate:    unlimited
+Recv Timeout: 10
+
+=== Testing protocol SSLv2.0 ===
+
+[+] 0 SSLv2.0 cipher suites supported
+
+
+=== Testing protocol SSLv3.0 ===
+
+[+] 0 SSLv3.0 cipher suites supported
+
+
+=== Testing protocol TLSv1.0 ===
+
+[+] 0 TLSv1.0 cipher suites supported
+
+
+=== Testing protocol TLSv1.1 ===
+
+[+] 0 TLSv1.1 cipher suites supported
+
+
+=== Testing protocol TLSv1.2 ===
+
+[+] 0 TLSv1.2 cipher suites supported
+
+[+] Summary of support cipher suites for 127.0.0.1:443
+
+
+=== Scan Complete ===
+
+[+] ssl-cipher-suite-enum v1.0.2 completed at Sun May 28 16:33:34 2017.  934 connections in 2 secs.
+
+
+
+
+2017-05-28 16:33:34,116 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:33:34,147 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_9  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:33:34,148 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_9  Message --> :Thread started --with command nmap -sV --reason -PN -n -p 443 127.0.0.1
+2017-05-28 16:33:48,218 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_9  Message --> :Thread finished
+2017-05-28 16:33:48,220 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_9  Message --> :Saving details :
+2017-05-28 16:33:48,229 - Commands Logger - DEBUG - Command id is ->ssl_9
+2017-05-28 16:33:48,230 - Commands Logger - DEBUG - commands are : [u'nmap -sV --reason -PN -n -p 443 127.0.0.1', '\nEnd']
+2017-05-28 16:33:48,230 - Commands Logger - DEBUG - My var : '$.Entries."ssl_9"'
+2017-05-28 16:33:48,230 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --reason -PN -n -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:33 UTC
+Nmap scan report for 127.0.0.1
+Host is up, received user-set (0.00010s latency).
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 64 nginx 1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.03 seconds
+
+
+
+2017-05-28 16:33:48,246 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:33:48,262 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_10  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:33:48,263 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_10  Message --> :Thread started --with command perl Scripts/beast.pl 127.0.0.1
+2017-05-28 16:33:48,653 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_10  Message --> :Thread finished
+2017-05-28 16:33:48,654 - Commands Logger - DEBUG - Command Logger --->Command id --> ssl_10  Message --> :Saving details :
+2017-05-28 16:33:48,657 - Commands Logger - DEBUG - Command id is ->ssl_10
+2017-05-28 16:33:48,658 - Commands Logger - DEBUG - commands are : [u'perl Scripts/beast.pl 127.0.0.1', '\nEnd']
+2017-05-28 16:33:48,658 - Commands Logger - DEBUG - My var : '$.Entries."ssl_10"'
+2017-05-28 16:33:48,658 - Commands Logger - DEBUG - Result --> : Command Executed :perl Scripts/beast.pl 127.0.0.1
+
+Result
+ERROR:
+Connecting to the taget
+
+DETAILS:
+SSL connect attempt failed error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed at Scripts/beast.pl line 66.
+SSL connect attempt failed error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed	...caught at Scripts/beast.pl line 69.
+
+===============================================
+
+SSL/TLS BEAST Vulnerability Check
+ by YGN Ethical Hacker Group, http://yehg.net/
+
+===============================================
+
+Target: 127.0.0.1:443       
+
+
+
+2017-05-28 16:33:48,669 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:33:48,718 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:33:48,720 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 161 127.0.0.1 --script telnet-encryption
+2017-05-28 16:33:49,916 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-28 16:33:49,919 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-28 16:33:49,931 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-28 16:33:49,932 - Commands Logger - DEBUG - commands are : [u'nmap -p 161 127.0.0.1 --script telnet-encryption', '\nEnd']
+2017-05-28 16:33:49,932 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-28 16:33:49,932 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 161 127.0.0.1 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:33 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000075s latency).
+PORT    STATE  SERVICE
+161/tcp closed snmp
+
+Nmap done: 1 IP address (1 host up) scanned in 1.15 seconds
+
+
+
+2017-05-28 16:33:49,939 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:33:49,972 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:33:49,974 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  127.0.0.1:161
+2017-05-28 16:33:52,681 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-28 16:33:52,682 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-28 16:33:52,685 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-28 16:33:52,686 - Commands Logger - DEBUG - commands are : [u'nikto -h  127.0.0.1:161', '\nEnd']
+2017-05-28 16:33:52,686 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-28 16:33:52,686 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  127.0.0.1:161
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
++ No web server found on 127.0.0.1:161
+---------------------------------------------------------------------------
++ 0 host(s) tested
+
+
+
+2017-05-28 16:33:52,693 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:33:52,717 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-28 16:33:52,718 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-28 16:33:52,719 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 161 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_689/689_127.0.0.1_161_capture-output.pcap
+2017-05-28 16:33:55,723 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 127.0.0.1 161 and timeout 200
+2017-05-28 16:33:55,813 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:33:55,814 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-28 16:34:09,936 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Results not as expected --> see aurguments 1.* Connection refused.*
+  Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+
+2017-05-28 16:34:09,937 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-28 16:34:09,941 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-28 16:34:09,941 - Commands Logger - DEBUG - commands are : [u'telnet 127.0.0.1 161\n', '\n\nConsole is Now expecting :.* Connection refused.*\n\n\nActual Output by console \n:Trying 127.0.0.1...\r\ntelnet: Unable to connect to remote host: Connection refused\r\n\n\n']
+2017-05-28 16:34:09,941 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-28 16:34:09,942 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 127.0.0.1 161
+
+
+Output
+
+
+Console is Now expecting :.* Connection refused.*
+
+
+Actual Output by console 
+:Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+
+
+
+2017-05-28 16:34:09,953 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:34:09,954 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : After : Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+
+2017-05-28 16:34:09,954 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-28 16:34:10,060 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-28 16:34:10,174 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:34:10,176 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 161 127.0.0.1 --script telnet-encryption
+2017-05-28 16:34:11,059 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-28 16:34:11,060 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-28 16:34:11,064 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-28 16:34:11,064 - Commands Logger - DEBUG - commands are : [u'nmap -p 161 127.0.0.1 --script telnet-encryption', '\nEnd']
+2017-05-28 16:34:11,065 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-28 16:34:11,065 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 161 127.0.0.1 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:34 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000083s latency).
+PORT    STATE  SERVICE
+161/tcp closed snmp
+
+Nmap done: 1 IP address (1 host up) scanned in 0.86 seconds
+
+
+
+2017-05-28 16:34:11,073 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:34:11,132 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:34:11,133 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  127.0.0.1:161
+2017-05-28 16:34:12,471 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-28 16:34:12,472 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-28 16:34:12,474 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-28 16:34:12,474 - Commands Logger - DEBUG - commands are : [u'nikto -h  127.0.0.1:161', '\nEnd']
+2017-05-28 16:34:12,474 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-28 16:34:12,474 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  127.0.0.1:161
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
++ No web server found on 127.0.0.1:161
+---------------------------------------------------------------------------
++ 0 host(s) tested
+
+
+
+2017-05-28 16:34:12,486 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:34:12,540 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-28 16:34:12,540 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-28 16:34:12,541 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 161 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_689/689_127.0.0.1_161_capture-output.pcap
+2017-05-28 16:34:15,543 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 127.0.0.1 161 and timeout 200
+2017-05-28 16:34:15,557 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:34:15,558 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-28 16:34:29,663 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Results not as expected --> see aurguments 1.* Connection refused.*
+  Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+
+2017-05-28 16:34:29,665 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-28 16:34:29,668 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-28 16:34:29,668 - Commands Logger - DEBUG - commands are : [u'telnet 127.0.0.1 161\n', '\n\nConsole is Now expecting :.* Connection refused.*\n\n\nActual Output by console \n:Trying 127.0.0.1...\r\ntelnet: Unable to connect to remote host: Connection refused\r\n\n\n']
+2017-05-28 16:34:29,669 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-28 16:34:29,669 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 127.0.0.1 161
+
+
+Output
+
+
+Console is Now expecting :.* Connection refused.*
+
+
+Actual Output by console 
+:Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+
+
+
+2017-05-28 16:34:29,683 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:34:29,684 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : After : Trying 127.0.0.1...
+telnet: Unable to connect to remote host: Connection refused
+
+2017-05-28 16:34:29,684 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-28 16:34:29,786 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-28 16:34:29,913 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:34:29,914 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 22 127.0.0.1 --script telnet-encryption
+2017-05-28 16:34:30,796 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-28 16:34:30,798 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-28 16:34:30,801 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-28 16:34:30,801 - Commands Logger - DEBUG - commands are : [u'nmap -p 22 127.0.0.1 --script telnet-encryption', '\nEnd']
+2017-05-28 16:34:30,802 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-28 16:34:30,802 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 22 127.0.0.1 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:34 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00012s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 0.85 seconds
+
+
+
+2017-05-28 16:34:30,815 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:34:30,853 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:34:30,854 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  127.0.0.1:22
+2017-05-28 16:34:32,282 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-28 16:34:32,283 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-28 16:34:32,285 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-28 16:34:32,285 - Commands Logger - DEBUG - commands are : [u'nikto -h  127.0.0.1:22', '\nEnd']
+2017-05-28 16:34:32,285 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-28 16:34:32,285 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  127.0.0.1:22
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
++ No web server found on 127.0.0.1:22
+---------------------------------------------------------------------------
++ 0 host(s) tested
+
+
+
+2017-05-28 16:34:32,292 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:34:32,350 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-28 16:34:32,351 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-28 16:34:32,351 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 22 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_689/689_127.0.0.1_22_capture-output.pcap
+2017-05-28 16:34:35,355 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 127.0.0.1 22 and timeout 200
+2017-05-28 16:34:35,372 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:34:35,373 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-28 16:36:39,476 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_7.2p2 Debian-5
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-28 16:36:39,579 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-28 16:36:41,580 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:36:41,580 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-28 16:36:45,585 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_7.2p2 Debian-5
+root
+Protocol mismatch.
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-28 16:36:45,686 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-28 16:36:47,688 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:36:47,688 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-28 16:36:51,692 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-28 16:36:51,692 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-28 16:36:51,694 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-28 16:36:51,694 - Commands Logger - DEBUG - commands are : [u'telnet 127.0.0.1 22\n', "Trying 127.0.0.1...\r\nConnected to 127.0.0.1.\r\nEscape character is '^]'.\r\nSSH-2.0-OpenSSH_7.2p2 Debian-5\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', "Trying 127.0.0.1...\r\nConnected to 127.0.0.1.\r\nEscape character is '^]'.\r\nSSH-2.0-OpenSSH_7.2p2 Debian-5\r\nroot\r\nProtocol mismatch.\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n", u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-28 16:36:51,694 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-28 16:36:51,694 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 127.0.0.1 22
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-28 16:36:51,721 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:36:51,721 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-28 16:36:51,722 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-28 16:36:51,823 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-28 16:36:51,911 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-28 16:36:51,911 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-28 16:36:51,914 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 8000 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_689/689_127.0.0.1_8000_capture-output.pcap
+2017-05-28 16:36:54,914 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:36:54,915 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 8000 127.0.0.1
+2017-05-28 16:37:05,521 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-28 16:37:05,521 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-28 16:37:05,523 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-28 16:37:05,523 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 8000 127.0.0.1', '\nEnd']
+2017-05-28 16:37:05,523 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-28 16:37:05,523 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 8000 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:36 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000064s latency).
+PORT     STATE SERVICE
+8000/tcp open  http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 10.58 seconds
+
+
+
+2017-05-28 16:37:05,531 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:37:05,567 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-28 16:37:05,621 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:37:05,621 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :Thread started --with command curl -v -X TRACE 127.0.0.1:8000
+2017-05-28 16:37:05,643 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :Thread finished
+2017-05-28 16:37:05,643 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :Saving details :
+2017-05-28 16:37:05,645 - Commands Logger - DEBUG - Command id is ->http_trace_2
+2017-05-28 16:37:05,645 - Commands Logger - DEBUG - commands are : [u'curl -v -X TRACE 127.0.0.1:8000', '\nEnd']
+2017-05-28 16:37:05,645 - Commands Logger - DEBUG - My var : '$.Entries."http_trace_2"'
+2017-05-28 16:37:05,645 - Commands Logger - DEBUG - Result --> : Command Executed :curl -v -X TRACE 127.0.0.1:8000
+
+Result* Rebuilt URL to: 127.0.0.1:8000/
+*   Trying 127.0.0.1...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
+> TRACE / HTTP/1.1
+> Host: 127.0.0.1:8000
+> User-Agent: curl/7.50.1
+> Accept: */*
+> 
+< HTTP/1.1 405 Not Allowed
+< Server: nginx/1.10.2
+< Date: Sun, 28 May 2017 16:37:05 GMT
+< Content-Type: text/html
+< Content-Length: 173
+< Connection: close
+< 
+{ [173 bytes data]
+100   173  100   173    0     0   154k      0 --:--:-- --:--:-- --:--:--  168k
+* Closing connection 0
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.10.2</center>
+</body>
+</html>
+
+
+
+2017-05-28 16:37:05,650 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:37:05,661 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:37:05,662 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-trace.nse -p 8000 127.0.0.1
+2017-05-28 16:37:18,116 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :Thread finished
+2017-05-28 16:37:18,117 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :Saving details :
+2017-05-28 16:37:18,118 - Commands Logger - DEBUG - Command id is ->http_trace_1
+2017-05-28 16:37:18,118 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-trace.nse -p 8000 127.0.0.1', '\nEnd']
+2017-05-28 16:37:18,118 - Commands Logger - DEBUG - My var : '$.Entries."http_trace_1"'
+2017-05-28 16:37:18,118 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-trace.nse -p 8000 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:37 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000070s latency).
+PORT     STATE SERVICE VERSION
+8000/tcp open  http    nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.43 seconds
+
+
+
+2017-05-28 16:37:18,128 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:37:18,138 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Inside command_meta
+2017-05-28 16:37:56,204 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:37:56,204 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :0
+2017-05-28 16:37:59,308 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :use auxiliary/scanner/http/trace
+[0m[4mmsf[0m auxiliary([1m[31mtrace[0m) [0m> 
+2017-05-28 16:38:02,414 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mtrace[0m) [0m> 
+2017-05-28 16:38:05,517 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :set RPORTS 8000
+[0mRPORTS => 8000
+[4mmsf[0m auxiliary([1m[31mtrace[0m) [0m> 
+2017-05-28 16:38:05,518 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:38:10,624 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:38:10,624 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mtrace[0m) [0m> 
+2017-05-28 16:38:10,625 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:38:10,625 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:38:12,728 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Exited from msfconsole !!!
+2017-05-28 16:38:12,729 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:38:12,729 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Closing the child pipe !!!
+2017-05-28 16:38:12,829 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Saving details :
+2017-05-28 16:38:12,831 - Commands Logger - DEBUG - Command id is ->http_trace_3
+2017-05-28 16:38:12,831 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/http/trace\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mtrace\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mtrace\x1b[0m) \x1b[0m> \n', 'set RPORTS 8000\r\r\n\x1b[0mRPORTS => 8000\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mtrace\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mtrace\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:38:12,831 - Commands Logger - DEBUG - My var : '$.Entries."http_trace_3"'
+2017-05-28 16:38:12,831 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mtrace[0m) [0m> 
+2017-05-28 16:38:12,902 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:38:12,907 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:38:12,908 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Thread started --with command echo -e 'Get/HTTP/1.0
+
+' | nc 127.0.0.1 8000 |grep 'Server'
+2017-05-28 16:38:12,921 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Thread finished
+2017-05-28 16:38:12,922 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Saving details :
+2017-05-28 16:38:12,924 - Commands Logger - DEBUG - Command id is ->http_banner_1
+2017-05-28 16:38:12,924 - Commands Logger - DEBUG - commands are : [u"echo -e 'Get/HTTP/1.0\n\n' | nc 127.0.0.1 8000 |grep 'Server'", '\nEnd']
+2017-05-28 16:38:12,924 - Commands Logger - DEBUG - My var : '$.Entries."http_banner_1"'
+2017-05-28 16:38:12,924 - Commands Logger - DEBUG - Result --> : Command Executed :echo -e 'Get/HTTP/1.0
+
+' | nc 127.0.0.1 8000 |grep 'Server'
+
+ResultServer: nginx/1.10.2
+
+
+
+2017-05-28 16:38:12,929 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:38:12,949 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Inside command_meta
+2017-05-28 16:38:49,959 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:38:49,960 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :0
+2017-05-28 16:38:53,065 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :use auxiliary/scanner/http/http_version
+[0m[4mmsf[0m auxiliary([1m[31mhttp_version[0m) [0m> 
+2017-05-28 16:38:56,168 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mhttp_version[0m) [0m> 
+2017-05-28 16:38:59,273 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :set RPORTS 8000
+[0mRPORTS => 8000
+[4mmsf[0m auxiliary([1m[31mhttp_version[0m) [0m> 
+2017-05-28 16:38:59,273 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:39:04,380 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:39:04,380 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 127.0.0.1:80 nginx/1.10.2
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mhttp_version[0m) [0m> 
+2017-05-28 16:39:04,380 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:39:04,381 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:39:06,484 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Exited from msfconsole !!!
+2017-05-28 16:39:06,485 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:39:06,485 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Closing the child pipe !!!
+2017-05-28 16:39:06,586 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Saving details :
+2017-05-28 16:39:06,588 - Commands Logger - DEBUG - Command id is ->http_banner_2
+2017-05-28 16:39:06,588 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/http/http_version\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_version\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_version\x1b[0m) \x1b[0m> \n', 'set RPORTS 8000\r\r\n\x1b[0mRPORTS => 8000\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_version\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 127.0.0.1:80 nginx/1.10.2\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_version\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:39:06,588 - Commands Logger - DEBUG - My var : '$.Entries."http_banner_2"'
+2017-05-28 16:39:06,588 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m 127.0.0.1:80 nginx/1.10.2
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mhttp_version[0m) [0m> 
+2017-05-28 16:39:06,687 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:39:06,694 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:39:06,695 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-headers -p 8000 127.0.0.1
+2017-05-28 16:39:19,194 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Thread finished
+2017-05-28 16:39:19,195 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Saving details :
+2017-05-28 16:39:19,200 - Commands Logger - DEBUG - Command id is ->http_headers_1
+2017-05-28 16:39:19,200 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-headers -p 8000 127.0.0.1', '\nEnd']
+2017-05-28 16:39:19,200 - Commands Logger - DEBUG - My var : '$.Entries."http_headers_1"'
+2017-05-28 16:39:19,201 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-headers -p 8000 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:39 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000053s latency).
+PORT     STATE SERVICE VERSION
+8000/tcp open  http    nginx 1.10.2
+| http-headers: 
+|   Server: nginx/1.10.2
+|   Date: Sun, 28 May 2017 16:39:19 GMT
+|   Content-Type: text/html
+|   Content-Length: 185
+|   Connection: close
+|   Location: https://127.0.0.1/
+|   
+|_  (Request type: GET)
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.48 seconds
+
+
+
+2017-05-28 16:39:19,213 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:39:19,270 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Inside command_meta
+2017-05-28 16:40:07,007 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:40:07,008 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :0
+2017-05-28 16:40:10,113 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :use auxiliary/scanner/http/http_header
+[0m[4mmsf[0m auxiliary([1m[31mhttp_header[0m) [0m> 
+2017-05-28 16:40:13,217 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mhttp_header[0m) [0m> 
+2017-05-28 16:40:16,325 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :set RPORTS 8000
+[0mRPORTS => 8000
+[4mmsf[0m auxiliary([1m[31mhttp_header[0m) [0m> 
+2017-05-28 16:40:16,325 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:40:39,393 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:40:39,394 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mhttp_header[0m) [0m> 
+2017-05-28 16:40:39,394 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:40:39,394 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:40:41,496 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Exited from msfconsole !!!
+2017-05-28 16:40:41,497 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:40:41,497 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Closing the child pipe !!!
+2017-05-28 16:40:41,597 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Saving details :
+2017-05-28 16:40:41,600 - Commands Logger - DEBUG - Command id is ->http_headers_2
+2017-05-28 16:40:41,600 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/http/http_header\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_header\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_header\x1b[0m) \x1b[0m> \n', 'set RPORTS 8000\r\r\n\x1b[0mRPORTS => 8000\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_header\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mhttp_header\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:40:41,600 - Commands Logger - DEBUG - My var : '$.Entries."http_headers_2"'
+2017-05-28 16:40:41,601 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mhttp_header[0m) [0m> 
+2017-05-28 16:40:41,613 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:40:41,620 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:40:41,621 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-methods -p 8000 127.0.0.1
+2017-05-28 16:40:54,037 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :Thread finished
+2017-05-28 16:40:54,038 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :Saving details :
+2017-05-28 16:40:54,039 - Commands Logger - DEBUG - Command id is ->http_methods_1
+2017-05-28 16:40:54,039 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-methods -p 8000 127.0.0.1', '\nEnd']
+2017-05-28 16:40:54,039 - Commands Logger - DEBUG - My var : '$.Entries."http_methods_1"'
+2017-05-28 16:40:54,039 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-methods -p 8000 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:40 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000051s latency).
+PORT     STATE SERVICE VERSION
+8000/tcp open  http    nginx 1.10.2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.39 seconds
+
+
+
+2017-05-28 16:40:54,048 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:40:54,086 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Inside command_meta
+2017-05-28 16:41:32,124 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:41:32,124 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :0
+2017-05-28 16:41:35,230 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :use auxiliary/scanner/http/options
+[0m[4mmsf[0m auxiliary([1m[31moptions[0m) [0m> 
+2017-05-28 16:41:38,334 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31moptions[0m) [0m> 
+2017-05-28 16:41:41,436 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :set RPORTS 8000
+[0mRPORTS => 8000
+[4mmsf[0m auxiliary([1m[31moptions[0m) [0m> 
+2017-05-28 16:41:41,436 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:41:46,547 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:41:46,548 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31moptions[0m) [0m> 
+2017-05-28 16:41:46,549 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:41:46,549 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:41:48,654 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Exited from msfconsole !!!
+2017-05-28 16:41:48,654 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:41:48,654 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Closing the child pipe !!!
+2017-05-28 16:41:48,755 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Saving details :
+2017-05-28 16:41:48,757 - Commands Logger - DEBUG - Command id is ->http_methods_2
+2017-05-28 16:41:48,757 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/http/options\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31moptions\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31moptions\x1b[0m) \x1b[0m> \n', 'set RPORTS 8000\r\r\n\x1b[0mRPORTS => 8000\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31moptions\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31moptions\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:41:48,758 - Commands Logger - DEBUG - My var : '$.Entries."http_methods_2"'
+2017-05-28 16:41:48,758 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31moptions[0m) [0m> 
+2017-05-28 16:41:48,854 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:41:48,860 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:41:48,861 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-robots.txt -p 8000 127.0.0.1
+2017-05-28 16:42:01,450 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :Thread finished
+2017-05-28 16:42:01,451 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :Saving details :
+2017-05-28 16:42:01,461 - Commands Logger - DEBUG - Command id is ->http_robots_1
+2017-05-28 16:42:01,461 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-robots.txt -p 8000 127.0.0.1', '\nEnd']
+2017-05-28 16:42:01,461 - Commands Logger - DEBUG - My var : '$.Entries."http_robots_1"'
+2017-05-28 16:42:01,461 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-robots.txt -p 8000 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:41 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000049s latency).
+PORT     STATE SERVICE VERSION
+8000/tcp open  http    nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.55 seconds
+
+
+
+2017-05-28 16:42:01,470 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:42:01,518 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Inside command_meta
+2017-05-28 16:42:41,165 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:42:41,166 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :0
+2017-05-28 16:42:44,268 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :use auxiliary/scanner/http/robots_txt
+[0m[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 16:42:47,377 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 16:42:50,480 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :set RPORTS 8000
+[0mRPORTS => 8000
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 16:42:50,480 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:42:55,598 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:42:55,598 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 16:42:55,598 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:42:55,599 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:42:57,701 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Exited from msfconsole !!!
+2017-05-28 16:42:57,701 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:42:57,701 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Closing the child pipe !!!
+2017-05-28 16:42:57,802 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Saving details :
+2017-05-28 16:42:57,804 - Commands Logger - DEBUG - Command id is ->http_robots_2
+2017-05-28 16:42:57,805 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/http/robots_txt\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n', 'set RPORTS 8000\r\r\n\x1b[0mRPORTS => 8000\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:42:57,805 - Commands Logger - DEBUG - My var : '$.Entries."http_robots_2"'
+2017-05-28 16:42:57,805 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 16:42:57,909 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:42:57,916 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:42:57,917 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 127.0.0.1
+2017-05-28 16:43:10,539 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :Thread finished
+2017-05-28 16:43:10,540 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :Saving details :
+2017-05-28 16:43:10,547 - Commands Logger - DEBUG - Command id is ->http_web_dev_1
+2017-05-28 16:43:10,547 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 127.0.0.1', '\nEnd']
+2017-05-28 16:43:10,547 - Commands Logger - DEBUG - My var : '$.Entries."http_web_dev_1"'
+2017-05-28 16:43:10,547 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:42 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000050s latency).
+PORT     STATE SERVICE VERSION
+8000/tcp open  http    nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.59 seconds
+
+
+
+2017-05-28 16:43:10,555 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:43:10,596 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Inside command_meta
+2017-05-28 16:43:48,942 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :[4mmsf[0m [0m> 
+2017-05-28 16:43:48,942 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :0
+2017-05-28 16:43:52,051 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :use auxiliary/scanner/http/webdav_scanner
+[0m[4mmsf[0m auxiliary([1m[31mwebdav_scanner[0m) [0m> 
+2017-05-28 16:43:55,156 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mwebdav_scanner[0m) [0m> 
+2017-05-28 16:43:58,261 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :set RPORTS 8000
+[0mRPORTS => 8000
+[4mmsf[0m auxiliary([1m[31mwebdav_scanner[0m) [0m> 
+2017-05-28 16:43:58,261 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 16:44:03,366 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 16:44:03,367 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mwebdav_scanner[0m) [0m> 
+2017-05-28 16:44:03,367 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 16:44:03,367 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 16:44:05,476 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Exited from msfconsole !!!
+2017-05-28 16:44:05,476 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 16:44:05,476 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Closing the child pipe !!!
+2017-05-28 16:44:05,577 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Saving details :
+2017-05-28 16:44:05,579 - Commands Logger - DEBUG - Command id is ->http_web_dev_2
+2017-05-28 16:44:05,579 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/http/webdav_scanner\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mwebdav_scanner\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mwebdav_scanner\x1b[0m) \x1b[0m> \n', 'set RPORTS 8000\r\r\n\x1b[0mRPORTS => 8000\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mwebdav_scanner\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mwebdav_scanner\x1b[0m) \x1b[0m> \n']
+2017-05-28 16:44:05,579 - Commands Logger - DEBUG - My var : '$.Entries."http_web_dev_2"'
+2017-05-28 16:44:05,579 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mwebdav_scanner[0m) [0m> 
+2017-05-28 16:44:05,587 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:44:05,605 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:44:05,606 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 22 127.0.0.1 --script telnet-encryption
+2017-05-28 16:44:06,278 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-28 16:44:06,279 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-28 16:44:06,281 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-28 16:44:06,281 - Commands Logger - DEBUG - commands are : [u'nmap -p 22 127.0.0.1 --script telnet-encryption', '\nEnd']
+2017-05-28 16:44:06,281 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-28 16:44:06,282 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 22 127.0.0.1 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 16:44 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000083s latency).
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 0.64 seconds
+
+
+
+2017-05-28 16:44:06,299 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:44:06,347 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 16:44:06,348 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  127.0.0.1:22
+2017-05-28 16:44:07,413 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-28 16:44:07,413 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-28 16:44:07,415 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-28 16:44:07,415 - Commands Logger - DEBUG - commands are : [u'nikto -h  127.0.0.1:22', '\nEnd']
+2017-05-28 16:44:07,415 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-28 16:44:07,415 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  127.0.0.1:22
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
++ No web server found on 127.0.0.1:22
+---------------------------------------------------------------------------
++ 0 host(s) tested
+
+
+
+2017-05-28 16:44:07,424 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:44:07,449 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-28 16:44:07,449 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-28 16:44:07,450 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 22 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_689/689_127.0.0.1_22_capture-output.pcap
+2017-05-28 16:44:10,452 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 127.0.0.1 22 and timeout 200
+2017-05-28 16:44:10,458 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:44:10,458 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-28 16:46:14,564 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_7.2p2 Debian-5
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-28 16:46:14,669 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-28 16:46:16,681 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:46:16,682 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-28 16:46:20,688 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_7.2p2 Debian-5
+root
+Protocol mismatch.
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-28 16:46:20,790 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-28 16:46:22,792 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-28 16:46:22,793 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-28 16:46:26,799 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-28 16:46:26,801 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-28 16:46:26,805 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-28 16:46:26,806 - Commands Logger - DEBUG - commands are : [u'telnet 127.0.0.1 22\n', "Trying 127.0.0.1...\r\nConnected to 127.0.0.1.\r\nEscape character is '^]'.\r\nSSH-2.0-OpenSSH_7.2p2 Debian-5\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', "Trying 127.0.0.1...\r\nConnected to 127.0.0.1.\r\nEscape character is '^]'.\r\nSSH-2.0-OpenSSH_7.2p2 Debian-5\r\nroot\r\nProtocol mismatch.\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n", u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-28 16:46:26,806 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-28 16:46:26,807 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 127.0.0.1 22
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-28 16:46:26,823 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 16:46:26,825 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-28 16:46:26,825 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-28 16:46:26,928 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process

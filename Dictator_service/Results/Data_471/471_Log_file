@@ -1,0 +1,44 @@
+2017-02-06 13:18:39,993 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 13:18:39,994 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 21 192.168.182.128 --script telnet-encryption
+2017-02-06 13:18:51,740 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-02-06 13:18:51,740 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-02-06 13:18:51,742 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-02-06 13:18:51,742 - Commands Logger - DEBUG - commands are : [u'nmap -p 21 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-02-06 13:18:51,742 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-02-06 13:18:51,742 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 21 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 13:18 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0010s latency).
+PORT   STATE SERVICE
+21/tcp open  ftp
+
+Nmap done: 1 IP address (1 host up) scanned in 11.72 seconds
+
+
+
+2017-02-06 13:18:51,755 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 13:18:51,819 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 13:18:51,820 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 23 192.168.182.128 --script telnet-encryption
+2017-02-06 13:19:03,607 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-02-06 13:19:03,608 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-02-06 13:19:03,611 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-02-06 13:19:03,612 - Commands Logger - DEBUG - commands are : [u'nmap -p 23 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-02-06 13:19:03,612 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-02-06 13:19:03,612 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 23 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 13:18 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00059s latency).
+PORT   STATE SERVICE
+23/tcp open  telnet
+| telnet-encryption: 
+|_  Telnet server does not support encryption
+
+Nmap done: 1 IP address (1 host up) scanned in 11.77 seconds
+
+
+
+2017-02-06 13:19:03,624 - Commands Logger - DEBUG - Finished!!!

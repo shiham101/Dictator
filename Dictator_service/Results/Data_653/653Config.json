@@ -1,0 +1,21 @@
+{
+  "Records": [
+    {
+      "Commands": [
+        "domain_1", 
+        "domain_2", 
+        "domain_3", 
+        "domain_4", 
+        "domain_5", 
+        "domain_6"
+      ], 
+      "Service": "domain", 
+      "IsModified": false, 
+      "Port": "22", 
+      "Host": "127.0.0.1", 
+      "IsCustom": false, 
+      "Project_id": "653", 
+      "id": "20468"
+    }
+  ]
+}

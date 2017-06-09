@@ -1,0 +1,80 @@
+2016-11-18 01:54:27,233 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2016-11-18 01:54:33,241 - Info Logger - DEBUG - 
+
+
+Welcome  STARTING MAIN METHOD OF DRIVER FILE FOR PROJECT ID --> 305
+2016-11-18 01:54:33,242 - Info Logger - ERROR - Error occured in Main method 'NoneType' object has no attribute 'execute'
+2016-11-18 01:58:35,130 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2016-11-18 01:58:41,147 - Info Logger - DEBUG - 
+
+
+Welcome  STARTING MAIN METHOD OF DRIVER FILE FOR PROJECT ID --> 305
+2016-11-18 01:58:41,217 - Info Logger - DEBUG - Starting method --> parse_and_process()
+2016-11-18 01:58:41,239 - Info Logger - DEBUG - {*}-Starting method --> InsertIPExploits()
+2016-11-18 01:58:41,243 - Info Logger - DEBUG - Inserting many records
+2016-11-18 01:58:41,398 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 305
+2016-11-18 01:58:41,402 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2016-11-18 01:59:00,899 - Info Logger - DEBUG - Started method Reconfigure
+2016-11-18 01:59:00,905 - Info Logger - DEBUG - Started getUNknown Services()
+2016-11-18 01:59:00,942 - Info Logger - ERROR - Error occured :global name 'unknownServices' is not defined
+2016-11-18 01:59:00,943 - Info Logger - ERROR - Error occured in Main method Driver instance has no attribute 'generate_report'
+2016-11-18 02:09:22,210 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2016-11-18 02:09:28,217 - Info Logger - DEBUG - 
+
+
+Welcome  STARTING MAIN METHOD OF DRIVER FILE FOR PROJECT ID --> 305
+2016-11-18 02:09:28,230 - Info Logger - DEBUG - Starting method --> parse_and_process()
+2016-11-18 02:09:28,235 - Info Logger - DEBUG - {*}-Starting method --> InsertIPExploits()
+2016-11-18 02:09:28,238 - Info Logger - DEBUG - Inserting many records
+2016-11-18 02:09:28,271 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 305
+2016-11-18 02:09:28,273 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2016-11-18 02:09:32,798 - Info Logger - DEBUG - Started method Reconfigure
+2016-11-18 02:09:32,802 - Info Logger - DEBUG - Started getUNknown Services()
+2016-11-18 02:09:32,827 - Info Logger - DEBUG - Started method UpdateUnknownServices
+2016-11-18 02:10:21,170 - Info Logger - DEBUG - Inside update-Reconfig
+2016-11-18 02:10:21,190 - Info Logger - DEBUG - Finished update-Reconfig
+2016-11-18 02:10:47,226 - Info Logger - DEBUG - Inside update-Reconfig
+2016-11-18 02:10:47,261 - Info Logger - DEBUG - Finished update-Reconfig
+2016-11-18 02:10:52,301 - Info Logger - DEBUG - Stopped method UpdateUnknownServices
+2016-11-18 02:10:52,302 - Info Logger - DEBUG - Started method InsertAdditionalServices()
+2016-11-18 02:11:21,516 - Info Logger - DEBUG - {*}-Starting method --> InsertIPExploits()
+2016-11-18 02:11:21,516 - Info Logger - DEBUG - Inserting single record
+2016-11-18 02:11:25,454 - Info Logger - DEBUG - Stopped method InsertAdditionalServices()
+2016-11-18 02:11:30,883 - Info Logger - DEBUG - Ending method Reconfigure()
+2016-11-18 02:11:30,885 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 305
+2016-11-18 02:11:30,893 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2016-11-18 02:11:35,103 - Info Logger - DEBUG - Started method Reconfigure
+2016-11-18 02:11:35,106 - Info Logger - DEBUG - Started getUNknown Services()
+2016-11-18 02:11:35,137 - Info Logger - DEBUG - Started method UpdateUnknownServices
+2016-11-18 02:11:53,222 - Info Logger - DEBUG - Stopped method UpdateUnknownServices
+2016-11-18 02:11:53,222 - Info Logger - DEBUG - Started method InsertAdditionalServices()
+2016-11-18 02:11:59,296 - Info Logger - DEBUG - Stopped method InsertAdditionalServices()
+2016-11-18 02:12:01,020 - Info Logger - DEBUG - Ending method Reconfigure()
+2016-11-18 02:12:01,021 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 305
+2016-11-18 02:12:01,024 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2016-11-18 02:12:05,145 - Info Logger - DEBUG - Started method LaunchExploits()
+2016-11-18 02:12:05,165 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2016-11-18 02:12:05,191 - Info Logger - DEBUG - Service,Host,port  is -->http  10.228.24.93  80
+2016-11-18 02:12:05,191 - Info Logger - DEBUG - Command id --> http_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 305
+2016-11-18 02:12:05,194 - Info Logger - DEBUG - Command id --> http_1  Message --> :In method SingleLineCommands_Timeout()
+2016-11-18 02:12:05,197 - Info Logger - DEBUG - Command id --> http_1  Message --> :Thread started --with command nikto -h  10.228.24.93:80
+2016-11-18 02:13:29,370 - Info Logger - DEBUG - Command id --> http_1  Message --> :Thread finished
+2016-11-18 02:13:29,372 - Info Logger - DEBUG - Command id --> http_1  Message --> :Saving details :
+2016-11-18 02:13:29,442 - Info Logger - DEBUG - Command id --> http_1  Message --> :Details Updated successfully
+2016-11-18 02:13:29,484 - Info Logger - DEBUG - Command id --> http_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 305
+2016-11-18 02:13:29,486 - Info Logger - DEBUG - Command id --> http_2  Message --> :In method SingleLineCommands_Timeout()
+2016-11-18 02:13:29,488 - Info Logger - DEBUG - Command id --> http_2  Message --> :Thread started --with command hoppy -t 12 -h 10.228.24.93:80
+2016-11-18 02:15:14,815 - Info Logger - DEBUG - Command id --> http_2  Message --> :Thread finished
+2016-11-18 02:15:14,816 - Info Logger - DEBUG - Command id --> http_2  Message --> :Saving details :

@@ -1,0 +1,870 @@
+2017-02-06 21:47:05,253 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :Inside command_meta
+2017-02-06 21:47:26,250 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :[4mmsf[0m [0m> 
+2017-02-06 21:47:26,251 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :0
+2017-02-06 21:47:29,356 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 21:47:32,465 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :set THREADS 1
+[0mTHREADS => 1
+[4mmsf[0m [0m> 
+2017-02-06 21:47:35,569 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 21:47:38,677 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :use auxiliary/scanner/rservices/rexec_login
+[0m[4mmsf[0m auxiliary([1m[31mrexec_login[0m) [0m> 
+2017-02-06 21:47:41,785 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mrexec_login[0m) [0m> 
+2017-02-06 21:47:41,785 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 21:47:46,895 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 21:47:46,896 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:512   - 192.168.182.128:512 - Starting rexec sweep
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mrexec_login[0m) [0m> 
+2017-02-06 21:47:46,896 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 21:47:46,896 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 21:47:49,006 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :Exited from msfconsole !!!
+2017-02-06 21:47:49,006 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:47:49,006 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :Closing the child pipe !!!
+2017-02-06 21:47:49,107 - Commands Logger - DEBUG - Command Logger --->Command id --> exec_1  Message --> :Saving details :
+2017-02-06 21:47:49,108 - Commands Logger - DEBUG - Command id is ->exec_1
+2017-02-06 21:47:49,109 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'set THREADS 1\n', 'set THREADS 1\r\r\n\x1b[0mTHREADS => 1\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/rservices/rexec_login\n', 'use auxiliary/scanner/rservices/rexec_login\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrexec_login\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrexec_login\x1b[0m) \x1b[0m> \n', '>run', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 192.168.182.128:512   - 192.168.182.128:512 - Starting rexec sweep\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrexec_login\x1b[0m) \x1b[0m> \n']
+2017-02-06 21:47:49,109 - Commands Logger - DEBUG - My var : '$.Entries."exec_1"'
+2017-02-06 21:47:49,109 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:512   - 192.168.182.128:512 - Starting rexec sweep
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mrexec_login[0m) [0m> 
+2017-02-06 21:47:49,137 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:47:49,168 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:47:49,173 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Thread started --with command rpcinfo -p  192.168.182.128
+2017-02-06 21:47:49,426 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Thread finished
+2017-02-06 21:47:49,427 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Saving details :
+2017-02-06 21:47:49,428 - Commands Logger - DEBUG - Command id is ->nfs_1
+2017-02-06 21:47:49,428 - Commands Logger - DEBUG - commands are : [u'rpcinfo -p  192.168.182.128', '\nEnd']
+2017-02-06 21:47:49,428 - Commands Logger - DEBUG - My var : '$.Entries."nfs_1"'
+2017-02-06 21:47:49,429 - Commands Logger - DEBUG - Result --> : Command Executed :rpcinfo -p  192.168.182.128
+
+Result   program vers proto   port  service
+    100000    2   tcp    111  portmapper
+    100000    2   udp    111  portmapper
+    100024    1   udp  37594  status
+    100024    1   tcp  35506  status
+    100003    2   udp   2049  nfs
+    100003    3   udp   2049  nfs
+    100003    4   udp   2049  nfs
+    100021    1   udp  41320  nlockmgr
+    100021    3   udp  41320  nlockmgr
+    100021    4   udp  41320  nlockmgr
+    100003    2   tcp   2049  nfs
+    100003    3   tcp   2049  nfs
+    100003    4   tcp   2049  nfs
+    100021    1   tcp  51227  nlockmgr
+    100021    3   tcp  51227  nlockmgr
+    100021    4   tcp  51227  nlockmgr
+    100005    1   udp  51740  mountd
+    100005    1   tcp  46785  mountd
+    100005    2   udp  51740  mountd
+    100005    2   tcp  46785  mountd
+    100005    3   udp  51740  mountd
+    100005    3   tcp  46785  mountd
+
+
+
+2017-02-06 21:47:49,453 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:47:49,509 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:47:49,510 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Thread started --with command perl Scripts/nfsping.pl 192.168.182.128
+2017-02-06 21:47:54,585 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Thread finished
+2017-02-06 21:47:54,586 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Saving details :
+2017-02-06 21:47:54,587 - Commands Logger - DEBUG - Command id is ->nfs_2
+2017-02-06 21:47:54,587 - Commands Logger - DEBUG - commands are : [u'perl Scripts/nfsping.pl 192.168.182.128', '\nEnd']
+2017-02-06 21:47:54,587 - Commands Logger - DEBUG - My var : '$.Entries."nfs_2"'
+2017-02-06 21:47:54,587 - Commands Logger - DEBUG - Result --> : Command Executed :perl Scripts/nfsping.pl 192.168.182.128
+
+Result
+Got response from 192.168.182.128
+
+              :: scanning 1/1
+:: waiting for responses...
+
+
+2017-02-06 21:47:54,602 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:47:54,679 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:47:54,679 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Thread started --with command showmount -e 192.168.182.128
+2017-02-06 21:47:54,691 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Thread finished
+2017-02-06 21:47:54,692 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Saving details :
+2017-02-06 21:47:54,693 - Commands Logger - DEBUG - Command id is ->nfs_3
+2017-02-06 21:47:54,693 - Commands Logger - DEBUG - commands are : [u'showmount -e 192.168.182.128', '\nEnd']
+2017-02-06 21:47:54,693 - Commands Logger - DEBUG - My var : '$.Entries."nfs_3"'
+2017-02-06 21:47:54,694 - Commands Logger - DEBUG - Result --> : Command Executed :showmount -e 192.168.182.128
+
+ResultExport list for 192.168.182.128:
+/ *
+
+
+
+2017-02-06 21:47:54,704 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:47:54,748 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :
+
+Starting Mount  all retive
+
+
+2017-02-06 21:47:54,891 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:47:54,892 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :2
+2017-02-06 21:47:58,999 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:48:03,102 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:48:07,211 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:48:11,316 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:48:15,425 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:48:15,426 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :Closing Child now !!
+2017-02-06 21:48:15,527 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :Saving details :
+2017-02-06 21:48:15,529 - Commands Logger - DEBUG - Command id is ->nfs_4
+2017-02-06 21:48:15,529 - Commands Logger - DEBUG - commands are : ['>mount -t nfs 192.168.182.128:/ /temp\n', "><class 'pexpect.exceptions.EOF'>", u'cd /temp\n', "<class 'pexpect.exceptions.EOF'>", u'ls\n', "<class 'pexpect.exceptions.EOF'>", u'mkdir test_directory\n', "<class 'pexpect.exceptions.EOF'>", u'cd ..\n', "<class 'pexpect.exceptions.EOF'>", u'umount /temp/\n', "<class 'pexpect.exceptions.EOF'>"]
+2017-02-06 21:48:15,530 - Commands Logger - DEBUG - My var : '$.Entries."nfs_4"'
+2017-02-06 21:48:15,530 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>mount -t nfs 192.168.182.128:/ /temp
+Result:
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 21:48:15,543 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:48:15,575 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:48:15,576 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_1  Message --> :Thread started --with command python Scripts/ircsnapshot/ircsnapshot.py 192.168.182.128
+2017-02-06 21:48:26,920 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_1  Message --> :Thread finished
+2017-02-06 21:48:26,921 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_1  Message --> :Saving details :
+2017-02-06 21:48:26,925 - Commands Logger - DEBUG - Command id is ->irc_1
+2017-02-06 21:48:26,926 - Commands Logger - DEBUG - commands are : [u'python Scripts/ircsnapshot/ircsnapshot.py 192.168.182.128', '\nEnd']
+2017-02-06 21:48:26,926 - Commands Logger - DEBUG - My var : '$.Entries."irc_1"'
+2017-02-06 21:48:26,926 - Commands Logger - DEBUG - Result --> : Command Executed :python Scripts/ircsnapshot/ircsnapshot.py 192.168.182.128
+
+ResultNamespace(channels=None, help=False, listdelay=None, nick='kwxxUebRtE', no_list=False, output='.', password=None, port='6667', proxy=None, real='ZVrXXQrOTh', server='192.168.182.128', ssl=False, throttle=1.0, user='zWoFqcinbu')
+30
+
+[2017-02-06 21:48:15,658] Logger initiated
+[2017-02-06 21:48:15,659] {"real": "ZVrXXQrOTh", "nick": "kwxxUebRtE", "config": {"proxyport": 9050, "real": "ZVrXXQrOTh", "listDelay": null, "nolist": false, "ssl": false, "throttleLevel": 1.0, "user": "zWoFqcinbu", "pass": null, "server": "192.168.182.128", "outputdir": ".", "channelstocheck": null, "proxyhost": null, "port": "6667", "nick": "kwxxUebRtE"}, "user": "zWoFqcinbu"}
+[2017-02-06 21:48:15,664] USER zWoFqcinbu 127.0.0.1 192.168.182.128 :ZVrXXQrOTh
+[2017-02-06 21:48:15,665] NICK kwxxUebRtE
+[2017-02-06 21:48:16,683] :irc.Metasploitable.LAN NOTICE AUTH :*** Looking up your hostname...
+[2017-02-06 21:48:26,861] :irc.Metasploitable.LAN NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead
+[2017-02-06 21:48:26,862] :irc.Metasploitable.LAN 001 kwxxUebRtE :Welcome to the TestIRC IRC Network kwxxUebRtE!zWoFqcinbu@192.168.182.1
+[2017-02-06 21:48:26,862] :irc.Metasploitable.LAN 002 kwxxUebRtE :Your host is irc.Metasploitable.LAN, running version Unreal3.2.8.1
+[2017-02-06 21:48:26,862] :irc.Metasploitable.LAN 003 kwxxUebRtE :This server was created Sun May 20 2012 at 14:04:37 EDT
+[2017-02-06 21:48:26,863] :irc.Metasploitable.LAN 004 kwxxUebRtE irc.Metasploitable.LAN Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+[2017-02-06 21:48:26,863] :irc.Metasploitable.LAN 005 kwxxUebRtE UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+[2017-02-06 21:48:26,863] :irc.Metasploitable.LAN 005 kwxxUebRtE WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=TestIRC CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+[2017-02-06 21:48:26,863] :irc.Metasploitable.LAN 005 kwxxUebRtE EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP :are supported by this server
+[2017-02-06 21:48:26,863] :irc.Metasploitable.LAN 251 kwxxUebRtE :There are 1 users and 0 invisible on 1 servers
+[2017-02-06 21:48:26,864] :irc.Metasploitable.LAN 255 kwxxUebRtE :I have 1 clients and 0 servers
+[2017-02-06 21:48:26,864] :irc.Metasploitable.LAN 265 kwxxUebRtE :Current Local Users: 1  Max: 2
+[2017-02-06 21:48:26,864] :irc.Metasploitable.LAN 266 kwxxUebRtE :Current Global Users: 1  Max: 1
+[2017-02-06 21:48:26,864] :irc.Metasploitable.LAN 422 kwxxUebRtE :MOTD File is missing
+[2017-02-06 21:48:26,864] LIST
+[2017-02-06 21:48:26,865] LINKS
+[2017-02-06 21:48:26,865] NAMES
+[2017-02-06 21:48:26,865] :kwxxUebRtE MODE kwxxUebRtE :+ix
+[2017-02-06 21:48:26,866] :irc.Metasploitable.LAN 321 kwxxUebRtE Channel :Users  Name
+[2017-02-06 21:48:26,867] :irc.Metasploitable.LAN 323 kwxxUebRtE :End of /LIST
+[2017-02-06 21:48:26,868] :irc.Metasploitable.LAN 364 kwxxUebRtE irc.Metasploitable.LAN irc.Metasploitable.LAN :0 Test IRC Server
+[2017-02-06 21:48:26,868] :irc.Metasploitable.LAN 365 kwxxUebRtE * :End of /LINKS list.
+[2017-02-06 21:48:26,904] QUIT :
+[2017-02-06 21:48:26,907] :irc.Metasploitable.LAN 366 kwxxUebRtE * :End of /NAMES list.
+[2017-02-06 21:48:26,907] join * not found in is_processing
+[2017-02-06 21:48:26,907] []
+[2017-02-06 21:48:26,907] PART *
+[2017-02-06 21:48:26,908] ERROR :Closing Link: kwxxUebRtE[192.168.182.1] (Quit: )
+[2017-02-06 21:48:26,908] Disconnected
+
+
+2017-02-06 21:48:26,945 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:48:26,995 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:48:26,996 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_2  Message --> :Thread started --with command nmap  --script=irc-botnet-channels -p 6697 192.168.182.128
+2017-02-06 21:48:38,711 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_2  Message --> :Thread finished
+2017-02-06 21:48:38,711 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_2  Message --> :Saving details :
+2017-02-06 21:48:38,713 - Commands Logger - DEBUG - Command id is ->irc_2
+2017-02-06 21:48:38,713 - Commands Logger - DEBUG - commands are : [u'nmap  --script=irc-botnet-channels -p 6697 192.168.182.128', '\nEnd']
+2017-02-06 21:48:38,713 - Commands Logger - DEBUG - My var : '$.Entries."irc_2"'
+2017-02-06 21:48:38,713 - Commands Logger - DEBUG - Result --> : Command Executed :nmap  --script=irc-botnet-channels -p 6697 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 21:48 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00074s latency).
+PORT     STATE SERVICE
+6697/tcp open  unknown
+| irc-botnet-channels: 
+|_  ERROR: Closing Link: [192.168.182.1] (Throttled: Reconnecting too fast) -Email admin@Metasploitable.LAN for more information.
+
+Nmap done: 1 IP address (1 host up) scanned in 11.69 seconds
+
+
+
+2017-02-06 21:48:38,729 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:48:38,811 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_3  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:48:38,812 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_3  Message --> :Thread started --with command nmap -sV -sC -p 6697 192.168.182.128
+2017-02-06 21:48:52,138 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_3  Message --> :Thread finished
+2017-02-06 21:48:52,138 - Commands Logger - DEBUG - Command Logger --->Command id --> irc_3  Message --> :Saving details :
+2017-02-06 21:48:52,139 - Commands Logger - DEBUG - Command id is ->irc_3
+2017-02-06 21:48:52,139 - Commands Logger - DEBUG - commands are : [u'nmap -sV -sC -p 6697 192.168.182.128', '\nEnd']
+2017-02-06 21:48:52,140 - Commands Logger - DEBUG - My var : '$.Entries."irc_3"'
+2017-02-06 21:48:52,140 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -sC -p 6697 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 21:48 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00070s latency).
+PORT     STATE SERVICE VERSION
+6697/tcp open  irc     Unreal ircd (Admin email admin@Metasploitable.LAN)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.30 seconds
+
+
+
+2017-02-06 21:48:52,185 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:58:01,490 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:58:01,491 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Thread started --with command rpcinfo -p  192.168.182.128
+2017-02-06 21:58:01,728 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Thread finished
+2017-02-06 21:58:01,729 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Saving details :
+2017-02-06 21:58:01,730 - Commands Logger - DEBUG - Command id is ->nfs_1
+2017-02-06 21:58:01,731 - Commands Logger - DEBUG - commands are : [u'rpcinfo -p  192.168.182.128', '\nEnd']
+2017-02-06 21:58:01,731 - Commands Logger - DEBUG - My var : '$.Entries."nfs_1"'
+2017-02-06 21:58:01,731 - Commands Logger - DEBUG - Result --> : Command Executed :rpcinfo -p  192.168.182.128
+
+Result   program vers proto   port  service
+    100000    2   tcp    111  portmapper
+    100000    2   udp    111  portmapper
+    100024    1   udp  37594  status
+    100024    1   tcp  35506  status
+    100003    2   udp   2049  nfs
+    100003    3   udp   2049  nfs
+    100003    4   udp   2049  nfs
+    100021    1   udp  41320  nlockmgr
+    100021    3   udp  41320  nlockmgr
+    100021    4   udp  41320  nlockmgr
+    100003    2   tcp   2049  nfs
+    100003    3   tcp   2049  nfs
+    100003    4   tcp   2049  nfs
+    100021    1   tcp  51227  nlockmgr
+    100021    3   tcp  51227  nlockmgr
+    100021    4   tcp  51227  nlockmgr
+    100005    1   udp  51740  mountd
+    100005    1   tcp  46785  mountd
+    100005    2   udp  51740  mountd
+    100005    2   tcp  46785  mountd
+    100005    3   udp  51740  mountd
+    100005    3   tcp  46785  mountd
+
+
+
+2017-02-06 21:58:01,745 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:58:01,795 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:58:01,796 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Thread started --with command perl Scripts/nfsping.pl 192.168.182.128
+2017-02-06 21:58:06,854 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Thread finished
+2017-02-06 21:58:06,854 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Saving details :
+2017-02-06 21:58:06,856 - Commands Logger - DEBUG - Command id is ->nfs_2
+2017-02-06 21:58:06,856 - Commands Logger - DEBUG - commands are : [u'perl Scripts/nfsping.pl 192.168.182.128', '\nEnd']
+2017-02-06 21:58:06,857 - Commands Logger - DEBUG - My var : '$.Entries."nfs_2"'
+2017-02-06 21:58:06,857 - Commands Logger - DEBUG - Result --> : Command Executed :perl Scripts/nfsping.pl 192.168.182.128
+
+Result
+Got response from 192.168.182.128
+
+              :: scanning 1/1
+:: waiting for responses...
+
+
+2017-02-06 21:58:06,871 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:58:06,911 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 21:58:06,912 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Thread started --with command showmount -e 192.168.182.128
+2017-02-06 21:58:06,935 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Thread finished
+2017-02-06 21:58:06,936 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Saving details :
+2017-02-06 21:58:06,937 - Commands Logger - DEBUG - Command id is ->nfs_3
+2017-02-06 21:58:06,937 - Commands Logger - DEBUG - commands are : [u'showmount -e 192.168.182.128', '\nEnd']
+2017-02-06 21:58:06,937 - Commands Logger - DEBUG - My var : '$.Entries."nfs_3"'
+2017-02-06 21:58:06,937 - Commands Logger - DEBUG - Result --> : Command Executed :showmount -e 192.168.182.128
+
+ResultExport list for 192.168.182.128:
+/ *
+
+
+
+2017-02-06 21:58:06,948 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 21:58:06,983 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :
+
+Starting Mount  all retive
+
+
+2017-02-06 21:58:07,048 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :Closing Child now !!
+2017-02-06 21:58:07,152 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :Saving details :
+2017-02-06 21:58:07,154 - Commands Logger - DEBUG - Command id is ->nfs_4
+2017-02-06 21:58:07,155 - Commands Logger - DEBUG - commands are : ['>mount -t nfs 192.168.182.128:/ /temp\n', 'mount.nfs: access denied by server while mounting 192.168.182.128:/']
+2017-02-06 21:58:07,155 - Commands Logger - DEBUG - My var : '$.Entries."nfs_4"'
+2017-02-06 21:58:07,155 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>mount -t nfs 192.168.182.128:/ /temp
+Result:
+mount.nfs: access denied by server while mounting 192.168.182.128:/
+2017-02-06 21:58:07,167 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:14:35,160 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:14:35,161 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :Thread started --with command nmap --script=smb-check-vulns.nse -p 135 10.0.1.39
+2017-02-06 22:14:46,870 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :Thread finished
+2017-02-06 22:14:46,871 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :Saving details :
+2017-02-06 22:14:46,876 - Commands Logger - DEBUG - Command id is ->msrpc_1
+2017-02-06 22:14:46,877 - Commands Logger - DEBUG - commands are : [u'nmap --script=smb-check-vulns.nse -p 135 10.0.1.39', '\nEnd']
+2017-02-06 22:14:46,877 - Commands Logger - DEBUG - My var : '$.Entries."msrpc_1"'
+2017-02-06 22:14:46,877 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=smb-check-vulns.nse -p 135 10.0.1.39
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 22:14 UTC
+Nmap scan report for 10.0.1.39
+Host is up (0.0013s latency).
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+Host script results:
+|_smb-check-vulns: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 11.66 seconds
+
+
+
+2017-02-06 22:14:46,890 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:14:46,895 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:14:46,896 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :Thread started --with command nmap --script=msrpc-enum.nse -p 135 10.0.1.39
+2017-02-06 22:14:58,676 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :Thread finished
+2017-02-06 22:14:58,677 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :Saving details :
+2017-02-06 22:14:58,678 - Commands Logger - DEBUG - Command id is ->msrpc_2
+2017-02-06 22:14:58,678 - Commands Logger - DEBUG - commands are : [u'nmap --script=msrpc-enum.nse -p 135 10.0.1.39', '\nEnd']
+2017-02-06 22:14:58,678 - Commands Logger - DEBUG - My var : '$.Entries."msrpc_2"'
+2017-02-06 22:14:58,678 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=msrpc-enum.nse -p 135 10.0.1.39
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 22:14 UTC
+Nmap scan report for 10.0.1.39
+Host is up (0.00089s latency).
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+Nmap done: 1 IP address (1 host up) scanned in 11.75 seconds
+
+
+
+2017-02-06 22:14:58,691 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:14:58,747 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :Inside command_meta
+2017-02-06 22:15:12,790 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :[4mmsf[0m [0m> 
+2017-02-06 22:15:12,791 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :0
+2017-02-06 22:15:15,896 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 22:15:19,001 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set THREADS 1
+[0mTHREADS => 1
+[4mmsf[0m [0m> 
+2017-02-06 22:15:22,106 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 22:15:25,213 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :use auxiliary/scanner/ftp/ftp_login
+[0m[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:28,326 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:31,437 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set rport 21
+[0mrport => 21
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:34,549 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set USERNAME msfadmin
+[0mUSERNAME => msfadmin
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:37,654 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set PASSWORD msfadmin
+[0mPASSWORD => msfadmin
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:40,758 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :set VERBOSE false
+[0mVERBOSE => false
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:40,758 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 22:15:45,878 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 22:15:45,879 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:21    - 192.168.182.128:21 - Starting FTP login sweep
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:45,879 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 22:15:45,879 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 22:15:47,989 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :Exited from msfconsole !!!
+2017-02-06 22:15:47,989 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 22:15:47,990 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :Closing the child pipe !!!
+2017-02-06 22:15:48,092 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_1  Message --> :Saving details :
+2017-02-06 22:15:48,094 - Commands Logger - DEBUG - Command id is ->ftp_1
+2017-02-06 22:15:48,094 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'set THREADS 1\n', 'set THREADS 1\r\r\n\x1b[0mTHREADS => 1\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/ftp/ftp_login\n', 'use auxiliary/scanner/ftp/ftp_login\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mftp_login\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mftp_login\x1b[0m) \x1b[0m> \n', u'set rport 21\n', 'set rport 21\r\r\n\x1b[0mrport => 21\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mftp_login\x1b[0m) \x1b[0m> \n', u'set USERNAME msfadmin\n', 'set USERNAME msfadmin\r\r\n\x1b[0mUSERNAME => msfadmin\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mftp_login\x1b[0m) \x1b[0m> \n', u'set PASSWORD msfadmin\n', 'set PASSWORD msfadmin\r\r\n\x1b[0mPASSWORD => msfadmin\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mftp_login\x1b[0m) \x1b[0m> \n', u'set VERBOSE false\n', 'set VERBOSE false\r\r\n\x1b[0mVERBOSE => false\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mftp_login\x1b[0m) \x1b[0m> \n', '>run', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 192.168.182.128:21    - 192.168.182.128:21 - Starting FTP login sweep\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mftp_login\x1b[0m) \x1b[0m> \n']
+2017-02-06 22:15:48,094 - Commands Logger - DEBUG - My var : '$.Entries."ftp_1"'
+2017-02-06 22:15:48,094 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:21    - 192.168.182.128:21 - Starting FTP login sweep
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mftp_login[0m) [0m> 
+2017-02-06 22:15:48,108 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:15:48,109 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :Inside command_meta
+2017-02-06 22:16:00,632 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :[4mmsf[0m [0m> 
+2017-02-06 22:16:00,633 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :0
+2017-02-06 22:16:03,739 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 22:16:06,845 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :set THREADS 1
+[0mTHREADS => 1
+[4mmsf[0m [0m> 
+2017-02-06 22:16:09,952 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 22:16:13,057 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :use auxiliary/scanner/ftp/anonymous
+[0m[4mmsf[0m auxiliary([1m[31manonymous[0m) [0m> 
+2017-02-06 22:16:16,162 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31manonymous[0m) [0m> 
+2017-02-06 22:16:19,268 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :set VERBOSE false
+[0mVERBOSE => false
+[4mmsf[0m auxiliary([1m[31manonymous[0m) [0m> 
+2017-02-06 22:16:19,268 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 22:16:24,378 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 22:16:24,378 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[32m[+][0m 192.168.182.128:21    - 192.168.182.128:21 - Anonymous READ (220 (vsFTPd 2.3.4))
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31manonymous[0m) [0m> 
+2017-02-06 22:16:24,378 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 22:16:24,378 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 22:16:26,485 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :Exited from msfconsole !!!
+2017-02-06 22:16:26,486 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 22:16:26,486 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :Closing the child pipe !!!
+2017-02-06 22:16:26,587 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_2  Message --> :Saving details :
+2017-02-06 22:16:26,589 - Commands Logger - DEBUG - Command id is ->ftp_2
+2017-02-06 22:16:26,589 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'set THREADS 1\n', 'set THREADS 1\r\r\n\x1b[0mTHREADS => 1\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/ftp/anonymous\n', 'use auxiliary/scanner/ftp/anonymous\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31manonymous\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31manonymous\x1b[0m) \x1b[0m> \n', u'set VERBOSE false\n', 'set VERBOSE false\r\r\n\x1b[0mVERBOSE => false\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31manonymous\x1b[0m) \x1b[0m> \n', '>run', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[32m[+]\x1b[0m 192.168.182.128:21    - 192.168.182.128:21 - Anonymous READ (220 (vsFTPd 2.3.4))\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31manonymous\x1b[0m) \x1b[0m> \n']
+2017-02-06 22:16:26,589 - Commands Logger - DEBUG - My var : '$.Entries."ftp_2"'
+2017-02-06 22:16:26,589 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[32m[+][0m 192.168.182.128:21    - 192.168.182.128:21 - Anonymous READ (220 (vsFTPd 2.3.4))
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31manonymous[0m) [0m> 
+2017-02-06 22:16:26,695 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:16:26,695 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_3  Message --> :
+
+Starting FTP Login --Anonmous
+
+
+2017-02-06 22:16:26,709 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_3  Message --> :Connected to 192.168.182.128.
+220 (vsFTPd 2.3.4)
+  Name (192.168.182.128:root):
+2017-02-06 22:16:29,818 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_3  Message --> :Before : After :  anonymous
+331 Please specify the password.
+Password:
+2017-02-06 22:16:32,925 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_3  Message --> :Login Successful
+2017-02-06 22:16:32,926 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_3  Message --> :Before : After : 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> 
+2017-02-06 22:16:32,926 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_3  Message --> :Closing Child now !!
+2017-02-06 22:16:33,027 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_3  Message --> :Saving details :
+2017-02-06 22:16:33,029 - Commands Logger - DEBUG - Command id is ->ftp_3
+2017-02-06 22:16:33,029 - Commands Logger - DEBUG - commands are : [u'ftp 192.168.182.128\n', 'Name (192.168.182.128:root):\n', 'Name (192.168.182.128:root):', 'anonymous\n', ' anonymous\r\n331 Please specify the password.\r\nPassword:\n', 'noah@example.com\n', '\r\n230 Login successful.\r\nRemote system type is UNIX.\r\nUsing binary mode to transfer files.\r\nftp> \n']
+2017-02-06 22:16:33,030 - Commands Logger - DEBUG - My var : '$.Entries."ftp_3"'
+2017-02-06 22:16:33,030 - Commands Logger - DEBUG - Result --> : 
+Login SuccesFul --> 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> Command Executed :ftp 192.168.182.128
+
+Result :
+
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> 
+2017-02-06 22:16:33,040 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:16:33,041 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_4  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:16:33,042 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_4  Message --> :Thread started --with command nmap -sV --script=ftp-bounce.nse -p 21 192.168.182.128
+2017-02-06 22:16:50,987 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_4  Message --> :Thread finished
+2017-02-06 22:16:50,988 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_4  Message --> :Saving details :
+2017-02-06 22:16:50,989 - Commands Logger - DEBUG - Command id is ->ftp_4
+2017-02-06 22:16:50,990 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=ftp-bounce.nse -p 21 192.168.182.128', '\nEnd']
+2017-02-06 22:16:50,990 - Commands Logger - DEBUG - My var : '$.Entries."ftp_4"'
+2017-02-06 22:16:50,990 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=ftp-bounce.nse -p 21 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 22:16 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00049s latency).
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 17.91 seconds
+
+
+
+2017-02-06 22:16:51,121 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:16:51,156 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_5  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:16:51,157 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 21 192.168.182.128
+2017-02-06 22:16:59,733 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_5  Message --> :Thread finished
+2017-02-06 22:16:59,734 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_5  Message --> :Saving details :
+2017-02-06 22:16:59,739 - Commands Logger - DEBUG - Command id is ->ftp_5
+2017-02-06 22:16:59,739 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=banner.nse -p 21 192.168.182.128', '\nEnd']
+2017-02-06 22:16:59,740 - Commands Logger - DEBUG - My var : '$.Entries."ftp_5"'
+2017-02-06 22:16:59,740 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=banner.nse -p 21 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 22:16 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0017s latency).
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4
+|_banner: 220 (vsFTPd 2.3.4)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.55 seconds
+
+
+
+2017-02-06 22:16:59,756 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:16:59,777 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_6  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:16:59,778 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_6  Message --> :Thread started --with command nmap --script=ftp-anon.nse -p 21 192.168.182.128
+2017-02-06 22:17:18,597 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_6  Message --> :Thread finished
+2017-02-06 22:17:18,598 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_6  Message --> :Saving details :
+2017-02-06 22:17:18,600 - Commands Logger - DEBUG - Command id is ->ftp_6
+2017-02-06 22:17:18,603 - Commands Logger - DEBUG - commands are : [u'nmap --script=ftp-anon.nse -p 21 192.168.182.128', '\nEnd']
+2017-02-06 22:17:18,603 - Commands Logger - DEBUG - My var : '$.Entries."ftp_6"'
+2017-02-06 22:17:18,603 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=ftp-anon.nse -p 21 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 22:16 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0034s latency).
+PORT   STATE SERVICE
+21/tcp open  ftp
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+
+Nmap done: 1 IP address (1 host up) scanned in 18.79 seconds
+
+
+
+2017-02-06 22:17:18,633 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:17:18,683 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Launching Domain Interactive ::<--- Command :--->nslookup
+2017-02-06 22:17:20,717 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :$server 192.168.182.128
+
+2017-02-06 22:17:20,717 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Before : 
+After : 
+>
+2017-02-06 22:17:22,821 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Before : 
+ server 192.168.182.128
+Default server: 192.168.182.128
+After : 
+Address: 192.168.182.128#53
+> 
+2017-02-06 22:17:24,928 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Dns lookup finished with changed dns server 
+2017-02-06 22:17:24,928 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Before : cricinfo.com
+Server:		192.168.182.128
+Address:	192.168.182.128#53
+
+Non-authoritative answer:
+Name:	cricinfo.com
+After : Address: 52.19.167.6
+> 
+2017-02-06 22:17:24,929 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Closing Child now !!
+2017-02-06 22:17:25,031 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Saving details :
+2017-02-06 22:17:25,034 - Commands Logger - DEBUG - Command id is ->domain_1
+2017-02-06 22:17:25,034 - Commands Logger - DEBUG - commands are : [u'nslookup\n', u'server 192.168.182.128', 'Address: 192.168.182.128#53\r\n> \n', ' server 192.168.182.128\r\nDefault server: 192.168.182.128\r\n   Address: 192.168.182.128#53\r\n> ', u'cricinfo.com\n', 'Address: 52.19.167.6\r\n> \n']
+2017-02-06 22:17:25,034 - Commands Logger - DEBUG - My var : '$.Entries."domain_1"'
+2017-02-06 22:17:25,035 - Commands Logger - DEBUG - Result --> : Address: 52.19.167.6
+> 
+
+
+Command Executed :nslookup
+
+Result:
+Address: 52.19.167.6
+> 
+
+2017-02-06 22:17:25,049 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:17:25,049 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Closing Child now !!
+2017-02-06 22:17:25,049 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_1  Message --> :Exiting Domain interactive !!
+2017-02-06 22:17:25,049 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Launching FierceCheck with the given host --> 192.168.182.128
+2017-02-06 22:17:25,050 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Thread started --with command fierce -dns 192.168.182.128 -threads 10
+2017-02-06 22:17:26,250 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Thread finished
+2017-02-06 22:18:16,324 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :
+Trying zone transfer first...
+
+Unsuccessful in zone transfer (it was worth a shot)
+Okay, trying the good old fashioned way... brute force
+
+Checking for wildcard DNS...
+Nope. Good.
+Now performing 2280 test(s)...
+
+Subnets found (may want to probe here using nmap or unicornscan):
+
+Done with Fierce scan: http://ha.ckers.org/fierce/
+Found 0 entries.
+
+Have a nice day.
+
+
+
+2017-02-06 22:18:16,325 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Dns reverse lookup
+2017-02-06 22:18:16,376 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :1
+2017-02-06 22:18:16,377 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Reverse dns Failed
+2017-02-06 22:18:16,377 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Before : 
+After : 
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+** server can't find 128.182.168.192.in-addr.arpa: NXDOMAIN
+
+2017-02-06 22:18:16,377 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Closing Child now !!
+2017-02-06 22:18:16,478 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :There is no reverse dns resolution for ip :192.168.182.128
+2017-02-06 22:18:16,478 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_2  Message --> :Saving details :
+2017-02-06 22:18:16,480 - Commands Logger - DEBUG - Command id is ->domain_2
+2017-02-06 22:18:16,481 - Commands Logger - DEBUG - commands are : ['fierce -dns 192.168.182.128 -threads 10\n', '\nTrying zone transfer first...\n\nUnsuccessful in zone transfer (it was worth a shot)\nOkay, trying the good old fashioned way... brute force\n\nChecking for wildcard DNS...\nNope. Good.\nNow performing 2280 test(s)...\n\nSubnets found (may want to probe here using nmap or unicornscan):\n\nDone with Fierce scan: http://ha.ckers.org/fierce/\nFound 0 entries.\n\nHave a nice day.\n\n\n\n', 'Result --> -1', u'No reverse dns for ip -->192.168.182.128']
+2017-02-06 22:18:16,481 - Commands Logger - DEBUG - My var : '$.Entries."domain_2"'
+2017-02-06 22:18:16,481 - Commands Logger - DEBUG - Result --> : Command Executed :fierce -dns 192.168.182.128 -threads 10
+
+
+Result:
+No reverse dns for ip -->192.168.182.128
+2017-02-06 22:18:16,495 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:18:16,496 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :In Dns_recon check
+2017-02-06 22:18:16,497 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Dns reverse lookup
+2017-02-06 22:18:16,542 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :1
+2017-02-06 22:18:16,542 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Reverse dns Failed
+2017-02-06 22:18:16,543 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Before : 
+After : 
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+** server can't find 128.182.168.192.in-addr.arpa: NXDOMAIN
+
+2017-02-06 22:18:16,543 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Closing Child now !!
+2017-02-06 22:18:16,645 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -D name_list.txt
+2017-02-06 22:18:16,645 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Comamnd to be launched -->dnsrecon -d <reversehost> -a
+2017-02-06 22:18:16,645 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Launching Command --> :dnsrecon -d 192.168.182.128 -t zonewalk
+2017-02-06 22:18:24,230 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :[*] Performing NSEC Zone Walk for 192.168.182.128
+[*] Getting SOA record for 192.168.182.128
+[*] Name Server 198.41.0.4 will be used
+[*] 	 A 192.168.182.128 192.168.182.128
+[*] 	 A aaa no_ip
+[*] 2 records found
+
+
+2017-02-06 22:18:24,230 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_3  Message --> :Saving details :
+2017-02-06 22:18:24,232 - Commands Logger - DEBUG - Command id is ->domain_3
+2017-02-06 22:18:24,232 - Commands Logger - DEBUG - commands are : ['Dns check : 192.168.182.128', 'Res:-1', u'dnsrecon -d 192.168.182.128 -t zonewalk\n', '[*] Performing NSEC Zone Walk for 192.168.182.128\n[*] Getting SOA record for 192.168.182.128\n[*] Name Server 198.41.0.4 will be used\n[*] \t A 192.168.182.128 192.168.182.128\n[*] \t A aaa no_ip\n[*] 2 records found\n']
+2017-02-06 22:18:24,232 - Commands Logger - DEBUG - My var : '$.Entries."domain_3"'
+2017-02-06 22:18:24,232 - Commands Logger - DEBUG - Result --> : Command Executed :Dns check : 192.168.182.128
+
+Result :
+[*] Performing NSEC Zone Walk for 192.168.182.128
+[*] Getting SOA record for 192.168.182.128
+[*] Name Server 198.41.0.4 will be used
+[*] 	 A 192.168.182.128 192.168.182.128
+[*] 	 A aaa no_ip
+[*] 2 records found
+
+2017-02-06 22:18:24,247 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:18:24,249 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_4  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:18:24,250 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_4  Message --> :Thread started --with command nmap -sU --script=dns-recursion.nse -p 53 192.168.182.128
+2017-02-06 22:18:36,183 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_4  Message --> :Thread finished
+2017-02-06 22:18:36,183 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_4  Message --> :Saving details :
+2017-02-06 22:18:36,184 - Commands Logger - DEBUG - Command id is ->domain_4
+2017-02-06 22:18:36,185 - Commands Logger - DEBUG - commands are : [u'nmap -sU --script=dns-recursion.nse -p 53 192.168.182.128', '\nEnd']
+2017-02-06 22:18:36,185 - Commands Logger - DEBUG - My var : '$.Entries."domain_4"'
+2017-02-06 22:18:36,185 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sU --script=dns-recursion.nse -p 53 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 22:18 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0011s latency).
+PORT   STATE SERVICE
+53/udp open  domain
+|_dns-recursion: Recursion appears to be enabled
+
+Nmap done: 1 IP address (1 host up) scanned in 11.91 seconds
+
+
+
+2017-02-06 22:18:36,205 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:18:36,240 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_5  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:18:36,241 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 53 192.168.182.128
+2017-02-06 22:19:10,010 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_5  Message --> :Thread finished
+2017-02-06 22:19:10,011 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_5  Message --> :Saving details :
+2017-02-06 22:19:10,014 - Commands Logger - DEBUG - Command id is ->domain_5
+2017-02-06 22:19:10,014 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=banner.nse -p 53 192.168.182.128', '\nEnd']
+2017-02-06 22:19:10,014 - Commands Logger - DEBUG - My var : '$.Entries."domain_5"'
+2017-02-06 22:19:10,015 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=banner.nse -p 53 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 22:18 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0011s latency).
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  ISC BIND 9.4.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 33.75 seconds
+
+
+
+2017-02-06 22:19:10,031 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:19:10,049 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_6  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:19:10,050 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_6  Message --> :Thread started --with command nslookup 192.168.182.128
+2017-02-06 22:19:10,085 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_6  Message --> :Thread finished
+2017-02-06 22:19:10,085 - Commands Logger - DEBUG - Command Logger --->Command id --> domain_6  Message --> :Saving details :
+2017-02-06 22:19:10,087 - Commands Logger - DEBUG - Command id is ->domain_6
+2017-02-06 22:19:10,087 - Commands Logger - DEBUG - commands are : [u'nslookup 192.168.182.128', '\nEnd']
+2017-02-06 22:19:10,087 - Commands Logger - DEBUG - My var : '$.Entries."domain_6"'
+2017-02-06 22:19:10,087 - Commands Logger - DEBUG - Result --> : Command Executed :nslookup 192.168.182.128
+
+ResultServer:		8.8.8.8
+Address:	8.8.8.8#53
+
+** server can't find 128.182.168.192.in-addr.arpa: NXDOMAIN
+
+
+
+
+2017-02-06 22:19:10,099 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:19:10,148 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Starting Interactive Session with command --> rlogin -l root  192.168.182.128 and timeout 300
+2017-02-06 22:19:10,160 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Arg list is --> [u'.*password: .*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-02-06 22:19:10,160 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :check list is --> [u'0', u'1', u'2', '3', '4']
+2017-02-06 22:19:14,264 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Before :
+After : root@192.168.182.128's password:  j is 0
+2017-02-06 22:19:14,369 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Just sent command -->  root
+2017-02-06 22:19:16,373 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Arg list is --> [u'.*password: .*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-02-06 22:19:16,373 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :check list is --> [u'0', u'1', u'2', '3', '4']
+2017-02-06 22:19:20,996 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Before :
+After : 
+Permission denied, please try again.
+root@192.168.182.128's password:  j is 0
+2017-02-06 22:19:20,996 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Saving details :
+2017-02-06 22:19:20,998 - Commands Logger - DEBUG - Command id is ->login_1
+2017-02-06 22:19:20,998 - Commands Logger - DEBUG - commands are : [u'rlogin -l root  192.168.182.128\n', "\nThe console would produce a pattern similar to following :\n [u'.*password: .*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]\n", "\nThe index of item that console produced is :0\n\n\n:root@192.168.182.128's password: \n\n", u'root\n', "\nThe console would produce a pattern similar to following :\n [u'.*password: .*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]\n", "\nThe index of item that console produced is :0\n\n\n:\r\nPermission denied, please try again.\r\r\nroot@192.168.182.128's password: \n\n"]
+2017-02-06 22:19:20,998 - Commands Logger - DEBUG - My var : '$.Entries."login_1"'
+2017-02-06 22:19:20,998 - Commands Logger - DEBUG - Result --> : Command Executed :rlogin -l root  192.168.182.128
+
+
+Output
+
+The index of item that console produced is :0
+
+
+:
+Permission denied, please try again.
+root@192.168.182.128's password: 
+
+
+2017-02-06 22:19:21,017 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 22:19:21,017 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Before : After : 
+Permission denied, please try again.
+root@192.168.182.128's password: 
+2017-02-06 22:19:21,018 - Commands Logger - DEBUG - Command Logger --->Command id --> login_1  Message --> :Closing Child now !!
+2017-02-06 22:19:21,120 - Commands Logger - DEBUG - Command Logger --->Command id --> login_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 22:19:21,121 - Commands Logger - DEBUG - Command Logger --->Command id --> login_2  Message --> :Thread started --with command perl Scripts/rsh-grind.pl -U Scripts/names.txt 192.168.182.128
+2017-02-06 22:19:21,317 - Commands Logger - DEBUG - Command Logger --->Command id --> login_2  Message --> :Thread finished
+2017-02-06 22:19:21,317 - Commands Logger - DEBUG - Command Logger --->Command id --> login_2  Message --> :Saving details :
+2017-02-06 22:19:21,322 - Commands Logger - DEBUG - Command id is ->login_2
+2017-02-06 22:19:21,322 - Commands Logger - DEBUG - commands are : [u'perl Scripts/rsh-grind.pl -U Scripts/names.txt 192.168.182.128', '\nEnd']
+2017-02-06 22:19:21,322 - Commands Logger - DEBUG - My var : '$.Entries."login_2"'
+2017-02-06 22:19:21,322 - Commands Logger - DEBUG - Result --> : Command Executed :perl Scripts/rsh-grind.pl -U Scripts/names.txt 192.168.182.128
+
+ResultStarting rsh-grind v0.9.2 ( http://pentestmonkey.net/tools/rsh-grind )
+
+ ----------------------------------------------------------
+|                   Scan Information                       |
+ ----------------------------------------------------------
+
+Processes .............. 10
+Command ................ id
+Target ................. 192.168.182.128
+Usernames file ......... Scripts/names.txt
+Username count ......... 12
+Query timeout .......... 5 secs
+
+######## Scan started at Mon Feb  6 22:19:21 2017 #########
+192.168.182.128/toor/toor	 <null response>
+192.168.182.128/admin@123/admin@123	 <null response>
+######## Scan completed at Mon Feb  6 22:19:21 2017 #########
+2 results.
+
+12 queries in 1 seconds (12.0 queries / sec)
+
+
+
+2017-02-06 22:19:21,343 - Commands Logger - DEBUG - Finished!!!

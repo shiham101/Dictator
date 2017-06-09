@@ -1,0 +1,171 @@
+2017-02-24 10:44:41,916 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:44:41,916 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_1  Message --> :Thread started --with command python Scripts/smtp-vrfy-check.py -h 192.168.182.128 -p 25 -u Scripts/names.txt -v 0
+2017-02-24 10:44:42,064 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_1  Message --> :Thread finished
+2017-02-24 10:44:42,065 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_1  Message --> :Saving details :
+2017-02-24 10:44:42,067 - Commands Logger - DEBUG - Command id is ->smtp_1
+2017-02-24 10:44:42,067 - Commands Logger - DEBUG - commands are : [u'python Scripts/smtp-vrfy-check.py -h 192.168.182.128 -p 25 -u Scripts/names.txt -v 0', '\nEnd']
+2017-02-24 10:44:42,067 - Commands Logger - DEBUG - My var : '$.Entries."smtp_1"'
+2017-02-24 10:44:42,067 - Commands Logger - DEBUG - Result --> : Command Executed :python Scripts/smtp-vrfy-check.py -h 192.168.182.128 -p 25 -u Scripts/names.txt -v 0
+
+ResultSMTP VRFY Checker
+By brad a.
+---------------------------------
+[+] Establishing connection to 192.168.182.128 : 25
+[V] Banner:
+220 metasploitable.localdomain ESMTP Postfix (Ubuntu)
+
+[V] Sending: VRFY jame
+
+[+] User: jame  -> Not Found!
+550 5.1.1 <jame>: Recipient address rejected: User unknown in local recipient table
+
+[V] Sending: VRFY jill
+
+[+] User: jill  -> Not Found!
+550 5.1.1 <jill>: Recipient address rejected: User unknown in local recipient table
+
+[V] Sending: VRFY khan
+
+[+] User: khan  -> Not Found!
+550 5.1.1 <khan>: Recipient address rejected: User unknown in local recipient table
+
+[V] Sending: VRFY root
+
+[+] User: root  -> Unknown Error!
+252 2.0.0 root
+
+[V] Sending: VRFY toor
+
+[+] User: toor  -> Not Found!
+550 5.1.1 <toor>: Recipient address rejected: User unknown in local recipient table
+
+[V] Sending: VRFY admin
+
+[+] User: admin  -> Not Found!
+550 5.1.1 <admin>: Recipient address rejected: User unknown in local recipient table
+
+[V] Sending: VRFY msfadmin
+
+[+] User: msfadmin  -> Unknown Error!
+252 2.0.0 msfadmin
+
+[V] Sending: VRFY msf
+
+[+] User: msf  -> Not Found!
+550 5.1.1 <msf>: Recipient address rejected: User unknown in local recipient table
+
+[V] Sending: VRFY admin@123
+
+[+] User: admin@123  -> Unknown Error!
+501 5.1.3 Bad recipient address syntax
+
+[V] Attempted ten usernames, reconnecting
+[V] Banner:
+220 metasploitable.localdomain ESMTP Postfix (Ubuntu)
+
+[V] Sending: VRFY abc
+
+[+] User: abc  -> Unknown Error!
+252 2.0.0 abc
+
+[V] Sending: VRFY furqan
+
+[+] User: furqan  -> Not Found!
+550 5.1.1 <furqan>: Recipient address rejected: User unknown in local recipient table
+
+[V] Sending: VRFY pal-blr-furqan
+
+[+] User: pal-blr-furqan  -> Not Found!
+550 5.1.1 <pal-blr-furqan>: Recipient address rejected: User unknown in local recipient table
+
+
+
+
+2017-02-24 10:44:42,071 - Commands Logger - DEBUG - Finished!!!
+2017-02-24 10:44:42,089 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:44:42,089 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_2  Message --> :Thread started --with command python Scripts/smtp-vrfy.py -t 192.168.182.128 -p 25 -f Scripts/names.txt
+2017-02-24 10:44:42,190 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_2  Message --> :Thread finished
+2017-02-24 10:44:42,190 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_2  Message --> :Saving details :
+2017-02-24 10:44:42,191 - Commands Logger - DEBUG - Command id is ->smtp_2
+2017-02-24 10:44:42,191 - Commands Logger - DEBUG - commands are : [u'python Scripts/smtp-vrfy.py -t 192.168.182.128 -p 25 -f Scripts/names.txt', '\nEnd']
+2017-02-24 10:44:42,192 - Commands Logger - DEBUG - My var : '$.Entries."smtp_2"'
+2017-02-24 10:44:42,192 - Commands Logger - DEBUG - Result --> : Command Executed :python Scripts/smtp-vrfy.py -t 192.168.182.128 -p 25 -f Scripts/names.txt
+
+Result[+] Connecting to server
+[+] Connected onFri Feb 24 10:44:42 2017
+[+] Waiting for SMTP banner
+220 metasploitable.localdomain ESMTP Postfix (Ubuntu)
+
+[-] Not found jill
+
+[-] Not found khan
+
+[+] Found! root
+
+[-] Not found toor
+
+[-] Not found admin
+
+[+] Found! msfadmin
+
+[-] Not found msf
+
+[+] Found! abc
+
+[-] Not found furqan
+
+[-] Not found pal-blr-furqan
+
+
+
+
+2017-02-24 10:44:42,197 - Commands Logger - DEBUG - Finished!!!
+2017-02-24 10:44:42,216 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_3  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:44:42,216 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_3  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 25 192.168.182.128
+2017-02-24 10:44:54,605 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_3  Message --> :Thread finished
+2017-02-24 10:44:54,605 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_3  Message --> :Saving details :
+2017-02-24 10:44:54,607 - Commands Logger - DEBUG - Command id is ->smtp_3
+2017-02-24 10:44:54,607 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=banner.nse -p 25 192.168.182.128', '\nEnd']
+2017-02-24 10:44:54,607 - Commands Logger - DEBUG - My var : '$.Entries."smtp_3"'
+2017-02-24 10:44:54,607 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=banner.nse -p 25 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-24 10:44 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00056s latency).
+PORT   STATE SERVICE VERSION
+25/tcp open  smtp    Postfix smtpd
+|_banner: 220 metasploitable.localdomain ESMTP Postfix (Ubuntu)
+Service Info: Host:  metasploitable.localdomain
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.36 seconds
+
+
+
+2017-02-24 10:44:54,612 - Commands Logger - DEBUG - Finished!!!
+2017-02-24 10:44:54,663 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_4  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:44:54,665 - Commands Logger - DEBUG - Command Logger --->Command id --> smtp_4  Message --> :Thread started --with command nmap --script=smtp-open-relay.nse -p 25 192.168.182.128
+2017-02-24 10:45:55,652 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:45:55,653 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 23 192.168.182.128 --script telnet-encryption
+2017-02-24 10:46:07,483 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-02-24 10:46:07,483 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-02-24 10:46:07,484 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-02-24 10:46:07,485 - Commands Logger - DEBUG - commands are : [u'nmap -p 23 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-02-24 10:46:07,485 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-02-24 10:46:07,485 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 23 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-24 10:45 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00041s latency).
+PORT   STATE SERVICE
+23/tcp open  telnet
+| telnet-encryption: 
+|_  Telnet server does not support encryption
+
+Nmap done: 1 IP address (1 host up) scanned in 11.80 seconds
+
+
+
+2017-02-24 10:46:07,509 - Commands Logger - DEBUG - Finished!!!

@@ -1,0 +1,27 @@
+2017-01-05 00:35:42,780 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-01-05 00:35:48,794 - Info Logger - DEBUG - 
+
+
+Welcome  STARTING MAIN METHOD OF DRIVER FILE FOR PROJECT ID --> 340
+2017-01-05 00:35:48,811 - Info Logger - DEBUG - Starting method --> parse_and_process()
+2017-01-05 00:35:48,815 - Info Logger - DEBUG - {*}-Starting method --> InsertIPExploits()
+2017-01-05 00:35:48,815 - Info Logger - DEBUG - Inserting many records
+2017-01-05 00:35:48,842 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 340
+2017-01-05 00:35:48,844 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-01-05 00:35:48,851 - Info Logger - DEBUG - Started getUNknownOnly Services()
+2017-01-05 00:42:47,285 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-01-05 00:42:53,398 - Info Logger - DEBUG - 
+
+
+Welcome  STARTING MAIN METHOD OF DRIVER FILE FOR PROJECT ID --> 310
+2017-01-05 00:42:53,399 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 310
+2017-01-05 00:42:53,401 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-01-05 00:42:53,466 - Info Logger - DEBUG - Started getUNknownOnly Services()

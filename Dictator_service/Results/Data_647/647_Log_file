@@ -1,0 +1,613 @@
+2017-05-11 08:24:37,890 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 08:24:37,891 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 08:24:37,892 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_647/647_192.168.182.132_80_capture-output.pcap
+2017-05-11 08:24:40,895 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:24:40,908 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 192.168.182.132
+2017-05-11 08:24:57,931 - Commands Logger - ERROR - Error -->Command id --> http_5  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:24:57,981 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 08:24:58,109 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:24:58,110 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 192.168.182.132
+2017-05-11 08:25:04,597 - Commands Logger - ERROR - Error -->Command id --> http_6  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:25:04,629 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:25:04,630 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132
+2017-05-11 08:25:18,057 - Commands Logger - ERROR - Error -->Command id --> http_7  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:25:18,154 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:25:18,154 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :Thread started --with command nikto -h  192.168.182.132:80
+2017-05-11 08:29:16,000 - Commands Logger - ERROR - Error -->Command id --> http_1  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:29:16,021 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:29:16,022 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.132:80
+2017-05-11 08:29:57,095 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :Thread finished
+2017-05-11 08:29:57,095 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :Saving details :
+2017-05-11 08:29:57,097 - Commands Logger - DEBUG - Command id is ->http_2
+2017-05-11 08:29:57,097 - Commands Logger - DEBUG - commands are : [u'hoppy -t 12 -h 192.168.182.132:80', '\nEnd']
+2017-05-11 08:29:57,097 - Commands Logger - DEBUG - My var : '$.Entries."http_2"'
+2017-05-11 08:29:57,097 - Commands Logger - DEBUG - Result --> : Command Executed :hoppy -t 12 -h 192.168.182.132:80
+
+Result
+[+] hoppy 1.8.1 run @ Thu May 11 08:29:16 2017:
+
+	[+] hoppy -t 12 -h 192.168.182.132:80
+
+[+] Configuring Test Environment
+
+	[+] Setup complete :-)
+
+[+] Initialising Connection
+
+	[+] Test host 192.168.182.132 resolves to 192.168.182.132
+
+	[+] Testing Connection to 192.168.182.132:80  - OK Data Recieved
+
+[+] Beginning spider with '/' and '/images/dummy.txt' as start points:
+
+		/icons/ 
+		/cgi-bin/ 
+		/docs/ 
+		/docs/2.4/ 
+		/docs/2.4/mod/ 
+
+	[+] Spider Completed :-) 
+
+	[+] Found 5 directories for testing
+
+[+] Testing http://192.168.182.132:80 [192.168.182.132] with /images/dummy.txt as webDAV location
+
+	[+] ......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+
+	[+] Done :-)
+
+[+] Summary of Findings
+
+	[+] Method Responses:
+
+		Copy                      -	 HTTP/1.1 405 Method Not Allowed
+		Debug                     -	 HTTP/1.1 501 Not Implemented
+		Delete /images/dummy.txt.put -	 HTTP/1.1 405 Method Not Allowed
+		Digest Auth               -	 HTTP/1.1 200 OK
+		Expect Header XSS         -	 HTTP/1.1 417 Expectation Failed
+		IIS Cookie Test           -	 HTTP/1.1 200 OK
+		Invalid Method            -	 HTTP/1.1 501 Not Implemented
+		Lock                      -	 HTTP/1.1 405 Method Not Allowed
+		Move                      -	 HTTP/1.1 405 Method Not Allowed
+		NTLM Auth                 -	 HTTP/1.1 200 OK
+		Options                   -	 HTTP/1.1 200 OK
+		Propfind /                -	 HTTP/1.1 405 Method Not Allowed
+		Propfind /images          -	 HTTP/1.1 405 Method Not Allowed
+		Propfind /images/         -	 HTTP/1.1 405 Method Not Allowed
+		Propfind /images/dummy.txt -	 HTTP/1.1 405 Method Not Allowed
+		Propfind                  -	 HTTP/1.1 405 Method Not Allowed
+		Proppatch /images/        -	 HTTP/1.1 405 Method Not Allowed
+		Proppatch /images/dummy.txt -	 HTTP/1.1 405 Method Not Allowed
+		Proxy Connect             -	 HTTP/1.1 405 Method Not Allowed
+		Proxy                     -	 HTTP/1.1 200 OK
+		Put /images/dummy.txt.put -	 HTTP/1.1 405 Method Not Allowed
+		Trace                     -	 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+		Trace                     -	 HTTP/1.1 405 Method Not Allowed
+		Track                     -	 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+		Track                     -	 HTTP/1.1 501 Not Implemented
+		crossdomain.xml           -	 HTTP/1.1 200 OK
+		mkcol                     -	 HTTP/1.1 405 Method Not Allowed
+		unLock                    -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /c%c0%afgi-bin  -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /cgi-bin        -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /d%c0%afocs     -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /d%c0%afocs/2.4 -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /d%c0%afocs/2.4/mod -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /docs           -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /docs/2.4       -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /docs/2.4/mod   -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /i%c0%afcons    -	 HTTP/1.1 405 Method Not Allowed
+		webDav on /icons          -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /c%c0%afgi-bin/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /cgi-bin/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /d%c0%afocs/2.4/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /d%c0%afocs/2.4/mod/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /d%c0%afocs/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /docs/2.4/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /docs/2.4/mod/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /docs/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /i%c0%afcons/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavDELETE on /icons/dnehoppy.html -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /c%c0%afgi-bin -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /cgi-bin     -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /d%c0%afocs  -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /d%c0%afocs/2.4 -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /d%c0%afocs/2.4/mod -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /docs        -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /docs/2.4    -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /docs/2.4/mod -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /i%c0%afcons -	 HTTP/1.1 405 Method Not Allowed
+		webDavPUT on /icons       -	 HTTP/1.1 405 Method Not Allowed
+
+	[+] Interesting Method Responses:
+
+		crossdomain.xml           -	 HTTP/1.1 200 OK
+
+	[+] Information Leakage:
+
+		[32mAllow[0;0m:
+		[32mAllow[0;0m: GET,HEAD,POST,OPTIONS
+		[32mApache[0;0m2 Debian Default Page
+		[32mApache[0;0m2 package with Debian. However, check <a
+		[32mETag:[0;0m "2b60-529c7a9b51180"
+		[32mETag:[0;0m "c8-4f448c3e17d00"
+		[32mServer:[0;0m Apache/2.4.18 (Debian)
+		[32mVary[0;0m: Accept-Encoding
+		/etc/[32mapache[0;0m2/
+		/usr/share/doc/[32mapache[0;0m2/README.Debian.gz</b>. Refer to this for the full
+		<a href="http://httpd.[32mapache[0;0m.org/docs/2.4/mod/mod_userdir.html">public_html</a>
+		<address>[32mApache[0;0m/2.4.18 (Debian) Server at  Port 80</address>
+		<address>[32mApache[0;0m/2.4.18 (Debian) Server at hophost Port 80</address>
+		<address>[32mApache[0;0m/2.4.18 (Debian) Server at www.google.com Port 443</address>
+		<address>Apache/2.4.18 (Debian) Server at www.[32mgoogle[0;0m.com Port 443</address>
+		<b>Calling <tt>/usr/bin/[32mapache[0;0m2</tt> directly will not work</b> with the
+		<title>[32mApache[0;0m2 Debian Default Page: It works</title>
+		<tt>[32mapache[0;0m2.conf</tt> is the main configuration
+		Debian's [32mApache[0;0m2 default configuration is different from the
+		If you can read this page, it means that the [32mApache[0;0m HTTP server installed at
+		Server: [32mApache[0;0m/2.4.18 (Debian)
+		The binary is called [32mapache[0;0m2. Due to the use of
+		The configuration layout for an [32mApache[0;0m2 web server installation on Debian systems is as follows:
+		document root directory in <tt>/etc/[32mapache[0;0m2/apache2.conf</tt>.
+		environment variables, in the default configuration, [32mapache[0;0m2 needs to be
+		found by accessing the <a href="/manual">manual</a> if the <tt>[32mapache[0;0m2-doc</tt>
+		href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=[32mapache[0;0m2;repeatmerged=0">existing
+		operation of the [32mApache[0;0m2 server after installation on Debian systems.
+		started/stopped with <tt>/etc/init.d/[32mapache[0;0m2</tt> or <tt>apache2ctl</tt>.
+		|-- [32mapache[0;0m2.conf
+
+	[+] IP Leakage:
+
+		<address>Apache/2.4.18 (Debian) Server at [31m192.168.182.132[0;0m Port 80</address>
+		<address>Apache/2.4.18 (Debian) Server at [31m127.0.1.1[0;0m Port 80</address>
+
+	[+] Extracted Data:
+
+		crossdomain.xml:		 <[32mallow-access-from[0;0m domain="*" />
+
+
+	[+] 373 check(s) failed to return data, try incrreasing the socket timeout (-t) and re-run with the -4 switch for more information
+
+
+None
+
+2017-05-11 08:29:57,192 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:29:57,225 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:29:57,225 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :Thread started --with command  perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.132:80
+2017-05-11 08:30:06,066 - Commands Logger - ERROR - Error -->Command id --> http_3  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:30:06,169 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Starting Special char-Interactive Session with command --> w3af_console and timeout 1200
+2017-05-11 08:30:06,194 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:06,195 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', u'2', '3', '4']
+2017-05-11 08:30:19,867 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : w3af>>>  j is 0
+2017-05-11 08:30:19,969 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  Y
+2017-05-11 08:30:21,971 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:21,971 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '3', '4']
+2017-05-11 08:30:23,972 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : Y
+Unknown command 'Y'
+w3af>>>  j is 0
+2017-05-11 08:30:24,077 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  misc-settings
+2017-05-11 08:30:26,079 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:26,079 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:28,083 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : misc-settings
+w3af/config:misc-settings>>>  j is 0
+2017-05-11 08:30:28,185 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  set max_discovery_time 7
+2017-05-11 08:30:30,187 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:30,187 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:32,190 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : set max_discovery_time 7
+w3af/config:misc-settings>>>  j is 0
+2017-05-11 08:30:32,294 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:30:34,296 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:34,296 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:36,298 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+The configuration has been saved.
+w3af>>>  j is 0
+2017-05-11 08:30:36,399 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  http-settings
+2017-05-11 08:30:38,401 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:38,401 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:40,407 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : http-settings
+w3af/config:http-settings>>>  j is 0
+2017-05-11 08:30:40,508 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  set timeout 10
+2017-05-11 08:30:42,511 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:42,511 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:44,514 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : set timeout 10
+w3af/config:http-settings>>>  j is 0
+2017-05-11 08:30:44,616 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:30:46,619 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:46,619 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:48,621 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+The configuration has been saved.
+w3af>>>  j is 0
+2017-05-11 08:30:48,723 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  target
+2017-05-11 08:30:50,727 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:50,727 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:52,730 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : target
+w3af/config:target>>>  j is 0
+2017-05-11 08:30:52,831 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  set target 192.168.182.132:80
+2017-05-11 08:30:54,833 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:54,833 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:30:56,836 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : set target 192.168.182.132:80
+w3af/config:target>>>  j is 0
+2017-05-11 08:30:56,937 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:30:58,941 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:30:58,941 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:31:00,942 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+The configuration has been saved.
+w3af>>>  j is 0
+2017-05-11 08:31:01,044 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  plugins
+2017-05-11 08:31:03,047 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:31:03,047 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:31:05,051 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : plugins
+w3af/plugins>>>  j is 0
+2017-05-11 08:31:05,152 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  audit sqli xss csrf
+2017-05-11 08:31:07,154 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:31:07,155 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:31:09,157 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : audit sqli xss csrf
+w3af/plugins>>>  j is 0
+2017-05-11 08:31:09,259 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  crawl web_spider
+2017-05-11 08:31:11,260 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:31:11,260 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:31:13,262 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : crawl web_spider
+w3af/plugins>>>  j is 0
+2017-05-11 08:31:13,364 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:31:15,366 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:31:15,367 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:31:17,371 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+w3af>>>  j is 0
+2017-05-11 08:31:17,473 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  start
+2017-05-11 08:31:19,476 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:31:19,477 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', u'1', u'2', '1', '2']
+2017-05-11 08:31:24,095 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : start
+New URL found by web_spider plugin: "http://192.168.182.132/icons/openlogo-75.png"
+New URL found by web_spider plugin: "http://192.168.182.132/"
+The following is a list of broken links that were found by the web_spider plugin:
+- http://192.168.182.132/manual [ referenced from: http://192.168.182.132/ ]
+Found 2 URLs and 3 different injections points.
+The URL list is:
+- http://192.168.182.132/
+- http://192.168.182.132/icons/openlogo-75.png
+The list of fuzzable requests is:
+- Method: GET | http://192.168.182.132/
+- Method: GET | http://192.168.182.132/
+- Method: GET | http://192.168.182.132/icons/openlogo-75.png
+Scan finished in 4 seconds.
+Stopping the core...
+w3af>>>  j is 0
+2017-05-11 08:31:24,196 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  exit
+2017-05-11 08:31:26,198 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'', u'\n', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:31:26,198 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-11 08:31:28,199 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After :  j is 0
+2017-05-11 08:31:28,200 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Saving details :
+2017-05-11 08:31:28,202 - Commands Logger - DEBUG - Command id is ->http_4
+2017-05-11 08:31:28,202 - Commands Logger - DEBUG - commands are : [u'w3af_console\n', "[u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nw3af>>> ', u'Y\n', "[u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", "\n\nY\r\nUnknown command 'Y'\r\nw3af>>> ", u'misc-settings\n', "[u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nmisc-settings\r\nw3af/config:misc-settings>>> ', u'set max_discovery_time 7\n', "[u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nset max_discovery_time 7\r\nw3af/config:misc-settings>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\nThe configuration has been saved.\r\nw3af>>> ', u'http-settings\n', "[u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nhttp-settings\r\nw3af/config:http-settings>>> ', u'set timeout 10\n', "[u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nset timeout 10\r\nw3af/config:http-settings>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\r\nThe configuration has been saved.\r\nw3af>>> ', u'target\n', "[u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\ntarget\r\nw3af/config:target>>> ', u'set target 192.168.182.132:80\n', "[u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nset target 192.168.182.132:80\r\nw3af/config:target>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\r\nThe configuration has been saved.\r\nw3af>>> ', u'plugins\n', "[u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nplugins\r\nw3af/plugins>>> ', u'audit sqli xss csrf\n', "[u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\naudit sqli xss csrf\r\r\nw3af/plugins>>> ', u'crawl web_spider\n', "[u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\ncrawl web_spider\r\r\nw3af/plugins>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\nw3af>>> ', u'start\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nstart\r\r\nNew URL found by web_spider plugin: "http://192.168.182.132/icons/openlogo-75.png"\r\r\nNew URL found by web_spider plugin: "http://192.168.182.132/"\r\r\nThe following is a list of broken links that were found by the web_spider plugin:\r\r\n- http://192.168.182.132/manual [ referenced from: http://192.168.182.132/ ]\r\r\nFound 2 URLs and 3 different injections points.\r\r\nThe URL list is:\r\r\n- http://192.168.182.132/\r\r\n- http://192.168.182.132/icons/openlogo-75.png\r\r\nThe list of fuzzable requests is:\r\r\n- Method: GET | http://192.168.182.132/\r\r\n- Method: GET | http://192.168.182.132/\r\r\n- Method: GET | http://192.168.182.132/icons/openlogo-75.png\r\r\nScan finished in 4 seconds.\r\r\nStopping the core...\r\r\nw3af>>> ', u'exit\n', "[u'', u'\\n', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\n']
+2017-05-11 08:31:28,202 - Commands Logger - DEBUG - My var : '$.Entries."http_4"'
+2017-05-11 08:31:28,203 - Commands Logger - DEBUG - Result --> : Command Executed :w3af_console
+
+
+Result:
+
+
+
+2017-05-11 08:31:28,216 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:31:28,216 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before : After : 
+2017-05-11 08:31:28,216 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Closing Child now !!
+2017-05-11 08:31:28,336 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 08:31:28,337 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 08:31:28,337 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 8000 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_647/647_192.168.182.132_8000_capture-output.pcap
+2017-05-11 08:31:31,340 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:31:31,341 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 8000 192.168.182.132
+2017-05-11 08:31:37,740 - Commands Logger - ERROR - Error -->Command id --> http_5  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:31:37,789 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 08:31:37,851 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:31:37,852 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 8000 192.168.182.132
+2017-05-11 08:31:44,261 - Commands Logger - ERROR - Error -->Command id --> http_6  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:31:44,302 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:31:44,303 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+2017-05-11 08:31:51,483 - Commands Logger - ERROR - Error -->Command id --> http_7  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:31:51,538 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:31:51,538 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :Thread started --with command nikto -h  192.168.182.132:8000
+2017-05-11 08:32:00,707 - Commands Logger - ERROR - Error -->Command id --> http_1  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:32:00,725 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:32:00,726 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.132:8000
+2017-05-11 08:32:01,842 - Commands Logger - ERROR - Error -->Command id --> http_2  Message --> :Exception in thread 'NoneType' object has no attribute 'decode'
+2017-05-11 08:32:01,872 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:32:01,873 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :Thread started --with command  perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.132:8000
+2017-05-11 08:35:12,742 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 08:35:12,743 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 08:35:12,744 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 8000 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_647/647_192.168.182.132_8000_capture-output.pcap
+2017-05-11 08:35:15,748 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:35:15,749 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 8000 192.168.182.132
+2017-05-11 08:35:22,182 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-11 08:35:22,182 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-11 08:35:22,186 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-11 08:35:22,186 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 08:35:22,186 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-11 08:35:22,186 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 08:35 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00053s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.39 seconds
+
+
+
+2017-05-11 08:35:22,192 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:35:22,195 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 08:35:22,241 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Parent process already killed:
+2017-05-11 08:35:22,250 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:35:22,251 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 8000 192.168.182.132
+2017-05-11 08:35:28,602 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-11 08:35:28,603 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-11 08:35:28,610 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-11 08:35:28,610 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 08:35:28,610 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-11 08:35:28,610 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 08:35 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00038s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.33 seconds
+
+
+
+2017-05-11 08:35:28,616 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:35:28,652 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:35:28,653 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+2017-05-11 08:35:35,753 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-11 08:35:35,754 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-11 08:35:35,756 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-11 08:35:35,756 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 08:35:35,756 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-11 08:35:35,756 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 08:35 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00048s latency).
+PORT     STATE    SERVICE  VERSION
+8000/tcp filtered http-alt
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.06 seconds
+
+
+
+2017-05-11 08:35:35,777 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:35:35,806 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:35:35,807 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :Thread started --with command nikto -h  192.168.182.132:8000
+2017-05-11 08:35:44,749 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :Thread finished
+2017-05-11 08:35:44,750 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :Saving details :
+2017-05-11 08:35:44,752 - Commands Logger - DEBUG - Command id is ->http_1
+2017-05-11 08:35:44,752 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.132:8000', '\nEnd']
+2017-05-11 08:35:44,752 - Commands Logger - DEBUG - My var : '$.Entries."http_1"'
+2017-05-11 08:35:44,752 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.132:8000
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
++ No web server found on 192.168.182.132:8000
+---------------------------------------------------------------------------
++ 0 host(s) tested
+
+
+
+2017-05-11 08:35:44,753 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:35:44,770 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:35:44,771 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.132:8000
+2017-05-11 08:35:45,869 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :Thread finished
+2017-05-11 08:35:45,869 - Commands Logger - DEBUG - Command Logger --->Command id --> http_2  Message --> :Saving details :
+2017-05-11 08:35:45,871 - Commands Logger - DEBUG - Command id is ->http_2
+2017-05-11 08:35:45,872 - Commands Logger - DEBUG - commands are : [u'hoppy -t 12 -h 192.168.182.132:8000', '\nEnd']
+2017-05-11 08:35:45,872 - Commands Logger - DEBUG - My var : '$.Entries."http_2"'
+2017-05-11 08:35:45,872 - Commands Logger - DEBUG - Result --> : Command Executed :hoppy -t 12 -h 192.168.182.132:8000
+
+Result
+[+] hoppy 1.8.1 run @ Thu May 11 08:35:44 2017:
+
+	[+] hoppy -t 12 -h 192.168.182.132:8000
+
+[+] Configuring Test Environment
+
+	[+] Setup complete :-)
+
+[+] Initialising Connection
+
+	[+] Test host 192.168.182.132 resolves to 192.168.182.132
+
+	[+] Testing Connection to 192.168.182.132:8000 
+
+	[!] No response from the server, Connection refused, maybe it's an ssl connection or try increaseing timeout (-t)
+
+
+
+
+2017-05-11 08:35:45,873 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:35:45,907 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 08:35:45,908 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :Thread started --with command  perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.132:8000
+2017-05-11 08:37:15,229 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :Thread finished
+2017-05-11 08:37:15,230 - Commands Logger - DEBUG - Command Logger --->Command id --> http_3  Message --> :Saving details :
+2017-05-11 08:37:15,232 - Commands Logger - DEBUG - Command id is ->http_3
+2017-05-11 08:37:15,232 - Commands Logger - DEBUG - commands are : [u' perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.132:8000', '\nEnd']
+2017-05-11 08:37:15,233 - Commands Logger - DEBUG - My var : '$.Entries."http_3"'
+2017-05-11 08:37:15,233 - Commands Logger - DEBUG - Result --> : Command Executed : perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.132:8000
+
+ResultStarting http-dir-enum v0.4.3 ( http://labs.portcullis.co.uk/application/http-dir-enum/ )
+Copyright (C) 2006 Mark Lowe ( mrl@portcullis-security.com )
+
+ ----------------------------------------------------------
+|                   Scan Information                       |
+ ----------------------------------------------------------
+
+URL .................... http://192.168.182.132:8000
+Processes .............. 10
+Directory name file .... Scripts/http-dir-enum/directory-names.txt
+Query timeout .......... 20 secs
+HTTP Method ............ HEAD
+Max Queries / sec ...... unlimited
+Trailing slash ......... On
+Recursive dir search ... On
+Close connections ...... Off
+Follow redirects ....... Off
+Case sensistive dirs ... On
+Auto-ignore ............ On
+
+######## Scan started on Thu May 11 08:35:46 2017 #########
+[I] Processing directory: / (0 dirs remaining)
+[I] Auto-ignoring HTTP code 500 for http://192.168.182.132:8000
+######## Scan completed on Thu May 11 08:37:15 2017 #########
+0 results.
+
+706 queries in 89 seconds (8 queries / sec)
+
+
+
+2017-05-11 08:37:15,234 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:37:15,259 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Starting Special char-Interactive Session with command --> w3af_console and timeout 1200
+2017-05-11 08:37:15,345 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:15,345 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', u'2', '3', '4']
+2017-05-11 08:37:20,275 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : w3af>>>  j is 0
+2017-05-11 08:37:20,377 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  Y
+2017-05-11 08:37:22,378 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:22,379 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '3', '4']
+2017-05-11 08:37:24,381 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : Y
+Unknown command 'Y'
+w3af>>>  j is 0
+2017-05-11 08:37:24,484 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  misc-settings
+2017-05-11 08:37:26,487 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:26,487 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:28,490 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : misc-settings
+w3af/config:misc-settings>>>  j is 0
+2017-05-11 08:37:28,593 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  set max_discovery_time 7
+2017-05-11 08:37:30,596 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:30,596 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:32,598 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : set max_discovery_time 7
+w3af/config:misc-settings>>>  j is 0
+2017-05-11 08:37:32,701 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:37:34,703 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:34,703 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:36,706 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+The configuration has been saved.
+w3af>>>  j is 0
+2017-05-11 08:37:36,808 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  http-settings
+2017-05-11 08:37:38,810 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:38,811 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:40,815 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : http-settings
+w3af/config:http-settings>>>  j is 0
+2017-05-11 08:37:40,916 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  set timeout 10
+2017-05-11 08:37:42,919 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:42,919 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:44,921 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : set timeout 10
+w3af/config:http-settings>>>  j is 0
+2017-05-11 08:37:45,025 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:37:47,027 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:47,029 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:49,030 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+The configuration has been saved.
+w3af>>>  j is 0
+2017-05-11 08:37:49,134 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  target
+2017-05-11 08:37:51,135 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:51,135 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:53,137 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : target
+w3af/config:target>>>  j is 0
+2017-05-11 08:37:53,240 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  set target 192.168.182.132:8000
+2017-05-11 08:37:55,243 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:55,244 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:37:57,247 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : set target 192.168.182.132:8000
+w3af/config:target>>>  j is 0
+2017-05-11 08:37:57,349 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:37:59,353 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:37:59,353 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:38:01,355 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+The configuration has been saved.
+w3af>>>  j is 0
+2017-05-11 08:38:01,457 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  plugins
+2017-05-11 08:38:03,459 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:38:03,460 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:38:05,464 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : plugins
+w3af/plugins>>>  j is 0
+2017-05-11 08:38:05,568 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  audit sqli xss csrf
+2017-05-11 08:38:07,570 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:38:07,571 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:38:09,575 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : audit sqli xss csrf
+w3af/plugins>>>  j is 0
+2017-05-11 08:38:09,681 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  crawl web_spider
+2017-05-11 08:38:11,683 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:38:11,683 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:38:13,685 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : crawl web_spider
+w3af/plugins>>>  j is 0
+2017-05-11 08:38:13,787 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  back
+2017-05-11 08:38:15,789 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:38:15,789 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', '1', '2']
+2017-05-11 08:38:17,791 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : back
+w3af>>>  j is 0
+2017-05-11 08:38:17,891 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  start
+2017-05-11 08:38:19,894 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:38:19,895 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', u'1', u'2', '1', '2']
+2017-05-11 08:38:23,007 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After : startThe following error was detected and could not be resolved:
+The remote web server is not answering our HTTP requests, multiple errors have been found while trying to GET a response from the server.
+
+In most cases this means that the configured target is incorrect, the port is closed, there is a firewall blocking our packets or there is no HTTP daemon listening on that port.
+
+Please verify your target configuration and try again.
+
+Scan finished in 2 seconds.
+Stopping the core...
+w3af>>>  j is 0
+2017-05-11 08:38:23,108 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Just sent command -->  exit
+2017-05-11 08:38:25,111 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Arg list is --> [u'', u'\n', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-11 08:38:25,111 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-11 08:38:27,115 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before :
+After :  j is 0
+2017-05-11 08:38:27,115 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Saving details :
+2017-05-11 08:38:27,117 - Commands Logger - DEBUG - Command id is ->http_4
+2017-05-11 08:38:27,117 - Commands Logger - DEBUG - commands are : [u'w3af_console\n', "[u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nw3af>>> ', u'Y\n', "[u'.*w3af>>> ', u'[$,#]', u'.*Usage of w3af for sending any traffic.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", "\n\nY\r\nUnknown command 'Y'\r\nw3af>>> ", u'misc-settings\n', "[u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nmisc-settings\r\nw3af/config:misc-settings>>> ', u'set max_discovery_time 7\n', "[u'.*w3af/config:misc-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nset max_discovery_time 7\r\nw3af/config:misc-settings>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\nThe configuration has been saved.\r\nw3af>>> ', u'http-settings\n', "[u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nhttp-settings\r\nw3af/config:http-settings>>> ', u'set timeout 10\n', "[u'.*w3af/config:http-settings>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nset timeout 10\r\nw3af/config:http-settings>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\nThe configuration has been saved.\r\nw3af>>> ', u'target\n', "[u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\ntarget\r\nw3af/config:target>>> ', u'set target 192.168.182.132:8000\n', "[u'.*w3af/config:target>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nset target 192.168.182.132:8000\r\nw3af/config:target>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\nThe configuration has been saved.\r\nw3af>>> ', u'plugins\n', "[u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nplugins\r\nw3af/plugins>>> ', u'audit sqli xss csrf\n', "[u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\naudit sqli xss csrf\r\nw3af/plugins>>> ', u'crawl web_spider\n', "[u'.*w3af/plugins>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\ncrawl web_spider\r\nw3af/plugins>>> ', u'back\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nback\r\nw3af>>> ', u'start\n', "[u'.*w3af>>> ', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\nstartThe following error was detected and could not be resolved:\r\n\rThe remote web server is not answering our HTTP requests, multiple errors have been found while trying to GET a response from the server.\r\n\r\r\n\rIn most cases this means that the configured target is incorrect, the port is closed, there is a firewall blocking our packets or there is no HTTP daemon listening on that port.\r\n\r\r\n\rPlease verify your target configuration and try again.\r\n\r\r\r\nScan finished in 2 seconds.\r\r\nStopping the core...\r\r\nw3af>>> ', u'exit\n', "[u'', u'\\n', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]", '\n\n']
+2017-05-11 08:38:27,117 - Commands Logger - DEBUG - My var : '$.Entries."http_4"'
+2017-05-11 08:38:27,118 - Commands Logger - DEBUG - Result --> : Command Executed :w3af_console
+
+
+Result:
+
+
+
+2017-05-11 08:38:27,120 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 08:38:27,121 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Before : After : 
+2017-05-11 08:38:27,122 - Commands Logger - DEBUG - Command Logger --->Command id --> http_4  Message --> :Closing Child now !!

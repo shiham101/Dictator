@@ -1,0 +1,32 @@
+2017-03-14 21:20:08,708 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-03-14 21:20:14,716 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 637
+2017-03-14 21:20:14,718 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-03-14 21:20:14,721 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-03-14 21:20:14,723 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-03-14 21:20:14,723 - Info Logger - DEBUG - Service,Host,port  is -->ftp  192.168.182.128  21
+2017-03-14 21:20:14,730 - Info Logger - DEBUG - Command id --> ftp_sniff_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 637
+2017-03-14 21:20:14,730 - Info Logger - DEBUG - Command id --> ftp_sniff_1  Message --> :Starting single line + Sniff
+2017-03-14 21:20:14,731 - Info Logger - DEBUG - Command id --> ftp_sniff_1  Message --> :IN Start_sniffing() method
+2017-03-14 21:20:17,733 - Info Logger - DEBUG - Command id --> ftp_sniff_1  Message --> :Starting Interactive Session with command --> ftp 192.168.182.128 21 and timeout 600
+2017-03-14 21:22:30,645 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-03-14 21:23:03,745 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-03-14 21:23:09,749 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 637
+2017-03-14 21:23:09,751 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-03-14 21:23:09,753 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-03-14 21:23:09,768 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-03-14 21:23:09,770 - Info Logger - DEBUG - Service,Host,port  is -->ftp  192.168.182.128  21
+2017-03-14 21:23:09,780 - Info Logger - DEBUG - Command id --> ftp_sniff_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 637
+2017-03-14 21:23:09,781 - Info Logger - DEBUG - Command id --> ftp_sniff_1  Message --> :Starting single line + Sniff
+2017-03-14 21:23:09,782 - Info Logger - DEBUG - Command id --> ftp_sniff_1  Message --> :IN Start_sniffing() method

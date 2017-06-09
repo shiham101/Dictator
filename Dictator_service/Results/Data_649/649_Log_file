@@ -1,0 +1,408 @@
+2017-05-11 09:52:51,024 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 09:52:51,024 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 09:52:51,026 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 09:52:51,026 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 09:52:51,027 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_649/649_192.168.182.132_80_capture-output.pcap
+2017-05-11 09:52:51,027 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_649/649_192.168.182.132_80_capture-output.pcap
+2017-05-11 09:52:54,032 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:52:54,032 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:52:54,032 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:52:54,033 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 192.168.182.132
+2017-05-11 09:52:54,033 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 192.168.182.132
+2017-05-11 09:52:54,033 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 192.168.182.132
+2017-05-11 09:52:55,041 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 09:52:55,041 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 09:52:55,041 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-11 09:52:55,042 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 09:52:55,042 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 09:52:55,042 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-11 09:52:55,043 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 8000 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_649/649_192.168.182.132_8000_capture-output.pcap
+2017-05-11 09:52:55,043 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 8000 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_649/649_192.168.182.132_8000_capture-output.pcap
+2017-05-11 09:52:55,043 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 8000 and host 192.168.182.132' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_649/649_192.168.182.132_8000_capture-output.pcap
+2017-05-11 09:52:58,043 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:52:58,043 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:52:58,043 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:52:58,045 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 8000 192.168.182.132
+2017-05-11 09:52:58,045 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 8000 192.168.182.132
+2017-05-11 09:52:58,045 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 8000 192.168.182.132
+2017-05-11 09:53:04,490 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-11 09:53:04,490 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-11 09:53:04,490 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-11 09:53:04,491 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-11 09:53:04,491 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-11 09:53:04,491 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:52 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00047s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.41 seconds
+
+
+
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:52 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00047s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.41 seconds
+
+
+
+2017-05-11 09:53:04,501 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:52 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00047s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.41 seconds
+
+
+
+2017-05-11 09:53:04,507 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:04,507 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:04,507 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:04,556 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 09:53:04,556 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 09:53:04,556 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 09:53:04,640 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:04,640 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:04,640 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:04,641 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 8000 192.168.182.132
+2017-05-11 09:53:04,641 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 8000 192.168.182.132
+2017-05-11 09:53:04,641 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 8000 192.168.182.132
+2017-05-11 09:53:10,321 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-11 09:53:10,321 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-11 09:53:10,321 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-11 09:53:10,322 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-11 09:53:10,322 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-11 09:53:10,322 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-11 09:53:10,326 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-11 09:53:10,326 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-11 09:53:10,326 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:52 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00084s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 16.27 seconds
+
+
+
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:52 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00084s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 16.27 seconds
+
+
+
+2017-05-11 09:53:10,327 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:52 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00084s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 16.27 seconds
+
+
+
+2017-05-11 09:53:10,371 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:10,371 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:10,371 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:10,394 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 09:53:10,394 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 09:53:10,394 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-11 09:53:10,469 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:10,469 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:10,469 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:10,470 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 192.168.182.132
+2017-05-11 09:53:10,470 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 192.168.182.132
+2017-05-11 09:53:10,470 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 192.168.182.132
+2017-05-11 09:53:11,044 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-11 09:53:11,044 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-11 09:53:11,044 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-11 09:53:11,045 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-11 09:53:11,045 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-11 09:53:11,045 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-11 09:53:11,050 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-11 09:53:11,050 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-11 09:53:11,050 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00059s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.39 seconds
+
+
+
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00059s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.39 seconds
+
+
+
+2017-05-11 09:53:11,051 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00059s latency).
+PORT     STATE    SERVICE
+8000/tcp filtered http-alt
+
+Nmap done: 1 IP address (1 host up) scanned in 6.39 seconds
+
+
+
+2017-05-11 09:53:11,059 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:11,059 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:11,059 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:11,075 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:11,075 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:11,075 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:11,076 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+2017-05-11 09:53:11,076 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+2017-05-11 09:53:11,076 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+2017-05-11 09:53:16,738 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-11 09:53:16,738 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-11 09:53:16,738 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-11 09:53:16,738 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-11 09:53:16,738 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-11 09:53:16,738 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-11 09:53:16,743 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-11 09:53:16,743 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-11 09:53:16,743 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-11 09:53:16,743 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:16,743 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:16,743 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:16,744 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-11 09:53:16,744 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-11 09:53:16,744 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-11 09:53:16,744 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00090s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 6.24 seconds
+
+
+
+2017-05-11 09:53:16,744 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00090s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 6.24 seconds
+
+
+
+2017-05-11 09:53:16,744 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00090s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 6.24 seconds
+
+
+
+2017-05-11 09:53:16,750 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:16,750 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:16,750 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:16,763 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:16,763 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:16,763 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-11 09:53:16,763 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132
+2017-05-11 09:53:16,763 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132
+2017-05-11 09:53:16,763 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132
+2017-05-11 09:53:18,495 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-11 09:53:18,495 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-11 09:53:18,495 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-11 09:53:18,496 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-11 09:53:18,496 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-11 09:53:18,496 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132', '\nEnd']
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-11 09:53:18,500 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-11 09:53:18,501 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00042s latency).
+PORT     STATE    SERVICE  VERSION
+8000/tcp filtered http-alt
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.39 seconds
+
+
+
+2017-05-11 09:53:18,501 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00042s latency).
+PORT     STATE    SERVICE  VERSION
+8000/tcp filtered http-alt
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.39 seconds
+
+
+
+2017-05-11 09:53:18,501 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 8000 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00042s latency).
+PORT     STATE    SERVICE  VERSION
+8000/tcp filtered http-alt
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.39 seconds
+
+
+
+2017-05-11 09:53:18,508 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:18,508 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:18,508 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:31,107 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-11 09:53:31,107 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-11 09:53:31,107 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-11 09:53:31,108 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-11 09:53:31,108 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-11 09:53:31,108 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132', '\nEnd']
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-11 09:53:31,111 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-11 09:53:31,112 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00050s latency).
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Debian))
+|_http-server-header: Apache/2.4.18 (Debian)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.29 seconds
+
+
+
+2017-05-11 09:53:31,112 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00050s latency).
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Debian))
+|_http-server-header: Apache/2.4.18 (Debian)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.29 seconds
+
+
+
+2017-05-11 09:53:31,112 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 80 192.168.182.132
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-11 09:53 UTC
+Nmap scan report for 192.168.182.132
+Host is up (0.00050s latency).
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Debian))
+|_http-server-header: Apache/2.4.18 (Debian)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.29 seconds
+
+
+
+2017-05-11 09:53:31,152 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:31,152 - Commands Logger - DEBUG - Finished!!!
+2017-05-11 09:53:31,152 - Commands Logger - DEBUG - Finished!!!

@@ -1,0 +1,25 @@
+2017-05-22 02:28:00,789 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-22 02:28:00,790 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-22 02:28:00,791 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 80 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_663/663_127.0.0.1_80_capture-output.pcap
+2017-05-22 02:28:03,798 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:28:03,810 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 127.0.0.1
+2017-05-22 02:28:15,074 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-22 02:28:15,084 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-22 02:28:15,086 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-22 02:28:15,086 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 02:28:15,086 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-22 02:28:15,086 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:28 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00010s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 11.22 seconds
+
+
+
+2017-05-22 02:28:15,092 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 02:28:15,134 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process

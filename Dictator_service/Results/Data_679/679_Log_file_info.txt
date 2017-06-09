@@ -1,0 +1,16 @@
+2017-05-22 04:29:19,349 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-22 04:29:25,354 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 679
+2017-05-22 04:29:25,356 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 04:29:25,357 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-22 04:29:25,358 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 04:29:25,359 - Info Logger - DEBUG - Service,Host,port  is -->http  127.0.0.1  80
+2017-05-22 04:29:25,370 - Info Logger - DEBUG - Command id --> http_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 679
+2017-05-22 04:29:25,371 - Info Logger - DEBUG - Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 04:29:25,371 - Info Logger - DEBUG - Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 127.0.0.1
+2017-05-22 04:29:26,042 - Info Logger - DEBUG - Command id --> http_6  Message --> :Thread finished
+2017-05-22 04:29:26,042 - Info Logger - DEBUG - Command id --> http_6  Message --> :Saving details :
+2017-05-22 04:29:26,052 - Info Logger - DEBUG - Command id --> http_6  Message --> :Details Updated successfully

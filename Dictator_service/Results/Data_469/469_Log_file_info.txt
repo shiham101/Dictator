@@ -1,0 +1,9 @@
+2017-02-06 13:05:01,656 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-02-06 13:05:07,661 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 469
+2017-02-06 13:05:07,663 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-02-06 13:05:07,665 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-02-06 13:05:07,667 - Info Logger - ERROR - EXception ipExploit -->(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and Pid = 469' at line 1")

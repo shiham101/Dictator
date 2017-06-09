@@ -1,0 +1,1752 @@
+2017-04-18 12:27:18,967 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-04-18 12:27:18,968 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 23 192.168.182.128 --script telnet-encryption
+2017-04-18 12:27:26,750 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-04-18 12:27:26,751 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-04-18 12:27:26,754 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-04-18 12:27:26,755 - Commands Logger - DEBUG - commands are : [u'nmap -p 23 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-04-18 12:27:26,755 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-04-18 12:27:26,755 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 23 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-04-18 12:27 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00047s latency).
+PORT   STATE SERVICE
+23/tcp open  telnet
+| telnet-encryption: 
+|_  Telnet server does not support encryption
+
+Nmap done: 1 IP address (1 host up) scanned in 7.74 seconds
+
+
+
+2017-04-18 12:27:26,761 - Commands Logger - DEBUG - Finished!!!
+2017-04-18 12:27:26,800 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-04-18 12:27:26,801 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-04-18 12:27:26,801 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 23 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_23_capture-output.pcap
+2017-04-18 12:27:29,803 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 23 and timeout 200
+2017-04-18 12:27:29,811 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-04-18 12:27:29,812 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-04-18 12:27:33,917 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :
+After : Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+metasploitable login:  j is 2
+2017-04-18 12:27:34,018 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-04-18 12:27:36,021 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-04-18 12:27:36,022 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-04-18 12:27:40,026 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :
+After : root
+Password: j is 0
+2017-04-18 12:27:40,128 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-04-18 12:27:42,131 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-04-18 12:27:42,131 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-04-18 12:27:46,183 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :
+After :  
+
+Login incorrect
+metasploitable login:  j is 1
+2017-04-18 12:27:46,183 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-04-18 12:27:46,186 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-04-18 12:27:46,187 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 23\n', "\n\nConsole is Now expecting :.* login:.*\n\n\nActual Output by console \n:Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| '_ ` _ \\ / _ \\ __/ _` / __| '_ \\| |/ _ \\| | __/ _` | '_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\nmetasploitable login: \n\n", u'Writing on console : root\n', '\n\nConsole is Now expecting :.*Password:\n\n\nActual Output by console \n:root\r\nPassword:\n\n', u'Writing on console : toor\n', '\n\nConsole is Now expecting :.* login:.*\n\n\nActual Output by console \n: \r\n\r\nLogin incorrect\r\nmetasploitable login: \n\n']
+2017-04-18 12:27:46,187 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-04-18 12:27:46,187 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 23
+
+
+Output
+
+
+Console is Now expecting :.* login:.*
+
+
+Actual Output by console 
+: 
+
+Login incorrect
+metasploitable login: 
+
+
+2017-04-18 12:27:46,197 - Commands Logger - DEBUG - Finished!!!
+2017-04-18 12:27:46,197 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : After :  
+
+Login incorrect
+metasploitable login: 
+2017-04-18 12:27:46,198 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-04-18 12:27:46,300 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 17:29:32,012 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:29:32,039 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 17:29:40,695 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 17:29:40,697 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 17:29:40,701 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 17:29:40,701 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 17:29:40,702 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 17:29:40,702 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 17:29 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0018s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 8.47 seconds
+
+
+
+2017-05-03 17:29:40,742 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:29:40,755 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:29:40,765 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 17:29:55,765 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 17:29:55,821 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 17:29:55,823 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 17:29:55,825 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 17:29:55,825 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 17:29:55,826 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 17:29:55,826 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Result- Nikto v2.1.6
+---------------------------------------------------------------------------
+
+Killed
+
+
+2017-05-03 17:29:55,834 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:29:56,826 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 17:29:56,827 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 17:29:56,837 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 17:29:56,838 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 17:29:56,839 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 17:29:59,842 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 17:29:59,977 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:29:59,978 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 17:32:04,085 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 17:32:04,208 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 17:32:06,211 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:32:06,212 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 17:32:10,220 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 17:32:10,322 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 17:32:12,325 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:32:12,325 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 17:32:16,332 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 17:32:16,332 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 17:32:16,334 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 17:32:16,335 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 17:32:16,335 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 17:32:16,335 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 17:32:16,343 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:32:16,344 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 17:32:16,344 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 17:32:16,445 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 17:48:30,634 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:48:30,636 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 17:48:38,827 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 17:48:38,828 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 17:48:38,832 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 17:48:38,838 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 17:48:38,839 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 17:48:38,840 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 17:48 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00055s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 8.04 seconds
+
+
+
+2017-05-03 17:48:38,861 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:48:38,914 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:48:38,915 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 17:49:08,916 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 17:49:09,005 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 17:49:09,005 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 17:49:09,011 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 17:49:09,016 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 17:49:09,016 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 17:49:09,016 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Result- Nikto v2.1.6
+---------------------------------------------------------------------------
+
+Killed
+
+
+2017-05-03 17:49:09,030 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:49:09,991 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 17:49:09,991 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 17:49:10,029 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 17:49:10,030 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 17:49:10,031 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 17:49:13,032 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 17:49:13,068 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:49:13,070 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 17:51:17,145 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 17:51:17,257 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 17:51:19,259 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:51:19,261 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 17:51:23,277 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 17:51:23,379 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 17:51:25,382 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:51:25,382 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 17:51:29,387 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 17:51:29,388 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 17:51:29,390 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 17:51:29,390 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 17:51:29,390 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 17:51:29,390 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 17:51:29,425 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:51:29,425 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 17:51:29,425 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 17:51:29,529 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 17:51:54,762 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:51:54,763 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 17:52:09,314 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 17:52:09,316 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 17:52:09,321 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 17:52:09,321 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 17:52:09,322 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 17:52:09,322 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 17:51 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00067s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 14.41 seconds
+
+
+
+2017-05-03 17:52:09,353 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:52:09,449 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:52:09,450 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 17:52:59,458 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 17:52:59,511 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 17:52:59,512 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 17:52:59,514 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 17:52:59,515 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 17:52:59,515 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 17:52:59,515 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Result- Nikto v2.1.6
+---------------------------------------------------------------------------
+
+Killed
+
+
+2017-05-03 17:53:00,012 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:53:00,539 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 17:53:00,539 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 17:53:01,168 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 17:53:01,169 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 17:53:01,172 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 17:53:04,172 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 17:53:04,190 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:53:04,191 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 17:55:08,296 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 17:55:08,398 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 17:55:10,400 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:55:10,401 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 17:55:14,412 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 17:55:14,513 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 17:55:16,516 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:55:16,516 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 17:55:20,522 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 17:55:20,522 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 17:55:20,524 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 17:55:20,524 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 17:55:20,525 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 17:55:20,525 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 17:55:20,592 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:55:20,593 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 17:55:20,593 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 17:55:20,695 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 17:56:33,070 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:56:33,071 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 17:56:43,245 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 17:56:43,246 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 17:56:43,269 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 17:56:43,269 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 17:56:43,269 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 17:56:43,270 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 17:56 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00073s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 10.06 seconds
+
+
+
+2017-05-03 17:56:43,290 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:56:43,338 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:56:43,339 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 17:57:33,339 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 17:57:33,396 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 17:57:33,397 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 17:57:33,399 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 17:57:33,399 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 17:57:33,400 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 17:57:33,400 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Result- Nikto v2.1.6
+---------------------------------------------------------------------------
+
+Killed
+
+
+2017-05-03 17:57:33,413 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:57:34,392 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 17:57:34,393 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 17:57:34,427 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 17:57:34,427 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.128:80
+2017-05-03 17:58:04,435 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Terminating process
+2017-05-03 17:58:04,553 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread finished
+2017-05-03 17:58:04,554 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Saving details :
+2017-05-03 17:58:04,569 - Commands Logger - DEBUG - Command id is ->telnet_http_2
+2017-05-03 17:58:04,570 - Commands Logger - DEBUG - commands are : [u'hoppy -t 12 -h 192.168.182.128:80', '\nEnd']
+2017-05-03 17:58:04,570 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_2"'
+2017-05-03 17:58:04,570 - Commands Logger - DEBUG - Result --> : Command Executed :hoppy -t 12 -h 192.168.182.128:80
+
+Result
+[+] hoppy 1.8.1 run @ Wed May  3 17:57:34 2017:
+
+	[+] hoppy -t 12 -h 192.168.182.128:80
+
+[+] Configuring Test Environment
+
+	[+] Setup complete :-)
+
+[+] Initialising Connection
+
+	[+] Test host 192.168.182.128 resolves to 192.168.182.128
+
+	[+] Testing Connection to 192.168.182.128:80  - OK Data Recieved
+
+Killed
+
+
+2017-05-03 17:58:04,594 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 17:58:05,551 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Parent Process already KIlled
+2017-05-03 17:58:05,551 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Kill result is --> 137
+2017-05-03 17:58:05,582 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 17:58:05,584 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 17:58:05,584 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 17:58:08,608 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 17:58:08,620 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 17:58:08,620 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 18:00:12,724 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 18:00:12,825 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 18:00:14,828 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:00:14,828 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 18:00:18,836 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 18:00:18,944 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 18:00:20,975 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:00:20,976 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 18:00:24,980 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 18:00:24,981 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 18:00:25,001 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 18:00:25,002 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 18:00:25,003 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 18:00:25,004 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 18:00:25,054 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:00:25,055 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 18:00:25,055 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 18:00:25,158 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 18:29:47,505 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:29:47,506 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 18:29:48,681 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 18:29:48,681 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 18:29:48,683 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 18:29:48,683 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 18:29:48,683 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 18:29:48,683 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 18:29 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00033s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 1.15 seconds
+
+
+
+2017-05-03 18:29:48,689 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:29:48,702 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:29:48,703 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 18:30:38,704 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 18:30:38,787 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 18:30:38,787 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 18:30:38,794 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 18:30:38,794 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 18:30:38,794 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 18:30:38,795 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
+
+Killed
+
+
+2017-05-03 18:30:38,826 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:30:39,788 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 18:30:39,788 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 18:30:39,801 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:30:39,802 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.128:80
+2017-05-03 18:31:09,803 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Terminating process
+2017-05-03 18:31:09,956 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread finished
+2017-05-03 18:31:09,956 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Saving details :
+2017-05-03 18:31:09,964 - Commands Logger - DEBUG - Command id is ->telnet_http_2
+2017-05-03 18:31:09,965 - Commands Logger - DEBUG - commands are : [u'hoppy -t 12 -h 192.168.182.128:80', '\nEnd']
+2017-05-03 18:31:09,965 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_2"'
+2017-05-03 18:31:09,966 - Commands Logger - DEBUG - Result --> : Command Executed :hoppy -t 12 -h 192.168.182.128:80
+
+Result
+[+] hoppy 1.8.1 run @ Wed May  3 18:30:39 2017:
+
+	[+] hoppy -t 12 -h 192.168.182.128:80
+
+[+] Configuring Test Environment
+
+	[+] Setup complete :-)
+
+[+] Initialising Connection
+
+	[+] Test host 192.168.182.128 resolves to 192.168.182.128
+
+	[+] Testing Connection to 192.168.182.128:80  - OK Data Recieved
+
+Killed
+
+
+2017-05-03 18:31:09,976 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:31:10,954 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Parent Process already KIlled
+2017-05-03 18:31:10,955 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Kill result is --> 137
+2017-05-03 18:31:10,970 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 18:31:10,971 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 18:31:10,973 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 18:31:13,976 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 18:31:14,015 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:31:14,016 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 18:33:18,056 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 18:33:18,157 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 18:33:20,160 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:33:20,161 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 18:33:24,168 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 18:33:24,269 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 18:33:26,272 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:33:26,273 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 18:33:30,277 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 18:33:30,279 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 18:33:30,282 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 18:33:30,283 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 18:33:30,283 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 18:33:30,283 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 18:33:30,434 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:33:30,435 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 18:33:30,435 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 18:33:30,537 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 18:33:38,893 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:33:38,894 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 18:33:46,603 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 18:33:46,604 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 18:33:46,606 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 18:33:46,606 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 18:33:46,606 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 18:33:46,606 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 18:33 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00049s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 7.66 seconds
+
+
+
+2017-05-03 18:33:46,614 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:33:46,627 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:33:46,628 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Thread started --with command  perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80
+2017-05-03 18:34:06,632 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Terminating process
+2017-05-03 18:34:18,109 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Thread finished
+2017-05-03 18:34:18,110 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Saving details :
+2017-05-03 18:34:18,114 - Commands Logger - DEBUG - Command id is ->telnet_http_3
+2017-05-03 18:34:18,115 - Commands Logger - DEBUG - commands are : [u' perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80', '\nEnd']
+2017-05-03 18:34:18,116 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_3"'
+2017-05-03 18:34:18,116 - Commands Logger - DEBUG - Result --> : Command Executed : perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80
+
+ResultStarting http-dir-enum v0.4.3 ( http://labs.portcullis.co.uk/application/http-dir-enum/ )
+Copyright (C) 2006 Mark Lowe ( mrl@portcullis-security.com )
+
+ ----------------------------------------------------------
+|                   Scan Information                       |
+ ----------------------------------------------------------
+
+URL .................... http://192.168.182.128:80
+Processes .............. 10
+Directory name file .... Scripts/http-dir-enum/directory-names.txt
+Query timeout .......... 20 secs
+HTTP Method ............ HEAD
+Max Queries / sec ...... unlimited
+Trailing slash ......... On
+Recursive dir search ... On
+Close connections ...... Off
+Follow redirects ....... Off
+Case sensistive dirs ... On
+Auto-ignore ............ On
+
+######## Scan started on Wed May  3 18:33:47 2017 #########
+[I] Processing directory: / (0 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80
+cgi-bin	403
+doc	200
+icons	200
+test	200
+twiki	200
+[I] Processing directory: cgi-bin (4 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/cgi-bin
+[I] Processing directory: doc (3 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc
+doc/info	200
+doc/login	200
+doc/at	200
+doc/cron	200
+doc/ftp	200
+doc/patch	200
+[I] Processing directory: icons (8 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/icons
+doc/menu	200
+[I] Processing directory: test (8 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/test
+[I] Processing directory: twiki (7 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/twiki
+twiki/bin	403
+twiki/templates	403
+twiki/lib	200
+twiki/pub	403
+twiki/data	403
+[I] Processing directory: doc/info (11 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/info
+[I] Processing directory: doc/login (10 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/login
+[I] Processing directory: doc/at (9 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/at
+
+Killed
+
+
+2017-05-03 18:34:18,140 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:34:19,105 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Parent Process already KIlled
+2017-05-03 18:34:19,106 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Kill result is --> 137
+2017-05-03 18:34:19,131 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:34:19,132 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 18:35:09,134 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 18:35:09,304 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 18:35:09,305 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 18:35:09,310 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 18:35:09,311 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 18:35:09,311 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 18:35:09,312 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.182.128
++ Target Hostname:    192.168.182.128
++ Target Port:        80
++ Start Time:         2017-05-03 18:34:21 (GMT0)
+---------------------------------------------------------------------------
++ Server: Apache/2.2.8 (Ubuntu) DAV/2
++ Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.10
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Uncommon header 'tcn' found, with contents: list
++ Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: index.php
++ Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.12). Apache 2.0.65 (final release) and 2.2.29 are also current.
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-877: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ /phpinfo.php?VARIABLE=<script>alert('Vulnerable')</script>: Output from the phpinfo() function was found.
++ OSVDB-3268: /doc/: Directory indexing found.
++ OSVDB-48: /doc/: The /doc/ directory is browsable. This may be /usr/doc.
++ OSVDB-12184: /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-3092: /phpMyAdmin/changelog.php: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ Server leaks inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540, mtime: Tue Dec  9 17:24:00 2008
++ OSVDB-3092: /phpMyAdmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ OSVDB-3268: /test/: Directory indexing found.
++ OSVDB-3092: /test/: This might be interesting...
++ /phpinfo.php: Output from the phpinfo() function was found.
++ OSVDB-3233: /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.
++ OSVDB-3268: /icons/: Directory indexing found.
++ /phpinfo.php?GLOBALS[test]=<script>alert(document.cookie);</script>: Output from the phpinfo() function was found.
++ /phpinfo.php?cx[]=xA07cxIkRI7kw7PaZ74WJuis9QbyoJbZSHmNy0iItCpHDb6XGRw1EprifktY9OmGY2Hov8AtCH1yFqjYfjt1lwJJiAPBM5jm7guUVdtJlNmf7iCND0laJt1ng5ZX0eg48M7VIYdTypN4lncYW5fCIOVEtRlAFPlXU3VH9OV6NBegp4OPnAbl1r2aKd5J2V3YqneIQD6IjFmns2R13OHufPfiTleGShyMZC47oxp3GG8N3yxZ9xeQruQqg99kFahrVmYnF9zfJRXx5Iq6TbYWV9DjFX9zRYkvtVqUHSBleFedJAnBS0viMhV8ftsK487J73iWmHUkDQthM8Dp94O4ifuKVFd1k3X9be9npXXHEaNoebjwOle8lQpsGR3JqiLZNHmPvCGKZ38b71bwaCElEvR7kJsK5JKNbh4BzByqM1y0DbDvupDhNJPPgtRJs5ejhI726yj2gPvdxMc5pJXktsNID2wrecmLEQHFMFnj5I9gJ30XL0R1bpcwzo12cT9RRl2I4ZYtY3ywltYtfBPReo3bGQHarzhZXiJpbFOGTd0LI3SLjH9gjSgeIvyjTc7pwlcNTSEkCWar5a2S1FPcg42hxEaQBgJvUCFbNyiQSOnD7C6t9NnPnC556r9fj001Sds5tHwlKeNJ5ikycF1J1JT0VmuaLzHosBEZYOnGLtET0VRIBEFhKLKOrZoyhxJ3lp4qjBwvhrm7guKpY8lBAqVTRHhEbngPogHSdTRzoeQbmMKPr4pG4ou62xZ7laajDWoaVTe4eyu57xVI1WbUhvlzEWhWHiapvA2udDmpQYuyRL9NccsVDiUrrSwvPymCseVZuIVKoQQPbEccrcfUKm3yWGAqpXzNSpKZ7eU6YkCFIBTpUsA3XOyV5iaC19Vsp7ANK4YfCVVArVQi7rxB3zUkgb42uxgysHI81h67827dVG8CULbYAYFxrOYHLQOWeef28Yp32cR6d5EF9UOwh04HBEdmlzNbTSICO78qbiesE5qhZadleVguhK5u8Qa4gys5dXLlKnJpexA2Gj6L6vJgoW1VX3exCFQJ9npyGxpdYAdXSsuN5Bo0cupJqYAd6eu5kLelEnQTRxUbPBwlSxVkBuhOwGOpaV9aMTdYoshYK1lcJjZlrAEdszvMsXvLADERtiVKxpxuMHkb3apFNkLTgt4tkq7iHRxd1GFNY75fR01O7qI0ve2lXUGI1eY9ZHJ9uPyvtk1fFMy3zdCok0R01evPSokDWyUZyq0z1y5iBHTC87yOt9U8CpkmENu4qvPbswcOngB2mD2pcl8q0hWj9THxeNRZ8wxauVYrgqtVpXtnN3vTVLkBQGzTCqhWD4lij4vlTp6E6u0BiwTgm4LSFjYFGj7MsNKMC0Ey31mGKIKODhbYnizSm77sa5IARseYNHXPwbv29oEV59Ov5DifLhssyDz1y1OmUzkA6u7gkz1aFot18RUtfen81EWi61A6AltHVzVKxZIc7teGAN8KtSIpof6wlY3gkYNKqiS5wJ9Mrav7lREFe6Qc9LYVv6mrH9iayIMP9vbv4doiFta2C8LCkyy9aciiTBMNDXoh51M0wfSIqErhfdEtH5Hu7Jmkaa5pwL9J30lfLql4rsp1V0mnD4yp10sAPFHwn24I2k5n1a51yuOsduu8kHtMOLCHUkfbHZyD3QYtlGZAEqhJvvpWG5zpbDuHikAf4lguTcC0yCgEAzT23DJCDMIovaNiSDyp47PWrsUhWrp01hXQs4PH1peN2GuWW2oNUrNv2HqhoX6A6yxQ3zLNXwVWzD1cwBWljYh2alKLiCta4x13QlmrKrVdaS8477mD4nQpuxqHMV7jL5ytkizujmNuAnUwm3GHJi9m3hTUPyFO1fo3PXYV8uyTDVh22AR8bASHMt46EJ1hUQfbIUF8HnKlfcNoZZGdgPhAmQOYW89g1Wut8OgKvjEpyNTeoefk8d58aPbZsexzowf4HVdMyXwVAMic5Q7oUI3cG9uXq695DUCgCnfqnVISZ59H30aGWyPn2u8ijxfLFouzMLhcwKb5pm36YXduj4vgUPenlNtcyJFdjugFLEHdVNVQ7y1i4MtRCV9cqESc6Ow42zzstPlv1qMK9eqMBRRnzjEmWWlav4ZQv8k1TrTPHejif4FgRTsYTA3kIyJlEe4URgfxFaut9RtegcL3yY72qfXTZRzMzGCldIwE0r0luaDX7omfi0BoPz18DuprAhMw0P2klfPM9g0le6mlQA13dkmleMLMyGAZNpNswJoNcpvofm4pZMCOKoPArnIvIcfUXNCNr441tuS7GrjYMKcpMdYfdw1WL5DHVQWomtKXvkitZjRwmaVI2c64rDXszsnjm8auygM1ktcsxGSK4jEcjRHleoGrWzbLJ3P0D8MS9WHcR3GlblJC745wIdjw9GQ9VbldeyExHl0dYcFxXVmXYUwSChtfvun0eyQjr8qMC3GMZOifh2jrBFpP2NBWEPTcn2iZsrmhsHKnBtoWzrh6Gu16h1L5Xbz3YQKS4y29PID60Ix4tVz7F7hyRjcSBtp4Q13dn7p6Uc5xLzDkywsN7e83q6gmIt0TZ2y7ie33jTLeXdJjUnOuT4SMTLhBeCaQjvcdjGlrnnTHiSW7SutT7s8DBvJyWsDHWNNT36JMwrEhE3wotpQs09TfC8fU0sq3sXDQ1va6hHwco0cd0qacdHVRXO8FQtoUzr5khGjClijCbkHouYdrfvvRaKuKuAAQJbNxbZ7beWlXI4fNavu4ostlHGY88vwtiqKT4Yd20Wb7GMyTNqQREItdAFfeqqoqxVVp8rwkyGwYR6Fm4DJ4c9EdYlQKIxgwdYRL1oIW42COnni3T9LcPRuD3zUJ8N5KXEKMRg07XbZ30LYRFfV42oaZKCh5GsM6f1vmQbGjSrvNPfL2sGa1TZTdFGrl2T2skxkThqZUrrMOLlQkivytJwUY8YQWt4jfwkgbgVJ5Wm7fwErD7RMtABrke34zuos5uNaMH4jHBvwRoXOx3wpLlfjIWUrcrgzk3XST7nqaZQlRynC9jijNMEvcs5j9XRssUdzACxcpY2am9Y72m5QdcIhRnDVPsHozKSmGMqYQPo2qMlWsG6kk6yrQhe2pgpornYfUEqukOb5HZLIrSrbZfJ283VUgWpJToW7LHzVlR0CGZm5tpVkAVCdfA68seAgMFCcAOa2RXzivqFIRxpmkzhuCjeTP6YH1iZxjkikGuj3sskIH27VFwDhL2D15wwGqEoSA2znp9FYUJbWGYIS6dbHjF7vFjH3FKjErfZ1M42W1MsMcpeyWuNIJdEIxGlKQBMphSRLJnogWjpNz4FXBheAUERbGTcQf6iaAvXaOWHXEQXTzVI6QtJAr3B2HyOpMIjmQxMgiCRemkPkLQV2uai2PIkYU57kzPlH6hM6JHyrz6M8t0Z963XCfpz0BPf0aSxyY73f3MwfBGcBuyEk9cS3sB8AZfc7Y1Zg2GLpcRNlY8N0cQy86Xp00ZxB2RD2kKo6P554oVpm06NlL3OS7mRkLO1K5gxzDZrZeZRdFEZjsq4AvmwUwvoBHvTItN2bo4GTi2R2mHNcjyRGnpSBUtvYZjsOMn5w6f57GUELF3MbAms7MsmDcgGhn1bmdWhB28W7mJ7x91XVnUmldIyS1lFxMFzxu4v86Cxi4fFfraQwMxtEssRJk0PAiA95UfOvmGldSfQzM3fwcSRXBeY2ctgemcgeYh44FIJYCMXRNM3Aqhl1xUkhQSRxjbXK8hRS5QbSsBSl7orh86OEfL2tVN7t8xA27V4TmzkdaoU6caZqcpm9Bv6sZQ6RAPGpleQz3vcvJmSj2xjDlA0V5eXFdJRCuonvZzdNVxqFwpfn4cylHirnOlgqinhirU8D3g0vRQzNOLthXzo7BmeJBvaIEwcXJA9u9nvp2wtNYgoMuDXsl51kloEmHmXgxVQOg8lmL3NAVUMUu68IenjPkAqVAKp0sddccpc2nlokci1dSLWGqj6P0f0LTk6Khig060IaXw30qcXoutbgjEfoAU8RKe5Y4i6tyY82Zq17iYOEg7bMvBA494wY1QVmvxlNNzgwWWMNYdfnb<script>alert(foo)</script>: Output from the phpinfo() function was found.
++ OSVDB-3233: /icons/README: Apache default file found.
+
+Killed
+
+
+2017-05-03 18:35:09,338 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:35:10,302 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 18:35:10,302 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 18:35:10,326 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:35:10,327 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.128:80
+2017-05-03 18:35:40,329 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Terminating process
+2017-05-03 18:35:40,393 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread finished
+2017-05-03 18:35:40,394 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Saving details :
+2017-05-03 18:35:40,396 - Commands Logger - DEBUG - Command id is ->telnet_http_2
+2017-05-03 18:35:40,396 - Commands Logger - DEBUG - commands are : [u'hoppy -t 12 -h 192.168.182.128:80', '\nEnd']
+2017-05-03 18:35:40,397 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_2"'
+2017-05-03 18:35:40,397 - Commands Logger - DEBUG - Result --> : Command Executed :hoppy -t 12 -h 192.168.182.128:80
+
+Result
+[+] hoppy 1.8.1 run @ Wed May  3 18:35:10 2017:
+
+	[+] hoppy -t 12 -h 192.168.182.128:80
+
+[+] Configuring Test Environment
+
+	[+] Setup complete :-)
+
+[+] Initialising Connection
+
+	[+] Test host 192.168.182.128 resolves to 192.168.182.128
+
+	[+] Testing Connection to 192.168.182.128:80  - OK Data Recieved
+
+Killed
+
+
+2017-05-03 18:35:40,405 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:35:41,390 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Parent Process already KIlled
+2017-05-03 18:35:41,390 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Kill result is --> 137
+2017-05-03 18:35:41,400 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 18:35:41,401 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 18:35:41,401 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 18:35:44,403 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 18:35:44,432 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:35:44,433 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 18:37:48,545 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 18:37:48,649 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 18:37:50,652 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:37:50,652 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 18:37:54,660 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 18:37:54,761 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 18:37:56,767 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:37:56,767 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 18:38:00,772 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 18:38:00,774 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 18:38:00,776 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 18:38:00,776 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 18:38:00,777 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 18:38:00,777 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 18:38:00,782 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:38:00,783 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 18:38:00,783 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 18:38:00,885 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 18:38:06,964 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:38:06,964 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 18:38:14,779 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 18:38:14,780 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 18:38:14,781 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 18:38:14,782 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 18:38:14,782 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 18:38:14,782 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 18:38 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00062s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 7.76 seconds
+
+
+
+2017-05-03 18:38:14,806 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:38:14,838 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:38:14,838 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Thread started --with command  perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80
+2017-05-03 18:38:34,840 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Terminating process
+2017-05-03 18:39:46,469 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Kill result is --> None
+2017-05-03 18:39:46,482 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:39:46,483 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 18:40:36,484 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 18:40:36,566 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 18:40:36,567 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 18:40:36,569 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 18:40:36,569 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 18:40:36,570 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 18:40:36,570 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
+
+Killed
+
+
+2017-05-03 18:40:36,581 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:40:37,597 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 18:40:37,597 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 18:40:37,613 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:40:37,615 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.128:80
+2017-05-03 18:41:07,616 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Terminating process
+2017-05-03 18:41:07,654 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread finished
+2017-05-03 18:41:07,654 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Saving details :
+2017-05-03 18:41:07,656 - Commands Logger - DEBUG - Command id is ->telnet_http_2
+2017-05-03 18:41:07,656 - Commands Logger - DEBUG - commands are : [u'hoppy -t 12 -h 192.168.182.128:80', '\nEnd']
+2017-05-03 18:41:07,657 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_2"'
+2017-05-03 18:41:07,657 - Commands Logger - DEBUG - Result --> : Command Executed :hoppy -t 12 -h 192.168.182.128:80
+
+Result
+[+] hoppy 1.8.1 run @ Wed May  3 18:40:38 2017:
+
+	[+] hoppy -t 12 -h 192.168.182.128:80
+
+[+] Configuring Test Environment
+
+	[+] Setup complete :-)
+
+[+] Initialising Connection
+
+	[+] Test host 192.168.182.128 resolves to 192.168.182.128
+
+	[+] Testing Connection to 192.168.182.128:80  - OK Data Recieved
+
+[+] Beginning spider with '/' and '/images/dummy.txt' as start points:
+
+		/twiki/ 
+		/phpMyAdmin/ 
+		/mutillidae/ 
+		/dvwa/ 
+		/dav/ 
+		/icons/ 
+		/twiki/bin/ 
+		/twiki/bin/view/ 
+		/twiki/bin/view/Main/ 
+		/phpMyAdmin/themes/ 
+		/phpMyAdmin/themes/original/ 
+		/phpMyAdmin/themes/original/img/ 
+		/mutillidae/styles/ 
+		/mutillidae/styles/ddsmoothmenu/ 
+		/mutillidae/javascript/ 
+		/mutillidae/javascript/ddsmoothmenu/ 
+		/mutillidae/images/ 
+		/index.php/ 
+		/icons/small/ 
+		/docs-project/ 
+		/cgi-bin/ 
+		/cgi-bin/view/ 
+		/cgi-bin/view/TWiki/ 
+		/cgi-bin/view/Main/ 
+		/cgi-bin/view/Codev/ 
+		/rdiff/ 
+		/rdiff/TWiki/ 
+		/view/ 
+		/view/TWiki/ 
+		/oops/ 
+		/oops/TWiki/ 
+		/software/ 
+		/software/rcs/ 
+		/p/ 
+		/p/pub/ 
+		/p/pub/TWiki/ 
+		/p/pub/TWiki/TWikiDocGraphics/ 
+		/pub/ 
+		/pub/infozip/ 
+		/docs/ 
+		/docs/mod/ 
+		/system/ 
+		/system/web_help/ 
+		/system/web_help/htaccess/ 
+		/downloads/ 
+		/pub/dl/ 
+		/dist/ 
+		/dist/httpd/ 
+		/dyn/ 
+		/dist/httpd/binaries/ 
+		/dist/httpd/binaries/win32/ 
+		/faq/ 
+		/cygwin-ug-net/ 
+		/bin/ 
+		/cgi-bin/edit/ 
+		/cgi-bin/edit/Main/ 
+		/cgi-bin/edit/TWiki/ 
+		/cgi-bin/passwd/ 
+		/cgi-bin/passwd/TWiki/ 
+		/cgi-bin/passwd/Main/ 
+		/cgi-bin/view/Know/ 
+		/cgi-bin/view/Plugins/ 
+		/p/pub/TWiki/FileAttachment/ 
+		/p/pub/icn/ 
+		/cgi-bin/viewfile/ 
+		/cgi-bin/viewfile/TWiki/ 
+		/cgi-bin/attach/ 
+		/cgi-bin/attach/TWiki/ 
+		/cgi-bin/viewfile/TWiki/TWiki/ 
+		/cgi-bin/rename/ 
+		/cgi-bin/rename/TWiki/ 
+		/twiki/%SCRIPTURLPATH%/ 
+		/twiki/%SCRIPTURLPATH%/edit%SCRIPTSUFFIX%/ 
+		/twiki/%SCRIPTURL%/ 
+		/twiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/ 
+		/twiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/%WEB%/ 
+		/twiki/%PUBURLPATH%/ 
+		/p/pub/TWiki/TWikiTemplates/ 
+		/copyleft/ 
+		/ntserver/ 
+		/ntserver/partners/ 
+		/ntserver/partners/findoffering/ 
+		/ntserver/partners/findoffering/serversolutions/ 
+		/cgi-bin/manage/ 
+		/cgi-bin/manage/TWiki/ 
+		/phpMyAdmin/themes/darkblue_orange/ 
+		/phpMyAdmin/themes/original/css/ 
+		/dvwa/dvwa/ 
+		/dvwa/dvwa/css/ 
+		/dvwa/dvwa/images/ 
+		/twiki/pub/ 
+		/twiki/pub/TWiki/ 
+		/twiki/pub/TWiki/TWikiLogos/ 
+		/twiki/bin/view/TWiki/ 
+		/twiki/bin/view/Know/ 
+		/twiki/bin/view/Sandbox/ 
+		/twiki/bin/search/ 
+		/twiki/bin/search/Main/ 
+		/twiki/pub/Main/ 
+		/twiki/pub/Main/WebHome/ 
+		/twiki/pub/icn/ 
+		/twiki/bin/attach/ 
+		/twiki/bin/attach/Main/ 
+		/phpMyAdmin/themes/darkblue_orange/css/ 
+		/phpMyAdmin/themes/darkblue_orange/img/ 
+		/dvwa/dvwa/includes/ 
+		/dvwa/dvwa/js/ 
+		/twiki/bin/edit/ 
+		/twiki/bin/edit/Main/ 
+		/twiki/bin/rdiff/ 
+		/twiki/bin/rdiff/Main/ 
+		/twiki/bin/oops/ 
+		/twiki/bin/oops/Main/ 
+		/twiki/bin/search/Know/ 
+		/twiki/bin/edit/Know/ 
+		/twiki/bin/attach/Know/ 
+		/twiki/bin/rdiff/Know/ 
+		/twiki/bin/oops/Know/ 
+		/twiki/bin/edit/Sandbox/ 
+		/twiki/bin/search/Sandbox/ 
+		/twiki/bin/attach/Sandbox/ 
+		/twiki/bin/rdiff/Sandbox/ 
+		/twiki/bin/oops/Sandbox/ 
+		/twiki/bin/search/TWiki/ 
+		/twiki/pub/TWiki/TWikiDocGraphics/ 
+		/twiki/bin/edit/TWiki/ 
+		/twiki/bin/attach/TWiki/ 
+		/twiki/bin/rdiff/TWiki/ 
+		/twiki/bin/oops/TWiki/ 
+		/twiki/bin/register/ 
+		/twiki/bin/register/Main/ 
+		/twiki/bin/view/TWiki/</ 
+		/twiki/bin/rename/ 
+		/twiki/bin/rename/TWiki/ 
+		/twiki/bin/statistics/ 
+		/twiki/pub/TWiki/TWikiPreferences/ 
+		/twiki/bin/view/TWiki/%ATTACHURLPATH%/ 
+		/reference/ 
+		/reference/wilbur/ 
+		/reference/wilbur/special/ 
+		/twiki/pub/TWiki/FileAttachment/ 
+		/twiki/bin/viewfile/ 
+		/twiki/bin/viewfile/TWiki/ 
+		/twiki/bin/viewfile/TWiki/TWiki/ 
+		/twiki/bin/oops/Mai/ 
+		/twiki/bin/upload/ 
+		/twiki/bin/upload/Main/ 
+		/twiki/bin/oops/mailto/ 
+		/twiki/bin/passwd/ 
+		/twiki/bin/passwd/TWiki/ 
+		/twiki/bin/passwd/Main/ 
+		/twiki/bin/view/TWiki/%SCRIPTURLPATH%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURLPATH%/edit%SCRIPTSUFFIX%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURL%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/%WEB%/ 
+		/twiki/bin/view/TWiki/%PUBURLPATH%/ 
+		/twiki/pub/TWiki/TWikiTemplates/ 
+		/twiki/bin/manage/ 
+		/twiki/bin/manage/TWiki/ 
+		/dvwa/dvwa/includes/DBMS/ 
+		/twiki/bin/preview/ 
+		/twiki/bin/
+Killed
+
+
+2017-05-03 18:41:07,692 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:41:08,651 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Parent Process already KIlled
+2017-05-03 18:41:08,651 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Kill result is --> 137
+2017-05-03 18:41:08,658 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 18:41:08,659 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 18:41:08,660 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 18:41:11,664 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 18:41:11,693 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:41:11,694 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 18:43:15,757 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 18:43:15,858 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 18:43:17,860 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:43:17,861 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 18:43:21,870 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 18:43:21,971 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 18:43:23,975 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:43:23,976 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 18:43:27,982 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 18:43:27,982 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 18:43:27,985 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 18:43:27,986 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 18:43:27,986 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 18:43:27,986 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 18:43:27,995 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:43:27,996 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 18:43:27,997 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 18:43:28,098 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-03 18:49:42,095 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:49:42,096 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-03 18:49:49,856 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-03 18:49:49,857 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-03 18:49:49,866 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-03 18:49:49,867 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-03 18:49:49,867 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-03 18:49:49,867 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-03 18:49 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.0011s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 7.69 seconds
+
+
+
+2017-05-03 18:49:49,876 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:49:49,909 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:49:49,910 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Thread started --with command  perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80
+2017-05-03 18:50:19,911 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Terminating process
+2017-05-03 18:50:31,542 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Thread finished
+2017-05-03 18:50:31,543 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Saving details :
+2017-05-03 18:50:31,555 - Commands Logger - DEBUG - Command id is ->telnet_http_3
+2017-05-03 18:50:31,556 - Commands Logger - DEBUG - commands are : [u' perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80', '\nEnd']
+2017-05-03 18:50:31,556 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_3"'
+2017-05-03 18:50:31,557 - Commands Logger - DEBUG - Result --> : Command Executed : perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80
+
+ResultStarting http-dir-enum v0.4.3 ( http://labs.portcullis.co.uk/application/http-dir-enum/ )
+Copyright (C) 2006 Mark Lowe ( mrl@portcullis-security.com )
+
+ ----------------------------------------------------------
+|                   Scan Information                       |
+ ----------------------------------------------------------
+
+URL .................... http://192.168.182.128:80
+Processes .............. 10
+Directory name file .... Scripts/http-dir-enum/directory-names.txt
+Query timeout .......... 20 secs
+HTTP Method ............ HEAD
+Max Queries / sec ...... unlimited
+Trailing slash ......... On
+Recursive dir search ... On
+Close connections ...... Off
+Follow redirects ....... Off
+Case sensistive dirs ... On
+Auto-ignore ............ On
+
+######## Scan started on Wed May  3 18:49:50 2017 #########
+[I] Processing directory: / (0 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80
+doc	200
+icons	200
+cgi-bin	403
+test	200
+twiki	200
+[I] Processing directory: doc (4 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc
+doc/info	200
+doc/login	200
+doc/cron	200
+doc/at	200
+doc/ftp	200
+doc/patch	200
+[I] Processing directory: icons (9 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/icons
+doc/menu	200
+[I] Processing directory: cgi-bin (9 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/cgi-bin
+[I] Processing directory: test (8 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/test
+[I] Processing directory: twiki (7 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/twiki
+twiki/bin	403
+twiki/templates	403
+twiki/lib	200
+twiki/pub	403
+twiki/data	403
+[I] Processing directory: doc/info (11 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/info
+[I] Processing directory: doc/login (10 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/login
+[I] Processing directory: doc/cron (9 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/cron
+doc/cron/examples	200
+[I] Processing directory: doc/at (9 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/at
+[I] Processing directory: doc/ftp (8 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/ftp
+[I] Processing directory: doc/patch (7 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/patch
+[I] Processing directory: doc/menu (6 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/doc/menu
+doc/menu/examples	200
+doc/menu/html	200
+[I] Processing directory: twiki/bin (7 dirs remaining)
+[I] Auto-ignoring HTTP code 404 for http://192.168.182.128:80/twiki/bin
+
+Killed
+
+
+2017-05-03 18:50:31,570 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:50:32,536 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Parent Process already KIlled
+2017-05-03 18:50:32,536 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Kill result is --> 137
+2017-05-03 18:50:32,562 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:50:32,569 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread started --with command nikto -h  192.168.182.128:80
+2017-05-03 18:51:22,570 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Terminating process
+2017-05-03 18:51:22,664 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Thread finished
+2017-05-03 18:51:22,665 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Saving details :
+2017-05-03 18:51:22,673 - Commands Logger - DEBUG - Command id is ->telnet_http
+2017-05-03 18:51:22,674 - Commands Logger - DEBUG - commands are : [u'nikto -h  192.168.182.128:80', '\nEnd']
+2017-05-03 18:51:22,674 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http"'
+2017-05-03 18:51:22,674 - Commands Logger - DEBUG - Result --> : Command Executed :nikto -h  192.168.182.128:80
+
+Resulthello nikto- Nikto v2.1.6
+---------------------------------------------------------------------------
+
+Killed
+
+
+2017-05-03 18:51:22,750 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:51:23,668 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Parent Process already KIlled
+2017-05-03 18:51:23,669 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http  Message --> :Kill result is --> 137
+2017-05-03 18:51:23,753 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :In method SingleLineCommands_Timeout()
+2017-05-03 18:51:23,754 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread started --with command hoppy -t 12 -h 192.168.182.128:80
+2017-05-03 18:51:53,755 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Terminating process
+2017-05-03 18:51:53,853 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Thread finished
+2017-05-03 18:51:53,854 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Saving details :
+2017-05-03 18:51:53,857 - Commands Logger - DEBUG - Command id is ->telnet_http_2
+2017-05-03 18:51:53,858 - Commands Logger - DEBUG - commands are : [u'hoppy -t 12 -h 192.168.182.128:80', '\nEnd']
+2017-05-03 18:51:53,858 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_2"'
+2017-05-03 18:51:53,859 - Commands Logger - DEBUG - Result --> : Command Executed :hoppy -t 12 -h 192.168.182.128:80
+
+Result
+[+] hoppy 1.8.1 run @ Wed May  3 18:51:23 2017:
+
+	[+] hoppy -t 12 -h 192.168.182.128:80
+
+[+] Configuring Test Environment
+
+	[+] Setup complete :-)
+
+[+] Initialising Connection
+
+	[+] Test host 192.168.182.128 resolves to 192.168.182.128
+
+	[+] Testing Connection to 192.168.182.128:80  - OK Data Recieved
+
+[+] Beginning spider with '/' and '/images/dummy.txt' as start points:
+
+		/twiki/ 
+		/phpMyAdmin/ 
+		/mutillidae/ 
+		/dvwa/ 
+		/dav/ 
+		/twiki/bin/ 
+		/twiki/bin/view/ 
+		/twiki/bin/view/Main/ 
+		/icons/ 
+		/phpMyAdmin/themes/ 
+		/phpMyAdmin/themes/original/ 
+		/phpMyAdmin/themes/original/img/ 
+		/mutillidae/styles/ 
+		/mutillidae/styles/ddsmoothmenu/ 
+		/mutillidae/javascript/ 
+		/mutillidae/javascript/ddsmoothmenu/ 
+		/mutillidae/images/ 
+		/index.php/ 
+		/cgi-bin/ 
+		/cgi-bin/view/ 
+		/cgi-bin/view/TWiki/ 
+		/cgi-bin/view/Main/ 
+		/cgi-bin/view/Codev/ 
+		/rdiff/ 
+		/rdiff/TWiki/ 
+		/view/ 
+		/view/TWiki/ 
+		/oops/ 
+		/oops/TWiki/ 
+		/software/ 
+		/software/rcs/ 
+		/p/ 
+		/p/pub/ 
+		/p/pub/TWiki/ 
+		/p/pub/TWiki/TWikiDocGraphics/ 
+		/pub/ 
+		/pub/infozip/ 
+		/docs/ 
+		/docs/mod/ 
+		/system/ 
+		/system/web_help/ 
+		/system/web_help/htaccess/ 
+		/downloads/ 
+		/pub/dl/ 
+		/dist/ 
+		/dist/httpd/ 
+		/dyn/ 
+		/dist/httpd/binaries/ 
+		/dist/httpd/binaries/win32/ 
+		/faq/ 
+		/cygwin-ug-net/ 
+		/bin/ 
+		/cgi-bin/edit/ 
+		/cgi-bin/edit/Main/ 
+		/cgi-bin/edit/TWiki/ 
+		/cgi-bin/passwd/ 
+		/cgi-bin/passwd/TWiki/ 
+		/cgi-bin/passwd/Main/ 
+		/cgi-bin/view/Know/ 
+		/cgi-bin/view/Plugins/ 
+		/p/pub/TWiki/FileAttachment/ 
+		/p/pub/icn/ 
+		/cgi-bin/viewfile/ 
+		/cgi-bin/viewfile/TWiki/ 
+		/cgi-bin/attach/ 
+		/cgi-bin/attach/TWiki/ 
+		/cgi-bin/viewfile/TWiki/TWiki/ 
+		/cgi-bin/rename/ 
+		/cgi-bin/rename/TWiki/ 
+		/twiki/%SCRIPTURLPATH%/ 
+		/twiki/%SCRIPTURLPATH%/edit%SCRIPTSUFFIX%/ 
+		/twiki/%SCRIPTURL%/ 
+		/twiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/ 
+		/twiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/%WEB%/ 
+		/twiki/%PUBURLPATH%/ 
+		/p/pub/TWiki/TWikiTemplates/ 
+		/copyleft/ 
+		/ntserver/ 
+		/ntserver/partners/ 
+		/ntserver/partners/findoffering/ 
+		/ntserver/partners/findoffering/serversolutions/ 
+		/cgi-bin/manage/ 
+		/cgi-bin/manage/TWiki/ 
+		/icons/small/ 
+		/docs-project/ 
+		/phpMyAdmin/themes/darkblue_orange/ 
+		/phpMyAdmin/themes/original/css/ 
+		/dvwa/dvwa/ 
+		/dvwa/dvwa/css/ 
+		/dvwa/dvwa/images/ 
+		/twiki/pub/ 
+		/twiki/pub/TWiki/ 
+		/twiki/pub/TWiki/TWikiLogos/ 
+		/twiki/bin/view/TWiki/ 
+		/twiki/bin/view/Know/ 
+		/twiki/bin/view/Sandbox/ 
+		/twiki/bin/search/ 
+		/twiki/bin/search/Main/ 
+		/twiki/pub/Main/ 
+		/twiki/pub/Main/WebHome/ 
+		/twiki/pub/icn/ 
+		/twiki/bin/attach/ 
+		/twiki/bin/attach/Main/ 
+		/phpMyAdmin/themes/darkblue_orange/css/ 
+		/phpMyAdmin/themes/darkblue_orange/img/ 
+		/dvwa/dvwa/includes/ 
+		/dvwa/dvwa/js/ 
+		/twiki/bin/edit/ 
+		/twiki/bin/edit/Main/ 
+		/twiki/bin/rdiff/ 
+		/twiki/bin/rdiff/Main/ 
+		/twiki/bin/oops/ 
+		/twiki/bin/oops/Main/ 
+		/twiki/bin/search/Know/ 
+		/twiki/bin/edit/Know/ 
+		/twiki/bin/attach/Know/ 
+		/twiki/bin/rdiff/Know/ 
+		/twiki/bin/oops/Know/ 
+		/twiki/bin/edit/Sandbox/ 
+		/twiki/bin/search/Sandbox/ 
+		/twiki/bin/attach/Sandbox/ 
+		/twiki/bin/rdiff/Sandbox/ 
+		/twiki/bin/oops/Sandbox/ 
+		/twiki/bin/search/TWiki/ 
+		/twiki/pub/TWiki/TWikiDocGraphics/ 
+		/twiki/bin/edit/TWiki/ 
+		/twiki/bin/attach/TWiki/ 
+		/twiki/bin/rdiff/TWiki/ 
+		/twiki/bin/oops/TWiki/ 
+		/twiki/bin/register/ 
+		/twiki/bin/register/Main/ 
+		/twiki/bin/view/TWiki/</ 
+		/twiki/bin/oops/mailto/ 
+		/twiki/bin/rename/ 
+		/twiki/bin/rename/TWiki/ 
+		/twiki/bin/statistics/ 
+		/twiki/pub/TWiki/TWikiPreferences/ 
+		/twiki/bin/view/TWiki/%ATTACHURLPATH%/ 
+		/reference/ 
+		/reference/wilbur/ 
+		/reference/wilbur/special/ 
+		/twiki/bin/oops/Mai/ 
+		/twiki/pub/TWiki/FileAttachment/ 
+		/twiki/bin/viewfile/ 
+		/twiki/bin/viewfile/TWiki/ 
+		/twiki/bin/viewfile/TWiki/TWiki/ 
+		/twiki/bin/upload/ 
+		/twiki/bin/upload/Main/ 
+		/twiki/bin/passwd/ 
+		/twiki/bin/passwd/TWiki/ 
+		/twiki/bin/passwd/Main/ 
+		/twiki/bin/view/TWiki/%SCRIPTURLPATH%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURLPATH%/edit%SCRIPTSUFFIX%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURL%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/ 
+		/twiki/bin/view/TWiki/%SCRIPTURL%/view%SCRIPTSUFFIX%/%WEB%/ 
+		/twiki/bin/view/TWiki/%PUBURLPATH%/ 
+		/twiki/pub/TWiki/TWikiTemplates/ 
+		/twiki/bin/manage/ 
+		/twiki/bin/manage/TWiki/ 
+		/dvwa/dvwa/includes/DBMS/ 
+		/twiki/bin/preview/ 
+		/twiki/bin/
+Killed
+
+
+2017-05-03 18:51:53,874 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:51:54,852 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Parent Process already KIlled
+2017-05-03 18:51:54,853 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_2  Message --> :Kill result is --> 137
+2017-05-03 18:51:54,869 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-05-03 18:51:54,871 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-05-03 18:51:54,873 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 80 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_643/643_192.168.182.128_80_capture-output.pcap
+2017-05-03 18:51:57,877 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 80 and timeout 200
+2017-05-03 18:51:57,894 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:51:57,895 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-05-03 18:54:02,001 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+
+After : <class 'pexpect.exceptions.TIMEOUT'> j is 5
+2017-05-03 18:54:02,111 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-05-03 18:54:04,116 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:54:04,117 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-05-03 18:54:08,128 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+root
+<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>
+
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+Connection closed by foreign host.
+
+After : <class 'pexpect.exceptions.EOF'> j is 2
+2017-05-03 18:54:08,240 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-05-03 18:54:10,242 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-05-03 18:54:10,243 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-05-03 18:54:14,249 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :toor
+
+After : <class 'pexpect.exceptions.EOF'> j is 3
+2017-05-03 18:54:14,250 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-05-03 18:54:14,253 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-05-03 18:54:14,254 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 80\n', "Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n\n\nConsole is Now expecting :Time out\n\n\nActual Output by console \n:Time out\n\n", u'Writing on console : root\n', 'Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is \'^]\'.\r\nroot\r\n<html><head><title>Metasploitable2 - Linux</title></head><body>\r\n<pre>\r\n\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| \'_ ` _ \\ / _ \\ __/ _` / __| \'_ \\| |/ _ \\| | __/ _` | \'_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\n</pre>\r\n<ul>\r\n<li><a href="/twiki/">TWiki</a></li>\r\n<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>\r\n<li><a href="/mutillidae/">Mutillidae</a></li>\r\n<li><a href="/dvwa/">DVWA</a></li>\r\n<li><a href="/dav/">WebDAV</a></li>\r\n</ul>\r\n</body>\r\n</html>\r\n\r\nConnection closed by foreign host.\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n', u'Writing on console : toor\n', 'toor\r\n\n\nConsole is Now expecting :Console Ended\n\n\nActual Output by console \n:Console Ended\n\n']
+2017-05-03 18:54:14,254 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-05-03 18:54:14,254 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 80
+
+
+Output
+toor
+
+
+Console is Now expecting :Console Ended
+
+
+Actual Output by console 
+:Console Ended
+
+
+2017-05-03 18:54:14,265 - Commands Logger - DEBUG - Finished!!!
+2017-05-03 18:54:14,266 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : toor
+After : <class 'pexpect.exceptions.EOF'>
+2017-05-03 18:54:14,266 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-05-03 18:54:14,368 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process
+2017-05-04 07:51:34,953 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-04 07:51:35,012 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 80 192.168.182.128 --script telnet-encryption
+2017-05-04 07:51:42,988 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-05-04 07:51:42,989 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-05-04 07:51:43,014 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-05-04 07:51:43,014 - Commands Logger - DEBUG - commands are : [u'nmap -p 80 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-05-04 07:51:43,015 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-05-04 07:51:43,015 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 80 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-04 07:51 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00100s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 7.63 seconds
+
+
+
+2017-05-04 07:51:43,031 - Commands Logger - DEBUG - Finished!!!
+2017-05-04 07:51:43,051 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :In method SingleLineCommands_Timeout()
+2017-05-04 07:51:43,052 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Thread started --with command  perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80
+2017-05-04 07:52:13,052 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Terminating process
+2017-05-04 07:52:23,669 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Thread finished
+2017-05-04 07:52:23,670 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_http_3  Message --> :Saving details :
+2017-05-04 07:52:23,749 - Commands Logger - DEBUG - Command id is ->telnet_http_3
+2017-05-04 07:52:23,750 - Commands Logger - DEBUG - commands are : [u' perl Scripts/http-dir-enum/http-dir-enum.pl -m 10 -f Scripts/http-dir-enum/directory-names.txt http://192.168.182.128:80', '\nEnd']
+2017-05-04 07:52:23,750 - Commands Logger - DEBUG - My var : '$.Entries."telnet_http_3"'

@@ -1,0 +1,580 @@
+2017-06-02 09:21:31,560 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-06-02 09:21:31,563 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-06-02 09:21:31,565 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 443 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_697/697_127.0.0.1_443_capture-output.pcap
+2017-06-02 09:21:34,567 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:21:34,570 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap -Pn --script=banner.nse -p 443 127.0.0.1
+2017-06-02 09:21:56,796 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-06-02 09:21:56,797 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-06-02 09:21:56,800 - Commands Logger - DEBUG - Command id is ->http_5
+2017-06-02 09:21:56,801 - Commands Logger - DEBUG - commands are : [u'nmap -Pn --script=banner.nse -p 443 127.0.0.1', '\nEnd']
+2017-06-02 09:21:56,801 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-06-02 09:21:56,801 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -Pn --script=banner.nse -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-06-02 09:21 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00012s latency).
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 21.87 seconds
+
+
+
+2017-06-02 09:21:56,812 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:21:56,820 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-06-02 09:21:56,889 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:21:56,890 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :Thread started --with command curl -v -X TRACE 127.0.0.1:443
+2017-06-02 09:21:56,982 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :Thread finished
+2017-06-02 09:21:56,983 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_2  Message --> :Saving details :
+2017-06-02 09:21:56,986 - Commands Logger - DEBUG - Command id is ->http_trace_2
+2017-06-02 09:21:56,986 - Commands Logger - DEBUG - commands are : [u'curl -v -X TRACE 127.0.0.1:443', '\nEnd']
+2017-06-02 09:21:56,986 - Commands Logger - DEBUG - My var : '$.Entries."http_trace_2"'
+2017-06-02 09:21:56,987 - Commands Logger - DEBUG - Result --> : Command Executed :curl -v -X TRACE 127.0.0.1:443
+
+Result* Rebuilt URL to: 127.0.0.1:443/
+*   Trying 127.0.0.1...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to 127.0.0.1 (127.0.0.1) port 443 (#0)
+> TRACE / HTTP/1.1
+> Host: 127.0.0.1:443
+> User-Agent: curl/7.50.1
+> Accept: */*
+> 
+< HTTP/1.1 405 Not Allowed
+< Server: nginx/1.10.2
+< Date: Fri, 02 Jun 2017 09:21:56 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 173
+< Connection: close
+< 
+{ [173 bytes data]
+100   173  100   173    0     0  48042      0 --:--:-- --:--:-- --:--:-- 57666
+* Closing connection 0
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.10.2</center>
+</body>
+</html>
+
+
+
+2017-06-02 09:21:56,994 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:21:57,028 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:21:57,031 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-trace.nse -p 443 127.0.0.1
+2017-06-02 09:22:11,903 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :Thread finished
+2017-06-02 09:22:11,904 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_1  Message --> :Saving details :
+2017-06-02 09:22:11,908 - Commands Logger - DEBUG - Command id is ->http_trace_1
+2017-06-02 09:22:11,908 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-trace.nse -p 443 127.0.0.1', '\nEnd']
+2017-06-02 09:22:11,908 - Commands Logger - DEBUG - My var : '$.Entries."http_trace_1"'
+2017-06-02 09:22:11,909 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-trace.nse -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-06-02 09:21 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00014s latency).
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.80 seconds
+
+
+
+2017-06-02 09:22:11,918 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:22:11,940 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Inside command_meta
+2017-06-02 09:23:24,023 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :msf > 
+2017-06-02 09:23:24,024 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :0
+2017-06-02 09:23:27,127 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :use auxiliary/scanner/http/trace
+use auxiliary/scanner/http/trace
+msf auxiliary(trace) > 
+2017-06-02 09:23:30,240 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :set RHOSTS 127.0.0.1
+set RHOSTS 127.0.0.1
+RHOSTS => 127.0.0.1
+msf auxiliary(trace) > 
+2017-06-02 09:23:33,355 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :set RPORTS 443
+set RPORTS 443
+RPORTS => 443
+msf auxiliary(trace) > 
+2017-06-02 09:23:33,355 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-06-02 09:23:38,465 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+
+Module Execution completed
+
+
+2017-06-02 09:23:38,467 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Before : 
+After : 
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(trace) > 
+2017-06-02 09:23:38,467 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+
+Now exiting !!!
+
+
+2017-06-02 09:23:38,471 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :
+Exiting  from msfconsole !!!
+
+2017-06-02 09:23:40,583 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Exited from msfconsole !!!
+2017-06-02 09:23:40,584 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Before : 
+exit
+exit
+After : 
+<class 'pexpect.exceptions.EOF'>
+2017-06-02 09:23:40,584 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Closing the child pipe !!!
+2017-06-02 09:23:40,687 - Commands Logger - DEBUG - Command Logger --->Command id --> http_trace_3  Message --> :Saving details :
+2017-06-02 09:23:40,691 - Commands Logger - DEBUG - Command id is ->http_trace_3
+2017-06-02 09:23:40,692 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', 'msf > ', 'use auxiliary/scanner/http/trace\r\nuse auxiliary/scanner/http/trace\r\r\nmsf auxiliary(trace) > \n', 'set RHOSTS 127.0.0.1\r\nset RHOSTS 127.0.0.1\r\r\nRHOSTS => 127.0.0.1\r\nmsf auxiliary(trace) > \n', 'set RPORTS 443\r\nset RPORTS 443\r\r\nRPORTS => 443\r\nmsf auxiliary(trace) > \n', 'run\r\nrun\r\r\n\r\n[*] Scanned 1 of 1 hosts (100% complete)\r\n[*] Auxiliary module execution completed\r\nmsf auxiliary(trace) > \n']
+2017-06-02 09:23:40,692 - Commands Logger - DEBUG - My var : '$.Entries."http_trace_3"'
+2017-06-02 09:23:40,693 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(trace) > 
+2017-06-02 09:23:40,805 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:23:40,815 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:23:40,816 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Thread started --with command echo -e 'Get/HTTP/1.0
+
+' | nc 127.0.0.1 443 |grep 'Server'
+2017-06-02 09:23:40,843 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Thread finished
+2017-06-02 09:23:40,844 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Saving details :
+2017-06-02 09:23:40,847 - Commands Logger - DEBUG - Command id is ->http_banner_1
+2017-06-02 09:23:40,847 - Commands Logger - DEBUG - commands are : [u"echo -e 'Get/HTTP/1.0\n\n' | nc 127.0.0.1 443 |grep 'Server'", '\nEnd']
+2017-06-02 09:23:40,848 - Commands Logger - DEBUG - My var : '$.Entries."http_banner_1"'
+2017-06-02 09:23:40,848 - Commands Logger - DEBUG - Result --> : Command Executed :echo -e 'Get/HTTP/1.0
+
+' | nc 127.0.0.1 443 |grep 'Server'
+
+Result
+None
+
+2017-06-02 09:23:40,857 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:23:40,870 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Inside command_meta
+2017-06-02 09:24:19,138 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :msf > 
+2017-06-02 09:24:19,138 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :0
+2017-06-02 09:24:22,246 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :use auxiliary/scanner/http/http_version
+use auxiliary/scanner/http/http_version
+msf auxiliary(http_version) > 
+2017-06-02 09:24:25,355 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :set RHOSTS 127.0.0.1
+set RHOSTS 127.0.0.1
+RHOSTS => 127.0.0.1
+msf auxiliary(http_version) > 
+2017-06-02 09:24:28,465 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :set RPORTS 443
+set RPORTS 443
+RPORTS => 443
+msf auxiliary(http_version) > 
+2017-06-02 09:24:28,465 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-06-02 09:24:33,980 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+
+Module Execution completed
+
+
+2017-06-02 09:24:33,981 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Before : 
+After : 
+run
+run
+
+[*] 127.0.0.1:80 nginx/1.10.2
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(http_version) > 
+2017-06-02 09:24:33,982 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+
+Now exiting !!!
+
+
+2017-06-02 09:24:33,982 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-06-02 09:24:36,102 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Exited from msfconsole !!!
+2017-06-02 09:24:36,103 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Before : 
+exit
+exit
+After : 
+<class 'pexpect.exceptions.EOF'>
+2017-06-02 09:24:36,103 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Closing the child pipe !!!
+2017-06-02 09:24:36,205 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_2  Message --> :Saving details :
+2017-06-02 09:24:36,209 - Commands Logger - DEBUG - Command id is ->http_banner_2
+2017-06-02 09:24:36,210 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', 'msf > ', 'use auxiliary/scanner/http/http_version\r\nuse auxiliary/scanner/http/http_version\r\r\nmsf auxiliary(http_version) > \n', 'set RHOSTS 127.0.0.1\r\nset RHOSTS 127.0.0.1\r\r\nRHOSTS => 127.0.0.1\r\nmsf auxiliary(http_version) > \n', 'set RPORTS 443\r\nset RPORTS 443\r\r\nRPORTS => 443\r\nmsf auxiliary(http_version) > \n', 'run\r\nrun\r\r\n\r\n[*] 127.0.0.1:80 nginx/1.10.2\r\n[*] Scanned 1 of 1 hosts (100% complete)\r\n[*] Auxiliary module execution completed\r\nmsf auxiliary(http_version) > \n']
+2017-06-02 09:24:36,210 - Commands Logger - DEBUG - My var : '$.Entries."http_banner_2"'
+2017-06-02 09:24:36,210 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+run
+
+[*] 127.0.0.1:80 nginx/1.10.2
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(http_version) > 
+2017-06-02 09:24:36,279 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:24:36,290 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:24:36,292 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-headers -p 443 127.0.0.1
+2017-06-02 09:24:51,386 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Thread finished
+2017-06-02 09:24:51,386 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Saving details :
+2017-06-02 09:24:51,390 - Commands Logger - DEBUG - Command id is ->http_headers_1
+2017-06-02 09:24:51,390 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-headers -p 443 127.0.0.1', '\nEnd']
+2017-06-02 09:24:51,391 - Commands Logger - DEBUG - My var : '$.Entries."http_headers_1"'
+2017-06-02 09:24:51,391 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-headers -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-06-02 09:24 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000098s latency).
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http nginx 1.10.2
+| http-headers: 
+|   Server: nginx/1.10.2
+|   Date: Fri, 02 Jun 2017 09:24:51 GMT
+|   Content-Type: text/html; charset=utf-8
+|   Transfer-Encoding: chunked
+|   Connection: close
+|   X-Frame-Options: SAMEORIGIN
+|   
+|_  (Request type: GET)
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.06 seconds
+
+
+
+2017-06-02 09:24:51,397 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:24:51,456 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Inside command_meta
+2017-06-02 09:25:30,649 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :msf > 
+2017-06-02 09:25:30,649 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :0
+2017-06-02 09:25:33,755 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :use auxiliary/scanner/http/http_header
+use auxiliary/scanner/http/http_header
+msf auxiliary(http_header) > 
+2017-06-02 09:25:36,872 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :set RHOSTS 127.0.0.1
+set RHOSTS 127.0.0.1
+RHOSTS => 127.0.0.1
+msf auxiliary(http_header) > 
+2017-06-02 09:25:39,981 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :set RPORTS 443
+set RPORTS 443
+RPORTS => 443
+msf auxiliary(http_header) > 
+2017-06-02 09:25:39,981 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-06-02 09:26:02,986 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+
+Module Execution completed
+
+
+2017-06-02 09:26:02,988 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Before : 
+After : 
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(http_header) > 
+2017-06-02 09:26:02,988 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+
+Now exiting !!!
+
+
+2017-06-02 09:26:02,989 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-06-02 09:26:05,096 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Exited from msfconsole !!!
+2017-06-02 09:26:05,096 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Before : 
+exit
+exit
+After : 
+<class 'pexpect.exceptions.EOF'>
+2017-06-02 09:26:05,097 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Closing the child pipe !!!
+2017-06-02 09:26:05,199 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_2  Message --> :Saving details :
+2017-06-02 09:26:05,208 - Commands Logger - DEBUG - Command id is ->http_headers_2
+2017-06-02 09:26:05,208 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', 'msf > ', 'use auxiliary/scanner/http/http_header\r\nuse auxiliary/scanner/http/http_header\r\r\nmsf auxiliary(http_header) > \n', 'set RHOSTS 127.0.0.1\r\nset RHOSTS 127.0.0.1\r\r\nRHOSTS => 127.0.0.1\r\nmsf auxiliary(http_header) > \n', 'set RPORTS 443\r\nset RPORTS 443\r\r\nRPORTS => 443\r\nmsf auxiliary(http_header) > \n', 'run\r\nrun\r\r\n\r\n[*] Scanned 1 of 1 hosts (100% complete)\r\n[*] Auxiliary module execution completed\r\nmsf auxiliary(http_header) > \n']
+2017-06-02 09:26:05,209 - Commands Logger - DEBUG - My var : '$.Entries."http_headers_2"'
+2017-06-02 09:26:05,209 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(http_header) > 
+2017-06-02 09:26:05,282 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:26:05,301 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:26:05,312 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-methods -p 443 127.0.0.1
+2017-06-02 09:26:20,964 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :Thread finished
+2017-06-02 09:26:20,965 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_1  Message --> :Saving details :
+2017-06-02 09:26:20,966 - Commands Logger - DEBUG - Command id is ->http_methods_1
+2017-06-02 09:26:20,966 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-methods -p 443 127.0.0.1', '\nEnd']
+2017-06-02 09:26:20,967 - Commands Logger - DEBUG - My var : '$.Entries."http_methods_1"'
+2017-06-02 09:26:20,967 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-methods -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-06-02 09:26 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000052s latency).
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
+
+
+
+2017-06-02 09:26:20,974 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:26:21,009 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Inside command_meta
+2017-06-02 09:27:03,939 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :msf > 
+2017-06-02 09:27:03,940 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :0
+2017-06-02 09:27:07,060 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :use auxiliary/scanner/http/options
+use auxiliary/scanner/http/options
+msf auxiliary(options) > 
+2017-06-02 09:27:10,172 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :set RHOSTS 127.0.0.1
+set RHOSTS 127.0.0.1
+RHOSTS => 127.0.0.1
+msf auxiliary(options) > 
+2017-06-02 09:27:13,279 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :set RPORTS 443
+set RPORTS 443
+RPORTS => 443
+msf auxiliary(options) > 
+2017-06-02 09:27:13,280 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-06-02 09:27:18,397 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+
+Module Execution completed
+
+
+2017-06-02 09:27:18,398 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Before : 
+After : 
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(options) > 
+2017-06-02 09:27:18,398 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+
+Now exiting !!!
+
+
+2017-06-02 09:27:18,399 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-06-02 09:27:20,534 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Exited from msfconsole !!!
+2017-06-02 09:27:20,534 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Before : 
+exit
+exit
+After : 
+<class 'pexpect.exceptions.EOF'>
+2017-06-02 09:27:20,535 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Closing the child pipe !!!
+2017-06-02 09:27:20,637 - Commands Logger - DEBUG - Command Logger --->Command id --> http_methods_2  Message --> :Saving details :
+2017-06-02 09:27:20,640 - Commands Logger - DEBUG - Command id is ->http_methods_2
+2017-06-02 09:27:20,641 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', 'msf > ', 'use auxiliary/scanner/http/options\r\nuse auxiliary/scanner/http/options\r\r\nmsf auxiliary(options) > \n', 'set RHOSTS 127.0.0.1\r\nset RHOSTS 127.0.0.1\r\r\nRHOSTS => 127.0.0.1\r\nmsf auxiliary(options) > \n', 'set RPORTS 443\r\nset RPORTS 443\r\r\nRPORTS => 443\r\nmsf auxiliary(options) > \n', 'run\r\nrun\r\r\n\r\n[*] Scanned 1 of 1 hosts (100% complete)\r\n[*] Auxiliary module execution completed\r\nmsf auxiliary(options) > \n']
+2017-06-02 09:27:20,641 - Commands Logger - DEBUG - My var : '$.Entries."http_methods_2"'
+2017-06-02 09:27:20,641 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(options) > 
+2017-06-02 09:27:20,709 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:27:20,719 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:27:20,720 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-robots.txt -p 443 127.0.0.1
+2017-06-02 09:27:35,871 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :Thread finished
+2017-06-02 09:27:35,872 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_1  Message --> :Saving details :
+2017-06-02 09:27:35,967 - Commands Logger - DEBUG - Command id is ->http_robots_1
+2017-06-02 09:27:35,968 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-robots.txt -p 443 127.0.0.1', '\nEnd']
+2017-06-02 09:27:35,969 - Commands Logger - DEBUG - My var : '$.Entries."http_robots_1"'
+2017-06-02 09:27:35,969 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-robots.txt -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-06-02 09:27 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000060s latency).
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.09 seconds
+
+
+
+2017-06-02 09:27:35,999 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:27:36,033 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Inside command_meta
+2017-06-02 09:28:17,873 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :msf > 
+2017-06-02 09:28:17,873 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :0
+2017-06-02 09:28:20,979 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :use auxiliary/scanner/http/robots_txt
+use auxiliary/scanner/http/robots_txt
+msf auxiliary(robots_txt) > 
+2017-06-02 09:28:24,088 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :set RHOSTS 127.0.0.1
+set RHOSTS 127.0.0.1
+RHOSTS => 127.0.0.1
+msf auxiliary(robots_txt) > 
+2017-06-02 09:28:27,200 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :set RPORTS 443
+set RPORTS 443
+RPORTS => 443
+msf auxiliary(robots_txt) > 
+2017-06-02 09:28:27,201 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-06-02 09:28:32,309 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Module Execution completed
+
+
+2017-06-02 09:28:32,310 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Before : 
+After : 
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(robots_txt) > 
+2017-06-02 09:28:32,311 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Now exiting !!!
+
+
+2017-06-02 09:28:32,311 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-06-02 09:28:34,418 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Exited from msfconsole !!!
+2017-06-02 09:28:34,419 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Before : 
+exit
+exit
+After : 
+<class 'pexpect.exceptions.EOF'>
+2017-06-02 09:28:34,419 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Closing the child pipe !!!
+2017-06-02 09:28:34,521 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Saving details :
+2017-06-02 09:28:34,524 - Commands Logger - DEBUG - Command id is ->http_robots_2
+2017-06-02 09:28:34,525 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', 'msf > ', 'use auxiliary/scanner/http/robots_txt\r\nuse auxiliary/scanner/http/robots_txt\r\r\nmsf auxiliary(robots_txt) > \n', 'set RHOSTS 127.0.0.1\r\nset RHOSTS 127.0.0.1\r\r\nRHOSTS => 127.0.0.1\r\nmsf auxiliary(robots_txt) > \n', 'set RPORTS 443\r\nset RPORTS 443\r\r\nRPORTS => 443\r\nmsf auxiliary(robots_txt) > \n', 'run\r\nrun\r\r\n\r\n[*] Scanned 1 of 1 hosts (100% complete)\r\n[*] Auxiliary module execution completed\r\nmsf auxiliary(robots_txt) > \n']
+2017-06-02 09:28:34,526 - Commands Logger - DEBUG - My var : '$.Entries."http_robots_2"'
+2017-06-02 09:28:34,526 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(robots_txt) > 
+2017-06-02 09:28:34,535 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:28:34,545 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :In method SingleLineCommands_Timeout()
+2017-06-02 09:28:34,546 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :Thread started --with command nmap -Pn -sV --script=http-iis-webdav-vuln.nse -p 443 127.0.0.1
+2017-06-02 09:28:50,377 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :Thread finished
+2017-06-02 09:28:50,378 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_1  Message --> :Saving details :
+2017-06-02 09:28:50,380 - Commands Logger - DEBUG - Command id is ->http_web_dev_1
+2017-06-02 09:28:50,380 - Commands Logger - DEBUG - commands are : [u'nmap -Pn -sV --script=http-iis-webdav-vuln.nse -p 443 127.0.0.1', '\nEnd']
+2017-06-02 09:28:50,380 - Commands Logger - DEBUG - My var : '$.Entries."http_web_dev_1"'
+2017-06-02 09:28:50,380 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -Pn -sV --script=http-iis-webdav-vuln.nse -p 443 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-06-02 09:28 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000072s latency).
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.79 seconds
+
+
+
+2017-06-02 09:28:50,396 - Commands Logger - DEBUG - Finished!!!
+2017-06-02 09:28:50,545 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Inside command_meta
+2017-06-02 09:29:31,985 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :msf > 
+2017-06-02 09:29:31,986 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :0
+2017-06-02 09:29:35,092 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :use auxiliary/scanner/http/webdav_scanner
+use auxiliary/scanner/http/webdav_scanner
+msf auxiliary(webdav_scanner) > 
+2017-06-02 09:29:38,203 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :set RHOSTS 127.0.0.1
+set RHOSTS 127.0.0.1
+RHOSTS => 127.0.0.1
+msf auxiliary(webdav_scanner) > 
+2017-06-02 09:29:41,314 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :set RPORTS 443
+set RPORTS 443
+RPORTS => 443
+msf auxiliary(webdav_scanner) > 
+2017-06-02 09:29:41,314 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-06-02 09:29:46,421 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+
+Module Execution completed
+
+
+2017-06-02 09:29:46,422 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Before : 
+After : 
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(webdav_scanner) > 
+2017-06-02 09:29:46,422 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+
+Now exiting !!!
+
+
+2017-06-02 09:29:46,422 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-06-02 09:29:48,529 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Exited from msfconsole !!!
+2017-06-02 09:29:48,530 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Before : 
+exit
+exit
+After : 
+<class 'pexpect.exceptions.EOF'>
+2017-06-02 09:29:48,532 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Closing the child pipe !!!
+2017-06-02 09:29:48,634 - Commands Logger - DEBUG - Command Logger --->Command id --> http_web_dev_2  Message --> :Saving details :
+2017-06-02 09:29:48,639 - Commands Logger - DEBUG - Command id is ->http_web_dev_2
+2017-06-02 09:29:48,639 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', 'msf > ', 'use auxiliary/scanner/http/webdav_scanner\r\nuse auxiliary/scanner/http/webdav_scanner\r\r\nmsf auxiliary(webdav_scanner) > \n', 'set RHOSTS 127.0.0.1\r\nset RHOSTS 127.0.0.1\r\r\nRHOSTS => 127.0.0.1\r\nmsf auxiliary(webdav_scanner) > \n', 'set RPORTS 443\r\nset RPORTS 443\r\r\nRPORTS => 443\r\nmsf auxiliary(webdav_scanner) > \n', 'run\r\nrun\r\r\n\r\n[*] Scanned 1 of 1 hosts (100% complete)\r\n[*] Auxiliary module execution completed\r\nmsf auxiliary(webdav_scanner) > \n']
+2017-06-02 09:29:48,640 - Commands Logger - DEBUG - My var : '$.Entries."http_web_dev_2"'
+2017-06-02 09:29:48,641 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+run
+
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf auxiliary(webdav_scanner) > 
+2017-06-02 09:29:48,650 - Commands Logger - DEBUG - Finished!!!

@@ -1,0 +1,16 @@
+2017-05-22 00:02:05,086 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-22 00:02:11,098 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 653
+2017-05-22 00:02:11,116 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 00:02:11,119 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-22 00:02:11,121 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 00:02:11,123 - Info Logger - DEBUG - Service,Host,port  is -->domain  127.0.0.1  22
+2017-05-22 00:02:11,207 - Info Logger - DEBUG - Command id --> domain_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 653
+2017-05-22 00:02:11,209 - Info Logger - DEBUG - Command id --> domain_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 00:02:11,211 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 22 127.0.0.1
+2017-05-22 00:02:14,576 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Thread finished
+2017-05-22 00:02:14,577 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Saving details :
+2017-05-22 00:02:14,589 - Info Logger - DEBUG - Command id --> domain_5  Message --> :Details Updated successfully

@@ -1,0 +1,90 @@
+2017-03-14 20:36:26,010 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-03-14 20:36:26,012 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread started --with command nmap -p 23 192.168.182.128 --script telnet-encryption
+2017-03-14 20:36:34,579 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Thread finished
+2017-03-14 20:36:34,580 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_1  Message --> :Saving details :
+2017-03-14 20:36:34,583 - Commands Logger - DEBUG - Command id is ->telnet_1
+2017-03-14 20:36:34,583 - Commands Logger - DEBUG - commands are : [u'nmap -p 23 192.168.182.128 --script telnet-encryption', '\nEnd']
+2017-03-14 20:36:34,583 - Commands Logger - DEBUG - My var : '$.Entries."telnet_1"'
+2017-03-14 20:36:34,584 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -p 23 192.168.182.128 --script telnet-encryption
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-03-14 20:36 UTC
+Nmap scan report for 192.168.182.128
+Host is up (0.00075s latency).
+PORT   STATE SERVICE
+23/tcp open  telnet
+| telnet-encryption: 
+|_  Telnet server does not support encryption
+
+Nmap done: 1 IP address (1 host up) scanned in 8.44 seconds
+
+
+
+2017-03-14 20:36:34,613 - Commands Logger - DEBUG - Finished!!!
+2017-03-14 20:36:34,629 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting single line + Sniff
+2017-03-14 20:36:34,651 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :IN Start_sniffing() method
+2017-03-14 20:36:34,654 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :sniffing command is --> tshark -f 'port 23 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_635/635_192.168.182.128_23_capture-output.pcap
+2017-03-14 20:36:37,660 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Starting Interactive Session with command --> telnet 192.168.182.128 23 and timeout 200
+2017-03-14 20:36:37,700 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'.* login:.*', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-03-14 20:36:37,701 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-03-14 20:36:41,844 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :
+After : Trying 192.168.182.128...
+Connected to 192.168.182.128.
+Escape character is '^]'.
+                _                  _       _ _        _     _      ____  
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \ 
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/ 
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|
+                            |_|                                          
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+metasploitable login:  j is 2
+2017-03-14 20:36:41,946 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  root
+2017-03-14 20:36:43,948 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'.*Password:', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-03-14 20:36:43,948 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', '1', '2']
+2017-03-14 20:36:47,954 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :
+After : root
+Password: j is 0
+2017-03-14 20:36:48,056 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Just sent command -->  toor
+2017-03-14 20:36:50,059 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Arg list is --> [u'[$,#]', u'.* login:.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-03-14 20:36:50,059 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :check list is --> [u'0', u'1', '2', '3']
+2017-03-14 20:36:54,460 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before :
+After :  
+
+Login incorrect
+metasploitable login:  j is 1
+2017-03-14 20:36:54,461 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Saving details :
+2017-03-14 20:36:54,464 - Commands Logger - DEBUG - Command id is ->telnet_sniff_1
+2017-03-14 20:36:54,470 - Commands Logger - DEBUG - commands are : [u'telnet 192.168.182.128 23\n', "\n\nConsole is Now expecting :.* login:.*\n\n\nActual Output by console \n:Trying 192.168.182.128...\r\nConnected to 192.168.182.128.\r\nEscape character is '^]'.\r\n                _                  _       _ _        _     _      ____  \r\n _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \\ \r\n| '_ ` _ \\ / _ \\ __/ _` / __| '_ \\| |/ _ \\| | __/ _` | '_ \\| |/ _ \\ __) |\r\n| | | | | |  __/ || (_| \\__ \\ |_) | | (_) | | || (_| | |_) | |  __// __/ \r\n|_| |_| |_|\\___|\\__\\__,_|___/ .__/|_|\\___/|_|\\__\\__,_|_.__/|_|\\___|_____|\r\n                            |_|                                          \r\n\r\n\r\nWarning: Never expose this VM to an untrusted network!\r\n\r\nContact: msfdev[at]metasploit.com\r\n\r\nLogin with msfadmin/msfadmin to get started\r\n\r\n\r\nmetasploitable login: \n\n", u'Writing on console : root\n', '\n\nConsole is Now expecting :.*Password:\n\n\nActual Output by console \n:root\r\nPassword:\n\n', u'Writing on console : toor\n', '\n\nConsole is Now expecting :.* login:.*\n\n\nActual Output by console \n: \r\n\r\nLogin incorrect\r\nmetasploitable login: \n\n']
+2017-03-14 20:36:54,471 - Commands Logger - DEBUG - My var : '$.Entries."telnet_sniff_1"'
+2017-03-14 20:36:54,471 - Commands Logger - DEBUG - Result --> : Command Executed :telnet 192.168.182.128 23
+
+
+Output
+
+
+Console is Now expecting :.* login:.*
+
+
+Actual Output by console 
+: 
+
+Login incorrect
+metasploitable login: 
+
+
+2017-03-14 20:36:54,483 - Commands Logger - DEBUG - Finished!!!
+2017-03-14 20:36:54,485 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Before : After :  
+
+Login incorrect
+metasploitable login: 
+2017-03-14 20:36:54,485 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Closing Child now !!
+2017-03-14 20:36:54,590 - Commands Logger - DEBUG - Command Logger --->Command id --> telnet_sniff_1  Message --> :Terminating Sniffing process

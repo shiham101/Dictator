@@ -1,0 +1,10 @@
+2016-12-05 18:09:38,186 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2016-12-05 18:09:44,191 - Info Logger - DEBUG - 
+
+
+Welcome  STARTING MAIN METHOD OF DRIVER FILE FOR PROJECT ID --> 332
+2016-12-05 18:09:44,193 - Info Logger - ERROR - Error occured in Main method 'NoneType' object is not iterable

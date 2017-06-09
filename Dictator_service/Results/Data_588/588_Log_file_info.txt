@@ -1,0 +1,57 @@
+2017-02-20 16:37:14,182 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-02-20 16:37:20,195 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 588
+2017-02-20 16:37:20,198 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-02-20 16:37:20,201 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-02-20 16:37:20,215 - Info Logger - DEBUG - Service,Host,port  is -->ftp  192.168.182.128  21
+2017-02-20 16:37:20,224 - Info Logger - DEBUG - Command id --> ftp_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 588
+2017-02-20 16:37:20,224 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Inside command_meta
+2017-02-20 16:38:14,761 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Everything Fine till now-->Launching run command
+2017-02-20 16:38:19,871 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Module Execution completed
+2017-02-20 16:38:19,873 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Exiting  from msfconsole !!!
+2017-02-20 16:38:22,102 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Saving details :
+2017-02-20 16:38:22,112 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Details Updated successfully
+2017-02-20 16:38:22,113 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Exiting custom_meta !!
+2017-02-20 16:38:22,121 - Info Logger - DEBUG - Command id --> ftp_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 588
+2017-02-20 16:38:22,121 - Info Logger - DEBUG - Command id --> ftp_2  Message --> :Inside command_meta
+2017-02-20 16:39:08,392 - Info Logger - DEBUG - Command id --> ftp_2  Message --> :Everything Fine till now-->Launching run command
+2017-02-20 16:39:13,504 - Info Logger - DEBUG - Command id --> ftp_2  Message --> :Module Execution completed
+2017-02-20 16:39:13,505 - Info Logger - DEBUG - Command id --> ftp_2  Message --> :Exiting  from msfconsole !!!
+2017-02-20 16:39:15,717 - Info Logger - DEBUG - Command id --> ftp_2  Message --> :Saving details :
+2017-02-20 16:39:15,760 - Info Logger - DEBUG - Command id --> ftp_2  Message --> :Details Updated successfully
+2017-02-20 16:39:15,760 - Info Logger - DEBUG - Command id --> ftp_2  Message --> :Exiting custom_meta !!
+2017-02-20 16:39:15,776 - Info Logger - DEBUG - Command id --> ftp_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 588
+2017-02-20 16:39:15,777 - Info Logger - DEBUG - Command id --> ftp_3  Message --> :Starting FTP Login --Anonmous
+2017-02-20 16:39:22,027 - Info Logger - DEBUG - Command id --> ftp_3  Message --> :Login Successful
+2017-02-20 16:39:22,129 - Info Logger - DEBUG - Command id --> ftp_3  Message --> :Saving details :
+2017-02-20 16:39:22,138 - Info Logger - DEBUG - Command id --> ftp_3  Message --> :Details Updated successfully
+2017-02-20 16:39:22,138 - Info Logger - DEBUG - Command id --> ftp_3  Message --> :Exiting method Ftp interactive !!
+2017-02-20 16:39:22,146 - Info Logger - DEBUG - Command id --> ftp_4  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 588
+2017-02-20 16:39:22,147 - Info Logger - DEBUG - Command id --> ftp_4  Message --> :In method SingleLineCommands_Timeout()
+2017-02-20 16:39:22,147 - Info Logger - DEBUG - Command id --> ftp_4  Message --> :Thread started --with command nmap -sV --script=ftp-bounce.nse -p 21 192.168.182.128
+2017-02-20 16:39:35,332 - Info Logger - DEBUG - Command id --> ftp_4  Message --> :Thread finished
+2017-02-20 16:39:35,332 - Info Logger - DEBUG - Command id --> ftp_4  Message --> :Saving details :
+2017-02-20 16:39:35,345 - Info Logger - DEBUG - Command id --> ftp_4  Message --> :Details Updated successfully
+2017-02-20 16:39:35,361 - Info Logger - DEBUG - Command id --> ftp_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 588
+2017-02-20 16:39:35,361 - Info Logger - DEBUG - Command id --> ftp_5  Message --> :In method SingleLineCommands_Timeout()
+2017-02-20 16:39:35,362 - Info Logger - DEBUG - Command id --> ftp_5  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 21 192.168.182.128
+2017-02-20 16:39:48,444 - Info Logger - DEBUG - Command id --> ftp_5  Message --> :Thread finished
+2017-02-20 16:39:48,445 - Info Logger - DEBUG - Command id --> ftp_5  Message --> :Saving details :
+2017-02-20 16:39:48,469 - Info Logger - DEBUG - Command id --> ftp_5  Message --> :Details Updated successfully
+2017-02-20 16:39:48,481 - Info Logger - DEBUG - Command id --> ftp_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 588
+2017-02-20 16:39:48,482 - Info Logger - DEBUG - Command id --> ftp_6  Message --> :In method SingleLineCommands_Timeout()
+2017-02-20 16:39:48,482 - Info Logger - DEBUG - Command id --> ftp_6  Message --> :Thread started --with command nmap --script=ftp-anon.nse -p 21 192.168.182.128
+2017-02-20 16:40:00,192 - Info Logger - DEBUG - Command id --> ftp_6  Message --> :Thread finished
+2017-02-20 16:40:00,192 - Info Logger - DEBUG - Command id --> ftp_6  Message --> :Saving details :
+2017-02-20 16:40:00,204 - Info Logger - DEBUG - Command id --> ftp_6  Message --> :Details Updated successfully
+2017-02-20 16:40:00,228 - Info Logger - DEBUG - Service,Host,port  is -->telnet  192.168.182.128  23
+2017-02-20 16:40:00,234 - Info Logger - DEBUG - Command id --> telnet_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 588
+2017-02-20 16:40:00,235 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-20 16:40:00,236 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread started --with command nmap -p 23 192.168.182.128 --script telnet-encryption
+2017-02-20 16:40:12,375 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread finished
+2017-02-20 16:40:12,375 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Saving details :
+2017-02-20 16:40:12,383 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Details Updated successfully
+2017-02-20 16:40:12,415 - Info Logger - ERROR - Error occured in Main method Driver instance has no attribute 'generate_report'

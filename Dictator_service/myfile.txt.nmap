@@ -1,0 +1,10 @@
+# Nmap 7.12 scan initiated Fri Dec 30 23:41:59 2016 as: nmap -sn -oA myfile.txt 10.0.1.1-254
+Nmap scan report for 10.0.1.39
+Host is up (0.0015s latency).
+MAC Address: B8:2A:72:9E:AF:5E (Dell)
+Nmap scan report for 10.0.1.85
+Host is up (0.0048s latency).
+MAC Address: 00:0C:29:47:D4:08 (VMware)
+Nmap scan report for 10.0.1.37
+Host is up.
+# Nmap done at Fri Dec 30 23:42:31 2016 -- 254 IP addresses (3 hosts up) scanned in 31.43 seconds

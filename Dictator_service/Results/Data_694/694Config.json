@@ -1,0 +1,17 @@
+{
+  "Records": [
+    {
+      "Commands": [
+        "telnet_1", 
+        "telnet_sniff_1"
+      ], 
+      "Service": "telnet", 
+      "IsModified": false, 
+      "Port": "21", 
+      "Host": "127.0.0.1", 
+      "IsCustom": false, 
+      "Project_id": "694", 
+      "id": "20536"
+    }
+  ]
+}

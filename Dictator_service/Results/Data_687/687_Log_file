@@ -1,0 +1,106 @@
+2017-05-28 09:57:18,491 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 09:57:18,493 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Thread started --with command echo -e 'Get/HTTP/1.0
+
+' | nc 127.0.0.1 8000 |grep 'Server'
+2017-05-28 09:57:18,550 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Thread finished
+2017-05-28 09:57:18,551 - Commands Logger - DEBUG - Command Logger --->Command id --> http_banner_1  Message --> :Saving details :
+2017-05-28 09:57:18,554 - Commands Logger - DEBUG - Command id is ->http_banner_1
+2017-05-28 09:57:18,554 - Commands Logger - DEBUG - commands are : [u"echo -e 'Get/HTTP/1.0\n\n' | nc 127.0.0.1 8000 |grep 'Server'", '\nEnd']
+2017-05-28 09:57:18,554 - Commands Logger - DEBUG - My var : '$.Entries."http_banner_1"'
+2017-05-28 09:57:18,555 - Commands Logger - DEBUG - Result --> : Command Executed :echo -e 'Get/HTTP/1.0
+
+' | nc 127.0.0.1 8000 |grep 'Server'
+
+ResultServer: nginx/1.10.2
+
+
+
+2017-05-28 09:57:18,651 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 09:57:18,696 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :In method SingleLineCommands_Timeout()
+2017-05-28 09:57:18,697 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-headers -p 8000 127.0.0.1
+2017-05-28 09:57:32,294 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Thread finished
+2017-05-28 09:57:32,296 - Commands Logger - DEBUG - Command Logger --->Command id --> http_headers_1  Message --> :Saving details :
+2017-05-28 09:57:32,300 - Commands Logger - DEBUG - Command id is ->http_headers_1
+2017-05-28 09:57:32,300 - Commands Logger - DEBUG - commands are : [u'nmap -sV -Pn --script=http-headers -p 8000 127.0.0.1', '\nEnd']
+2017-05-28 09:57:32,301 - Commands Logger - DEBUG - My var : '$.Entries."http_headers_1"'
+2017-05-28 09:57:32,301 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV -Pn --script=http-headers -p 8000 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-28 09:57 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000078s latency).
+PORT     STATE SERVICE VERSION
+8000/tcp open  http    nginx 1.10.2
+| http-headers: 
+|   Server: nginx/1.10.2
+|   Date: Sun, 28 May 2017 09:57:32 GMT
+|   Content-Type: text/html
+|   Content-Length: 185
+|   Connection: close
+|   Location: https://127.0.0.1/
+|   
+|_  (Request type: GET)
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.54 seconds
+
+
+
+2017-05-28 09:57:32,312 - Commands Logger - DEBUG - Finished!!!
+2017-05-28 09:57:32,323 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Inside command_meta
+2017-05-28 09:58:16,053 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :[4mmsf[0m [0m> 
+2017-05-28 09:58:16,054 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :0
+2017-05-28 09:58:19,159 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :use auxiliary/scanner/http/robots_txt
+[0m[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 09:58:22,267 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :set RHOSTS 127.0.0.1
+[0mRHOSTS => 127.0.0.1
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 09:58:25,373 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :set RPORTS 8000
+[0mRPORTS => 8000
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 09:58:25,373 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Everything Fine till now-->Launching run command
+
+
+2017-05-28 09:58:30,485 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Module Execution completed
+
+
+2017-05-28 09:58:30,485 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Before : 
+After : 
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 09:58:30,486 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+
+Now exiting !!!
+
+
+2017-05-28 09:58:30,486 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :
+Exiting  from msfconsole !!!
+
+2017-05-28 09:58:32,593 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Exited from msfconsole !!!
+2017-05-28 09:58:32,595 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Before : 
+exit
+[0mAfter : 
+<class 'pexpect.exceptions.EOF'>
+2017-05-28 09:58:32,595 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Closing the child pipe !!!
+2017-05-28 09:58:32,698 - Commands Logger - DEBUG - Command Logger --->Command id --> http_robots_2  Message --> :Saving details :
+2017-05-28 09:58:32,700 - Commands Logger - DEBUG - Command id is ->http_robots_2
+2017-05-28 09:58:32,701 - Commands Logger - DEBUG - commands are : ['>msfconsole \n', '\x1b[4mmsf\x1b[0m \x1b[0m> ', 'use auxiliary/scanner/http/robots_txt\r\r\n\x1b[0m\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n', 'set RHOSTS 127.0.0.1\r\r\n\x1b[0mRHOSTS => 127.0.0.1\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n', 'set RPORTS 8000\r\r\n\x1b[0mRPORTS => 8000\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n', 'run\r\r\n\x1b[0m\r\n\x1b[1m\x1b[34m[*]\x1b[0m Scanned 1 of 1 hosts (100% complete)\r\n\x1b[1m\x1b[34m[*]\x1b[0m Auxiliary module execution completed\r\n\x1b[4mmsf\x1b[0m auxiliary(\x1b[1m\x1b[31mrobots_txt\x1b[0m) \x1b[0m> \n']
+2017-05-28 09:58:32,701 - Commands Logger - DEBUG - My var : '$.Entries."http_robots_2"'
+2017-05-28 09:58:32,701 - Commands Logger - DEBUG - Result --> : 
+Command Executed :>msfconsole 
+
+Result :
+run
+[0m
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf[0m auxiliary([1m[31mrobots_txt[0m) [0m> 
+2017-05-28 09:58:32,770 - Commands Logger - DEBUG - Finished!!!

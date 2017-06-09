@@ -1,0 +1,72 @@
+2017-02-24 10:28:14,170 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-02-24 10:28:20,179 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 595
+2017-02-24 10:28:20,180 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-02-24 10:28:20,182 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-02-24 10:28:20,199 - Info Logger - DEBUG - Service,Host,port  is -->telnet  192.168.182.128  22
+2017-02-24 10:28:20,206 - Info Logger - DEBUG - Command id --> telnet_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 595
+2017-02-24 10:28:20,206 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:28:20,207 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread started --with command nmap -p 22 192.168.182.128 --script telnet-encryption
+2017-02-24 10:28:32,036 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread finished
+2017-02-24 10:28:32,038 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Saving details :
+2017-02-24 10:28:32,053 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Details Updated successfully
+2017-02-24 10:28:32,107 - Info Logger - DEBUG - Service,Host,port  is -->telnet  192.168.182.128  8180
+2017-02-24 10:28:32,114 - Info Logger - DEBUG - Command id --> telnet_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 595
+2017-02-24 10:28:32,114 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:28:32,115 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread started --with command nmap -p 8180 192.168.182.128 --script telnet-encryption
+2017-02-24 10:28:43,846 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Thread finished
+2017-02-24 10:28:43,846 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Saving details :
+2017-02-24 10:28:43,856 - Info Logger - DEBUG - Command id --> telnet_1  Message --> :Details Updated successfully
+2017-02-24 10:28:43,919 - Info Logger - ERROR - Error occured in Main method Driver instance has no attribute 'generate_report'
+2017-02-24 10:30:31,434 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-02-24 10:30:37,441 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 595
+2017-02-24 10:30:37,442 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-02-24 10:30:37,453 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-02-24 10:30:37,483 - Info Logger - DEBUG - Service,Host,port  is -->ftp  192.168.182.128  21
+2017-02-24 10:30:37,489 - Info Logger - DEBUG - Command id --> ftp_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 595
+2017-02-24 10:30:37,490 - Info Logger - DEBUG - Command id --> ftp_1  Message --> :Inside command_meta
+2017-02-24 10:35:44,918 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-02-24 10:35:50,925 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 595
+2017-02-24 10:35:50,927 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-02-24 10:35:50,931 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-02-24 10:35:50,976 - Info Logger - DEBUG - Service,Host,port  is -->rpcbind  192.168.182.128  111
+2017-02-24 10:35:50,988 - Info Logger - DEBUG - Command id --> rpcbind_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 595
+2017-02-24 10:35:50,989 - Info Logger - DEBUG - Command id --> rpcbind_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:35:50,990 - Info Logger - DEBUG - Command id --> rpcbind_1  Message --> :Thread started --with command rpcinfo -p  192.168.182.128
+2017-02-24 10:35:51,336 - Info Logger - DEBUG - Command id --> rpcbind_1  Message --> :Thread finished
+2017-02-24 10:35:51,337 - Info Logger - DEBUG - Command id --> rpcbind_1  Message --> :Saving details :
+2017-02-24 10:35:51,348 - Info Logger - DEBUG - Command id --> rpcbind_1  Message --> :Details Updated successfully
+2017-02-24 10:35:51,386 - Info Logger - DEBUG - Command id --> rpcbind_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 595
+2017-02-24 10:35:51,387 - Info Logger - DEBUG - Command id --> rpcbind_2  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:35:51,388 - Info Logger - DEBUG - Command id --> rpcbind_2  Message --> :Thread started --with command nmap -v -sR 192.168.182.128
+2017-02-24 10:36:29,590 - Info Logger - DEBUG - Command id --> rpcbind_2  Message --> :Thread finished
+2017-02-24 10:36:29,590 - Info Logger - DEBUG - Command id --> rpcbind_2  Message --> :Saving details :
+2017-02-24 10:36:29,639 - Info Logger - DEBUG - Command id --> rpcbind_2  Message --> :Details Updated successfully
+2017-02-24 10:36:29,655 - Info Logger - DEBUG - Command id --> rpcbind_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 595
+2017-02-24 10:36:29,655 - Info Logger - DEBUG - Command id --> rpcbind_3  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:36:29,656 - Info Logger - DEBUG - Command id --> rpcbind_3  Message --> :Thread started --with command nmap -sV --script=nfs-showmount.nse -p 111 192.168.182.128
+2017-02-24 10:36:41,663 - Info Logger - DEBUG - Command id --> rpcbind_3  Message --> :Thread finished
+2017-02-24 10:36:41,664 - Info Logger - DEBUG - Command id --> rpcbind_3  Message --> :Saving details :
+2017-02-24 10:41:40,882 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-02-24 10:41:46,889 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 595
+2017-02-24 10:41:46,891 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-02-24 10:41:46,901 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-02-24 10:41:46,947 - Info Logger - DEBUG - Service,Host,port  is -->http  192.168.182.128  80
+2017-02-24 10:41:46,953 - Info Logger - DEBUG - Command id --> http_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 595
+2017-02-24 10:41:46,953 - Info Logger - DEBUG - Command id --> http_1  Message --> :In method SingleLineCommands_Timeout()
+2017-02-24 10:41:46,954 - Info Logger - DEBUG - Command id --> http_1  Message --> :Thread started --with command nikto -h  192.168.182.128:80

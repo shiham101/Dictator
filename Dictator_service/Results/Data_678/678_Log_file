@@ -1,0 +1,82 @@
+2017-05-22 04:25:09,499 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 04:25:09,500 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Thread started --with command nmap -sV --script=ssh2-enum-algos.nse -p 22 127.0.0.1
+2017-05-22 04:25:12,222 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Thread finished
+2017-05-22 04:25:12,223 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_5  Message --> :Saving details :
+2017-05-22 04:25:12,226 - Commands Logger - DEBUG - Command id is ->ssh_5
+2017-05-22 04:25:12,226 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=ssh2-enum-algos.nse -p 22 127.0.0.1', '\nEnd']
+2017-05-22 04:25:12,226 - Commands Logger - DEBUG - My var : '$.Entries."ssh_5"'
+2017-05-22 04:25:12,226 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=ssh2-enum-algos.nse -p 22 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 04:25 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000074s latency).
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Debian 5 (protocol 2.0)
+| ssh2-enum-algos: 
+|   kex_algorithms: (6)
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group14-sha1
+|   server_host_key_algorithms: (5)
+|       ssh-rsa
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (6)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2.67 seconds
+
+
+
+2017-05-22 04:25:12,234 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 04:25:12,249 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 04:25:12,249 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 22 127.0.0.1
+2017-05-22 04:25:14,667 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Thread finished
+2017-05-22 04:25:14,669 - Commands Logger - DEBUG - Command Logger --->Command id --> ssh_6  Message --> :Saving details :
+2017-05-22 04:25:14,671 - Commands Logger - DEBUG - Command id is ->ssh_6
+2017-05-22 04:25:14,671 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=banner.nse -p 22 127.0.0.1', '\nEnd']
+2017-05-22 04:25:14,671 - Commands Logger - DEBUG - My var : '$.Entries."ssh_6"'
+2017-05-22 04:25:14,672 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=banner.nse -p 22 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 04:25 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00012s latency).
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Debian 5 (protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_7.2p2 Debian-5
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 2.38 seconds
+
+
+
+2017-05-22 04:25:14,682 - Commands Logger - DEBUG - Finished!!!

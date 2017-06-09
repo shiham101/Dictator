@@ -1,0 +1,27 @@
+2017-05-22 00:33:16,894 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-22 00:33:22,901 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 654
+2017-05-22 00:33:22,903 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 00:33:22,904 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-22 00:33:22,906 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 00:33:22,907 - Info Logger - DEBUG - Service,Host,port  is -->http  127.0.0.1  22
+2017-05-22 00:33:22,924 - Info Logger - DEBUG - Command id --> http_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 654
+2017-05-22 00:33:22,925 - Info Logger - DEBUG - Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-22 00:33:22,926 - Info Logger - DEBUG - Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-22 00:33:25,930 - Info Logger - DEBUG - Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 00:33:25,932 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 22 127.0.0.1
+2017-05-22 00:33:26,995 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread finished
+2017-05-22 00:33:26,995 - Info Logger - DEBUG - Command id --> http_5  Message --> :Saving details :
+2017-05-22 00:33:27,034 - Info Logger - DEBUG - Command id --> http_5  Message --> :Details Updated successfully
+2017-05-22 00:33:27,056 - Info Logger - DEBUG - Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-22 00:33:27,158 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting Start_sniffing() method
+2017-05-22 00:33:27,161 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting general_commands_tout_sniff()
+2017-05-22 00:33:27,178 - Info Logger - DEBUG - Command id --> http_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 654
+2017-05-22 00:33:27,178 - Info Logger - DEBUG - Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 00:33:27,186 - Info Logger - DEBUG - Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 22 127.0.0.1
+2017-05-22 00:33:28,385 - Info Logger - DEBUG - Command id --> http_6  Message --> :Thread finished
+2017-05-22 00:33:28,385 - Info Logger - DEBUG - Command id --> http_6  Message --> :Saving details :
+2017-05-22 00:33:28,402 - Info Logger - DEBUG - Command id --> http_6  Message --> :Details Updated successfully

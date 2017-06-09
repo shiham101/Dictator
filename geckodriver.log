@@ -1,0 +1,40 @@
+1487958983536	geckodriver	INFO	Listening on 127.0.0.1:41720
+1487958984534	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.waDBd76tccDN
+1487958984536	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487958984544	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37382
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined
+1487959005890	geckodriver	INFO	Listening on 127.0.0.1:40146
+1487959006890	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.NcYTbgoeeWjX
+1487959006893	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487959006899	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41183
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined
+1487959035457	geckodriver	INFO	Listening on 127.0.0.1:53656
+1487959036459	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.VeO0NxVgY62b
+1487959036462	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487959036466	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33364
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined
+1487959103797	geckodriver	INFO	Listening on 127.0.0.1:60317
+1487959104792	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qqIjoymEJFdc
+1487959104795	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487959104801	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33559
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined
+1487959473293	geckodriver	INFO	Listening on 127.0.0.1:55471
+1487959474467	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.kLoMAZRxQL0t
+1487959474468	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487959474470	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38455
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined
+1487961397004	geckodriver	INFO	Listening on 127.0.0.1:32862
+1487961398204	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.olaHoIQ5Tog9
+1487961398210	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487961398214	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37553
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined
+1487961989202	geckodriver	INFO	Listening on 127.0.0.1:44944
+1487961990188	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qayyDE9K3uA0
+1487961990191	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487961990195	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45353
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined
+1487971806799	geckodriver	INFO	Listening on 127.0.0.1:60406
+1487971807791	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.dVN9vI7o9sBZ
+1487971807794	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1487971807799	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33198
+JavaScript error: resource://gre/modules/SafeBrowsing.jsm, line 83: TypeError: provider is undefined

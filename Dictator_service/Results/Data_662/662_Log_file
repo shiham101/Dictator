@@ -1,0 +1,46 @@
+2017-05-22 02:23:14,565 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-22 02:23:14,567 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-22 02:23:14,567 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :sniffing command is --> tshark -f 'port 80 and host 127.0.0.1' -i eth0 -a duration:200 -w /root/Django-projects/Dictator1.1/Dictator_service/Results/Data_662/662_127.0.0.1_80_capture-output.pcap
+2017-05-22 02:23:17,570 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:23:17,572 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 127.0.0.1
+2017-05-22 02:23:28,960 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Thread finished
+2017-05-22 02:23:28,961 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Saving details :
+2017-05-22 02:23:28,965 - Commands Logger - DEBUG - Command id is ->http_5
+2017-05-22 02:23:28,966 - Commands Logger - DEBUG - commands are : [u'nmap --script=banner.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 02:23:28,966 - Commands Logger - DEBUG - My var : '$.Entries."http_5"'
+2017-05-22 02:23:28,966 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=banner.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:23 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00013s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 11.21 seconds
+
+
+
+2017-05-22 02:23:28,984 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 02:23:28,985 - Commands Logger - DEBUG - Command Logger --->Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-22 02:23:29,089 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:23:29,090 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 127.0.0.1
+2017-05-22 02:23:29,937 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-22 02:23:29,938 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-22 02:23:29,940 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-22 02:23:29,946 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 02:23:29,946 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-22 02:23:29,946 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:23 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00013s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.82 seconds
+
+
+
+2017-05-22 02:23:30,021 - Commands Logger - DEBUG - Finished!!!

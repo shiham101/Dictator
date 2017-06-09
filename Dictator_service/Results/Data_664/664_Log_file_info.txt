@@ -1,0 +1,32 @@
+2017-05-22 02:36:26,062 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-22 02:36:32,071 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 664
+2017-05-22 02:36:32,074 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 02:36:32,077 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-22 02:36:32,185 - Info Logger - DEBUG - Service,Host,port  is -->http  127.0.0.1  80
+2017-05-22 02:36:32,192 - Info Logger - DEBUG - Command id --> http_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 664
+2017-05-22 02:36:32,193 - Info Logger - DEBUG - Command id --> http_5  Message --> :Starting single line + Sniff
+2017-05-22 02:36:32,195 - Info Logger - DEBUG - Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-05-22 02:36:35,209 - Info Logger - DEBUG - Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:36:35,211 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread started --with command nmap --script=banner.nse -p 80 127.0.0.1
+2017-05-22 02:36:46,217 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread finished
+2017-05-22 02:36:46,221 - Info Logger - DEBUG - Command id --> http_5  Message --> :Saving details :
+2017-05-22 02:36:46,230 - Info Logger - DEBUG - Command id --> http_5  Message --> :Details Updated successfully
+2017-05-22 02:36:46,262 - Info Logger - DEBUG - Command id --> http_5  Message --> :Terminating Sniffing process
+2017-05-22 02:36:46,365 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting Start_sniffing() method
+2017-05-22 02:36:46,366 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting general_commands_tout_sniff()
+2017-05-22 02:36:46,373 - Info Logger - DEBUG - Command id --> http_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 664
+2017-05-22 02:36:46,373 - Info Logger - DEBUG - Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:36:46,374 - Info Logger - DEBUG - Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 127.0.0.1
+2017-05-22 02:36:47,413 - Info Logger - DEBUG - Command id --> http_6  Message --> :Thread finished
+2017-05-22 02:36:47,417 - Info Logger - DEBUG - Command id --> http_6  Message --> :Saving details :
+2017-05-22 02:36:47,431 - Info Logger - DEBUG - Command id --> http_6  Message --> :Details Updated successfully
+2017-05-22 02:36:47,485 - Info Logger - DEBUG - Command id --> http_7  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 664
+2017-05-22 02:36:47,486 - Info Logger - DEBUG - Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:36:47,487 - Info Logger - DEBUG - Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 80 127.0.0.1
+2017-05-22 02:36:56,069 - Info Logger - DEBUG - Command id --> http_7  Message --> :Thread finished
+2017-05-22 02:36:56,071 - Info Logger - DEBUG - Command id --> http_7  Message --> :Saving details :
+2017-05-22 02:36:56,171 - Info Logger - DEBUG - Command id --> http_7  Message --> :Details Updated successfully

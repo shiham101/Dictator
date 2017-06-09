@@ -1,0 +1,15 @@
+2017-05-22 03:03:07,800 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-05-22 03:03:13,809 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 670
+2017-05-22 03:03:13,811 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-05-22 03:03:13,812 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-05-22 03:03:13,822 - Info Logger - DEBUG - Service,Host,port  is -->ssh  127.0.0.1  22
+2017-05-22 03:03:13,829 - Info Logger - DEBUG - Command id --> ssh_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 670
+2017-05-22 03:03:13,830 - Info Logger - DEBUG - Command id --> ssh_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 03:03:13,830 - Info Logger - DEBUG - Command id --> ssh_6  Message --> :Thread started --with command nmap -sV --script=banner.nse -p 22 127.0.0.1
+2017-05-22 03:03:15,505 - Info Logger - DEBUG - Command id --> ssh_6  Message --> :Thread finished
+2017-05-22 03:03:15,506 - Info Logger - DEBUG - Command id --> ssh_6  Message --> :Saving details :
+2017-05-22 03:03:15,519 - Info Logger - DEBUG - Command id --> ssh_6  Message --> :Details Updated successfully

@@ -1,0 +1,9 @@
+2017-03-14 21:20:14,730 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :Starting single line + Sniff
+2017-03-14 21:20:14,731 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :IN Start_sniffing() method
+2017-03-14 21:20:14,731 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :sniffing command is --> tshark -f 'port 21 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_637/637_192.168.182.128_21_capture-output.pcap
+2017-03-14 21:20:17,732 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :Starting Interactive Session with command --> ftp 192.168.182.128 21 and timeout 600
+2017-03-14 21:20:17,738 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :Arg list is --> [u'.*Permission denied.*', u'.* Connection refused.*', u'Name .*:', u'[$,#]', u'.*No route to host.*', <class 'pexpect.exceptions.TIMEOUT'>, <class 'pexpect.exceptions.EOF'>]
+2017-03-14 21:20:17,739 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :check list is --> [u'2', '5', '6']
+2017-03-14 21:23:09,781 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :Starting single line + Sniff
+2017-03-14 21:23:09,782 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :IN Start_sniffing() method
+2017-03-14 21:23:09,782 - Commands Logger - DEBUG - Command Logger --->Command id --> ftp_sniff_1  Message --> :sniffing command is --> tshark -f 'port 21 and host 192.168.182.128' -i eth0 -a duration:200 -w /root/Django-projects/Dictator/Dictator_service/Results/Data_637/637_192.168.182.128_21_capture-output.pcap

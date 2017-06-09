@@ -1,0 +1,88 @@
+2017-05-22 02:01:49,306 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:01:49,307 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 127.0.0.1
+2017-05-22 02:01:50,146 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-22 02:01:50,147 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-22 02:01:50,148 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-22 02:01:50,148 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 02:01:50,148 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-22 02:01:50,148 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:01 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000058s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.79 seconds
+
+
+
+2017-05-22 02:01:50,157 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 02:01:50,186 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:01:50,187 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 80 127.0.0.1
+2017-05-22 02:01:57,925 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-22 02:01:57,926 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-22 02:01:57,927 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-22 02:01:57,928 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 02:01:57,928 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-22 02:01:57,928 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:01 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000074s latency).
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.71 seconds
+
+
+
+2017-05-22 02:01:57,936 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 02:01:58,110 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:01:58,111 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread started --with command nmap --script=http-trace.nse -p 80 127.0.0.1
+2017-05-22 02:01:58,854 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Thread finished
+2017-05-22 02:01:58,854 - Commands Logger - DEBUG - Command Logger --->Command id --> http_6  Message --> :Saving details :
+2017-05-22 02:01:58,856 - Commands Logger - DEBUG - Command id is ->http_6
+2017-05-22 02:01:58,856 - Commands Logger - DEBUG - commands are : [u'nmap --script=http-trace.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 02:01:58,856 - Commands Logger - DEBUG - My var : '$.Entries."http_6"'
+2017-05-22 02:01:58,856 - Commands Logger - DEBUG - Result --> : Command Executed :nmap --script=http-trace.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:01 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000048s latency).
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.70 seconds
+
+
+
+2017-05-22 02:01:58,861 - Commands Logger - DEBUG - Finished!!!
+2017-05-22 02:01:58,917 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :In method SingleLineCommands_Timeout()
+2017-05-22 02:01:58,918 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread started --with command nmap -sV --script=http-iis-webdav-vuln.nse -p 80 127.0.0.1
+2017-05-22 02:02:06,648 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Thread finished
+2017-05-22 02:02:06,649 - Commands Logger - DEBUG - Command Logger --->Command id --> http_7  Message --> :Saving details :
+2017-05-22 02:02:06,654 - Commands Logger - DEBUG - Command id is ->http_7
+2017-05-22 02:02:06,654 - Commands Logger - DEBUG - commands are : [u'nmap -sV --script=http-iis-webdav-vuln.nse -p 80 127.0.0.1', '\nEnd']
+2017-05-22 02:02:06,654 - Commands Logger - DEBUG - My var : '$.Entries."http_7"'
+2017-05-22 02:02:06,655 - Commands Logger - DEBUG - Result --> : Command Executed :nmap -sV --script=http-iis-webdav-vuln.nse -p 80 127.0.0.1
+
+Result
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-05-22 02:01 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000072s latency).
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.10.2
+|_http-server-header: nginx/1.10.2
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.70 seconds
+
+
+
+2017-05-22 02:02:06,665 - Commands Logger - DEBUG - Finished!!!
