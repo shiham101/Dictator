@@ -327,11 +327,12 @@ class IPtable:
 				return 3;
 			self.cur.execute("select count(id) from IPtable where project=%s",(int(project_id),))
 			data=self.cur.fetchone()
+			print "Data status is :"+str(data[0])
 			if(int(data[0]) > 0):
 				self.cur.execute("update IPtable set status='incomplete' where status='processing' and project=%s",(int(project_id),))
 				self.conn.commit()
 				self.close_connection()
-				self.print_Log("Ended")
+				self.print_Log("Updated status to incomplete !!Ended")
 				return 1
 			else:
 				self.close_connection()
