@@ -29,7 +29,7 @@ active_threads=threading.enumerate()
 counter=len(active_threads)
 print "Inside invoker_ex_resume.The number of threads active  are :"+str(active_threads)+"\n"
 
-DriverObj.main('gui',project_id,True,False,False,False,False,'',True,True) 
+DriverObj.main('gui',project_id,True,False,False,True,False,'',True,True) 
 
 
 

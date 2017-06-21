@@ -116,7 +116,7 @@ class Commands:
 			self.logger.critical(message +"--Exception :  --"+str(e))
 			self.lock.release()
 			print "Log exception :"+str(e)
-		print message+"\n"
+		#print message+"\n"
 
 	def print_Error(self,message):
 		"""
@@ -128,7 +128,7 @@ class Commands:
 		#self.logger=self.Auto_logger.configureLogger(self.method_id,self.Log_file)
 		
 		message="Error -->Command id --> "+str(self.command_id) +"  Message --> :" +str(message)
-		print message
+		#print message
 		try:
 			self.lock.acquire()
 			self.logger.error(message)
@@ -290,24 +290,28 @@ class Commands:
 				self.print_Log(str(i))
 				for command in commands:
 					command=command.replace("\n","")
+					#command=command+"\n"
 					child.sendline(command)
-					#commands_launched.append(command+"\n")
-					time.sleep(8)
+					commands_launched.append(command+"\n")
+					time.sleep(3)
 					j=child.expect(['.*> ',pexpect.EOF,pexpect.TIMEOUT],timeout=280)
 					if(j==0):
 						self.print_Log(str(child.after))
+						#words=str(child.after).split()
+						#to_append=" ".join(sorted(set(words),key=words.index))
 						commands_launched.append(str(child.after)+"\n")
+						#commands_launched.append(str(to_append)+"\n")
 						continue
 					elif(j==1):
 						self.print_Log("EOF reached-->Not launching the run command")
 						self.Display_msg(child)
-						commands_launched.append(str(child.after)+"\n")
+						commands_launched.append(str(child.after))
 						run=False
 						break
 					else:
 						self.print_Log("Time out exceeded in child check ->Not launching the run command")
 						self.Display_msg(child)
-						commands_launched.append(str(child.after)+"\n")
+						commands_launched.append(str(child.after))
 						run=False
 						break
 
@@ -339,7 +343,12 @@ class Commands:
 						self.print_Log("\n\nModule Execution completed\n\n")
 						self.print_Log_info("\nModule Execution completed\n")
 						self.Display_msg(child)
-						commands_launched.append(''+str(child.after)+'\n')
+						#words=str(child.after).split()
+						#to_append=" ".join(sorted(set(words),key=words.index))
+						commands_launched.append(str(child.after))
+						#commands_launched.append(str(to_append)+"\n")
+						
+						#commands_launched.append(''+str(child.after)+'\n')
 						exploit_result=exploit_result+"Command Executed :"+commands_launched[0]
 						exploit_result="\n"+exploit_result+"\nResult :\n"+str(child.after)
 						#exploit_result=str(child.after)

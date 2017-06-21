@@ -752,6 +752,7 @@ class NmapScan:
 		self.method_id="LaunchPausedScan()"
 		self.print_Log( "Started Launch Paused ")
 		success=self.IPtable.MakeUpdate(project_id)
+		time.sleep(20)
 		if(success==1):
 			self.startProcessing(self.N)
 		elif(success==2): #when its paused b4 making bulk entries
@@ -1221,7 +1222,7 @@ class NmapScan:
 									continue_=True
 									delete=False
 									get_default_config=False
-									th=False
+									th=True
 									if 1:
 										exploit_status=obj.LaunchExploits(project_id,continue_,delete,get_default_config,th)
 										if exploit_status["status"]=="success":

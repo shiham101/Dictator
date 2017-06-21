@@ -385,3 +385,104 @@
 [2017-03-01 18:50:49,365] Disconnected
 =======
 >>>>>>> b6b8e9ee72399e3d683c7808a85d7f1c8ce3cbf6
+[2017-06-18 21:18:07,480] Logger initiated
+[2017-06-18 21:18:07,534] {"real": "lHqmwANuYR", "nick": "OJUykUoYQx", "config": {"proxyport": 9050, "real": "lHqmwANuYR", "listDelay": null, "nolist": false, "ssl": false, "throttleLevel": 1.0, "user": "UsfTpodYsr", "pass": null, "server": "192.168.182.128", "outputdir": ".", "channelstocheck": null, "proxyhost": null, "port": "6667", "nick": "OJUykUoYQx"}, "user": "UsfTpodYsr"}
+[2017-06-18 21:18:07,550] USER UsfTpodYsr 127.0.0.1 192.168.182.128 :lHqmwANuYR
+[2017-06-18 21:18:07,550] NICK OJUykUoYQx
+[2017-06-18 21:18:07,550] :irc.Metasploitable.LAN NOTICE AUTH :*** Looking up your hostname...
+[2017-06-18 21:18:07,551] :irc.Metasploitable.LAN NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead
+[2017-06-18 21:18:08,561] :irc.Metasploitable.LAN 001 OJUykUoYQx :Welcome to the TestIRC IRC Network OJUykUoYQx!UsfTpodYsr@192.168.182.1
+[2017-06-18 21:18:08,561] :irc.Metasploitable.LAN 002 OJUykUoYQx :Your host is irc.Metasploitable.LAN, running version Unreal3.2.8.1
+[2017-06-18 21:18:08,561] :irc.Metasploitable.LAN 003 OJUykUoYQx :This server was created Sun May 20 2012 at 14:04:37 EDT
+[2017-06-18 21:18:08,561] :irc.Metasploitable.LAN 004 OJUykUoYQx irc.Metasploitable.LAN Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+[2017-06-18 21:18:08,561] :irc.Metasploitable.LAN 005 OJUykUoYQx UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+[2017-06-18 21:18:08,562] :irc.Metasploitable.LAN 005 OJUykUoYQx WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=TestIRC CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+[2017-06-18 21:18:08,562] :irc.Metasploitable.LAN 005 OJUykUoYQx EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP :are supported by this server
+[2017-06-18 21:18:08,764] :irc.Metasploitable.LAN 251 OJUykUoYQx :There are 1 users and 0 invisible on 1 servers
+[2017-06-18 21:18:08,764] :irc.Metasploitable.LAN 255 OJUykUoYQx :I have 1 clients and 0 servers
+[2017-06-18 21:18:08,764] :irc.Metasploitable.LAN 265 OJUykUoYQx :Current Local Users: 1  Max: 2
+[2017-06-18 21:18:08,764] :irc.Metasploitable.LAN 266 OJUykUoYQx :Current Global Users: 1  Max: 1
+[2017-06-18 21:18:08,765] :irc.Metasploitable.LAN 422 OJUykUoYQx :MOTD File is missing
+[2017-06-18 21:18:08,765] LIST
+[2017-06-18 21:18:08,765] LINKS
+[2017-06-18 21:18:08,765] NAMES
+[2017-06-18 21:18:08,766] :OJUykUoYQx MODE OJUykUoYQx :+ix
+[2017-06-18 21:18:08,767] :irc.Metasploitable.LAN 321 OJUykUoYQx Channel :Users  Name
+[2017-06-18 21:18:08,767] :irc.Metasploitable.LAN 323 OJUykUoYQx :End of /LIST
+[2017-06-18 21:18:08,772] :irc.Metasploitable.LAN 364 OJUykUoYQx irc.Metasploitable.LAN irc.Metasploitable.LAN :0 Test IRC Server
+[2017-06-18 21:18:08,772] :irc.Metasploitable.LAN 365 OJUykUoYQx * :End of /LINKS list.
+[2017-06-18 21:18:08,772] :irc.Metasploitable.LAN 366 OJUykUoYQx * :End of /NAMES list.
+[2017-06-18 21:18:08,772] join * not found in is_processing
+[2017-06-18 21:18:08,772] []
+[2017-06-18 21:18:08,772] PART *
+[2017-06-18 21:18:08,775] :irc.Metasploitable.LAN 403 OJUykUoYQx * :No such channel
+[2017-06-18 21:18:08,785] QUIT :
+[2017-06-18 21:18:08,788] ERROR :Closing Link: OJUykUoYQx[192.168.182.1] (Quit: OJUykUoYQx)
+[2017-06-18 21:18:08,788] Disconnected
+[2017-06-18 22:07:17,164] Logger initiated
+[2017-06-18 22:07:17,168] {"real": "iOHFYakgEZ", "nick": "ahOCkVdXxB", "config": {"proxyport": 9050, "real": "iOHFYakgEZ", "listDelay": null, "nolist": false, "ssl": false, "throttleLevel": 1.0, "user": "SNsfZgTSoY", "pass": null, "server": "192.168.182.128", "outputdir": ".", "channelstocheck": null, "proxyhost": null, "port": "6667", "nick": "ahOCkVdXxB"}, "user": "SNsfZgTSoY"}
+[2017-06-18 22:07:17,177] USER SNsfZgTSoY 127.0.0.1 192.168.182.128 :iOHFYakgEZ
+[2017-06-18 22:07:17,178] NICK ahOCkVdXxB
+[2017-06-18 22:07:17,184] :irc.Metasploitable.LAN NOTICE AUTH :*** Looking up your hostname...
+[2017-06-18 22:07:17,185] :irc.Metasploitable.LAN NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead
+[2017-06-18 22:07:17,186] :irc.Metasploitable.LAN 001 ahOCkVdXxB :Welcome to the TestIRC IRC Network ahOCkVdXxB!SNsfZgTSoY@192.168.182.1
+[2017-06-18 22:07:17,186] :irc.Metasploitable.LAN 002 ahOCkVdXxB :Your host is irc.Metasploitable.LAN, running version Unreal3.2.8.1
+[2017-06-18 22:07:17,186] :irc.Metasploitable.LAN 003 ahOCkVdXxB :This server was created Sun May 20 2012 at 14:04:37 EDT
+[2017-06-18 22:07:17,186] :irc.Metasploitable.LAN 004 ahOCkVdXxB irc.Metasploitable.LAN Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+[2017-06-18 22:07:17,187] :irc.Metasploitable.LAN 005 ahOCkVdXxB UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+[2017-06-18 22:07:17,187] :irc.Metasploitable.LAN 005 ahOCkVdXxB WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=TestIRC CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+[2017-06-18 22:07:17,188] :irc.Metasploitable.LAN 005 ahOCkVdXxB EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP :are supported by this server
+[2017-06-18 22:07:17,188] :irc.Metasploitable.LAN 251 ahOCkVdXxB :There are 1 users and 0 invisible on 1 servers
+[2017-06-18 22:07:17,189] :irc.Metasploitable.LAN 255 ahOCkVdXxB :I have 1 clients and 0 servers
+[2017-06-18 22:07:17,189] :irc.Metasploitable.LAN 265 ahOCkVdXxB :Current Local Users: 1  Max: 2
+[2017-06-18 22:07:17,189] :irc.Metasploitable.LAN 266 ahOCkVdXxB :Current Global Users: 1  Max: 1
+[2017-06-18 22:07:17,189] :irc.Metasploitable.LAN 422 ahOCkVdXxB :MOTD File is missing
+[2017-06-18 22:07:17,190] LIST
+[2017-06-18 22:07:17,190] LINKS
+[2017-06-18 22:07:17,190] NAMES
+[2017-06-18 22:07:17,191] :ahOCkVdXxB MODE ahOCkVdXxB :+ix
+[2017-06-18 22:07:17,193] :irc.Metasploitable.LAN 321 ahOCkVdXxB Channel :Users  Name
+[2017-06-18 22:07:17,193] :irc.Metasploitable.LAN 323 ahOCkVdXxB :End of /LIST
+[2017-06-18 22:07:17,200] :irc.Metasploitable.LAN 364 ahOCkVdXxB irc.Metasploitable.LAN irc.Metasploitable.LAN :0 Test IRC Server
+[2017-06-18 22:07:17,210] :irc.Metasploitable.LAN 365 ahOCkVdXxB * :End of /LINKS list.
+[2017-06-18 22:07:17,210] :irc.Metasploitable.LAN 366 ahOCkVdXxB * :End of /NAMES list.
+[2017-06-18 22:07:17,211] join * not found in is_processing
+[2017-06-18 22:07:17,214] []
+[2017-06-18 22:07:17,214] PART *
+[2017-06-18 22:07:17,215] :irc.Metasploitable.LAN 403 ahOCkVdXxB * :No such channel
+[2017-06-18 22:07:18,442] QUIT :
+[2017-06-18 22:07:18,447] ERROR :Closing Link: ahOCkVdXxB[192.168.182.1] (Quit: ahOCkVdXxB)
+[2017-06-18 22:07:18,448] Disconnected
+[2017-06-21 06:11:45,397] Logger initiated
+[2017-06-21 06:11:45,417] {"real": "VBpiaJHeGK", "nick": "dkRfOCuXtw", "config": {"proxyport": 9050, "real": "VBpiaJHeGK", "listDelay": null, "nolist": false, "ssl": false, "throttleLevel": 1.0, "user": "XzLFZZvDUz", "pass": null, "server": "192.168.182.128", "outputdir": ".", "channelstocheck": null, "proxyhost": null, "port": "6667", "nick": "dkRfOCuXtw"}, "user": "XzLFZZvDUz"}
+[2017-06-21 06:11:45,446] USER XzLFZZvDUz 127.0.0.1 192.168.182.128 :VBpiaJHeGK
+[2017-06-21 06:11:45,447] NICK dkRfOCuXtw
+[2017-06-21 06:11:46,442] :irc.Metasploitable.LAN NOTICE AUTH :*** Looking up your hostname...
+[2017-06-21 06:11:56,540] :irc.Metasploitable.LAN NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead
+[2017-06-21 06:11:56,541] :irc.Metasploitable.LAN 001 dkRfOCuXtw :Welcome to the TestIRC IRC Network dkRfOCuXtw!XzLFZZvDUz@192.168.182.1
+[2017-06-21 06:11:56,541] :irc.Metasploitable.LAN 002 dkRfOCuXtw :Your host is irc.Metasploitable.LAN, running version Unreal3.2.8.1
+[2017-06-21 06:11:56,542] :irc.Metasploitable.LAN 003 dkRfOCuXtw :This server was created Sun May 20 2012 at 14:04:37 EDT
+[2017-06-21 06:11:56,542] :irc.Metasploitable.LAN 004 dkRfOCuXtw irc.Metasploitable.LAN Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+[2017-06-21 06:11:56,542] :irc.Metasploitable.LAN 005 dkRfOCuXtw UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=30 CHANLIMIT=#:30 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+[2017-06-21 06:11:56,542] :irc.Metasploitable.LAN 005 dkRfOCuXtw WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=TestIRC CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+[2017-06-21 06:11:56,543] :irc.Metasploitable.LAN 005 dkRfOCuXtw EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP :are supported by this server
+[2017-06-21 06:11:56,543] :irc.Metasploitable.LAN 251 dkRfOCuXtw :There are 1 users and 0 invisible on 1 servers
+[2017-06-21 06:11:56,543] :irc.Metasploitable.LAN 255 dkRfOCuXtw :I have 1 clients and 0 servers
+[2017-06-21 06:11:56,543] :irc.Metasploitable.LAN 265 dkRfOCuXtw :Current Local Users: 1  Max: 2
+[2017-06-21 06:11:56,544] :irc.Metasploitable.LAN 266 dkRfOCuXtw :Current Global Users: 1  Max: 1
+[2017-06-21 06:11:56,544] :irc.Metasploitable.LAN 422 dkRfOCuXtw :MOTD File is missing
+[2017-06-21 06:11:56,544] LIST
+[2017-06-21 06:11:56,544] LINKS
+[2017-06-21 06:11:56,545] NAMES
+[2017-06-21 06:11:56,545] :dkRfOCuXtw MODE dkRfOCuXtw :+ix
+[2017-06-21 06:11:56,550] :irc.Metasploitable.LAN 321 dkRfOCuXtw Channel :Users  Name
+[2017-06-21 06:11:56,550] :irc.Metasploitable.LAN 323 dkRfOCuXtw :End of /LIST
+[2017-06-21 06:11:56,577] QUIT :
+[2017-06-21 06:11:56,580] :irc.Metasploitable.LAN 364 dkRfOCuXtw irc.Metasploitable.LAN irc.Metasploitable.LAN :0 Test IRC Server
+[2017-06-21 06:11:56,581] :irc.Metasploitable.LAN 365 dkRfOCuXtw * :End of /LINKS list.
+[2017-06-21 06:11:56,581] :irc.Metasploitable.LAN 366 dkRfOCuXtw * :End of /NAMES list.
+[2017-06-21 06:11:56,581] join * not found in is_processing
+[2017-06-21 06:11:56,581] []
+[2017-06-21 06:11:56,581] PART *
+[2017-06-21 06:11:56,582] ERROR :Closing Link: dkRfOCuXtw[192.168.182.1] (Quit: )
+[2017-06-21 06:11:56,582] Disconnected

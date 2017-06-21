@@ -29,7 +29,7 @@ import auto_commands
 import psutil
 import MySQLdb
 #import MySQLdb
-import threading
+import threading,multiprocessing
 import subprocess
 import logging
 import logging.handlers
@@ -99,7 +99,8 @@ class Driver:
 		self.folder_name=os.path.join(self.results_path,"Data_")
 		self.generate_report=False
 		#<<<<<<< HEAD
-		self.N=7
+		self.N=10
+		self.active_processes=0
 		#=======
 		#self.N=10
 		#>>>>>>> b6b8e9ee72399e3d683c7808a85d7f1c8ce3cbf6
@@ -1176,6 +1177,7 @@ class Driver:
 								self.launchExploits(True,record_list)
 							print "Launched Exploits !"
 						else:
+							print "Threading obtained is true !!!"
 							active_threads=threading.enumerate()
 							counter=len(active_threads)
 							print "\n---\nMain At the begining --1---- the active threads are :---"+str(active_threads)+"\n---\n\n"
@@ -1410,14 +1412,15 @@ class Driver:
 				active_threads=threading.enumerate()
 				counter=len(active_threads)
 				#=1
-				print "Parent thread count oreginally was :"+str(self.thread_count)
+				#print "Parent thread count oreginally was :"+str(self.thread_count)
 				#<<<<<<< HEAD
-				print "Polling --> Threads remaining are :"+str(len(active_threads))+str(active_threads)+"\n"
+				#print "Polling --> Threads remaining are :"+str(len(active_threads))+str(active_threads)+"\n"
 				#=======
 				#print "Polling --> Threads remaining are :"+str(active_threads)+"\n"
 				#>>>>>>> b6b8e9ee72399e3d683c7808a85d7f1c8ce3cbf6
-				
-				if(counter==1)or (self.check_dummy_status_only(active_threads)):
+				ret_val=self.IPexploit.checkPollingStatus(self.N,self.project_id)
+				print "Polling status of ret value is : "+str(ret_val["status"])
+				if(ret_val["status"]=="complete"):
 						print "Left with dummy threads ponly :"
 						status=self.IPexploit.checkStatus(self.project_id)
 						if(status):
@@ -1435,10 +1438,10 @@ class Driver:
 								break;
 
 				#elif(counter <=(self.N+1)):
-				elif(int(self.getNonDummyCount(active_threads)) <=(self.N+1)):
+				elif(ret_val["status"]=="pull"):
 					if(not(self.getPausedStatus(self.project_id))):
 						#limit=(self.N+1)-counter
-						limit=(self.N+1)-int(self.getNonDummyCount(active_threads))
+						limit=int(ret_val["value"])
 						if(limit != 0): 
 							left_hosts=self.startProcessing(limit) 
 							time.sleep(1)	
@@ -1447,14 +1450,16 @@ class Driver:
 							
 					else:
 						time.sleep(10) #status --> pause then it would get terminated on its own by kill
-				else :
-					print "\n\n\n\n------FATEL ERROR-------\n\n\n"
-					print "Number of threads cant exceed : "+str(self.N+1)
-					
-							
-			
+				elif(ret_val["status"]=="pass"):
+					print "Active processes running are equal to max val :"
+					time.sleep(10)
+				elif (ret_val["status"]=="error") :
+					print "\n------FATEL ERROR-------\n"
+					print str(ret_val["value"])
+					break;			
 		except Exception ,ee:
 			print "Exception caught 15" +str(ee)
+			#break
 
 
 	def getNonDummyCount(self,active_threads):
@@ -1537,7 +1542,7 @@ class Driver:
 							print "Object copied !"
 							print "New object instance is :"+str(obj) +" and the main object instance is :"+str(self)	
 							
-							t = threading.Thread(target=obj.launchThread,args=(meta,host,port,service,current_record_id)) 
+							t = multiprocessing.Process(target=obj.launchThread,args=(meta,host,port,service,current_record_id,self)) 
 							try :
 								self.IPexploit.UpdateStatus('processing',host,port,int(self.project_id),int(current_record_id))
 							except Exception, ee:
@@ -1545,6 +1550,8 @@ class Driver:
 							#threads.append(t)
 							t.start()
 							obj.print_Log("\nStarted thread --"+str(t)+"--- for IP :"+str(host) + " Port : "+  str(port)+" and service : "+str(service))
+							self.active_processes=self.active_processes +1
+							print "Active processes : "+str(self.active_processes)
 							#<<<<<<< HEAD
 							time.sleep(1)
 							#=======
@@ -1554,7 +1561,7 @@ class Driver:
 			print ("Inside exception of start Threads ! " +str(ee))
 
 
-	def launchThread(self,meta,host,port,service,current_record_id):
+	def launchThread(self,meta,host,port,service,current_record_id,parent_obj=None):
 					"""
 					Objective :
 					Each thread will actually invoke the file auto_commands.py with appropriate commands
@@ -1567,6 +1574,7 @@ class Driver:
 						id_list=profile_service.get('Test_cases')
 		
 						print "The thread is invoked with innstance :"+str(self)
+						#print "The process count from parent is : " +str(project_obj.active_processes)
 						for entries in meta :
 						  if entries.get('id') in id_list:	
 							method_name=entries.get('method')
@@ -1612,6 +1620,9 @@ class Driver:
 								#>>>>>>> b6b8e9ee72399e3d683c7808a85d7f1c8ce3cbf6
 					
 						self.IPexploit.UpdateStatus('complete',host,port,int(self.project_id),int(current_record_id))
+						
+						if parent_obj.active_processes > 0:
+							parent_obj.active_processes=parent_obj.active_processes -1
 					except Exception, ee:
 							self.IPexploit.UpdateStatus('error-complete',host,port,int(self.project_id),int(current_record_id))
 							print "EXception while executing exploits !: " +str(ee)
@@ -1635,9 +1646,11 @@ class Driver:
 					IPexploits_data=self.IPexploit.getIpExploits(self.project_id)
 				else:
 					IPexploits_data=self.IPexploit.getIpExploits(self.project_id,None,True)
+					print "Now sleeping for 20 sec !!"
+					time.sleep(20)
 			else:
 				IPexploits_data=self.IPexploit.getIpExploit(self.project_id,record_list)
-				if((IPexploits_data !=-1 ) and (IPexploits_data is not None )):
+				if((IPexploits_data !=-1 ) and (IPexploits_data is not None)):
 					try:
 						for exploit in IPexploits_data:
 								current_record_id=exploit[0]
