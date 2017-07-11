@@ -1080,7 +1080,7 @@ class Commands:
 
 
 
-	def execute_singleLine(self,cmd,result_=False):#A good thing is that even when a process is killed the thread resumes and details are saved
+	def execute_singleLine(self,cmd,result_=False,grep_commands=None):#A good thing is that even when a process is killed the thread resumes and details are saved
 		"""
 			Objective :
 			The purpose of this method is to execute scripts that can be invoked by single line command
@@ -1139,7 +1139,7 @@ class Commands:
 		    	(output, err)=self.process.communicate() #seunicode characters.sends ouput continuesly.Thus we may not know in which chunk of o/p we would recieve unicode character.Its better to convert all output into utf-8 and then back to ascii with ignoring special characters/unicode characters
 		    result = chardet.detect(output)
 		    charenc = result['encoding']
-		    print "Encoding used is --> : "+str(charenc)
+		    #print "Encoding used is --> : "+str(charenc)
 		    if (charenc is not None):
 		            output=output.decode(charenc).encode('ascii','replace')
 		            if err is not None:		
@@ -1150,6 +1150,7 @@ class Commands:
 		                     self.Kill=False
 		                     err=err+"Killed@"
 		    commands_executed.append(str(output)+"\n"+str(err)+"\n")	
+		    parent_output=str(output)
 		    exploit_result="Command Executed :"+commands_executed[0]+"\n"
 		    exploit_result=exploit_result+"\nResult"+str(commands_executed[len(commands_executed)-1])
 		    commands_executed[len(commands_executed)-1]="\nEnd"
@@ -1159,6 +1160,69 @@ class Commands:
 				#print "Execution result : "+str(exploit_result)
 				#print "Hello"
 				self.SaveDetails((str(commands_executed)),exploit_result)
+				var=0
+				if grep_commands !=None :
+					for dic in grep_commands:
+						if var <1:
+							#var =1
+							try:#for kk ,vv in dic.iteritems():
+								#var=1
+								kk=dic["id"]
+								vv=dic["grep_string"]
+								commands_executed=[]
+								self.command_id=kk
+								command=cmd +" | "+ str(vv)
+								commands_executed.append(command+"\n")
+								to_execute="echo "+"'"+str(parent_output) +"'" +"|" +str(vv)
+								split_output=parent_output.split("\n")
+								counter_var=0
+								result="None"
+								output=''
+								for op in split_output:
+									
+									if vv in op:
+										#print "Found at counter val :"+str(counter_var)
+										output=op
+										after_val=int(dic["after"])
+										before_val=int(dic["before"])
+										grep_before=''
+										if before_val !=0:	
+											before_counter=counter_var-before_val
+											#print "Before counter is : "+str(before_counter)
+											for i in range(before_counter,counter_var):	
+												grep_before=grep_before +"\n"+split_output[i] 
+										grep_after=''	
+										if after_val !=0:	
+											after_counter=counter_var+after_val
+											for i in range(counter_var +1 ,after_counter):	
+												grep_after=grep_after +"\n"+split_output[i] 
+										output=grep_before +"\n"+ output +"\n"+ grep_after
+										break
+									counter_var=counter_var + 1
+								result=chardet.detect(output)
+								charenc = result['encoding']
+								if (charenc is not None):
+										output=output.decode(charenc).encode('ascii','replace')
+										if err is not None:		
+											 err=err.decode(charenc).encode('ascii','replace')
+										else:
+											 err=''
+											 if self.Kill:
+												 self.Kill=False
+												 err=err+"Killed@"
+								if err==None:
+									err=""
+								commands_executed.append(str(output)+"\n"+str(err)+"\n")	
+								exploit_result="Command Executed :"+commands_executed[0]+"\n"
+								exploit_result=exploit_result+"\nResult\n"+str(commands_executed[len(commands_executed)-1])
+								commands_executed[len(commands_executed)-1]="\nEnd"
+								self.SaveDetails((str(commands_executed)),exploit_result)
+							except Exception ,exc:
+								print "INternal Exception " +str(exc)
+								self.print_Error( "Inner Exception - " +str(exc))
+								self.print_Error_info( "Inner Exception" +str(exc))
+						
+						
 		    else:
 				self.general_op=(str(output)+"\n"+str(err)+"\n")
 			#return str(str(output)+"\n"+str(err)+"\n")	 
@@ -1461,7 +1525,7 @@ class Commands:
 			self.print_Error_info("Exception in SingleLineCommands_Tout" +str(e))	
 	
 
-	def singleLineCommands_Timeout(self,arg):   #see in this case its not necessaer to update result since it would be uodated by the other mrth	
+	def singleLineCommands_Timeout(self,arg,grep_commands=None):   #see in this case its not necessaer to update result since it would be uodated by the other mrth	
 			"""
 			Objective :
 			The purpose of this method is to execute scripts that can be invoked with single line command
@@ -1473,7 +1537,11 @@ class Commands:
 			self.print_Log_info("In method SingleLineCommands_Timeout()")
 			commands_executed=[]
 			commands_executed.append(arg[1])
-			thread = threading.Thread(target=self.execute_singleLine,args=(arg[1],))
+			if grep_commands ==None:
+				thread = threading.Thread(target=self.execute_singleLine,args=(arg[1],))
+			else:
+				print "In else with grep as true "
+				thread = threading.Thread(target=self.execute_singleLine,args=(arg[1],False,grep_commands))
 			thread.start()
 			timeout=int(arg[0])
 			thread.join(timeout)

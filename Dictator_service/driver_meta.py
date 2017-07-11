@@ -1609,15 +1609,7 @@ class Driver:
 									self.IPexploit.TestCaseStatus('true',host,port,int(self.project_id),int(current_record_id))
 								except Exception ,ees:
 									print "EXception occured while executing test case :"+str(ees)
-								#=======
-								#if((is_interactive !=None ) and (is_interactive =="1")):
-									#print "Launching General interactive mode !!-->Method->"+method_name
-									
-									#func(final_args,True)
-								#else:
-									#print "Launching without interactive mode !!--->"+method_name	
-									#func(final_args)
-								#>>>>>>> b6b8e9ee72399e3d683c7808a85d7f1c8ce3cbf6
+								
 					
 						self.IPexploit.UpdateStatus('complete',host,port,int(self.project_id),int(current_record_id))
 						
@@ -1677,9 +1669,12 @@ class Driver:
 						self.IPexploit.UpdateStatus('processing',host,port,int(self.project_id),int(current_record_id))
 						profile_service=self.profileJson.get(service)
 						id_list=profile_service.get('Test_cases')
-		
+						execute=True
+						
 						for entries in meta :
-							if entries.get('id') in id_list:
+							execute=entries.get("execute",True)
+							print "For command : "+str(entries.get("id")) +" execute is : "+str(execute)
+							if entries.get('id') in id_list and execute ==True:
 								method_name=entries.get('method')
 								args=entries.get('args')
 								self.commandObj.method_id=method_name
@@ -1706,8 +1701,13 @@ class Driver:
 											print "Launching General interactive mode !!-->Method->"+method_name
 											func(final_args,True)
 										else:
-											print "Launching without interactive mode !!--->"+method_name	
-											func(final_args)
+											print "Launching without interactive mode !!--->"+method_name
+											grep= entries.get("grep",None)
+											if grep != None:
+												grep_commands=entries.get("grep_commands")
+												func(final_args,grep_commands)
+											else:
+												func(final_args)
 										self.IPexploit.TestCaseStatus('true',host,port,int(self.project_id),int(current_record_id))
 									
 									except Exception ,ee:

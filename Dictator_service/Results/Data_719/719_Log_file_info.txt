@@ -1,0 +1,500 @@
+2017-07-11 11:41:28,392 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-07-11 11:41:34,398 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 719
+2017-07-11 11:41:34,400 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-07-11 11:41:34,415 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-07-11 11:41:34,451 - Info Logger - DEBUG - Service,Host,port  is -->ssl  127.0.0.1  443
+2017-07-11 11:41:34,461 - Info Logger - DEBUG - Command id --> ssl_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:41:34,462 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:41:34,472 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Thread started --with command sslyze 127.0.0.1:443
+2017-07-11 11:41:35,486 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Thread finished
+2017-07-11 11:41:35,487 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Saving details :
+2017-07-11 11:41:35,502 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Details Updated successfully
+2017-07-11 11:41:35,515 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:41:35,515 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Starting Test ssl
+2017-07-11 11:41:44,295 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Saving details :
+2017-07-11 11:41:44,534 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Details Updated successfully
+2017-07-11 11:41:44,534 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Stopping Test ssl
+2017-07-11 11:41:44,647 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:41:44,648 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Starting Test ssl
+2017-07-11 11:41:48,977 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Saving details :
+2017-07-11 11:41:48,989 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Details Updated successfully
+2017-07-11 11:41:48,989 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Stopping Test ssl
+2017-07-11 11:41:49,097 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:41:49,097 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Starting Test ssl
+2017-07-11 11:41:56,114 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Saving details :
+2017-07-11 11:41:56,130 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Details Updated successfully
+2017-07-11 11:41:56,131 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Stopping Test ssl
+2017-07-11 11:41:56,254 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:41:56,255 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:41:56,257 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Thread started --with command nmap -Pn -sV --script=ssl-ccs-injection -p 443 127.0.0.1
+2017-07-11 11:42:13,717 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Thread finished
+2017-07-11 11:42:13,718 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Saving details :
+2017-07-11 11:42:13,734 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Details Updated successfully
+2017-07-11 11:42:13,773 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:42:13,774 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Inside command_meta
+2017-07-11 11:43:48,567 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 11:43:53,672 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Module Execution completed
+2017-07-11 11:43:53,672 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Exiting  from msfconsole !!!
+2017-07-11 11:43:55,878 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Saving details :
+2017-07-11 11:43:55,909 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Details Updated successfully
+2017-07-11 11:43:55,909 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Exiting custom_meta !!
+2017-07-11 11:43:55,921 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:43:55,921 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Starting Test ssl
+2017-07-11 11:43:58,483 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Saving details :
+2017-07-11 11:43:58,500 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Details Updated successfully
+2017-07-11 11:43:58,500 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Stopping Test ssl
+2017-07-11 11:43:58,608 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:43:58,609 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:43:58,611 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Thread started --with command echo | openssl s_client -connect 127.0.0.1:443 |grep -i 'Compression'
+2017-07-11 11:43:58,681 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Thread finished
+2017-07-11 11:43:58,682 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Saving details :
+2017-07-11 11:43:58,692 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Details Updated successfully
+2017-07-11 11:43:58,733 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:43:58,733 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Starting Test ssl
+2017-07-11 11:44:02,295 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Saving details :
+2017-07-11 11:44:02,318 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Details Updated successfully
+2017-07-11 11:44:02,319 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Stopping Test ssl
+2017-07-11 11:44:02,428 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:44:02,429 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:44:02,430 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Thread started --with command nmap -Pn -sV --script=ssl-poodle -p 443 127.0.0.1
+2017-07-11 11:44:17,084 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Thread finished
+2017-07-11 11:44:17,084 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Saving details :
+2017-07-11 11:44:17,101 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Details Updated successfully
+2017-07-11 11:44:17,147 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:44:17,148 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:44:17,149 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Thread started --with command openssl s_client -connect 127.0.0.1:443
+2017-07-11 11:44:17,205 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Thread finished
+2017-07-11 11:44:17,205 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Saving details :
+2017-07-11 11:44:17,219 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Details Updated successfully
+2017-07-11 11:44:17,277 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:44:17,278 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Starting Test ssl
+2017-07-11 11:44:20,145 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Saving details :
+2017-07-11 11:44:20,162 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Details Updated successfully
+2017-07-11 11:44:20,164 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Stopping Test ssl
+2017-07-11 11:44:20,276 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:44:20,277 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:44:20,283 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Thread started --with command  nmap -Pn --script ssl-heartbleed -p 443 127.0.0.1
+2017-07-11 11:44:21,613 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Thread finished
+2017-07-11 11:44:21,615 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Saving details :
+2017-07-11 11:44:21,632 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Details Updated successfully
+2017-07-11 11:44:21,677 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:44:21,677 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Inside command_meta
+2017-07-11 11:45:13,089 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 11:45:18,195 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Module Execution completed
+2017-07-11 11:45:18,195 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Exiting  from msfconsole !!!
+2017-07-11 11:45:20,403 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Saving details :
+2017-07-11 11:45:20,458 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Details Updated successfully
+2017-07-11 11:45:20,459 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Exiting custom_meta !!
+2017-07-11 11:45:20,471 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:45:20,471 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Starting Test ssl
+2017-07-11 11:45:23,625 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Saving details :
+2017-07-11 11:45:23,644 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Details Updated successfully
+2017-07-11 11:45:23,645 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Stopping Test ssl
+2017-07-11 11:45:23,758 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:45:23,758 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Starting Test ssl
+2017-07-11 11:45:29,581 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Saving details :
+2017-07-11 11:45:29,597 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Details Updated successfully
+2017-07-11 11:45:29,597 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Stopping Test ssl
+2017-07-11 11:45:29,710 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:45:29,711 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Starting Test ssl
+2017-07-11 11:45:35,468 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Saving details :
+2017-07-11 11:45:35,481 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Details Updated successfully
+2017-07-11 11:45:35,482 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Stopping Test ssl
+2017-07-11 11:45:35,591 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:45:35,591 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Starting Test ssl
+2017-07-11 11:45:38,419 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Saving details :
+2017-07-11 11:45:38,433 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Details Updated successfully
+2017-07-11 11:45:38,433 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Stopping Test ssl
+2017-07-11 11:45:38,545 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:45:38,546 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:45:38,548 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Thread started --with command nmap -Pn --script=sslv2-drown -p 443 127.0.0.1
+2017-07-11 11:45:39,354 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Thread finished
+2017-07-11 11:45:39,355 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Saving details :
+2017-07-11 11:45:39,371 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Details Updated successfully
+2017-07-11 11:45:39,432 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:45:39,432 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Starting Test ssl
+2017-07-11 11:46:04,628 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Saving details :
+2017-07-11 11:46:04,708 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Details Updated successfully
+2017-07-11 11:46:04,709 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Stopping Test ssl
+2017-07-11 11:46:04,816 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:46:04,816 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:46:04,817 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Thread started --with command echo | openssl s_client -connect 127.0.0.1:443 |grep 'Secure Renegotiation'
+2017-07-11 11:46:04,876 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Thread finished
+2017-07-11 11:46:04,877 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Saving details :
+2017-07-11 11:46:04,899 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Details Updated successfully
+2017-07-11 11:46:04,953 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:46:04,953 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Starting Test ssl
+2017-07-11 11:46:30,079 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Saving details :
+2017-07-11 11:46:30,109 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Details Updated successfully
+2017-07-11 11:46:30,109 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Stopping Test ssl
+2017-07-11 11:46:30,220 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:46:30,220 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:46:30,222 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Thread started --with command sslscan 127.0.0.1:443
+2017-07-11 11:46:31,097 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Thread finished
+2017-07-11 11:46:31,097 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Saving details :
+2017-07-11 11:46:31,118 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Details Updated successfully
+2017-07-11 11:46:31,169 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:46:31,170 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:46:31,172 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443
+2017-07-11 11:47:33,724 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Thread finished
+2017-07-11 11:47:33,725 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Saving details :
+2017-07-11 11:47:33,989 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Details Updated successfully
+2017-07-11 11:47:33,990 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_2  Message --> :Saving details :
+2017-07-11 11:47:34,004 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_2  Message --> :Details Updated successfully
+2017-07-11 11:47:34,005 - Info Logger - DEBUG - Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :Saving details :
+2017-07-11 11:47:34,017 - Info Logger - DEBUG - Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :Details Updated successfully
+2017-07-11 11:47:34,019 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Saving details :
+2017-07-11 11:47:34,042 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Details Updated successfully
+2017-07-11 11:47:34,043 - Info Logger - DEBUG - Command id --> ssl_Wild_card_1  Message --> :Saving details :
+2017-07-11 11:47:34,056 - Info Logger - DEBUG - Command id --> ssl_Wild_card_1  Message --> :Details Updated successfully
+2017-07-11 11:47:34,058 - Info Logger - DEBUG - Command id --> ssl_Self_Signed_1  Message --> :Saving details :
+2017-07-11 11:47:34,072 - Info Logger - DEBUG - Command id --> ssl_Self_Signed_1  Message --> :Details Updated successfully
+2017-07-11 11:47:34,074 - Info Logger - DEBUG - Command id --> ssl_Server_key_size  Message --> :Saving details :
+2017-07-11 11:47:34,093 - Info Logger - DEBUG - Command id --> ssl_Server_key_size  Message --> :Details Updated successfully
+2017-07-11 11:47:34,095 - Info Logger - DEBUG - Command id --> ssl_Signiture_algorithm  Message --> :Saving details :
+2017-07-11 11:47:34,105 - Info Logger - DEBUG - Command id --> ssl_Signiture_algorithm  Message --> :Details Updated successfully
+2017-07-11 11:47:34,128 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:47:34,129 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:47:34,131 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Thread started --with command java -jar Scripts/TestSSLServer.jar 127.0.0.1 443
+2017-07-11 11:47:38,639 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Thread finished
+2017-07-11 11:47:38,640 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Saving details :
+2017-07-11 11:47:38,653 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Details Updated successfully
+2017-07-11 11:47:38,677 - Info Logger - DEBUG - Command id --> ssl_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:47:38,678 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:47:38,679 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Thread started --with command  nmap -Pn --script=ssl-cert -p 443 127.0.0.1
+2017-07-11 11:47:39,673 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Thread finished
+2017-07-11 11:47:39,673 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Saving details :
+2017-07-11 11:47:39,686 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Details Updated successfully
+2017-07-11 11:47:39,718 - Info Logger - DEBUG - Command id --> ssl_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:47:39,721 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:47:39,722 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Thread started --with command nmap -Pn --script=ssl-enum-ciphers -p 443 127.0.0.1
+2017-07-11 11:47:41,736 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Thread finished
+2017-07-11 11:47:41,737 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Saving details :
+2017-07-11 11:47:41,753 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Details Updated successfully
+2017-07-11 11:47:41,771 - Info Logger - DEBUG - Command id --> ssl_7  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:47:41,772 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:47:41,774 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Thread started --with command perl Scripts/ssl-cipher-suite-enum.pl --rdp 127.0.0.1:443
+2017-07-11 11:47:43,373 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Thread finished
+2017-07-11 11:47:43,374 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Saving details :
+2017-07-11 11:47:43,387 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Details Updated successfully
+2017-07-11 11:47:43,431 - Info Logger - DEBUG - Command id --> ssl_9  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:47:43,432 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:47:43,433 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Thread started --with command nmap -sV --reason -Pn -n -p 443 127.0.0.1
+2017-07-11 11:47:57,597 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Thread finished
+2017-07-11 11:47:57,597 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Saving details :
+2017-07-11 11:47:57,621 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Details Updated successfully
+2017-07-11 11:47:57,643 - Info Logger - DEBUG - Command id --> ssl_10  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:47:57,644 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:47:57,646 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Thread started --with command perl Scripts/beast.pl 127.0.0.1
+2017-07-11 11:47:58,471 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Thread finished
+2017-07-11 11:47:58,472 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Saving details :
+2017-07-11 11:47:58,495 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Details Updated successfully
+2017-07-11 11:51:26,548 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-07-11 11:51:32,552 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 719
+2017-07-11 11:51:32,554 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-07-11 11:51:32,565 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-07-11 11:51:32,581 - Info Logger - DEBUG - Service,Host,port  is -->http  127.0.0.1  443
+2017-07-11 11:51:32,591 - Info Logger - DEBUG - Command id --> http_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:51:32,591 - Info Logger - DEBUG - Command id --> http_5  Message --> :Starting single line + Sniff
+2017-07-11 11:51:32,593 - Info Logger - DEBUG - Command id --> http_5  Message --> :IN Start_sniffing() method
+2017-07-11 11:51:35,595 - Info Logger - DEBUG - Command id --> http_5  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:51:35,602 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread started --with command nmap -Pn --script=banner.nse -p 443 127.0.0.1
+2017-07-11 11:51:56,561 - Info Logger - DEBUG - Command id --> http_5  Message --> :Thread finished
+2017-07-11 11:51:56,562 - Info Logger - DEBUG - Command id --> http_5  Message --> :Saving details :
+2017-07-11 11:51:56,579 - Info Logger - DEBUG - Command id --> http_5  Message --> :Details Updated successfully
+2017-07-11 11:51:56,585 - Info Logger - DEBUG - Command id --> http_5  Message --> :Terminating Sniffing process
+2017-07-11 11:51:56,640 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting Start_sniffing() method
+2017-07-11 11:51:56,647 - Info Logger - DEBUG - Command id --> http_5  Message --> :Exiting general_commands_tout_sniff()
+2017-07-11 11:51:56,655 - Info Logger - DEBUG - Command id --> http_trace_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:51:56,657 - Info Logger - DEBUG - Command id --> http_trace_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:51:56,658 - Info Logger - DEBUG - Command id --> http_trace_2  Message --> :Thread started --with command curl -v -X TRACE 127.0.0.1:443
+2017-07-11 11:51:56,744 - Info Logger - DEBUG - Command id --> http_trace_2  Message --> :Thread finished
+2017-07-11 11:51:56,744 - Info Logger - DEBUG - Command id --> http_trace_2  Message --> :Saving details :
+2017-07-11 11:51:56,756 - Info Logger - DEBUG - Command id --> http_trace_2  Message --> :Details Updated successfully
+2017-07-11 11:51:56,784 - Info Logger - DEBUG - Command id --> http_trace_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:51:56,785 - Info Logger - DEBUG - Command id --> http_trace_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:51:56,785 - Info Logger - DEBUG - Command id --> http_trace_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-trace.nse -p 443 127.0.0.1
+2017-07-11 11:52:11,225 - Info Logger - DEBUG - Command id --> http_trace_1  Message --> :Thread finished
+2017-07-11 11:52:11,226 - Info Logger - DEBUG - Command id --> http_trace_1  Message --> :Saving details :
+2017-07-11 11:52:11,243 - Info Logger - DEBUG - Command id --> http_trace_1  Message --> :Details Updated successfully
+2017-07-11 11:52:11,261 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:52:11,261 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> :Inside command_meta
+2017-07-11 11:53:06,140 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 11:53:11,246 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> :Module Execution completed
+2017-07-11 11:53:11,248 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> :Exiting  from msfconsole !!!
+2017-07-11 11:53:13,457 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> :Saving details :
+2017-07-11 11:53:13,485 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> :Details Updated successfully
+2017-07-11 11:53:13,485 - Info Logger - DEBUG - Command id --> http_trace_3  Message --> :Exiting custom_meta !!
+2017-07-11 11:53:13,496 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:53:13,497 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:53:13,498 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Thread started --with command echo -e 'Get/HTTP/1.0' | nc 127.0.0.1 443 |grep 'Server'
+2017-07-11 11:53:13,530 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Thread finished
+2017-07-11 11:53:13,531 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Saving details :
+2017-07-11 11:53:13,544 - Info Logger - DEBUG - Command id --> http_banner_1  Message --> :Details Updated successfully
+2017-07-11 11:53:13,581 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:53:13,582 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> :Inside command_meta
+2017-07-11 11:54:06,774 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 11:54:11,881 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> :Module Execution completed
+2017-07-11 11:54:11,883 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> :Exiting  from msfconsole !!!
+2017-07-11 11:54:14,091 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> :Saving details :
+2017-07-11 11:54:14,122 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> :Details Updated successfully
+2017-07-11 11:54:14,122 - Info Logger - DEBUG - Command id --> http_banner_2  Message --> :Exiting custom_meta !!
+2017-07-11 11:54:14,131 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:54:14,132 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:54:14,134 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-headers -p 443 127.0.0.1
+2017-07-11 11:54:29,470 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Thread finished
+2017-07-11 11:54:29,471 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Saving details :
+2017-07-11 11:54:29,492 - Info Logger - DEBUG - Command id --> http_headers_1  Message --> :Details Updated successfully
+2017-07-11 11:54:29,520 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:54:29,521 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> :Inside command_meta
+2017-07-11 11:55:31,893 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 11:55:55,947 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> :Module Execution completed
+2017-07-11 11:55:55,949 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> :Exiting  from msfconsole !!!
+2017-07-11 11:55:58,157 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> :Saving details :
+2017-07-11 11:55:58,660 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> :Details Updated successfully
+2017-07-11 11:55:58,660 - Info Logger - DEBUG - Command id --> http_headers_2  Message --> :Exiting custom_meta !!
+2017-07-11 11:55:59,026 - Info Logger - DEBUG - Command id --> http_methods_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:55:59,029 - Info Logger - DEBUG - Command id --> http_methods_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:55:59,031 - Info Logger - DEBUG - Command id --> http_methods_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-methods -p 443 127.0.0.1
+2017-07-11 11:56:18,417 - Info Logger - DEBUG - Command id --> http_methods_1  Message --> :Thread finished
+2017-07-11 11:56:18,418 - Info Logger - DEBUG - Command id --> http_methods_1  Message --> :Saving details :
+2017-07-11 11:56:18,471 - Info Logger - DEBUG - Command id --> http_methods_1  Message --> :Details Updated successfully
+2017-07-11 11:56:18,523 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:56:18,524 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> :Inside command_meta
+2017-07-11 11:57:19,842 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 11:57:24,951 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> :Module Execution completed
+2017-07-11 11:57:24,952 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> :Exiting  from msfconsole !!!
+2017-07-11 11:57:27,159 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> :Saving details :
+2017-07-11 11:57:27,173 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> :Details Updated successfully
+2017-07-11 11:57:27,173 - Info Logger - DEBUG - Command id --> http_methods_2  Message --> :Exiting custom_meta !!
+2017-07-11 11:57:27,183 - Info Logger - DEBUG - Command id --> http_robots_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:57:27,184 - Info Logger - DEBUG - Command id --> http_robots_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:57:27,186 - Info Logger - DEBUG - Command id --> http_robots_1  Message --> :Thread started --with command nmap -sV -Pn --script=http-robots.txt -p 443 127.0.0.1
+2017-07-11 11:57:42,625 - Info Logger - DEBUG - Command id --> http_robots_1  Message --> :Thread finished
+2017-07-11 11:57:42,626 - Info Logger - DEBUG - Command id --> http_robots_1  Message --> :Saving details :
+2017-07-11 11:57:42,642 - Info Logger - DEBUG - Command id --> http_robots_1  Message --> :Details Updated successfully
+2017-07-11 11:57:42,688 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:57:42,689 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Inside command_meta
+2017-07-11 11:58:47,069 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 11:58:52,176 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Module Execution completed
+2017-07-11 11:58:52,177 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Exiting  from msfconsole !!!
+2017-07-11 11:58:54,387 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Saving details :
+2017-07-11 11:58:54,560 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Details Updated successfully
+2017-07-11 11:58:54,560 - Info Logger - DEBUG - Command id --> http_robots_2  Message --> :Exiting custom_meta !!
+2017-07-11 11:58:54,673 - Info Logger - DEBUG - Command id --> http_web_dev_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:58:54,675 - Info Logger - DEBUG - Command id --> http_web_dev_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 11:58:54,677 - Info Logger - DEBUG - Command id --> http_web_dev_1  Message --> :Thread started --with command nmap -Pn -sV --script=http-iis-webdav-vuln.nse -p 443 127.0.0.1
+2017-07-11 11:59:10,339 - Info Logger - DEBUG - Command id --> http_web_dev_1  Message --> :Thread finished
+2017-07-11 11:59:10,339 - Info Logger - DEBUG - Command id --> http_web_dev_1  Message --> :Saving details :
+2017-07-11 11:59:10,522 - Info Logger - DEBUG - Command id --> http_web_dev_1  Message --> :Details Updated successfully
+2017-07-11 11:59:10,616 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 11:59:10,616 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> :Inside command_meta
+2017-07-11 12:00:22,348 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 12:00:27,454 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> :Module Execution completed
+2017-07-11 12:00:27,456 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> :Exiting  from msfconsole !!!
+2017-07-11 12:00:29,665 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> :Saving details :
+2017-07-11 12:00:29,707 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> :Details Updated successfully
+2017-07-11 12:00:29,708 - Info Logger - DEBUG - Command id --> http_web_dev_2  Message --> :Exiting custom_meta !!
+2017-07-11 12:10:16,853 - Info Logger - DEBUG - 
+
+Starting 
+
+
+2017-07-11 12:10:22,908 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 719
+2017-07-11 12:10:22,910 - Info Logger - DEBUG - Starting method --> GetIPExploits()
+2017-07-11 12:10:22,923 - Info Logger - DEBUG - Started method LaunchExploits()
+2017-07-11 12:10:23,492 - Info Logger - DEBUG - Service,Host,port  is -->ssl  127.0.0.1  443
+2017-07-11 12:10:23,570 - Info Logger - DEBUG - Command id --> ssl_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:10:23,610 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:10:23,617 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Thread started --with command sslyze 127.0.0.1:443
+2017-07-11 12:10:24,990 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Thread finished
+2017-07-11 12:10:24,990 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Saving details :
+2017-07-11 12:10:25,003 - Info Logger - DEBUG - Command id --> ssl_1  Message --> :Details Updated successfully
+2017-07-11 12:10:25,049 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:10:25,050 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Starting Test ssl
+2017-07-11 12:10:32,239 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Saving details :
+2017-07-11 12:10:32,266 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Details Updated successfully
+2017-07-11 12:10:32,267 - Info Logger - DEBUG - Command id --> ssl_beast_1  Message --> :Stopping Test ssl
+2017-07-11 12:10:32,374 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:10:32,374 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Starting Test ssl
+2017-07-11 12:10:34,628 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Saving details :
+2017-07-11 12:10:34,643 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Details Updated successfully
+2017-07-11 12:10:34,643 - Info Logger - DEBUG - Command id --> ssl_freak_1  Message --> :Stopping Test ssl
+2017-07-11 12:10:34,757 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:10:34,757 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Starting Test ssl
+2017-07-11 12:10:43,532 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Saving details :
+2017-07-11 12:10:43,558 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Details Updated successfully
+2017-07-11 12:10:43,559 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_1  Message --> :Stopping Test ssl
+2017-07-11 12:10:43,667 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:10:43,668 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:10:43,669 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Thread started --with command nmap -Pn -sV --script=ssl-ccs-injection -p 443 127.0.0.1
+2017-07-11 12:10:59,558 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Thread finished
+2017-07-11 12:10:59,559 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Saving details :
+2017-07-11 12:10:59,574 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_2  Message --> :Details Updated successfully
+2017-07-11 12:10:59,614 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:10:59,615 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Inside command_meta
+2017-07-11 12:13:07,240 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 12:13:12,348 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Module Execution completed
+2017-07-11 12:13:12,349 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Exiting  from msfconsole !!!
+2017-07-11 12:13:14,556 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Saving details :
+2017-07-11 12:13:14,567 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Details Updated successfully
+2017-07-11 12:13:14,567 - Info Logger - DEBUG - Command id --> ssl_CCS_Injection_3  Message --> :Exiting custom_meta !!
+2017-07-11 12:13:14,577 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:14,577 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Starting Test ssl
+2017-07-11 12:13:17,867 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Saving details :
+2017-07-11 12:13:17,884 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Details Updated successfully
+2017-07-11 12:13:17,885 - Info Logger - DEBUG - Command id --> ssl_Crime_1  Message --> :Stopping Test ssl
+2017-07-11 12:13:17,996 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:17,997 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:13:18,000 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Thread started --with command echo | openssl s_client -connect 127.0.0.1:443 |grep -i 'Compression'
+2017-07-11 12:13:18,107 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Thread finished
+2017-07-11 12:13:18,108 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Saving details :
+2017-07-11 12:13:18,129 - Info Logger - DEBUG - Command id --> ssl_Crime_2  Message --> :Details Updated successfully
+2017-07-11 12:13:18,181 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:18,182 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Starting Test ssl
+2017-07-11 12:13:21,800 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Saving details :
+2017-07-11 12:13:21,816 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Details Updated successfully
+2017-07-11 12:13:21,816 - Info Logger - DEBUG - Command id --> ssl_Poodle_1  Message --> :Stopping Test ssl
+2017-07-11 12:13:21,928 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:21,928 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:13:21,930 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Thread started --with command nmap -Pn -sV --script=ssl-poodle -p 443 127.0.0.1
+2017-07-11 12:13:36,574 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Thread finished
+2017-07-11 12:13:36,575 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Saving details :
+2017-07-11 12:13:36,592 - Info Logger - DEBUG - Command id --> ssl_Poodle_2  Message --> :Details Updated successfully
+2017-07-11 12:13:36,621 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:36,622 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:13:36,624 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Thread started --with command openssl s_client -connect 127.0.0.1:443
+2017-07-11 12:13:36,664 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Thread finished
+2017-07-11 12:13:36,665 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Saving details :
+2017-07-11 12:13:36,678 - Info Logger - DEBUG - Command id --> ssl_Poodle_3  Message --> :Details Updated successfully
+2017-07-11 12:13:36,697 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:36,697 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Starting Test ssl
+2017-07-11 12:13:39,141 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Saving details :
+2017-07-11 12:13:39,164 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Details Updated successfully
+2017-07-11 12:13:39,165 - Info Logger - DEBUG - Command id --> ssl_HearBleed_1  Message --> :Stopping Test ssl
+2017-07-11 12:13:39,275 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:39,276 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:13:39,278 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Thread started --with command  nmap -Pn --script ssl-heartbleed -p 443 127.0.0.1
+2017-07-11 12:13:40,303 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Thread finished
+2017-07-11 12:13:40,304 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Saving details :
+2017-07-11 12:13:40,316 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_2  Message --> :Details Updated successfully
+2017-07-11 12:13:40,363 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:13:40,363 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Inside command_meta
+2017-07-11 12:14:41,507 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Everything Fine till now-->Launching run command
+2017-07-11 12:14:46,617 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Module Execution completed
+2017-07-11 12:14:46,618 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Exiting  from msfconsole !!!
+2017-07-11 12:14:48,826 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Saving details :
+2017-07-11 12:14:48,907 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Details Updated successfully
+2017-07-11 12:14:48,908 - Info Logger - DEBUG - Command id --> ssl_HeartBleed_3  Message --> :Exiting custom_meta !!
+2017-07-11 12:14:48,918 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:14:48,919 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Starting Test ssl
+2017-07-11 12:14:52,451 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Saving details :
+2017-07-11 12:14:52,526 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Details Updated successfully
+2017-07-11 12:14:52,526 - Info Logger - DEBUG - Command id --> ssl_LogJam_1  Message --> :Stopping Test ssl
+2017-07-11 12:14:52,638 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:14:52,638 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Starting Test ssl
+2017-07-11 12:14:57,063 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Saving details :
+2017-07-11 12:14:57,087 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Details Updated successfully
+2017-07-11 12:14:57,087 - Info Logger - DEBUG - Command id --> ssl_Sweet_32_1  Message --> :Stopping Test ssl
+2017-07-11 12:14:57,197 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:14:57,198 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Starting Test ssl
+2017-07-11 12:15:01,107 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Saving details :
+2017-07-11 12:15:01,129 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Details Updated successfully
+2017-07-11 12:15:01,129 - Info Logger - DEBUG - Command id --> ssl_Ciphers_1  Message --> :Stopping Test ssl
+2017-07-11 12:15:01,241 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:15:01,242 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Starting Test ssl
+2017-07-11 12:15:03,790 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Saving details :
+2017-07-11 12:15:03,806 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Details Updated successfully
+2017-07-11 12:15:03,806 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_1  Message --> :Stopping Test ssl
+2017-07-11 12:15:03,917 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:15:03,917 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:15:03,919 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Thread started --with command nmap -Pn --script=sslv2-drown -p 443 127.0.0.1
+2017-07-11 12:15:05,050 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Thread finished
+2017-07-11 12:15:05,050 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Saving details :
+2017-07-11 12:15:05,072 - Info Logger - DEBUG - Command id --> ssl_Sweet_Drown_2  Message --> :Details Updated successfully
+2017-07-11 12:15:05,123 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:15:05,125 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Starting Test ssl
+2017-07-11 12:15:31,177 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Saving details :
+2017-07-11 12:15:31,192 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Details Updated successfully
+2017-07-11 12:15:31,192 - Info Logger - DEBUG - Command id --> ssl_RC4_1  Message --> :Stopping Test ssl
+2017-07-11 12:15:31,299 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:15:31,300 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:15:31,300 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Thread started --with command echo | openssl s_client -connect 127.0.0.1:443 |grep 'Secure Renegotiation'
+2017-07-11 12:15:31,319 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Thread finished
+2017-07-11 12:15:31,319 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Saving details :
+2017-07-11 12:15:31,329 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_1  Message --> :Details Updated successfully
+2017-07-11 12:15:31,340 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:15:31,340 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Starting Test ssl
+2017-07-11 12:15:50,416 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Saving details :
+2017-07-11 12:15:50,481 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Details Updated successfully
+2017-07-11 12:15:50,481 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_1  Message --> :Stopping Test ssl
+2017-07-11 12:15:50,592 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:15:50,592 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:15:50,593 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Thread started --with command sslscan 127.0.0.1:443
+2017-07-11 12:15:51,385 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Thread finished
+2017-07-11 12:15:51,386 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Saving details :
+2017-07-11 12:15:51,404 - Info Logger - DEBUG - Command id --> ssl_Weak_ciphers_2  Message --> :Details Updated successfully
+2017-07-11 12:15:51,430 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:15:51,431 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:15:51,433 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Thread started --with command echo | bash Scripts/testssl.sh 127.0.0.1:443
+2017-07-11 12:16:51,106 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Thread finished
+2017-07-11 12:16:51,107 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Saving details :
+2017-07-11 12:16:51,129 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Details Updated successfully
+2017-07-11 12:16:51,130 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_2  Message --> :Saving details :
+2017-07-11 12:16:51,148 - Info Logger - DEBUG - Command id --> ssl_Secure_Renegotiation_2  Message --> :Details Updated successfully
+2017-07-11 12:16:51,150 - Info Logger - DEBUG - Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :Saving details :
+2017-07-11 12:16:51,168 - Info Logger - DEBUG - Command id --> ssl_Secure_Client_Renegotiation_1  Message --> :Details Updated successfully
+2017-07-11 12:16:51,170 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Saving details :
+2017-07-11 12:16:51,188 - Info Logger - DEBUG - Command id --> ssl_Weak_cert_exp_1  Message --> :Details Updated successfully
+2017-07-11 12:16:51,191 - Info Logger - DEBUG - Command id --> ssl_Wild_card_1  Message --> :Saving details :
+2017-07-11 12:16:51,343 - Info Logger - DEBUG - Command id --> ssl_Wild_card_1  Message --> :Details Updated successfully
+2017-07-11 12:16:51,345 - Info Logger - DEBUG - Command id --> ssl_Self_Signed_1  Message --> :Saving details :
+2017-07-11 12:16:51,585 - Info Logger - DEBUG - Command id --> ssl_Self_Signed_1  Message --> :Details Updated successfully
+2017-07-11 12:16:51,586 - Info Logger - DEBUG - Command id --> ssl_Server_key_size  Message --> :Saving details :
+2017-07-11 12:16:51,798 - Info Logger - DEBUG - Command id --> ssl_Server_key_size  Message --> :Details Updated successfully
+2017-07-11 12:16:51,801 - Info Logger - DEBUG - Command id --> ssl_Signiture_algorithm  Message --> :Saving details :
+2017-07-11 12:16:51,818 - Info Logger - DEBUG - Command id --> ssl_Signiture_algorithm  Message --> :Details Updated successfully
+2017-07-11 12:16:51,840 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:16:51,842 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:16:51,844 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Thread started --with command java -jar Scripts/TestSSLServer.jar 127.0.0.1 443
+2017-07-11 12:16:56,130 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Thread finished
+2017-07-11 12:16:56,131 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Saving details :
+2017-07-11 12:16:56,149 - Info Logger - DEBUG - Command id --> ssl_3_ssl_tls_support  Message --> :Details Updated successfully
+2017-07-11 12:16:56,185 - Info Logger - DEBUG - Command id --> ssl_5  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:16:56,186 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:16:56,187 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Thread started --with command  nmap -Pn --script=ssl-cert -p 443 127.0.0.1
+2017-07-11 12:16:57,526 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Thread finished
+2017-07-11 12:16:57,528 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Saving details :
+2017-07-11 12:16:57,544 - Info Logger - DEBUG - Command id --> ssl_5  Message --> :Details Updated successfully
+2017-07-11 12:16:57,582 - Info Logger - DEBUG - Command id --> ssl_6  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:16:57,584 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:16:57,586 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Thread started --with command nmap -Pn --script=ssl-enum-ciphers -p 443 127.0.0.1
+2017-07-11 12:16:59,439 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Thread finished
+2017-07-11 12:16:59,440 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Saving details :
+2017-07-11 12:16:59,455 - Info Logger - DEBUG - Command id --> ssl_6  Message --> :Details Updated successfully
+2017-07-11 12:16:59,499 - Info Logger - DEBUG - Command id --> ssl_7  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:16:59,500 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:16:59,502 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Thread started --with command perl Scripts/ssl-cipher-suite-enum.pl --rdp 127.0.0.1:443
+2017-07-11 12:17:00,630 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Thread finished
+2017-07-11 12:17:00,630 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Saving details :
+2017-07-11 12:17:00,644 - Info Logger - DEBUG - Command id --> ssl_7  Message --> :Details Updated successfully
+2017-07-11 12:17:00,723 - Info Logger - DEBUG - Command id --> ssl_9  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:17:00,724 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:17:00,725 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Thread started --with command nmap -sV --reason -Pn -n -p 443 127.0.0.1
+2017-07-11 12:17:14,512 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Thread finished
+2017-07-11 12:17:14,512 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Saving details :
+2017-07-11 12:17:14,555 - Info Logger - DEBUG - Command id --> ssl_9  Message --> :Details Updated successfully
+2017-07-11 12:17:14,614 - Info Logger - DEBUG - Command id --> ssl_10  Message --> : STARTING EXPLOITS  FOR PROJECT ID --> 719
+2017-07-11 12:17:14,615 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :In method SingleLineCommands_Timeout()
+2017-07-11 12:17:14,617 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Thread started --with command perl Scripts/beast.pl 127.0.0.1
+2017-07-11 12:17:15,272 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Thread finished
+2017-07-11 12:17:15,272 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Saving details :
+2017-07-11 12:17:15,282 - Info Logger - DEBUG - Command id --> ssl_10  Message --> :Details Updated successfully
