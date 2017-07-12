@@ -935,8 +935,8 @@
 
 			"set rport <port>", 
 
-          "set SMBPass msfadmin", 
-          "set SMBUser msfadmin"
+          "set SMBPass admin", 
+          "set SMBUser admin"
         ], 
         "id": "microsoft-ds_10", 
         "include": true, 
@@ -951,8 +951,8 @@
           "use auxiliary/scanner/smb/smb_login", 
           "set RHOSTS <host>", 
           "set rport <port>", 
-          "set SMBPass msfadmin", 
-          "set SMBUser msfadmin"
+          "set SMBPass admin", 
+          "set SMBUser admin"
         ], 
         "id": "microsoft-ds_11", 
         "include": true, 
@@ -1061,6 +1061,57 @@
         "include": true, 
         "method": "singleLineCommands_Timeout", 
         "title": "Enum Users"
+      },
+		
+		{
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_negotiate_pidhigh", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "microsoft-ds_21", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+        "args": [
+          "use auxiliary/admin/kerberos/ms14_068_kerberos_checksum", 
+          "set RHOST <host>", 
+          "set RPORT <port>",
+			"set DOMAIN <domain>",
+			"set PASSWORD <password>",
+			"set USER <user>",
+			"set USER_SID <user_sid>"
+        ], 
+        "id": "microsoft-ds_22", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit Microsoft ds Kerberos"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "microsoft-ds_23", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit Microsoft ds"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/scanner/smb/smb_ms17_010", 
+          "set RHOSTS <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "microsoft-ds_24", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit microsoft ds"
       }
     ], 
     "Custom": false
@@ -1519,6 +1570,56 @@
         "include": true, 
         "method": "singleLineCommands_Timeout", 
         "title": "Enum Users"
+      },
+		{
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_negotiate_pidhigh", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ns_9", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+        "args": [
+          "use auxiliary/admin/kerberos/ms14_068_kerberos_checksum", 
+          "set RHOST <host>", 
+          "set RPORT <port>",
+			"set DOMAIN <domain>",
+			"set PASSWORD <password>",
+			"set USER <user>",
+			"set USER_SID <user_sid>"
+        ], 
+        "id": "netbios_ns_10", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios Kerberos"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ns_11", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/scanner/smb/smb_ms17_010", 
+          "set RHOSTS <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ns_12", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
       }
     ], 
     "Custom": false
@@ -1574,6 +1675,56 @@
         "include": true, 
         "method": "singleLineCommands_Timeout", 
         "title": "OS discovery on netbios-ssn"
+      },
+		{
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_negotiate_pidhigh", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ssn_6", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+        "args": [
+          "use auxiliary/admin/kerberos/ms14_068_kerberos_checksum", 
+          "set RHOST <host>", 
+          "set RPORT <port>",
+			"set DOMAIN <domain>",
+			"set PASSWORD <password>",
+			"set USER <user>",
+			"set USER_SID <user_sid>"
+        ], 
+        "id": "netbios_ssn_7", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios Kerberos"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ssn_8", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/scanner/smb/smb_ms17_010", 
+          "set RHOSTS <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ssn_9", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
       }
     ], 
     "Custom": false

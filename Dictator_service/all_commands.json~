@@ -902,8 +902,8 @@
           "use auxiliary/scanner/smb/smb_enumshares", 
           "set RHOSTS <host>", 
 		  "set rport <port>", 
-          "set SMBPass msfadmin", 
-          "set SMBUser msfadmin"
+          "set SMBPass <password>", 
+          "set SMBUser <user>"
         ], 
         "id": "microsoft-ds_8", 
         "include": true, 
@@ -935,8 +935,8 @@
 
 			"set rport <port>", 
 
-          "set SMBPass msfadmin", 
-          "set SMBUser msfadmin"
+          "set SMBPass <password>", 
+          "set SMBUser <user>"
         ], 
         "id": "microsoft-ds_10", 
         "include": true, 
@@ -951,8 +951,8 @@
           "use auxiliary/scanner/smb/smb_login", 
           "set RHOSTS <host>", 
           "set rport <port>", 
-          "set SMBPass msfadmin", 
-          "set SMBUser msfadmin"
+          "set SMBPass <password>", 
+          "set SMBUser <user>"
         ], 
         "id": "microsoft-ds_11", 
         "include": true, 
@@ -1061,6 +1061,58 @@
         "include": true, 
         "method": "singleLineCommands_Timeout", 
         "title": "Enum Users"
+      }
+		,
+		
+		{
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_negotiate_pidhigh", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "microsoft-ds_21", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+        "args": [
+          "use use auxiliary/admin/kerberos/ms14_068_kerberos_checksum", 
+          "set RHOST <host>", 
+          "set RPORT <port>",
+			"set DOMAIN <domain>",
+			"set PASSWORD <password>",
+			"set USER <user>",
+			"set USER_SID <user_sid>"
+        ], 
+        "id": "microsoft-ds_22", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit Microsoft ds Kerberos"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "microsoft-ds_23", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit Microsoft ds"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/scanner/smb/smb_ms17_010", 
+          "set RHOSTS <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "microsoft-ds_24", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit microsoft ds"
       }
     ], 
     "Custom": false
@@ -1520,6 +1572,57 @@
         "method": "singleLineCommands_Timeout", 
         "title": "Enum Users"
       }
+		,
+		{
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_negotiate_pidhigh", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ns_9", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+        "args": [
+          "use use auxiliary/admin/kerberos/ms14_068_kerberos_checksum", 
+          "set RHOST <host>", 
+          "set RPORT <port>",
+			"set DOMAIN <domain>",
+			"set PASSWORD <password>",
+			"set USER <user>",
+			"set USER_SID <user_sid>"
+        ], 
+        "id": "netbios_ns_10", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios Kerberos"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ns_11", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/scanner/smb/smb_ms17_010", 
+          "set RHOSTS <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ns_12", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      }
     ], 
     "Custom": false
   }, 
@@ -1574,6 +1677,57 @@
         "include": true, 
         "method": "singleLineCommands_Timeout", 
         "title": "OS discovery on netbios-ssn"
+      }
+		,
+		{
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_negotiate_pidhigh", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ssn_6", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+        "args": [
+          "use use auxiliary/admin/kerberos/ms14_068_kerberos_checksum", 
+          "set RHOST <host>", 
+          "set RPORT <port>",
+			"set DOMAIN <domain>",
+			"set PASSWORD <password>",
+			"set USER <user>",
+			"set USER_SID <user_sid>"
+        ], 
+        "id": "netbios_ssn_7", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios Kerberos"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff", 
+          "set RHOST <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ssn_8", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
+      },
+		{
+		
+        "args": [
+          "use auxiliary/scanner/smb/smb_ms17_010", 
+          "set RHOSTS <host>", 
+          "set RPORT <port>"
+        ], 
+        "id": "netbios_ssn_9", 
+        "include": true, 
+        "method": "custom_meta", 
+        "title": "Metasploit NetBios"
       }
     ], 
     "Custom": false
@@ -2768,22 +2922,24 @@
 	  {
         "args": [
           "1000", 
-          "echo | bash Scripts/testssl.sh <host>:<port> |grep 'Secure Renegotiation'"
+          "echo | bash Scripts/testssl.sh <host>:<port>"
         ], 
         "id": "ssl_Secure_Renegotiation_2", 
         "include": true, 
         "method": "singleLineCommands_Timeout", 
-        "title": "HTTPS  Sweet testssl.sh"
+        "title": "HTTPS  Sweet testssl.sh",
+		"execute":false
       },
 	  {
         "args": [
           "1000", 
-          "echo | bash Scripts/testssl.sh <host>:<port> |grep 'Secure Client-Initiated Renegotiation'"
+          "echo | bash Scripts/testssl.sh <host>:<port>"
         ], 
         "id": "ssl_Secure_Client_Renegotiation_1", 
         "include": true, 
         "method": "singleLineCommands_Timeout", 
-        "title": "HTTPS  Sweet testssl.sh"
+        "title": "HTTPS  Sweet testssl.sh",
+		"execute":false
       },
 	  {
         "args": [
@@ -2794,6 +2950,7 @@
         "include": true, 
         "method": "test_ssl", 
         "title": "HTTPS  Sweet testssl.sh"
+	
       },
 	  {
         "args": [
@@ -2804,56 +2961,72 @@
         "include": true, 
         "method": "singleLineCommands_Timeout", 
         "title": "ssl encryption"
-      }, 
+      },
+	   
 	  {
         "args": [
-          "800", 
-          "echo | bash Scripts/testssl.sh <host>:<port> | grep 'Certificate Expiration'"
+          "4000", 
+          "echo | bash Scripts/testssl.sh <host>:<port>"
         ], 
         "id": "ssl_Weak_cert_exp_1", 
         "include": true, 
         "method": "singleLineCommands_Timeout", 
-        "title": "HTTPS  Sweet testssl.sh"
+        "title": "HTTPS  Sweet testssl.sh",
+		"grep":true,
+		"grep_commands":[
+				{"id":"ssl_Secure_Renegotiation_2","grep_string":"Secure Renegotiation","after":3,"before":0},
+				{"id":"ssl_Secure_Client_Renegotiation_1","grep_string":"Secure Client-Initiated Renegotiation","after":3,"before":0},
+				{"id":"ssl_Weak_cert_exp_1","grep_string":"Certificate Expiration","after":3,"before":2},
+				{"id":"ssl_Wild_card_1","grep_string":"Common Name","after":3,"before":0},
+				{"id":"ssl_Self_Signed_1","grep_string":"Issuer","after":3,"before":0},
+				{"id":"ssl_Server_key_size","grep_string":"Server key size","after":3,"before":0},
+				{"id":"ssl_Signiture_algorithm","grep_string":"Signature Algorithm","after":3,"before":0}
+
+				]
       },
 	  {
         "args": [
-          "800", 
-          "echo | bash Scripts/testssl.sh <host>:<port> | grep 'Common Name'"
+          "4000", 
+          "echo | bash Scripts/testssl.sh <host>:<port>"
         ], 
         "id": "ssl_Wild_card_1", 
         "include": true, 
         "method": "test_ssl", 
-        "title": "HTTPS  Sweet testssl.sh"
+        "title": "HTTPS  Sweet testssl.sh",
+		"execute":false
       },
 	  {
         "args": [
-          "800", 
-          "echo | bash Scripts/testssl.sh <host>:<port> | grep 'Issuer'"
+          "4000", 
+          "echo | bash Scripts/testssl.sh <host>:<port>"
         ], 
         "id": "ssl_Self_Signed_1", 
         "include": true, 
         "method": "singleLineCommands_Timeout", 
-        "title": "HTTPS  Sweet testssl.sh"
+        "title": "HTTPS  Sweet testssl.sh",
+		"execute":false
       },
 	  {
         "args": [
-          "800", 
-          "echo | bash Scripts/testssl.sh <host>:<port> | grep 'Server key size'"
+          "4000", 
+          "echo | bash Scripts/testssl.sh <host>:<port>"
         ], 
         "id": "ssl_Server_key_size", 
         "include": true, 
         "method": "singleLineCommands_Timeout", 
-        "title": "HTTPS  Sweet testssl.sh"
+        "title": "HTTPS  Sweet testssl.sh",
+		"execute":false
       },
 	  {
         "args": [
           "800", 
-          "echo | bash Scripts/testssl.sh <host>:<port> | grep 'Signature Algorithm'"
+          "echo | bash Scripts/testssl.sh <host>:<port>"
         ], 
-        "id": "ssl_Server_key_size", 
+        "id": "ssl_Signiture_algorithm", 
         "include": true, 
         "method": "singleLineCommands_Timeout", 
-        "title": "HTTPS  Sweet testssl.sh"
+        "title": "HTTPS  Sweet testssl.sh",
+		"execute":false
       },
       {
         "args": [

@@ -1561,7 +1561,7 @@ class Driver:
 			print ("Inside exception of start Threads ! " +str(ee))
 
 
-	def launchThread(self,meta,host,port,service,current_record_id,parent_obj=None):
+	def launchThread(self,meta,host,port,service,current_record_id,parent_obj=None,params_key="Default"):
 					"""
 					Objective :
 					Each thread will actually invoke the file auto_commands.py with appropriate commands
@@ -1575,6 +1575,20 @@ class Driver:
 		
 						print "The thread is invoked with innstance :"+str(self)
 						#print "The process count from parent is : " +str(project_obj.active_processes)
+						params_config_file=os.path.join(self.folder_dir,"Project_params.json")
+						with open(params_config_file,"rb") as f:
+							all_params_data = json.loads(f.read()) #--> all service types in master json 
+						param_data=all_params_data.get(params_key,None)
+						user=''
+						password=''
+						domain=''
+						user_sid=''
+						if param_data != None:
+							user=param_data.get("User","")
+							password=param_data.get("Password","")
+							domain=param_data.get("Domain","")
+							user_sid=param_data.get("User_sid","")
+							
 						for entries in meta :
 						  if entries.get('id') in id_list:	
 							method_name=entries.get('method')
@@ -1590,6 +1604,10 @@ class Driver:
 								if isinstance(arg, basestring):
 									arg=arg.replace("<host>",host)
 									arg=arg.replace("<port>",port)
+									arg=arg.replace("<user>",user)
+									arg=arg.replace("<password>",password)
+									arg=arg.replace("<domain>",domain)
+									arg=arg.replace("<user_sid>",user_sid)
 								final_args.append(arg)
 							if ((method_name)):
 								func = getattr(self.commandObj,method_name)
@@ -1604,8 +1622,14 @@ class Driver:
 									
 										func(final_args,True)
 									else:
-										print "Launching without interactive mode !!--->"+method_name	
-										func(final_args)
+										print "Launching without interactive mode !!--->"+method_name
+										grep= entries.get("grep",None)
+										if grep != None:
+												grep_commands=entries.get("grep_commands")
+												func(final_args,grep_commands)
+										else:
+												func(final_args)	
+										#func(final_args)
 									self.IPexploit.TestCaseStatus('true',host,port,int(self.project_id),int(current_record_id))
 								except Exception ,ees:
 									print "EXception occured while executing test case :"+str(ees)
@@ -1621,7 +1645,7 @@ class Driver:
 				
 				
 		
-	def launchExploits(self,concurrent=False,record_list=[],resume=False):
+	def launchExploits(self,concurrent=False,record_list=[],resume=False,params_key="Default"):
 		"""
 			Objective :
 			This mehod will actually invoke the file auto_commands.py with appropriate commands
@@ -1670,7 +1694,20 @@ class Driver:
 						profile_service=self.profileJson.get(service)
 						id_list=profile_service.get('Test_cases')
 						execute=True
-						
+						params_config_file=os.path.join(self.folder_dir,"Project_params.json")
+						with open(params_config_file,"rb") as f:
+							all_params_data = json.loads(f.read()) #--> all service types in master json 
+						param_data=all_params_data.get(params_key,None)
+						user=''
+						password=''
+						domain=''
+						user_sid=''
+						if param_data != None:
+							user=param_data.get("User","")
+							password=param_data.get("Password","")
+							domain=param_data.get("Domain","")
+							user_sid=param_data.get("User_sid","")
+
 						for entries in meta :
 							execute=entries.get("execute",True)
 							print "For command : "+str(entries.get("id")) +" execute is : "+str(execute)
@@ -1688,6 +1725,10 @@ class Driver:
 									if isinstance(arg, basestring):
 										arg=arg.replace("<host>",host)
 										arg=arg.replace("<port>",port)
+										arg=arg.replace("<user>",user)
+										arg=arg.replace("<password>",password)
+										arg=arg.replace("<domain>",domain)
+										arg=arg.replace("<user_sid>",user_sid)
 									final_args.append(arg)
 								if ((method_name)):
 									func = getattr(self.commandObj,method_name)

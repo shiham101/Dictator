@@ -167,7 +167,11 @@
             "microsoft-ds_17", 
             "microsoft-ds_18", 
             "microsoft-ds_19", 
-            "microsoft-ds_20"
+            "microsoft-ds_20",
+			"microsoft-ds_21",
+			"microsoft-ds_22",
+			"microsoft-ds_23",
+			"microsoft-ds_24"
         ]
     }, 
     "ms-sql-m": {
@@ -238,7 +242,11 @@
             "netbios-ns_5", 
             "netbios-ns_6", 
             "netbios-ns_7", 
-            "netbios-ns_8"
+            "netbios-ns_8",
+			"netbios_ns_9",
+			"netbios_ns_10",
+			"netbios_ns_11",
+			"netbios_ns_12"
         ]
     }, 
     "netbios-ssn": {
@@ -248,7 +256,11 @@
             "netbios-ssn_2", 
             "netbios-ssn_3", 
             "netbios-ssn_4", 
-            "netbios-ssn_5"
+            "netbios-ssn_5",
+			"netbios_ssn_6",
+			"netbios_ssn_7",
+			"netbios_ssn_8",
+			"netbios_ssn_9"
         ]
     }, 
     "nfs": {
@@ -435,7 +447,6 @@
         "Custom": false, 
         "Test_cases": [
             "telnet_1", 
-            "telnet_http", 
             "telnet_sniff_1"
         ]
     }, 
