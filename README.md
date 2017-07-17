@@ -262,7 +262,7 @@ Although the general template structure would remain to be same for all the meth
 
 # 1.	Metasploit Test Cases # 
 
-![Master_json_metasploit.png](https://bitbucket.org/repo/7576gx/images/2666964196-Master_json_metasploit.png)
+![Master_json_metasploit.png](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/-Master_json_metasploit.png)
 
 	"ftp" - It specifies the service for which the test cases are to be configured.
 
