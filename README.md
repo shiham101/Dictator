@@ -61,7 +61,7 @@ PTO  is a network penetration testing automation tool that automates port discov
 *  The tool is available as a WEB service /API + web Application 
 *  The WEB api is under the project dictator_service
 *  The web application that consumes the web api is under the project dictator_client
- ![Image :](https://bitbucket.org/repo/5X5GyA/images/1154581580-arcitecture.png)
+ ![Image :](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/arcitecture.png)
 
 # KEY POINTS : #
 * 	It must be noted that the web API does not have any authentication logic.
@@ -285,9 +285,9 @@ Thus likewise there would be many such dictionaries inside commands [] list and 
 
 The single line test_cases are the ones which require only one line command to invoke the test case and would not require further interaction with test case script /For example nse scripts ,python scripts ,Perl scripts ,java class modules ,etc which can be invoked as one liners and they would get executed and finally would provide us with output.
 
-![Master_json_single_line.png](https://bitbucket.org/repo/7576gx/images/3591983543-Master_json_single_line.png)
+![Master_json_single_line.png](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/Master_json_single_line.png)
 
-![Master_json_single_line_ex_sc.png](https://bitbucket.org/repo/7576gx/images/3621354201-Master_json_single_line_ex_sc.png)
+![Master_json_single_line_ex_sc.png](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/Master_json_single_line_ex_sc.png)
 
 •	Commands : The structure /entries of each dictionary inside commands is :  Dict { }  
 
@@ -303,7 +303,7 @@ o	Title :It could be any title that u may wish to name your test case with
 
 With our automation scripts we not only cover the use cases that would invoke an external script (Python, Ruby, shell, etc.) and collect the findings, but we have also been able to  automate the use cases which require multiple steps of human intervention. Tools like “w3af_console” that need multiple steps of terminal interaction from user before actually performing the scan or manual checks such as anonymous ftp ,telnet anonymous  login or logging in with default passwords. This requires a pen tester to open a terminal and type a series of commands to deduce to a conclusion towards vulnerability status of underlying service being tested. We have been able to achieve this capability using virtual consoles. 
 
-![general_interactive.png](https://bitbucket.org/repo/7576gx/images/2983942768-general_interactive.png)
+![general_interactive.png](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/general_interactive.png)
 
 
 •	Commands : The structure /entries of each dictionary inside commands is :  Dict { } 
@@ -414,7 +414,7 @@ o	Second argument is command to be executed
 ### o	Sequential Mode ### :
  In sequential mode, the tool would start with the discovery followed by reconfiguration and then it will start service scanning. Thus, it is a three step process. Note that in sequential mode :
 
-![sequential.jpg](https://bitbucket.org/repo/7576gx/images/2446128188-sequential.jpg)
+![sequential.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/sequential.jpg)
 
 •	The service scanning cannot be started till all hosts haven't been scanned
 
@@ -426,20 +426,20 @@ o	Second argument is command to be executed
 
 In order to reduce false positives and false negatives ,kindly analyze port scanning results and if required ,reconfigure / change them and you may additionally add test cases if in case any service / port is left out. 
 
-![reconfig_1.jpg](https://bitbucket.org/repo/7576gx/images/530319620-reconfig_1.jpg)
+![reconfig_1.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/reconfig_1.jpg)
 
-![reconfig_2.jpg](https://bitbucket.org/repo/7576gx/images/1033413368-reconfig_2.jpg)
+![reconfig_2.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/reconfig_2.jpg)
 
 
 •	In the above figure we are changing service of type "status" to type "ftp" .Thus the test cases would be run for ftp.Note :Do that only when you are sure that the service discovered is incorrect or of type "Unknown" .We shall understand service types shortly.
 
 •	Add test case :If nmap may miss out host /port /service ,add that manually as follows :
 
-![add_test_case.jpg](https://bitbucket.org/repo/7576gx/images/378465611-add_test_case.jpg)
+![add_test_case.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/add_test_case.jpg)
 
 •	After adding test case we can click upon start scanning option to begin with service scanning. We can choose to enable threading option in order to speed up the results ,and we can also go and start service scanning without threading option. As shown below:
 
-![added_test_case.jpg](https://bitbucket.org/repo/7576gx/images/809506929-added_test_case.jpg)
+![added_test_case.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/added_test_case.jpg)
 
 
 •	Viewing intermediate results :The moment a person clicks upon Start scanning ,he / she would be redirected to scanning page. Every time a test case would be executed the UI would be updated and a blue color icon would appear on the screen in front of the service being scanned. A user may click upon that icon and can view the test case results.
@@ -448,11 +448,11 @@ o	Note : When all the test_cases for a service would be executed then the icon w
 
 •	Following diagram shows intermediate test case results :
 
-![view_test_case_res.jpg](https://bitbucket.org/repo/7576gx/images/4057313099-view_test_case_res.jpg)
+![view_test_case_res.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/view_test_case_res.jpg)
 
 •	At any point a user can leave the UI ,the running scan will not get impacted. Suppose the user may wish to see currently running scans .From the scan tab at top ,he may choose running scans .The following screen would be displayed :
 
-![All_Scans.jpg](https://bitbucket.org/repo/7576gx/images/2751621350-All_Scans.jpg)
+![All_Scans.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/All_Scans.jpg)
 
 
 •	Depending upon the state of the scan the action column ,will display appropriate action. If the scan would be under progress the action column will have action as  "Ongoing". A user may click upon this button and will get to the UI screen of the current state of his / her scan.
@@ -470,11 +470,11 @@ o	Note : When all the test_cases for a service would be executed then the icon w
 	Fill in the scan parameters and choose the scan mode as Concurrent.
 
 
-![concurrent.jpg](https://bitbucket.org/repo/7576gx/images/979384770-concurrent.jpg)
+![concurrent.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/concurrent.jpg)
 
 	The remaining steps will be same ,just that in this mode of scan ,a user will not have to wait for all hosts and ports to be scanned, to begin with service scanning ,also the user can choose what services he may wish to scan :Following figure displays same :
 
-![results_conc.jpg](https://bitbucket.org/repo/7576gx/images/4286344808-results_conc.jpg)
+![results_conc.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/results_conc.jpg)
 
 	As you can see in above screen shot ,user choose to scan http first and does not scan Ssh immediately ,Its at users will when he would want to scan what service.
 
@@ -488,7 +488,7 @@ With this mode the service scanning would start immediately after discovery woul
 
 	Fill in the scan parameters and choose the scan mode as Sequential Default.
 
-![seq_def.jpg](https://bitbucket.org/repo/7576gx/images/678003689-seq_def.jpg)
+![seq_def.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/seq_def.jpg)
 
 	When port scanning results would be over it will start service scanning ,by itself ,irrespective of  whether the user is currently logged in or not.
 
@@ -502,7 +502,7 @@ o	It must be noted that ,if the scan is paused while discovery (port scanning wo
 o	Following screen shots show how to pause an ongoing scan .
 
 
-![ongoing_scan.jpg](https://bitbucket.org/repo/7576gx/images/591328815-ongoing_scan.jpg)
+![ongoing_scan.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/ongoing_scan.jpg)
 
 o	In order to resume the scan ,either go to the current scans tab or go to the paused scans tab. The action column by default would be having two buttons :
 
@@ -514,14 +514,14 @@ o	In order to resume the scan ,either go to the current scans tab or go to the p
 
 	Note : Analyze option does not appear for concurrent scans ,the resume button will perform that joint functionality of resuming and analyzing the scans invoked in concurrent mode.
 
-![resume_analyze.jpg](https://bitbucket.org/repo/7576gx/images/3272206393-resume_analyze.jpg)
+![resume_analyze.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/resume_analyze.jpg)
 
 
 ## •	Downloading Reports  or Analyzing when Scan would be completed  ## :
 
 o	When the scan would be finished ,the user will get the option Download all ,on the UI .If the user would visit the current scans tab ,for all the scans with status as complete for both discovery and service scanning ,the action column ,will by default have an option to download the  results for offline analysis or to analyze the results online itself.
 
-![download_analyze.jpg](https://bitbucket.org/repo/7576gx/images/22949813-download_analyze.jpg)
+![download_analyze.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/download_analyze.jpg)
 
 o	On  clicking Download all ,a zipped folder would be downloaded. It will have :
 
@@ -539,10 +539,10 @@ o	On the other hand clicking upon Analyze tests will take us to UI where we can 
 o	 Nmap Report Upload - To use it ,go to Upload Reports and choose Nmap report . 
 Its a result importer module, which can read the results from an existing Nmap.xml report file and can import the findings in our custom database, and further use these findings in order to launch test cases/service scan. Thus, this leaves the user with the flexibility to use our tool in both modes (1) Discovery and service scanning together (2) Service scanning mode alone
 
-![report_dash_board.jpg](https://bitbucket.org/repo/7576gx/images/2083522804-report_dash_board.jpg)
+![report_dash_board.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/report_dash_board.jpg)
 
 
-![nmap_xml.jpg](https://bitbucket.org/repo/7576gx/images/3362623830-nmap_xml.jpg)
+![nmap_xml.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/nmap_xml.jpg)
 
 	On clicking upon upload the report will be parsed and uploaded ,a user may go to current scans and would find the uploaded project "test_upload_nmap" listed over there ,with its discovery status and complete and service scanning status as incomplete. A user may click upon action tab "ongoing:" and can reconfigure the results and then start service scanning.
 
@@ -553,7 +553,7 @@ Qualys and Nessus Report Parsers-
 	To use this option Go to Upload reports tab and select either Qualys/Nessus Report. 
 We  have a report merging module, which would merge the results obtained from Qualys, Nessus and manual test cases. In order to merge the reports, they have to be parsed first .We have Qualys, Nmap and Nessus report parsers. All of them will take a report in XML format and would parse the report and place it in local storage so that querying and integrating the results with other reports becomes easier.
 
-![qualys_nessus.jpg](https://bitbucket.org/repo/7576gx/images/3174782953-qualys_nessus.jpg)
+![qualys_nessus.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/qualys_nessus.jpg)
 
 	Note that the purpose of uploading the report here is to merge it with some manual project. Thus select the project from drop down list with which a user may wish to merge the nessus /Qualys report.
 
@@ -566,9 +566,9 @@ o	Report Merger :
 
 	This module merges the manual test cases, parsed Qualys report, parsed Nessus report and would also map the CVEs to exploits and finally, would provide the user an option to download the integrated reports in any of the format amongst (XML, HTML, CSV, JSON) thus providing one consolidated view for analysis.
 
-![merger_home.jpg](https://bitbucket.org/repo/7576gx/images/720317329-merger_home.jpg)
+![merger_home.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/merger_home.jpg)
 
-![merger.jpg](https://bitbucket.org/repo/7576gx/images/1868737616-merger.jpg)
+![merger.jpg](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/merger.jpg)
 
 	The final downloadable report is available in four formats (HTML, CSV ,JSON ,XML).
 
