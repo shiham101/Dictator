@@ -235,7 +235,7 @@ But with application ,it will be having role of normal user.
 o	The structure followed by master json file is : 
 
 Key<service name>: value (A dictionary having a list of dictionaries) –Example
-![Master_json.png](https://bitbucket.org/repo/7576gx/images/470669311-Master_json.png)
+![Master_json.png](https://github.com/Paladion-Labs/Dictator/blob/master/Git_images/Master_json.png)
 
 
 o	Method ID: The Method ID signifies the various methods which have been developed and placed in the auto_commands.py module which would be responsible for executing various test cases. 
