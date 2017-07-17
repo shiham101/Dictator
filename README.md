@@ -2,7 +2,8 @@
 PTO  is a network penetration testing automation tool that automates port discovery and service scanning phases of penetration testing 
 
 1.      Discovery (Port Scanning) -Nmap
-2.  	Vulnerability Scanning (Service Scanning) -Metasploit ,Terminal automation ,nse ,open source (python ,ruby ,shell ,nse ,perl) scripts ,Kali Linux Built in tools.
+2.  	Vulnerability Scanning (Service Scanning) -Metasploit ,Terminal automation ,nse ,open source
+	(python ,ruby ,shell ,nse ,perl) scripts ,Kali Linux Built in tools.
 3. 	PTO is developed in python and django and uses mysql at backend.
 	
 # Target Users #
