@@ -78,13 +78,13 @@ PTO  is a network penetration testing automation tool that automates port discov
 
 # INSTALLATION STEPS : #
        Pull the code For PTO as follows :
-             Pull/Clone code of dictator_service
-             Pull /Clone code of dictator_client
-             Downloading database nmapscan.sql
+             Pull/Clone code of dictator_service  : git clone <url>
+             Pull /Clone code of dictator_client  : git clone <url>
+             Downloading database nmapscan.sql     :The database is present at the root directory of Dictator Code base
 
 # OTHER DEPENDENCIES : #
 
-# Dependencies Internet: #
+# Dependencies from Internet /Web: #
 
 Either install them manually by typing each command in terminal
 
