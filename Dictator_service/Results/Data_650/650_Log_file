@@ -1,2 +1,0 @@
-2017-05-11 10:05:54,145 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :In method SingleLineCommands_Timeout()
-2017-05-11 10:05:54,146 - Commands Logger - DEBUG - Command Logger --->Command id --> http_1  Message --> :Thread started --with command nikto -h  192.168.182.132:80
