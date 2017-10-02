@@ -1,9 +1,0 @@
-2017-02-07 15:26:29,000 - Info Logger - DEBUG - 
-
-Starting 
-
-
-2017-02-07 15:26:35,009 - Info Logger - DEBUG - Starting method --> launchConfiguration()Project id --> 494
-2017-02-07 15:26:35,010 - Info Logger - DEBUG - Starting method --> GetIPExploits()
-2017-02-07 15:26:35,011 - Info Logger - DEBUG - Started method LaunchExploits()
-2017-02-07 15:26:35,012 - Info Logger - DEBUG - Starting method --> GetIPExploits()
