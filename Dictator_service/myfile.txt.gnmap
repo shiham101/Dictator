@@ -1,5 +1,0 @@
-# Nmap 7.12 scan initiated Fri Dec 30 23:41:59 2016 as: nmap -sn -oA myfile.txt 10.0.1.1-254
-Host: 10.0.1.39 ()	Status: Up
-Host: 10.0.1.85 ()	Status: Up
-Host: 10.0.1.37 ()	Status: Up
-# Nmap done at Fri Dec 30 23:42:31 2016 -- 254 IP addresses (3 hosts up) scanned in 31.43 seconds
