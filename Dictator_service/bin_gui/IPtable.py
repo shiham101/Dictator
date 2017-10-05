@@ -23,7 +23,7 @@ class IPtable:
 	def init_connection(self):
 		try:
 			self.method_id="Init_connection()"
-			self.conn=MySQLdb.connect("localhost","root","a2mated@P4l4d10n","nmapscan")
+			self.conn=MySQLdb.connect("localhost","<USER>","<PASSWORD>","nmapscan")
 			self.cursor = self.conn.cursor()
 			self.cur=self.conn.cursor()
 		except Exception,ee:
