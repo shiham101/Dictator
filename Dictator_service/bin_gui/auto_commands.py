@@ -60,7 +60,7 @@ class Commands:
 
 	def init_connection(self):
 		try:
-			self.con=MySQLdb.connect("localhost","root","a2mated@P4l4d10n","nmapscan")
+			self.con=MySQLdb.connect("localhost","USER","PASSWORD","nmapscan")
 			self.cursor = self.con.cursor()
 		except Exception, e:
 			self.print_Error("EXception in connection-->"+str(e))
