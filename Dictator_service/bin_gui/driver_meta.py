@@ -62,7 +62,7 @@ class Driver:
 	def init_connection(self):
 		try:
 			self.method_id="Init_connection()"
-			self.con=MySQLdb.connect("localhost","root","a2mated@P4l4d10n","nmapscan")
+			self.con=MySQLdb.connect("localhost","<USER>","<PASSWORD>","nmapscan")
 			self.cursor = self.con.cursor()
 		except Exception,ee:
 			self.print_Error("EXception in connection-->"+str(ee))
